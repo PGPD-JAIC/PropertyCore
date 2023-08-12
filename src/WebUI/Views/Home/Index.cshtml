@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron text-center">
+    <div class="container">
+        <div class="text-center"><img class="img-responsive" height="100" width="100" src="~/images/BOHSI Logo Xparent BG.png" alt="BOHSI"></div>
+        <h1 class="display-3" style="font-weight:500;">PropertyCore</h1>
+        <p>A project being developed by the Bureau of Homeland Security & Intelligence Joint Analysis Intelligence Center and intended to greatly increase the availability of data collected by the Records Management System.</p>
+        <p><a class="btn btn-primary btn-lg" asp-action="About" asp-controller="Home" asp-route-returnUrl="/Home" role="button">Learn more »</a></p>
+    </div>
+</div>
+<div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Property Warehouse</h2>
+            <h4 class="text-success">Live! (Alpha Testing)</h4>
+            <p>PropertyCore can assist Property and Evidence personnel in researching information about recovered property. </p>
+            <p><a class="btn btn-secondary" asp-action="About" asp-controller="Property" asp-route-returnUrl="/Home" role="button">View details »</a></p>
+        </div>
+@*         <div class="col-md-4">
+            <h2>Report Status Tracking</h2>
+            <h4 class="text-warning">Coming Soon</h4>
+            <p>RecordsCore can assist Supervisors with tracking Delinquent or missing RMS reports. </p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+        </div> *@
+    </div>
+    <hr>
+</div>

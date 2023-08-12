@@ -1,0 +1,33 @@
+﻿using System;
+using System.Linq;
+using System.Reflection;
+
+namespace PropertyCore.Common.Extensions
+{
+    /// <summary>
+    /// Class that contains extension methods for Enumeration objects.
+    /// </summary>
+    public static class EnumExtensionMethods
+    {
+        /// <summary>
+        /// Retrieves the Annotated Description of an Enumeration.
+        /// </summary>
+        /// <param name="GenericEnum"></param>
+        /// <returns></returns>
+        public static string GetDescription(this Enum GenericEnum)
+        {
+            Type genericEnumType = GenericEnum.GetType();
+            MemberInfo[] memberInfo = genericEnumType.GetMember(GenericEnum.ToString());
+            if ((memberInfo != null && memberInfo.Length > 0))
+            {
+                var _Attribs = memberInfo[0].GetCustomAttributes(typeof(System.ComponentModel.DescriptionAttribute), false);
+                if ((_Attribs != null && _Attribs.Count() > 0))
+                {
+                    return ((System.ComponentModel.DescriptionAttribute)_Attribs.ElementAt(0)).Description;
+                }
+            }
+            return GenericEnum.ToString();
+        }
+
+    }
+}

@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebUI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+          asp-fallback-href="~/lib/fontawesome/all.min.css"
+          asp-fallback-test-class="fa"
+          crossorigin="anonymous"
+          integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" />
+
+    <link rel="stylesheet" href="~/lib/bootstrap-dark/css/bootstrap-dark.min.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap-dark/css/toggle-bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap-dark/css/toggle-bootstrap-dark.min.css" />
+    <link rel="stylesheet" href="~/css/sidebar.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <script src="~/lib/jquery/jquery.min.js"></script>
+    <script src="~/lib/bootstrap-dark/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/sidebar.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Head", required: false)
+</head>
+<body class="bootstrap-dark">
+    <div class="page-wrapper chiller-theme toggled">
+        @if (ViewData["ActiveMenu"] != null && ViewData["ActiveLink"] != null)
+        {
+            <partial name="_SideBar" model='new SideBarViewModel { ActiveMenu = @ViewData["ActiveMenu"].ToString(), ActiveLink = @ViewData["ActiveLink"].ToString() }' />
+        }
+        else
+        {
+            <partial name="_SideBar" model='new SideBarViewModel { ActiveMenu = "None", ActiveLink = "None" }' />
+        }
+        <main class="container-fluid page-content" role="main">
+            @RenderBody()
+        </main>
+    </div>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,123 @@
+﻿@model SideBarViewModel
+
+<a id="show-sidebar" class="btn btn-sm btn-dark">
+    <i class="fas fa-bars"></i>
+</a>
+<nav id="sidebar" class="sidebar-wrapper">
+    <div class="sidebar-content">
+        <div class="sidebar-brand">
+            <a href="#">Menu</a>
+            <div id="close-sidebar">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <div class="sidebar-header d-flex justify-content-center purplegradient">
+            <div class="user-info text-center">
+                <div class="d-flex justify-content-center">
+                    <div class="user-pic">
+                        <img class="img-responsive" src="~/images/PGPDPatchXparent.png" alt="User picture">
+                    </div>
+                </div>
+                <span class="user-name">
+                    <a asp-action="UserInfo" asp-controller="Home" asp-route-userName="@User.Identity.Name"><i class="fas fa-user-edit"></i><strong> @User.Identity.Name</strong></a>
+                </span>
+                @if (User.IsInRole("Admin"))
+                {
+                    <span class="user-role">Administrator</span>
+                }
+            </div>
+        </div>
+        <!-- sidebar-header  -->
+        <div class="sidebar-menu">
+            <ul class="list-group list-group-flush">
+                <li class="header-menu">
+                    <span>General</span>
+                </li>
+                <li class="@(Model.ActiveMenu == "Main" ? "active" : "")">
+                    <a asp-action="Index" asp-controller="Home">
+                        <i class="fas fa-home"></i>
+                        <span>Main</span>
+                    </a>
+                </li>
+                <li class="sidebar-dropdown @(Model.ActiveMenu == "Property" ? "active" : "")">
+                    <a>
+                        @if (Model.ActiveMenu == "Property")
+                        {
+                            <i class="fas fa-folder-open"></i>
+                        }
+                        else
+                        {
+                            <i class="fas fa-folder"></i>
+                        }
+                        <span>Property</span>
+                    </a>
+                    <div class="sidebar-submenu" style="display: @(Model.ActiveMenu == "Property" ? "block" : "none")">
+                        <ul>
+                            <li class="@(Model.ActiveLink == "PropertySearch" ? "active" : "")">
+                                <a asp-action="Index" asp-controller="Property" asp-route-returnUrl="/Home/Index">Property Search</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                @if (User.IsInRole("Admin"))
+                {
+                    <li class="sidebar-dropdown @(Model.ActiveMenu == "Admin" ? "active" : "")">
+                        <a>
+                            <i class="fas fa-tools"></i>
+                            <span>Admin</span>
+                        </a>
+                        <div class="sidebar-submenu" style="display: @(Model.ActiveMenu == "Admin" ? "block" : "none")">
+                            <ul>
+                                <li class="@(Model.ActiveLink == "Home" ? "active" : "")">
+                                    <a asp-action="Index" asp-controller="Admin" asp-route-returnUrl="/Home/Index">Admin Home</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                }
+                <li class="header-menu">
+                    <span>Extra</span>
+                </li>
+                <li>
+                    <a href="/swagger" target="_blank">
+                        <i class="fas fa-cloud"></i>
+                        <span>API</span>
+                    </a>
+                </li>
+                @if (User.IsInRole("Admin"))
+                {
+                    <li>
+                        <a href="/services" target="_blank">
+                            <i class="fas fa-cog"></i>
+                            <span>Registered Services</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/hangfire" target="_blank">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Hangfire Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/Home/Test">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Test Page</span>
+                        </a>
+                    </li>
+                }
+                <li>
+                    <a href="#">
+                        <i class="fa fa-book"></i>
+                        <span>Documentation</span>
+                        <span class="badge badge-pill badge-primary">Beta</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- sidebar-menu  -->
+    </div>
+    <!-- sidebar-content  -->
+    <div class="sidebar-footer">
+        <span>&copy; 2023 - PropertyCore - <a asp-action="About" asp-controller="Home">About</a></span>
+    </div>
+</nav>     
