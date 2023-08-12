@@ -1,0 +1,37 @@
+﻿﻿@using PropertyCore.Application.Property.Queries.GetPropertyDetail
+@model PropertyDetailVm
+
+<div>
+    <h2>Property Detail</h2>
+    @if (ViewBag.ReturnUrl != null)
+    {
+        <a href="@ViewBag.ReturnUrl"><i class="fas fa-angle-left"></i> Back</a>
+    }
+    <hr />
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="InstanceId" class="form-label">Instance Id</label>
+                <input type="text" readonly class="form-control-plaintext" asp-for="InstanceId" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="SeqNo1" class="form-label">Sequence</label>
+                <input type="text" readonly class="form-control-plaintext" asp-for="SeqNo1" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="BarCode" class="form-label">Bar Code</label>
+                <input type="text" readonly class="form-control-plaintext" asp-for="BarCode" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="CaseNumber" class="form-label">Case Number</label>
+                <input type="text" readonly class="form-control-plaintext" asp-for="CaseNumber" />
+            </div>
+        </div>
+    </div>
+</div>

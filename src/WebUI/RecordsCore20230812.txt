@@ -1,0 +1,993 @@
+2023-08-12 09:47:53.086 -04:00 [INF] User profile is available. Using 'C:\Users\jcs30\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-12 09:47:53.219 -04:00 [INF] Start installing Hangfire SQL objects...
+2023-08-12 09:48:04.768 -04:00 [WRN] An exception occurred while trying to perform the migration. Retrying...
+System.Data.SqlClient.SqlException (0x80131904): Cannot open database "PropertyCoreHangfire" requested by the login. The login failed.
+Login failed for user 'SCOUNDREL\jcs30'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerStorage.Initialize()
+ClientConnectionId:8851f3b9-e07a-45ba-9a9d-995ee5030a00
+Error Number:4060,State:1,Class:11
+2023-08-12 09:48:04.820 -04:00 [WRN] An exception occurred while trying to perform the migration. Retrying...
+System.Data.SqlClient.SqlException (0x80131904): Cannot open database "PropertyCoreHangfire" requested by the login. The login failed.
+Login failed for user 'SCOUNDREL\jcs30'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerStorage.Initialize()
+ClientConnectionId:8851f3b9-e07a-45ba-9a9d-995ee5030a00
+Error Number:4060,State:1,Class:11
+2023-08-12 09:48:04.822 -04:00 [WRN] An exception occurred while trying to perform the migration.
+System.Data.SqlClient.SqlException (0x80131904): Cannot open database "PropertyCoreHangfire" requested by the login. The login failed.
+Login failed for user 'SCOUNDREL\jcs30'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerStorage.Initialize()
+ClientConnectionId:8851f3b9-e07a-45ba-9a9d-995ee5030a00
+Error Number:4060,State:1,Class:11
+2023-08-12 09:48:04.823 -04:00 [WRN] Was unable to perform the Hangfire schema migration due to an exception. Ignore this message unless you've just installed or upgraded Hangfire.
+System.Data.SqlClient.SqlException (0x80131904): Cannot open database "PropertyCoreHangfire" requested by the login. The login failed.
+Login failed for user 'SCOUNDREL\jcs30'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerStorage.Initialize()
+ClientConnectionId:8851f3b9-e07a-45ba-9a9d-995ee5030a00
+Error Number:4060,State:1,Class:11
+2023-08-12 09:48:04.963 -04:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\mssqllocaldb@PropertyCoreHangfire'
+2023-08-12 09:48:04.964 -04:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-08-12 09:48:04.966 -04:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-08-12 09:48:04.982 -04:00 [ERR] Execution BackgroundServerProcess is in the Failed state now due to an exception, execution will be retried no more than in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): Cannot open database "PropertyCoreHangfire" requested by the login. The login failed.
+Login failed for user 'SCOUNDREL\jcs30'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:8851f3b9-e07a-45ba-9a9d-995ee5030a00
+Error Number:4060,State:1,Class:11
+2023-08-12 09:48:05.335 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-12 09:48:05.337 -04:00 [INF] Hosting environment: Development
+2023-08-12 09:48:05.338 -04:00 [INF] Content root path: C:\Users\jcs30\source\repos\PropertyCore\src\WebUI
+2023-08-12 09:48:05.366 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/  
+2023-08-12 09:48:05.389 -04:00 [WRN] Failed to determine the https port for redirect.
+2023-08-12 09:48:17.573 -04:00 [INF] Executing endpoint 'PropertyCore.WebUI.Controllers.HomeController.Index (PropertyCore.WebUI)'
+2023-08-12 09:48:17.599 -04:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller PropertyCore.WebUI.Controllers.HomeController (PropertyCore.WebUI).
+2023-08-12 09:48:19.925 -04:00 [INF] Executing ViewResult, running view Index.
+2023-08-12 09:48:22.448 -04:00 [INF] Executed ViewResult - view Index executed in 4841.5074ms.
+2023-08-12 09:48:22.452 -04:00 [INF] Executed action PropertyCore.WebUI.Controllers.HomeController.Index (PropertyCore.WebUI) in 4851.1845ms
+2023-08-12 09:48:22.454 -04:00 [INF] Executed endpoint 'PropertyCore.WebUI.Controllers.HomeController.Index (PropertyCore.WebUI)'
+2023-08-12 09:48:22.459 -04:00 [INF] Request finished in 17093.4425ms 200 text/html; charset=utf-8
+2023-08-12 09:48:22.473 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/lib/bootstrap-dark/css/bootstrap-dark.min.css  
+2023-08-12 09:48:22.476 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/lib/bootstrap-dark/css/toggle-bootstrap.min.css  
+2023-08-12 09:48:22.478 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/css/sidebar.css  
+2023-08-12 09:48:22.478 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/lib/bootstrap-dark/css/toggle-bootstrap-dark.min.css  
+2023-08-12 09:48:22.478 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/css/site.css  
+2023-08-12 09:48:22.478 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/lib/jquery/jquery.min.js  
+2023-08-12 09:48:26.372 -04:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\jcs30\source\repos\PropertyCore\src\WebUI\wwwroot\css\site.css'
+2023-08-12 09:48:26.374 -04:00 [INF] Sending file. Request path: '/css/sidebar.css'. Physical path: 'C:\Users\jcs30\source\repos\PropertyCore\src\WebUI\wwwroot\css\sidebar.css'
+2023-08-12 09:48:26.376 -04:00 [INF] Request finished in 3898.3831ms 200 text/css
+2023-08-12 09:48:26.382 -04:00 [INF] Request finished in 3903.3006ms 200 text/css
+2023-08-12 09:48:26.389 -04:00 [INF] Sending file. Request path: '/lib/bootstrap-dark/css/toggle-bootstrap.min.css'. Physical path: 'C:\Users\jcs30\source\repos\PropertyCore\src\WebUI\wwwroot\lib\bootstrap-dark\css\toggle-bootstrap.min.css'
+2023-08-12 09:48:26.389 -04:00 [INF] Sending file. Request path: '/lib/bootstrap-dark/css/bootstrap-dark.min.css'. Physical path: 'C:\Users\jcs30\source\repos\PropertyCore\src\WebUI\wwwroot\lib\bootstrap-dark\css\bootstrap-dark.min.css'
+2023-08-12 09:48:26.391 -04:00 [INF] Request finished in 3915.1636ms 200 text/css
+2023-08-12 09:48:26.392 -04:00 [INF] Request finished in 3919.2514ms 200 text/css
+2023-08-12 09:48:26.391 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/js/sidebar.js  
+2023-08-12 09:48:26.391 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/lib/bootstrap-dark/js/bootstrap.bundle.min.js  
+2023-08-12 09:48:26.389 -04:00 [INF] Sending file. Request path: '/lib/bootstrap-dark/css/toggle-bootstrap-dark.min.css'. Physical path: 'C:\Users\jcs30\source\repos\PropertyCore\src\WebUI\wwwroot\lib\bootstrap-dark\css\toggle-bootstrap-dark.min.css'
+2023-08-12 09:48:26.399 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/js/site.js?v=dLGP40S79Xnx6GqUthRF6NWvjvhQ1nOvdVSwaNcgG18  
+2023-08-12 09:48:26.400 -04:00 [INF] Request finished in 3921.4766ms 200 text/css
+2023-08-12 09:48:26.403 -04:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\jcs30\source\repos\PropertyCore\src\WebUI\wwwroot\js\site.js'
+2023-08-12 09:48:26.404 -04:00 [INF] Request finished in 5.3142ms 200 application/javascript
+2023-08-12 09:48:26.407 -04:00 [INF] Request finished in 3928.8989ms 404 
+2023-08-12 09:48:26.409 -04:00 [INF] Sending file. Request path: '/js/sidebar.js'. Physical path: 'C:\Users\jcs30\source\repos\PropertyCore\src\WebUI\wwwroot\js\sidebar.js'
+2023-08-12 09:48:26.410 -04:00 [INF] Request finished in 20.299ms 200 application/javascript
+2023-08-12 09:48:26.414 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_framework/aspnetcore-browser-refresh.js  
+2023-08-12 09:48:26.416 -04:00 [INF] Request finished in 2.4284ms 200 application/javascript; charset=utf-8
+2023-08-12 09:48:26.419 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/images/PGPDPatchXparent.png  
+2023-08-12 09:48:26.423 -04:00 [INF] Sending file. Request path: '/lib/bootstrap-dark/js/bootstrap.bundle.min.js'. Physical path: 'C:\Users\jcs30\source\repos\PropertyCore\src\WebUI\wwwroot\lib\bootstrap-dark\js\bootstrap.bundle.min.js'
+2023-08-12 09:48:26.425 -04:00 [INF] Request finished in 33.1981ms 200 application/javascript
+2023-08-12 09:48:26.425 -04:00 [INF] Sending file. Request path: '/images/PGPDPatchXparent.png'. Physical path: 'C:\Users\jcs30\source\repos\PropertyCore\src\WebUI\wwwroot\images\PGPDPatchXparent.png'
+2023-08-12 09:48:26.427 -04:00 [INF] Request finished in 8.0847ms 200 image/png
+2023-08-12 09:48:26.431 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/images/BOHSI Logo Xparent BG.png  
+2023-08-12 09:48:26.437 -04:00 [INF] Sending file. Request path: '/images/BOHSI Logo Xparent BG.png'. Physical path: 'C:\Users\jcs30\source\repos\PropertyCore\src\WebUI\wwwroot\images\BOHSI Logo Xparent BG.png'
+2023-08-12 09:48:26.439 -04:00 [INF] Request finished in 7.9558ms 200 image/png
+2023-08-12 09:48:30.013 -04:00 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:00:25.0281080 due to an exception, will be retried no more than in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): Cannot open database "PropertyCoreHangfire" requested by the login. The login failed.
+Login failed for user 'SCOUNDREL\jcs30'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:5000a7fb-317a-4731-be5d-08c6756dd704
+Error Number:4060,State:1,Class:11
+2023-08-12 10:53:55.101 -04:00 [INF] User profile is available. Using 'C:\Users\jcs30\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-12 10:53:55.144 -04:00 [INF] Start installing Hangfire SQL objects...
+2023-08-12 10:54:06.208 -04:00 [WRN] An exception occurred while trying to perform the migration. Retrying...
+System.Data.SqlClient.SqlException (0x80131904): Cannot open database "PropertyCoreHangfire" requested by the login. The login failed.
+Login failed for user 'SCOUNDREL\jcs30'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerStorage.Initialize()
+ClientConnectionId:b523baaa-7681-431e-b13a-3227c9338215
+Error Number:4060,State:1,Class:11
+2023-08-12 10:54:06.227 -04:00 [WRN] An exception occurred while trying to perform the migration. Retrying...
+System.Data.SqlClient.SqlException (0x80131904): Cannot open database "PropertyCoreHangfire" requested by the login. The login failed.
+Login failed for user 'SCOUNDREL\jcs30'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerStorage.Initialize()
+ClientConnectionId:b523baaa-7681-431e-b13a-3227c9338215
+Error Number:4060,State:1,Class:11
+2023-08-12 10:54:06.229 -04:00 [WRN] An exception occurred while trying to perform the migration.
+System.Data.SqlClient.SqlException (0x80131904): Cannot open database "PropertyCoreHangfire" requested by the login. The login failed.
+Login failed for user 'SCOUNDREL\jcs30'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerStorage.Initialize()
+ClientConnectionId:b523baaa-7681-431e-b13a-3227c9338215
+Error Number:4060,State:1,Class:11
+2023-08-12 10:54:06.230 -04:00 [WRN] Was unable to perform the Hangfire schema migration due to an exception. Ignore this message unless you've just installed or upgraded Hangfire.
+System.Data.SqlClient.SqlException (0x80131904): Cannot open database "PropertyCoreHangfire" requested by the login. The login failed.
+Login failed for user 'SCOUNDREL\jcs30'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerStorage.Initialize()
+ClientConnectionId:b523baaa-7681-431e-b13a-3227c9338215
+Error Number:4060,State:1,Class:11
+2023-08-12 10:54:06.264 -04:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\mssqllocaldb@PropertyCoreHangfire'
+2023-08-12 10:54:06.265 -04:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-08-12 10:54:06.266 -04:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-08-12 10:54:06.279 -04:00 [ERR] Execution BackgroundServerProcess is in the Failed state now due to an exception, execution will be retried no more than in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): Cannot open database "PropertyCoreHangfire" requested by the login. The login failed.
+Login failed for user 'SCOUNDREL\jcs30'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:b523baaa-7681-431e-b13a-3227c9338215
+Error Number:4060,State:1,Class:11
+2023-08-12 10:54:06.476 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-12 10:54:06.478 -04:00 [INF] Hosting environment: Development
+2023-08-12 10:54:06.482 -04:00 [INF] Content root path: C:\Users\jcs30\source\repos\PropertyCore\src\WebUI
+2023-08-12 10:54:06.494 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/  
+2023-08-12 10:54:06.514 -04:00 [WRN] Failed to determine the https port for redirect.
+2023-08-12 10:54:06.534 -04:00 [INF] Executing endpoint 'PropertyCore.WebUI.Controllers.HomeController.Index (PropertyCore.WebUI)'
+2023-08-12 10:54:06.553 -04:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller PropertyCore.WebUI.Controllers.HomeController (PropertyCore.WebUI).
+2023-08-12 10:54:08.280 -04:00 [INF] Executing ViewResult, running view Index.
+2023-08-12 10:54:10.700 -04:00 [INF] Executed ViewResult - view Index executed in 4141.376ms.
+2023-08-12 10:54:10.703 -04:00 [INF] Executed action PropertyCore.WebUI.Controllers.HomeController.Index (PropertyCore.WebUI) in 4148.7476ms
+2023-08-12 10:54:10.705 -04:00 [INF] Executed endpoint 'PropertyCore.WebUI.Controllers.HomeController.Index (PropertyCore.WebUI)'
+2023-08-12 10:54:10.711 -04:00 [INF] Request finished in 4216.8486ms 200 text/html; charset=utf-8
+2023-08-12 10:54:10.721 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/lib/bootstrap-dark/css/bootstrap-dark.min.css  
+2023-08-12 10:54:10.725 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/css/sidebar.css  
+2023-08-12 10:54:10.725 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/css/site.css  
+2023-08-12 10:54:10.725 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/lib/bootstrap-dark/css/toggle-bootstrap-dark.min.css  
+2023-08-12 10:54:10.727 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/lib/bootstrap-dark/css/toggle-bootstrap.min.css  
+2023-08-12 10:54:10.727 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/lib/jquery/jquery.min.js  
+2023-08-12 10:54:10.755 -04:00 [INF] Sending file. Request path: '/css/sidebar.css'. Physical path: 'C:\Users\jcs30\source\repos\PropertyCore\src\WebUI\wwwroot\css\sidebar.css'
+2023-08-12 10:54:10.755 -04:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\jcs30\source\repos\PropertyCore\src\WebUI\wwwroot\css\site.css'
+2023-08-12 10:54:10.760 -04:00 [INF] Request finished in 34.8795ms 200 text/css
+2023-08-12 10:54:10.770 -04:00 [INF] Request finished in 44.8573ms 200 text/css
+2023-08-12 10:54:10.775 -04:00 [INF] Sending file. Request path: '/lib/bootstrap-dark/css/toggle-bootstrap-dark.min.css'. Physical path: 'C:\Users\jcs30\source\repos\PropertyCore\src\WebUI\wwwroot\lib\bootstrap-dark\css\toggle-bootstrap-dark.min.css'
+2023-08-12 10:54:10.775 -04:00 [INF] Sending file. Request path: '/lib/bootstrap-dark/css/toggle-bootstrap.min.css'. Physical path: 'C:\Users\jcs30\source\repos\PropertyCore\src\WebUI\wwwroot\lib\bootstrap-dark\css\toggle-bootstrap.min.css'
+2023-08-12 10:54:10.777 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/js/sidebar.js  
+2023-08-12 10:54:10.778 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/lib/bootstrap-dark/js/bootstrap.bundle.min.js  
+2023-08-12 10:54:10.780 -04:00 [INF] Request finished in 54.7678ms 200 text/css
+2023-08-12 10:54:10.779 -04:00 [INF] Request finished in 51.7525ms 200 text/css
+2023-08-12 10:54:10.775 -04:00 [INF] Sending file. Request path: '/lib/bootstrap-dark/css/bootstrap-dark.min.css'. Physical path: 'C:\Users\jcs30\source\repos\PropertyCore\src\WebUI\wwwroot\lib\bootstrap-dark\css\bootstrap-dark.min.css'
+2023-08-12 10:54:10.786 -04:00 [INF] Sending file. Request path: '/js/sidebar.js'. Physical path: 'C:\Users\jcs30\source\repos\PropertyCore\src\WebUI\wwwroot\js\sidebar.js'
+2023-08-12 10:54:10.788 -04:00 [INF] Request finished in 66.4934ms 200 text/css
+2023-08-12 10:54:10.790 -04:00 [INF] Sending file. Request path: '/lib/bootstrap-dark/js/bootstrap.bundle.min.js'. Physical path: 'C:\Users\jcs30\source\repos\PropertyCore\src\WebUI\wwwroot\lib\bootstrap-dark\js\bootstrap.bundle.min.js'
+2023-08-12 10:54:10.792 -04:00 [INF] Request finished in 14.7792ms 200 application/javascript
+2023-08-12 10:54:10.792 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/js/site.js?v=dLGP40S79Xnx6GqUthRF6NWvjvhQ1nOvdVSwaNcgG18  
+2023-08-12 10:54:10.796 -04:00 [INF] Request finished in 18.168ms 200 application/javascript
+2023-08-12 10:54:10.798 -04:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\jcs30\source\repos\PropertyCore\src\WebUI\wwwroot\js\site.js'
+2023-08-12 10:54:10.799 -04:00 [INF] Request finished in 7.0147ms 200 application/javascript
+2023-08-12 10:54:10.803 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_framework/aspnetcore-browser-refresh.js  
+2023-08-12 10:54:10.805 -04:00 [INF] Request finished in 2.3144ms 200 application/javascript; charset=utf-8
+2023-08-12 10:54:10.808 -04:00 [INF] Request finished in 80.6776ms 404 
+2023-08-12 10:54:10.809 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/images/PGPDPatchXparent.png  
+2023-08-12 10:54:10.813 -04:00 [INF] Sending file. Request path: '/images/PGPDPatchXparent.png'. Physical path: 'C:\Users\jcs30\source\repos\PropertyCore\src\WebUI\wwwroot\images\PGPDPatchXparent.png'
+2023-08-12 10:54:10.814 -04:00 [INF] Request finished in 4.8703ms 200 image/png
+2023-08-12 10:54:10.815 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/images/BOHSI Logo Xparent BG.png  
+2023-08-12 10:54:10.819 -04:00 [INF] Sending file. Request path: '/images/BOHSI Logo Xparent BG.png'. Physical path: 'C:\Users\jcs30\source\repos\PropertyCore\src\WebUI\wwwroot\images\BOHSI Logo Xparent BG.png'
+2023-08-12 10:54:10.821 -04:00 [INF] Request finished in 5.9055ms 200 image/png
+2023-08-12 10:54:31.302 -04:00 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:00:25.0217764 due to an exception, will be retried no more than in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): Cannot open database "PropertyCoreHangfire" requested by the login. The login failed.
+Login failed for user 'SCOUNDREL\jcs30'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:95ea92a1-b2a1-4d77-9ea2-ac35214042c8
+Error Number:4060,State:1,Class:11
+2023-08-12 10:54:31.844 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/lib/bootstrap-dark/js/bootstrap.bundle.min.js.map  
+2023-08-12 10:54:31.870 -04:00 [INF] Sending file. Request path: '/lib/bootstrap-dark/js/bootstrap.bundle.min.js.map'. Physical path: 'C:\Users\jcs30\source\repos\PropertyCore\src\WebUI\wwwroot\lib\bootstrap-dark\js\bootstrap.bundle.min.js.map'
+2023-08-12 10:54:31.872 -04:00 [INF] Request finished in 28.0366ms 200 text/plain
+2023-08-12 10:55:56.928 -04:00 [INF] User profile is available. Using 'C:\Users\jcs30\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-12 10:55:56.972 -04:00 [INF] Start installing Hangfire SQL objects...
+2023-08-12 10:56:07.065 -04:00 [WRN] An exception occurred while trying to perform the migration. Retrying...
+System.Data.SqlClient.SqlException (0x80131904): Cannot open database "PropertyCoreHangfire" requested by the login. The login failed.
+Login failed for user 'SCOUNDREL\jcs30'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerStorage.Initialize()
+ClientConnectionId:b5febf9d-8170-4e48-8224-1f7428565413
+Error Number:4060,State:1,Class:11
+2023-08-12 10:56:07.085 -04:00 [WRN] An exception occurred while trying to perform the migration. Retrying...
+System.Data.SqlClient.SqlException (0x80131904): Cannot open database "PropertyCoreHangfire" requested by the login. The login failed.
+Login failed for user 'SCOUNDREL\jcs30'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerStorage.Initialize()
+ClientConnectionId:b5febf9d-8170-4e48-8224-1f7428565413
+Error Number:4060,State:1,Class:11
+2023-08-12 10:56:07.086 -04:00 [WRN] An exception occurred while trying to perform the migration.
+System.Data.SqlClient.SqlException (0x80131904): Cannot open database "PropertyCoreHangfire" requested by the login. The login failed.
+Login failed for user 'SCOUNDREL\jcs30'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerStorage.Initialize()
+ClientConnectionId:b5febf9d-8170-4e48-8224-1f7428565413
+Error Number:4060,State:1,Class:11
+2023-08-12 10:56:07.088 -04:00 [WRN] Was unable to perform the Hangfire schema migration due to an exception. Ignore this message unless you've just installed or upgraded Hangfire.
+System.Data.SqlClient.SqlException (0x80131904): Cannot open database "PropertyCoreHangfire" requested by the login. The login failed.
+Login failed for user 'SCOUNDREL\jcs30'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerStorage.Initialize()
+ClientConnectionId:b5febf9d-8170-4e48-8224-1f7428565413
+Error Number:4060,State:1,Class:11
+2023-08-12 10:56:07.122 -04:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\mssqllocaldb@PropertyCoreHangfire'
+2023-08-12 10:56:07.123 -04:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-08-12 10:56:07.124 -04:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-08-12 10:56:07.137 -04:00 [ERR] Execution BackgroundServerProcess is in the Failed state now due to an exception, execution will be retried no more than in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): Cannot open database "PropertyCoreHangfire" requested by the login. The login failed.
+Login failed for user 'SCOUNDREL\jcs30'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:b5febf9d-8170-4e48-8224-1f7428565413
+Error Number:4060,State:1,Class:11
+2023-08-12 10:56:07.329 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-12 10:56:07.333 -04:00 [INF] Hosting environment: Development
+2023-08-12 10:56:07.334 -04:00 [INF] Content root path: C:\Users\jcs30\source\repos\PropertyCore\src\WebUI
+2023-08-12 10:56:07.345 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/  
+2023-08-12 10:56:07.362 -04:00 [WRN] Failed to determine the https port for redirect.
+2023-08-12 10:56:07.382 -04:00 [INF] Executing endpoint 'PropertyCore.WebUI.Controllers.HomeController.Index (PropertyCore.WebUI)'
+2023-08-12 10:56:07.398 -04:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller PropertyCore.WebUI.Controllers.HomeController (PropertyCore.WebUI).
+2023-08-12 10:56:09.145 -04:00 [INF] Executing ViewResult, running view Index.
+2023-08-12 10:56:11.572 -04:00 [INF] Executed ViewResult - view Index executed in 4167.8473ms.
+2023-08-12 10:56:11.575 -04:00 [INF] Executed action PropertyCore.WebUI.Controllers.HomeController.Index (PropertyCore.WebUI) in 4175.2345ms
+2023-08-12 10:56:11.577 -04:00 [INF] Executed endpoint 'PropertyCore.WebUI.Controllers.HomeController.Index (PropertyCore.WebUI)'
+2023-08-12 10:56:11.583 -04:00 [INF] Request finished in 4237.868ms 200 text/html; charset=utf-8
+2023-08-12 10:56:11.593 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/lib/jquery/dist/jquery.min.js  
+2023-08-12 10:56:11.618 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_framework/aspnetcore-browser-refresh.js  
+2023-08-12 10:56:11.621 -04:00 [INF] Request finished in 2.7127ms 200 application/javascript; charset=utf-8
+2023-08-12 10:56:11.631 -04:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Users\jcs30\source\repos\PropertyCore\src\WebUI\wwwroot\lib\jquery\dist\jquery.min.js'
+2023-08-12 10:56:11.632 -04:00 [INF] Request finished in 39.1403ms 200 application/javascript
+2023-08-12 10:56:21.925 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/Property?returnUrl=%2FHome%2FIndex  
+2023-08-12 10:56:21.930 -04:00 [INF] Executing endpoint 'PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI)'
+2023-08-12 10:56:21.949 -04:00 [INF] Route matched with {action = "Index", controller = "Property"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery, System.String) on controller PropertyCore.WebUI.Controllers.PropertyController (PropertyCore.WebUI).
+2023-08-12 10:56:22.033 -04:00 [INF] RecordsCore Request: GetPropertyListQuery SCOUNDREL\jcs30 PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery
+2023-08-12 10:56:22.607 -04:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2023-08-12 10:56:22.661 -04:00 [INF] Entity Framework Core 3.0.0 initialized 'DHStoreContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled 
+2023-08-12 10:56:32.157 -04:00 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:00:25.0189189 due to an exception, will be retried no more than in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): Cannot open database "PropertyCoreHangfire" requested by the login. The login failed.
+Login failed for user 'SCOUNDREL\jcs30'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:f4199b59-0c11-40c2-9624-50deb5848d60
+Error Number:4060,State:1,Class:11
+2023-08-12 10:56:52.749 -04:00 [ERR] An error occurred using the connection to database 'DHStoreAnalysis' on server 'p1records.co.pg.md.us,5453'.
+2023-08-12 10:56:52.760 -04:00 [ERR] An exception occurred while iterating over the results of a query for context type 'PropertyCore.Persistence.DHStoreContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - No such host is known.)
+ ---> System.ComponentModel.Win32Exception (11001): No such host is known.
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:11001,State:0,Class:20
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - No such host is known.)
+ ---> System.ComponentModel.Win32Exception (11001): No such host is known.
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:11001,State:0,Class:20
+2023-08-12 10:56:52.851 -04:00 [INF] Executed action PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI) in 30900.8576ms
+2023-08-12 10:56:52.853 -04:00 [INF] Executed endpoint 'PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI)'
+2023-08-12 10:56:52.855 -04:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - No such host is known.)
+ ---> System.ComponentModel.Win32Exception (11001): No such host is known.
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQueryHandler.Handle(GetPropertyListQuery request, CancellationToken cancellationToken) in C:\Users\jcs30\source\repos\PropertyCore\src\Application\Property\Queries\GetPropertyList\GetPropertyListQueryHandler.cs:line 78
+   at PropertyCore.Application.Common.Behaviors.RequestAuthorizationBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Users\jcs30\source\repos\PropertyCore\src\Application\Common\Behaviors\RequestAuthorizationBehavior.cs:line 44
+   at PropertyCore.Application.Common.Behaviors.RequestPerformanceBehavior`2.Handle(TRequest request, CancellationToken cancellation, RequestHandlerDelegate`1 next) in C:\Users\jcs30\source\repos\PropertyCore\src\Application\Common\Behaviors\RequestPerformanceBehavior.cs:line 43
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at PropertyCore.WebUI.Controllers.PropertyController.Index(GetPropertyListQuery request, String returnUrl) in C:\Users\jcs30\source\repos\PropertyCore\src\WebUI\Controllers\PropertyController.cs:line 20
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:11001,State:0,Class:20
+2023-08-12 10:56:52.890 -04:00 [INF] Request finished in 30965.3443ms 404 
+2023-08-12 10:56:57.185 -04:00 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:00:50.0464381 due to an exception, will be retried no more than in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): Cannot open database "PropertyCoreHangfire" requested by the login. The login failed.
+Login failed for user 'SCOUNDREL\jcs30'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:027cb013-8cb5-41ef-81fd-5a0a31059e05
+Error Number:4060,State:1,Class:11
+2023-08-12 10:57:06.880 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_framework/aspnetcore-browser-refresh.js  
+2023-08-12 10:57:06.882 -04:00 [INF] Request finished in 1.994ms 200 application/javascript; charset=utf-8
+2023-08-12 10:57:12.191 -04:00 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:01:05.0521173 due to an exception, will be retried no more than in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): Cannot open database "PropertyCoreHangfire" requested by the login. The login failed.
+Login failed for user 'SCOUNDREL\jcs30'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:027cb013-8cb5-41ef-81fd-5a0a31059e05
+Error Number:4060,State:1,Class:11
+2023-08-12 10:57:37.212 -04:00 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:01:30.0730301 due to an exception, will be retried no more than in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): Cannot open database "PropertyCoreHangfire" requested by the login. The login failed.
+Login failed for user 'SCOUNDREL\jcs30'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:5e520e68-7af8-413a-9215-5ffff1a52977
+Error Number:4060,State:1,Class:11
+2023-08-12 10:57:52.222 -04:00 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:01:45.0833117 due to an exception, will be retried no more than in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): Cannot open database "PropertyCoreHangfire" requested by the login. The login failed.
+Login failed for user 'SCOUNDREL\jcs30'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:5e520e68-7af8-413a-9215-5ffff1a52977
+Error Number:4060,State:1,Class:11
+2023-08-12 10:58:07.235 -04:00 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:02:00.0967245 due to an exception, will be retried no more than in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): Cannot open database "PropertyCoreHangfire" requested by the login. The login failed.
+Login failed for user 'SCOUNDREL\jcs30'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:5e520e68-7af8-413a-9215-5ffff1a52977
+Error Number:4060,State:1,Class:11
+2023-08-12 10:58:32.254 -04:00 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:02:25.1158592 due to an exception, will be retried no more than in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): Cannot open database "PropertyCoreHangfire" requested by the login. The login failed.
+Login failed for user 'SCOUNDREL\jcs30'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:6d4e1701-93e4-407b-8ff7-b4269c53c1de
+Error Number:4060,State:1,Class:11
+2023-08-12 10:58:47.271 -04:00 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:02:40.1327574 due to an exception, will be retried no more than in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): Cannot open database "PropertyCoreHangfire" requested by the login. The login failed.
+Login failed for user 'SCOUNDREL\jcs30'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:6d4e1701-93e4-407b-8ff7-b4269c53c1de
+Error Number:4060,State:1,Class:11
+2023-08-12 10:58:56.633 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/Property?returnUrl=%2FHome%2FIndex  
+2023-08-12 10:58:56.636 -04:00 [INF] Executing endpoint 'PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI)'
+2023-08-12 10:58:56.638 -04:00 [INF] Route matched with {action = "Index", controller = "Property"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery, System.String) on controller PropertyCore.WebUI.Controllers.PropertyController (PropertyCore.WebUI).
+2023-08-12 10:58:56.643 -04:00 [INF] RecordsCore Request: GetPropertyListQuery SCOUNDREL\jcs30 PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery
+2023-08-12 10:58:56.662 -04:00 [INF] Entity Framework Core 3.0.0 initialized 'DHStoreContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled 
+2023-08-12 10:59:02.283 -04:00 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:02:55.1441631 due to an exception, will be retried no more than in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): Cannot open database "PropertyCoreHangfire" requested by the login. The login failed.
+Login failed for user 'SCOUNDREL\jcs30'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:6d4e1701-93e4-407b-8ff7-b4269c53c1de
+Error Number:4060,State:1,Class:11
+2023-08-12 10:59:17.294 -04:00 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:03:10.1553344 due to an exception, will be retried no more than in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): Cannot open database "PropertyCoreHangfire" requested by the login. The login failed.
+Login failed for user 'SCOUNDREL\jcs30'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:6d4e1701-93e4-407b-8ff7-b4269c53c1de
+Error Number:4060,State:1,Class:11
+2023-08-12 10:59:26.364 -04:00 [ERR] An error occurred using the connection to database 'DHStoreAnalysis' on server 'p1records.co.pg.md.us,5453'.
+2023-08-12 10:59:26.367 -04:00 [ERR] An exception occurred while iterating over the results of a query for context type 'PropertyCore.Persistence.DHStoreContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - No such host is known.)
+ ---> System.ComponentModel.Win32Exception (11001): No such host is known.
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:11001,State:0,Class:20
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - No such host is known.)
+ ---> System.ComponentModel.Win32Exception (11001): No such host is known.
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:11001,State:0,Class:20
+2023-08-12 10:59:26.433 -04:00 [INF] Executed action PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI) in 29794.0501ms
+2023-08-12 10:59:26.435 -04:00 [INF] Executed endpoint 'PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI)'
+2023-08-12 10:59:26.437 -04:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - No such host is known.)
+ ---> System.ComponentModel.Win32Exception (11001): No such host is known.
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQueryHandler.Handle(GetPropertyListQuery request, CancellationToken cancellationToken) in C:\Users\jcs30\source\repos\PropertyCore\src\Application\Property\Queries\GetPropertyList\GetPropertyListQueryHandler.cs:line 78
+   at PropertyCore.Application.Common.Behaviors.RequestAuthorizationBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Users\jcs30\source\repos\PropertyCore\src\Application\Common\Behaviors\RequestAuthorizationBehavior.cs:line 44
+   at PropertyCore.Application.Common.Behaviors.RequestPerformanceBehavior`2.Handle(TRequest request, CancellationToken cancellation, RequestHandlerDelegate`1 next) in C:\Users\jcs30\source\repos\PropertyCore\src\Application\Common\Behaviors\RequestPerformanceBehavior.cs:line 43
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at PropertyCore.WebUI.Controllers.PropertyController.Index(GetPropertyListQuery request, String returnUrl) in C:\Users\jcs30\source\repos\PropertyCore\src\WebUI\Controllers\PropertyController.cs:line 20
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:11001,State:0,Class:20
+2023-08-12 10:59:26.446 -04:00 [INF] Request finished in 29813.1768ms 404 
+2023-08-12 10:59:42.331 -04:00 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:03:35.1928045 due to an exception, will be retried no more than in 00:00:15
+System.Data.SqlClient.SqlException (0x80131904): Cannot open database "PropertyCoreHangfire" requested by the login. The login failed.
+Login failed for user 'SCOUNDREL\jcs30'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:6f95d84e-2640-4546-a235-13a216d46687
+Error Number:4060,State:1,Class:11
+2023-08-12 11:00:38.399 -04:00 [INF] User profile is available. Using 'C:\Users\jcs30\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-12 11:00:38.442 -04:00 [INF] Start installing Hangfire SQL objects...
+2023-08-12 11:00:38.621 -04:00 [INF] Hangfire SQL objects installed.
+2023-08-12 11:00:38.655 -04:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\mssqllocaldb@PropertyCoreHangfire'
+2023-08-12 11:00:38.656 -04:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-08-12 11:00:38.657 -04:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-08-12 11:00:38.820 -04:00 [INF] Server scoundrel:10492:6f0bb9e3 successfully announced in 151.8038 ms
+2023-08-12 11:00:38.827 -04:00 [INF] Server scoundrel:10492:6f0bb9e3 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-08-12 11:00:38.913 -04:00 [INF] Server scoundrel:10492:6f0bb9e3 all the dispatchers started
+2023-08-12 11:00:38.956 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-12 11:00:38.962 -04:00 [INF] Hosting environment: Development
+2023-08-12 11:00:38.963 -04:00 [INF] Content root path: C:\Users\jcs30\source\repos\PropertyCore\src\WebUI
+2023-08-12 11:00:38.977 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/  
+2023-08-12 11:00:38.997 -04:00 [WRN] Failed to determine the https port for redirect.
+2023-08-12 11:00:39.018 -04:00 [INF] Executing endpoint 'PropertyCore.WebUI.Controllers.HomeController.Index (PropertyCore.WebUI)'
+2023-08-12 11:00:39.035 -04:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller PropertyCore.WebUI.Controllers.HomeController (PropertyCore.WebUI).
+2023-08-12 11:00:40.812 -04:00 [INF] Executing ViewResult, running view Index.
+2023-08-12 11:00:43.253 -04:00 [INF] Executed ViewResult - view Index executed in 4212.1049ms.
+2023-08-12 11:00:43.256 -04:00 [INF] Executed action PropertyCore.WebUI.Controllers.HomeController.Index (PropertyCore.WebUI) in 4219.8019ms
+2023-08-12 11:00:43.259 -04:00 [INF] Executed endpoint 'PropertyCore.WebUI.Controllers.HomeController.Index (PropertyCore.WebUI)'
+2023-08-12 11:00:43.266 -04:00 [INF] Request finished in 4289.4695ms 200 text/html; charset=utf-8
+2023-08-12 11:00:43.292 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_framework/aspnetcore-browser-refresh.js  
+2023-08-12 11:00:43.295 -04:00 [INF] Request finished in 3.8573ms 200 application/javascript; charset=utf-8
+2023-08-12 11:00:47.016 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/Property?returnUrl=%2FHome%2FIndex  
+2023-08-12 11:00:47.025 -04:00 [INF] Executing endpoint 'PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI)'
+2023-08-12 11:00:47.040 -04:00 [INF] Route matched with {action = "Index", controller = "Property"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery, System.String) on controller PropertyCore.WebUI.Controllers.PropertyController (PropertyCore.WebUI).
+2023-08-12 11:00:47.113 -04:00 [INF] RecordsCore Request: GetPropertyListQuery SCOUNDREL\jcs30 PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery
+2023-08-12 11:00:47.673 -04:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2023-08-12 11:00:47.704 -04:00 [INF] Entity Framework Core 3.0.0 initialized 'DHStoreContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled 
+2023-08-12 11:01:17.621 -04:00 [ERR] An error occurred using the connection to database 'DHStoreAnalysis' on server 'p1records.co.pg.md.us,5453'.
+2023-08-12 11:01:17.639 -04:00 [ERR] An exception occurred while iterating over the results of a query for context type 'PropertyCore.Persistence.DHStoreContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - No such host is known.)
+ ---> System.ComponentModel.Win32Exception (11001): No such host is known.
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:11001,State:0,Class:20
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - No such host is known.)
+ ---> System.ComponentModel.Win32Exception (11001): No such host is known.
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:11001,State:0,Class:20
+2023-08-12 11:01:17.733 -04:00 [INF] Executed action PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI) in 30690.8152ms
+2023-08-12 11:01:17.734 -04:00 [INF] Executed endpoint 'PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI)'
+2023-08-12 11:01:17.737 -04:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - No such host is known.)
+ ---> System.ComponentModel.Win32Exception (11001): No such host is known.
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQueryHandler.Handle(GetPropertyListQuery request, CancellationToken cancellationToken) in C:\Users\jcs30\source\repos\PropertyCore\src\Application\Property\Queries\GetPropertyList\GetPropertyListQueryHandler.cs:line 78
+   at PropertyCore.Application.Common.Behaviors.RequestAuthorizationBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Users\jcs30\source\repos\PropertyCore\src\Application\Common\Behaviors\RequestAuthorizationBehavior.cs:line 44
+   at PropertyCore.Application.Common.Behaviors.RequestPerformanceBehavior`2.Handle(TRequest request, CancellationToken cancellation, RequestHandlerDelegate`1 next) in C:\Users\jcs30\source\repos\PropertyCore\src\Application\Common\Behaviors\RequestPerformanceBehavior.cs:line 43
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at PropertyCore.WebUI.Controllers.PropertyController.Index(GetPropertyListQuery request, String returnUrl) in C:\Users\jcs30\source\repos\PropertyCore\src\WebUI\Controllers\PropertyController.cs:line 20
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:11001,State:0,Class:20
+2023-08-12 11:01:17.761 -04:00 [INF] Request finished in 30745.2126ms 404 

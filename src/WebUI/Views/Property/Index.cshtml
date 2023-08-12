@@ -1,0 +1,201 @@
+﻿﻿@using PropertyCore.Application.Property.Queries.GetPropertyList
+@model PropertyListVm
+
+<div>
+    <h2>Property List</h2>
+    <hr />
+    <form asp-page="/Index" method="get" class="floatingForm">
+        <div class="form-row align-items-top mb-2">
+            <div class="col-md-3">
+                <input type="text" name="BarCodeSearch" class="form-control form-control-sm" value="@Model.BarCode" placeholder="Search by Bar Code" />
+            </div>
+            <div class="col-md-3">
+                <input type="text" name="CaseNumberSearch" class="form-control form-control-sm" value="@Model.CaseNumber" placeholder="Search by Case Number" />
+            </div>
+            <div class="col-md-3">
+                <input type="text" name="PropertySheetSearch" class="form-control form-control-sm" value="@Model.PropertySheet" placeholder="Search by Property Sheet" />
+            </div>
+        </div>
+        <div class="form-row align-items-center mb-2">
+            <div class="col-auto mb-2">
+                <button type="submit" class="btn btn-primary" id="filterSubmit"><i class="fas fa-search"></i> Search</button>
+                @if (!string.IsNullOrEmpty(Model.BarCode) || !string.IsNullOrEmpty(Model.CaseNumber) || !string.IsNullOrEmpty(Model.PropertySheet))
+                {
+                    <a type="reset" class="btn btn-success" asp-action="Index" asp-controller="Property"><i class="fas fa-arrow-left"></i> Reset</a>
+                }
+            </div>
+        </div>
+    </form>
+    @if (Model.PropertyItems.Count > 0)
+    {
+        <div class="table-responsive-sm">
+            <table class="table table-striped table-sm">
+                <thead>
+                    <tr>
+                        <th colspan="9">
+                            <div page-model="@Model.PagingInfo" page-action="Index" page-classes-enabled="true"
+                                 page-class="" page-class-normal=""
+                                 page-class-selected="active"
+                                 page-url-sortOrder="@Model.CurrentSort"
+                                 page-url-barCodeSearch="@Model.BarCode"
+                                 page-url-caseNumberSearch="@Model.PropertySheet"
+                                 class="btn-group">
+                            </div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            BarCode
+                        </th>
+                        <th>
+                            <a asp-page="/Index"
+                               asp-route-sortOrder=""
+                               asp-route-caseNumberSearch="@Model.CaseNumber"
+                               asp-route-barCodeSearch="@Model.BarCode"
+                               asp-route-propertySheetSearch="@Model.PropertySheet"
+                               title="Sort by Property Type">
+                                Type
+                                @if (Model.CurrentSort == "propertyType_desc")
+                                {
+                                    <i class="fas fa-sort-alpha-up"></i>
+                                }
+                                else
+                                {
+                                    <i class="fas fa-sort-alpha-up-alt"></i>
+                                }
+                            </a>
+                        </th>
+                        <th>
+                            <a asp-page="/Index"
+                               asp-route-sortOrder=""
+                               asp-route-caseNumberSearch="@Model.CaseNumber"
+                               asp-route-barCodeSearch="@Model.BarCode"
+                               asp-route-propertySheetSearch="@Model.PropertySheet"
+                               title="Sort by Property Category">
+                                Category
+                                @if (Model.CurrentSort == "propertyCategory_desc")
+                                {
+                                    <i class="fas fa-sort-alpha-up"></i>
+                                }
+                                else
+                                {
+                                    <i class="fas fa-sort-alpha-up-alt"></i>
+                                }
+                            </a>
+                        </th>
+                        <th>
+                            <a asp-page="/Index"
+                               asp-route-sortOrder="@Model.DateSort"
+                               asp-route-caseNumberSearch="@Model.CaseNumber"
+                               asp-route-barCodeSearch="@Model.BarCode"
+                               asp-route-propertySheetSearch="@Model.PropertySheet"
+                               title="Sort by Date Obtained">
+                                Date Obtained
+                                @if (Model.CurrentSort == "dateObtained_asc")
+                                {
+                                    <i class="fas fa-sort-numeric-up"></i>
+                                }
+                                else
+                                {
+                                    <i class="fas fa-sort-numeric-up-alt"></i>
+                                }
+                            </a>
+                        </th>
+                        <th>
+                            <a asp-page="/Index"
+                               asp-route-sortOrder="@Model.CaseNumberSort"
+                               asp-route-caseNumberSearch="@Model.CaseNumber"
+                               asp-route-barCodeSearch="@Model.BarCode"
+                               asp-route-propertySheetSearch="@Model.PropertySheet"
+                               title="Sort by Case Number">
+                                Case Number
+                                @if (Model.CurrentSort == "caseNumber_desc")
+                                {
+                                    <i class="fas fa-sort-numeric-up"></i>
+                                }
+                                else
+                                {
+                                    <i class="fas fa-sort-numeric-up-alt"></i>
+                                }
+                            </a>
+                        </th>
+                        <th>
+                            <a asp-page="/Index"
+                               asp-route-sortOrder="@Model.PropertySheetSort"
+                               asp-route-caseNumberSearch="@Model.CaseNumber"
+                               asp-route-barCodeSearch="@Model.BarCode"
+                               asp-route-propertySheetSearch="@Model.PropertySheet"
+                               title="Sort by Property Sheet">
+                                Property Sheet
+                                @if (Model.CurrentSort == "propertySheet_desc")
+                                {
+                                    <i class="fas fa-sort-alpha-up"></i>
+                                }
+                                else
+                                {
+                                    <i class="fas fa-sort-alpha-up-alt"></i>
+                                }
+                            </a>
+                        </th>
+                        <th>
+                            Disposition
+                        </th>
+                        <th>
+                            Location
+                        </th>
+                        <th>
+
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (PropertyListPropertyItemDto r in Model.PropertyItems)
+                    {
+                        <tr>
+
+                            <td>
+                                @r.BarCode
+                            </td>
+                            <td>
+                                @r.PropertyType
+                            </td>
+                            <td>
+                                @r.PropertyCategory
+                            </td>
+                            <td>
+                                @r.ObtainedDate
+                            </td>
+                            <td>
+                                @r.CaseNumber
+                            </td>
+                            <td>
+                                @r.PropertySheetNumber
+                            </td>
+                            <td>
+                                @r.CurrentDisposition
+                            </td>
+                            <td>
+                                @r.CurrentLocation
+                            </td>
+                            <td>
+                                <a asp-controller="Property" 
+                                    asp-action="Details" 
+                                    asp-route-InstanceId="@r.InstanceId" 
+                                    asp-route-SeqNo1="@r.SeqNo1"
+                                   asp-route-returnUrl="/Property/Index@(!String.IsNullOrEmpty(Context.Request.QueryString.ToString()) ? $"{Context.Request.QueryString}" : "")">
+                                   Details
+                               </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+    else
+    {
+        <div class="text-center">
+            <h5>No Property Items Found</h5>
+        </div>
+    }
+</div>

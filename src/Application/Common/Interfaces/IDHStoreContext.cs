@@ -11,7 +11,7 @@ namespace PropertyCore.Application.Common.Interfaces
         /// <summary>
         /// A <see cref="DbSet{Domain.Entities.DHStore.Property}"/> containing Property Entries.
         /// </summary>
-        DbSet<Property> Property { get; }
+        DbSet<Domain.Entities.DHStore.Property> Property { get; }
         /// <summary>
         /// A <see cref="DbSet{PropertySheetTags}"/> containing property sheet tag entries.
         /// </summary>
