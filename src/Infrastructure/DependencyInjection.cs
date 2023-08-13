@@ -2,6 +2,9 @@
 using Hangfire.SqlServer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using PropertyCore.Application.Common.Interfaces;
+using PropertyCore.Common;
+using PropertyCore.Infrastructure.Files;
 using System;
 
 namespace PropertyCore.Infrastructure
@@ -13,6 +16,8 @@ namespace PropertyCore.Infrastructure
     {
         public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration) 
         {
+            services.AddTransient<ICsvFileBuilder, CsvFileBuilder>();
+            services.AddTransient<IDateTime, MachineDateTime>();
             // Add Hangfire services.
             services.AddHangfire(config => config
                 .SetDataCompatibilityLevel(CompatibilityLevel.Version_170)

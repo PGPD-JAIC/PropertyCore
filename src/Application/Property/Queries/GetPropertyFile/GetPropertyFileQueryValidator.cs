@@ -1,21 +1,21 @@
 ﻿using FluentValidation;
 using System.Collections.Generic;
 
-namespace PropertyCore.Application.Property.Queries.GetPropertyList
+namespace PropertyCore.Application.Property.Queries.GetPropertyFile
 {
     /// <summary>
-    /// Implementation of <seealso cref="AbstractValidator{T}"/> used to validate data in the <see cref="GetPropertyListQuery"></see>
+    /// Implementation of <seealso cref="AbstractValidator{T}"/> used to validate data in the <see cref="GetPropertyFileQuery"></see>
     /// </summary>
-    public class GetPropertyListQueryValidator : AbstractValidator<GetPropertyListQuery>
+    public class GetPropertyFileQueryValidator : AbstractValidator<GetPropertyFileQuery>
     {
         private readonly List<string> _validSortValues;
         /// <summary>
         /// Creates a new instance of the validator.
         /// </summary>
-        public GetPropertyListQueryValidator() 
+        public GetPropertyFileQueryValidator()
         {
             _validSortValues = new List<string>()
-            { 
+            {
                 "",
                 "dateObtained_asc",
                 "caseNumber_desc",
@@ -49,12 +49,6 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyList
             RuleFor(x => x.SortOrder)
                 .Must(x => _validSortValues.Contains(x))
                 .WithMessage("Must be a valid sorting value: " + string.Join(",", _validSortValues));
-            RuleFor(x => x.PageSize)
-                .GreaterThan(0)
-                .WithMessage("Page Size must be greater than 0.");
-            RuleFor(x => x.PageNumber)
-                .GreaterThan(0)
-                .WithMessage("Page Number must be greater than 0.");
         }
     }
 }

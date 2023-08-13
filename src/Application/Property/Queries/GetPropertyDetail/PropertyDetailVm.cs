@@ -1,7 +1,8 @@
 ﻿using PropertyCore.Application.Common.Mappings;
-using PropertyCore.Application.Property.Queries.GetPropertyList;
 using PropertyCore.Domain.Entities.DHStore;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace PropertyCore.Application.Property.Queries.GetPropertyDetail
 {
@@ -84,12 +85,21 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyDetail
         /// </summary>
         public string PropertySheetNumber { get; set; }
         /// <summary>
+        /// The status of the property.
+        /// </summary>
+        public string Status { get; set; }
+        /// <summary>
+        /// The Hold Status of the property.
+        /// </summary>
+        public string HoldStatus { get; set; }
+        public List<ChainOfCustodyDto> ChainOfCustodyEntries { get; set; } = new List<ChainOfCustodyDto>();
+        /// <summary>
         /// Creates a mapping between the entity and the data transfer class.
         /// </summary>
         /// <param name="profile"></param>
         public void Mapping(MappingProfile profile)
         {
-            profile.CreateMap<PropertySheetTags, PropertyListPropertyItemDto>()
+            profile.CreateMap<PropertySheetTags, PropertyDetailVm>()
                 .ForMember(x => x.InstanceId, opt => opt.MapFrom(y => y.InstanceId))
                 .ForMember(x => x.SeqNo1, opt => opt.MapFrom(y => y.SeqNo1))
                 .ForMember(x => x.BarCode, opt => opt.MapFrom(y => y.TagNumber))
@@ -105,7 +115,51 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyDetail
                 .ForMember(x => x.DropLocationID, opt => opt.MapFrom(y => y.DropLocationId))
                 .ForMember(x => x.DropLocation, opt => opt.MapFrom(y => y.DropLocation))
                 .ForMember(x => x.CaseNumber, opt => opt.MapFrom(y => y.TagsCaseNoRtf))
-                .ForMember(x => x.PropertySheetNumber, opt => opt.MapFrom(y => y.TagsSheetNoRtf));
+                .ForMember(x => x.PropertySheetNumber, opt => opt.MapFrom(y => y.TagsSheetNoRtf))
+                .ForMember(x => x.Status, opt => opt.MapFrom(y => y.Status))
+                .ForMember(x => x.HoldStatus, opt => opt.MapFrom(y => y.HoldStatus))
+                .ForMember(x => x.ChainOfCustodyEntries, opt => opt.MapFrom(y => y.PropertySheetTagsChainOfCustody.OrderByDescending(z => z.TransactionDatetime)));
         }
+    }
+    /// <summary>
+    /// Data transfer class used to relay details of a <see cref="PropertySheetTagsChainOfCustody"/>
+    /// </summary>
+    public class ChainOfCustodyDto : IMapFrom<PropertySheetTagsChainOfCustody>
+    {
+        /// <summary>
+        /// The Instance Id of the entity.
+        /// </summary>
+        public Guid InstanceId { get; set; }
+        /// <summary>
+        /// The SeqNo1 of the entity
+        /// </summary>
+        public int SeqNo1 { get; set; }
+        /// <summary>
+        /// The Transaction type of the entity.
+        /// </summary>
+        public string TransactionType { get; set; }
+        /// <summary>
+        /// The Date/Time of the transaction.
+        /// </summary>
+        public DateTime TransactionDate { get; set; }
+        /// <summary>
+        /// The name of the user associated with the transaciton.
+        /// </summary>
+        public string UserName { get; set; }
+        /// <summary>
+        /// The transaction details.
+        /// </summary>
+        public string Details { get; set; }
+        public void Mapping(MappingProfile profile)
+        {
+            profile.CreateMap<PropertySheetTagsChainOfCustody, ChainOfCustodyDto>()
+                .ForMember(x => x.InstanceId, opt => opt.MapFrom(y => y.InstanceId))
+                .ForMember(x => x.SeqNo1, opt => opt.MapFrom(y => y.SeqNo1))
+                .ForMember(x => x.TransactionType, opt => opt.MapFrom(y => y.TransactionType))
+                .ForMember(x => x.TransactionDate, opt => opt.MapFrom(y => y.TransactionDatetime))
+                .ForMember(x => x.UserName, opt => opt.MapFrom(y => y.User))
+                .ForMember(x => x.Details, opt => opt.MapFrom(y => y.Details));
+        }
+
     }
 }

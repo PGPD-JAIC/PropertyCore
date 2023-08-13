@@ -33,14 +33,12 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyDetail
         /// <param name="cancellationToken">A <see cref="CancellationToken"/></param>
         /// <returns>A <see cref="PropertyDetailVm"/> containing the query results.</returns>
         public async Task<PropertyDetailVm> Handle(GetPropertyDetailQuery request, CancellationToken cancellationToken)
-        {
-            PropertyDetailVm vm = new PropertyDetailVm();
-
-            var charge = await _context.PropertySheetTags
-                    .Where(x => x.InstanceId == request.InstanceId && x.SeqNo1 == request.SeqNo1)
+        {            
+            var result = await _context.PropertySheetTags
+                    .Where(x => (x.InstanceId == request.InstanceId && x.SeqNo1 == request.SeqNo1))
                     .ProjectTo<PropertyDetailVm>(_mapper.ConfigurationProvider)
                     .FirstOrDefaultAsync();
-            return vm;
+            return result;
         }
     }
 }

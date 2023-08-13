@@ -24,5 +24,6 @@ namespace PropertyCore.Application.Common.Models
         /// </summary>
         public int TotalPages =>
             (int)Math.Ceiling((decimal)TotalItems / ItemsPerPage);
+        public string Caption => $"Showing {((CurrentPage - 1) * ItemsPerPage) + 1} to {(TotalItems < (CurrentPage * ItemsPerPage) ? TotalItems : (CurrentPage * ItemsPerPage))} of {TotalItems} Items.";
     }
 }

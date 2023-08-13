@@ -23,15 +23,139 @@
         </div>
         <div class="col">
             <div class="form-group">
-                <label for="BarCode" class="form-label">Bar Code</label>
-                <input type="text" readonly class="form-control-plaintext" asp-for="BarCode" />
-            </div>
-        </div>
-        <div class="col">
-            <div class="form-group">
                 <label for="CaseNumber" class="form-label">Case Number</label>
                 <input type="text" readonly class="form-control-plaintext" asp-for="CaseNumber" />
             </div>
         </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="CaseNumber" class="form-label">Property Sheet</label>
+                <input type="text" readonly class="form-control-plaintext" asp-for="PropertySheetNumber" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="BarCode" class="form-label">Bar Code</label>
+                <input type="text" readonly class="form-control-plaintext" asp-for="BarCode" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="PropertyType" class="form-label">Property Type</label>
+                <input type="text" readonly class="form-control-plaintext" asp-for="PropertyType" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="PropertyCategory" class="form-label">Category</label>
+                <input type="text" readonly class="form-control-plaintext" asp-for="PropertyCategory" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="CurrentLocation" class="form-label">Location</label>
+                <input type="text" readonly class="form-control-plaintext" asp-for="CurrentLocation" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="CurrentDisposition" class="form-label">Disposition</label>
+                <input type="text" readonly class="form-control-plaintext" asp-for="CurrentDisposition" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="Status" class="form-label">Status</label>
+                <input type="text" readonly class="form-control-plaintext" asp-for="Status" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="ObtainedDate" class="form-label">Date Obtained</label>
+                <input type="text" readonly class="form-control-plaintext" asp-for="ObtainedDate" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="DropLocation" class="form-label">Drop Location</label>
+                <input type="text" readonly class="form-control-plaintext" asp-for="DropLocation" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="ObtainedById" class="form-label">Obtained By</label>
+                <input type="text" readonly class="form-control-plaintext" asp-for="ObtainedById" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="ObtainedFrom" class="form-label">Obtained From</label>
+                <input type="text" readonly class="form-control-plaintext" asp-for="ObtainedFrom" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="HoldStatus" class="form-label">Hold Status</label>
+                <input type="text" readonly class="form-control-plaintext" asp-for="HoldStatus" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="Explain" class="form-label">Details</label>
+                <input type="text" readonly class="form-control-plaintext" asp-for="Explain" />
+            </div>
+        </div>
+        <div class="col">
+            <label for="Description" class="form-label">Description</label>
+            <input type="text" readonly class="form-control-plaintext" asp-for="Description" />
+        </div>
+    </div>
+    <hr />
+    <h4>Chain of Custody Entries</h4>
+
+    <div class="table-responsive-sm">
+        <table class="table table-striped table-sm">
+            <thead>
+                <tr>
+                    <th>
+                        Type
+                    </th>
+                    <th>
+                        Date
+                    </th>
+                    <th>
+                        User
+                    </th>
+                    <th>
+                        Details
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(ChainOfCustodyDto c in Model.ChainOfCustodyEntries)
+                {
+                    <tr>
+                        <td>
+                            @c.TransactionType
+                        </td>
+                        <td>
+                            @c.TransactionDate.ToString("MM/dd/yy HH:mm")
+                        </td>
+                        <td>
+                            @c.UserName
+                        </td>
+                        <td>
+                            @c.Details
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
     </div>
 </div>

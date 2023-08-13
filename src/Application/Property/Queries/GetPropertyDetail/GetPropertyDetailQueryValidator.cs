@@ -16,7 +16,7 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyDetail
                 .NotEmpty()
                 .WithMessage("InstanceId is required.");
             RuleFor(x => x.SeqNo1)
-                .NotEmpty()
+                .GreaterThan(-1)
                 .WithMessage("SeqNo1 is required.");
         }
     }

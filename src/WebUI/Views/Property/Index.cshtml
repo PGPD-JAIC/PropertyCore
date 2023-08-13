@@ -4,7 +4,7 @@
 <div>
     <h2>Property List</h2>
     <hr />
-    <form asp-page="/Index" method="get" class="floatingForm">
+    <form action="" method="get" class="floatingForm">
         <div class="form-row align-items-top mb-2">
             <div class="col-md-3">
                 <input type="text" name="BarCodeSearch" class="form-control form-control-sm" value="@Model.BarCode" placeholder="Search by Bar Code" />
@@ -16,12 +16,43 @@
                 <input type="text" name="PropertySheetSearch" class="form-control form-control-sm" value="@Model.PropertySheet" placeholder="Search by Property Sheet" />
             </div>
         </div>
+        <div class="form-row align-items-top mb-2">
+            <div class="col-md-3">
+                <select name="SelectedPropertyTypeId" id="SelectedPropertyTypeId" style="width: 100%" class="form-control form-control-sm selectpicker" asp-items="@(new SelectList(Model.PropertyTypes, "Value", "Text", Model.SelectedPropertyTypeId))">
+                    <option disabled selected>Choose Type</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <select name="SelectedPropertyCategory" id="SelectedPropertyCategory" style="width: 100%" class="form-control form-control-sm selectpicker" asp-items="@(new SelectList(Model.PropertyCategories, "Value", "Text", Model.SelectedPropertyCategory))">
+                    <option disabled selected>Choose Category</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <select name="SelectedPropertyStatusId" id="SelectedPropertyStatusId" style="width: 100%" class="form-control form-control-sm selectpicker" asp-items="@(new SelectList(Model.PropertyStatuses, "Value", "Text", Model.SelectedPropertyStatusId))">
+                    <option disabled selected>Choose Status</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <select name="SelectedPropertyHoldStatusId" id="SelectedPropertyHoldStatusId" style="width: 100%" class="form-control form-control-sm selectpicker" asp-items="@(new SelectList(Model.HoldStatuses, "Value", "Text", Model.SelectedPropertyHoldStatusId))">
+                    <option disabled selected>Choose Status</option>
+                </select>
+            </div>
+        </div>
         <div class="form-row align-items-center mb-2">
             <div class="col-auto mb-2">
-                <button type="submit" class="btn btn-primary" id="filterSubmit"><i class="fas fa-search"></i> Search</button>
-                @if (!string.IsNullOrEmpty(Model.BarCode) || !string.IsNullOrEmpty(Model.CaseNumber) || !string.IsNullOrEmpty(Model.PropertySheet))
+                <button type="submit" class="btn btn-primary" id="filterSubmit" formaction="/Property/Index"><i class="fas fa-search"></i> Search</button>
+                <button type="submit" class="btn btn-success" id="filterSubmit" formaction="/Property/Download"><i class="far fa-file-excel"></i> Download</button>
+                @if (!string.IsNullOrEmpty(Model.BarCode) 
+                    || !string.IsNullOrEmpty(Model.CaseNumber) 
+                    || !string.IsNullOrEmpty(Model.PropertySheet) 
+                    || !string.IsNullOrEmpty(Model.CurrentSort)
+                    || !string.IsNullOrEmpty(Model.SelectedPropertyTypeId)
+                    || !string.IsNullOrEmpty(Model.SelectedPropertyCategory)
+                    || !string.IsNullOrEmpty(Model.SelectedPropertyStatusId)
+                    || !string.IsNullOrEmpty(Model.SelectedPropertyHoldStatusId)
+                )
                 {
-                    <a type="reset" class="btn btn-success" asp-action="Index" asp-controller="Property"><i class="fas fa-arrow-left"></i> Reset</a>
+                    <a type="reset" class="btn btn-info" asp-action="Index" asp-controller="Property"><i class="fas fa-arrow-left"></i> Reset</a>
                 }
             </div>
         </div>
@@ -32,7 +63,7 @@
             <table class="table table-striped table-sm">
                 <thead>
                     <tr>
-                        <th colspan="9">
+                        <th colspan="10">
                             <div page-model="@Model.PagingInfo" page-action="Index" page-classes-enabled="true"
                                  page-class="" page-class-normal=""
                                  page-class-selected="active"
@@ -44,12 +75,34 @@
                         </th>
                     </tr>
                     <tr>
+                        <th colspan="10">
+                            <small>@Model.PagingInfo.Caption</small>
+                        </th>
+                        
+                    </tr>
+                    <tr>
                         <th>
-                            BarCode
+                            <a asp-page="/Index"
+                               asp-route-sortOrder="@Model.BarCodeSort"
+                               asp-route-caseNumberSearch="@Model.CaseNumber"
+                               asp-route-barCodeSearch="@Model.BarCode"
+                               asp-route-propertySheetSearch="@Model.PropertySheet"
+                               title="Sort by Bar Code">
+                                BarCode
+                                @if (Model.CurrentSort == "barCode_desc")
+                                {
+                                    <i class="fas fa-sort-numeric-up"></i>
+                                }
+                                else
+                                {
+                                    <i class="fas fa-sort-numeric-up-alt"></i>
+                                }
+                            </a>
+                            
                         </th>
                         <th>
                             <a asp-page="/Index"
-                               asp-route-sortOrder=""
+                               asp-route-sortOrder="@Model.PropertySheetSort"
                                asp-route-caseNumberSearch="@Model.CaseNumber"
                                asp-route-barCodeSearch="@Model.BarCode"
                                asp-route-propertySheetSearch="@Model.PropertySheet"
@@ -67,13 +120,31 @@
                         </th>
                         <th>
                             <a asp-page="/Index"
-                               asp-route-sortOrder=""
+                               asp-route-sortOrder="@Model.PropertyCategorySort"
                                asp-route-caseNumberSearch="@Model.CaseNumber"
                                asp-route-barCodeSearch="@Model.BarCode"
                                asp-route-propertySheetSearch="@Model.PropertySheet"
                                title="Sort by Property Category">
                                 Category
                                 @if (Model.CurrentSort == "propertyCategory_desc")
+                                {
+                                    <i class="fas fa-sort-alpha-up"></i>
+                                }
+                                else
+                                {
+                                    <i class="fas fa-sort-alpha-up-alt"></i>
+                                }
+                            </a>
+                        </th>
+                        <th>
+                            <a asp-page="/Index"
+                               asp-route-sortOrder="@Model.StatusSort"
+                               asp-route-caseNumberSearch="@Model.CaseNumber"
+                               asp-route-barCodeSearch="@Model.BarCode"
+                               asp-route-propertySheetSearch="@Model.PropertySheet"
+                               title="Sort by Property Status">
+                                Status
+                                @if (Model.CurrentSort == "status_desc")
                                 {
                                     <i class="fas fa-sort-alpha-up"></i>
                                 }
@@ -138,13 +209,58 @@
                             </a>
                         </th>
                         <th>
-                            Disposition
+                            <a asp-page="/Index"
+                               asp-route-sortOrder="@Model.DispositionSort"
+                               asp-route-caseNumberSearch="@Model.CaseNumber"
+                               asp-route-barCodeSearch="@Model.BarCode"
+                               asp-route-propertySheetSearch="@Model.PropertySheet"
+                               title="Sort by Disposition">
+                                Disposition
+                                @if (Model.CurrentSort == "disposition_desc")
+                                {
+                                    <i class="fas fa-sort-alpha-up"></i>
+                                }
+                                else
+                                {
+                                    <i class="fas fa-sort-alpha-up-alt"></i>
+                                }
+                            </a>
                         </th>
                         <th>
-                            Location
+                            <a asp-page="/Index"
+                               asp-route-sortOrder="@Model.LocationSort"
+                               asp-route-caseNumberSearch="@Model.CaseNumber"
+                               asp-route-barCodeSearch="@Model.BarCode"
+                               asp-route-propertySheetSearch="@Model.PropertySheet"
+                               title="Sort by Location">
+                                Location
+                                @if (Model.CurrentSort == "location_desc")
+                                {
+                                    <i class="fas fa-sort-alpha-up"></i>
+                                }
+                                else
+                                {
+                                    <i class="fas fa-sort-alpha-up-alt"></i>
+                                }
+                            </a>
                         </th>
                         <th>
-
+                            <a asp-page="/Index"
+                               asp-route-sortOrder="@Model.HoldStatusSort"
+                               asp-route-caseNumberSearch="@Model.CaseNumber"
+                               asp-route-barCodeSearch="@Model.BarCode"
+                               asp-route-propertySheetSearch="@Model.PropertySheet"
+                               title="Sort by Hold Status">
+                                Hold Status
+                                @if (Model.CurrentSort == "holdStatus_desc")
+                                {
+                                    <i class="fas fa-sort-alpha-up"></i>
+                                }
+                                else
+                                {
+                                    <i class="fas fa-sort-alpha-up-alt"></i>
+                                }
+                            </a>
                         </th>
                     </tr>
                 </thead>
@@ -154,13 +270,22 @@
                         <tr>
 
                             <td>
-                                @r.BarCode
+                                <a asp-controller="Property"
+                                   asp-action="Details"
+                                   asp-route-InstanceId="@r.InstanceId"
+                                   asp-route-SeqNo1="@r.SeqNo1"
+                                   asp-route-returnUrl="/Property/Index@(!String.IsNullOrEmpty(Context.Request.QueryString.ToString()) ? $"{Context.Request.QueryString}" : "")">
+                                    @r.BarCode
+                                </a>
                             </td>
                             <td>
                                 @r.PropertyType
                             </td>
                             <td>
                                 @r.PropertyCategory
+                            </td>
+                            <td>
+                                @r.Status
                             </td>
                             <td>
                                 @r.ObtainedDate
@@ -178,13 +303,7 @@
                                 @r.CurrentLocation
                             </td>
                             <td>
-                                <a asp-controller="Property" 
-                                    asp-action="Details" 
-                                    asp-route-InstanceId="@r.InstanceId" 
-                                    asp-route-SeqNo1="@r.SeqNo1"
-                                   asp-route-returnUrl="/Property/Index@(!String.IsNullOrEmpty(Context.Request.QueryString.ToString()) ? $"{Context.Request.QueryString}" : "")">
-                                   Details
-                               </a>
+                                @r.HoldStatus
                             </td>
                         </tr>
                     }
@@ -199,3 +318,30 @@
         </div>
     }
 </div>
+@section Head {
+    <link href="~/lib/select2/css/select2.css" rel="stylesheet" />
+}
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#SelectedPropertyTypeId").select2({
+                placeholder: "Select Property Type",
+                allowClear: true
+            });
+            $("#SelectedPropertyCategory").select2({
+                placeholder: "Select Category",
+                allowClear: true
+            });
+            $("#SelectedPropertyStatusId").select2({
+                placeholder: "Select Status",
+                allowClear: true
+            });
+            $("#SelectedPropertyHoldStatusId").select2({
+                placeholder: "Select Hold Status",
+                allowClear: true
+            });
+        });
+    </script>
+}

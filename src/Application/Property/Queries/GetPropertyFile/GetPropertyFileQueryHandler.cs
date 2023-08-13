@@ -3,56 +3,45 @@ using AutoMapper.QueryableExtensions;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using PropertyCore.Application.Common.Interfaces;
-using PropertyCore.Application.Common.Models;
+using PropertyCore.Common;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace PropertyCore.Application.Property.Queries.GetPropertyList
+namespace PropertyCore.Application.Property.Queries.GetPropertyFile
 {
-    public class GetPropertyListQueryHandler : IRequestHandler<GetPropertyListQuery, PropertyListVm>
+    /// <summary>
+    /// Implementation of <see cref="IRequestHandler"/> that handles requests to retrieve a list of Property Items in a file.
+    /// </summary>
+    public class GetPropertyFileQueryHandler : IRequestHandler<GetPropertyFileQuery, PropertyFileVm>
     {
         private readonly IDHStoreContext _context;
+        private readonly ICsvFileBuilder _fileBuilder;
         private readonly IMapper _mapper;
-
-        public GetPropertyListQueryHandler(IDHStoreContext context, IMapper mapper)
+        private readonly IDateTime _dateTime;
+        /// <summary>
+        /// Creates a new instance of the handler.
+        /// </summary>
+        /// <param name="context">An implementation of <see cref="IDHStoreContext"/></param>
+        /// <param name="fileBuilder">An implementation of <see cref="ICsvFileBuilder"/></param>
+        /// <param name="mapper">An implementation of <see cref="IMapper"/></param>
+        /// <param name="dateTime">An implementation of <see cref="IDateTime"/></param>
+        public GetPropertyFileQueryHandler(IDHStoreContext context, ICsvFileBuilder fileBuilder, IMapper mapper, IDateTime dateTime)
         {
             _context = context;
+            _fileBuilder = fileBuilder;
             _mapper = mapper;
+            _dateTime = dateTime;
         }
-        public async Task<PropertyListVm> Handle(GetPropertyListQuery request, CancellationToken cancellationToken)
+        /// <summary>
+        /// Handles the request.
+        /// </summary>
+        /// <param name="request">A <see cref="GetPropertyFileQuery"/> object.</param>
+        /// <param name="cancellationToken">A <see cref="CancellationToken"/></param>
+        /// <returns>A <see cref="PropertyFileVm"/> object.</returns>
+        public async Task<PropertyFileVm> Handle(GetPropertyFileQuery request, CancellationToken cancellationToken)
         {
-            PropertyListVm vm = new PropertyListVm
-            {
-                PagingInfo = new PagingInfo
-                {
-                    ItemsPerPage = request.PageSize,
-                    CurrentPage = request.PageNumber
-                }
-            };
-            vm.CurrentSort = string.IsNullOrEmpty(request.SortOrder) ? "" : request.SortOrder;
-            vm.DateSort = string.IsNullOrEmpty(request.SortOrder) ? "dateObtained_asc" : "";
-            vm.CaseNumberSort = request.SortOrder == "caseNumber_desc" ? "caseNumber" : "caseNumber_desc";
-            vm.PropertySheetSort = request.SortOrder == "propertySheet_desc" ? "propertySheet" : "propertySheet_desc";
-            vm.BarCodeSort = request.SortOrder == "barCode_desc" ? "barCode" : "barCode_desc";
-            vm.PropertyTypeSort = request.SortOrder == "propertyType_desc" ? "propertyType" : "propertyType_desc";
-            vm.PropertyCategorySort = request.SortOrder == "propertyCategory_desc" ? "propertyCategory" : "propertyCategory_desc";
-            vm.DispositionSort = request.SortOrder == "disposition_desc" ? "disposition" : "disposition_desc";
-            vm.LocationSort = request.SortOrder == "location_desc" ? "location" : "location_desc";
-            vm.StatusSort = request.SortOrder == "status_desc" ? "status" : "status_desc";
-            vm.HoldStatusSort = request.SortOrder == "holdStatus_desc" ? "holdStatus" : "holdStatus_desc";
-            vm.BarCode = request.BarCodeSearch;
-            vm.CaseNumber = request.CaseNumberSearch;
-            vm.PropertySheet = request.PropertySheetSearch;
-            vm.PropertyTypes = _context.PropertySheetTags.Select(x => new DropDownListItem { Text = x.PropertyType, Value = x.PropertyTypeId}).Distinct().OrderBy(x => x.Text).ToList();
-            vm.PropertyCategories = _context.PropertySheetTags.Select(x => new DropDownListItem { Text = x.PropertyCategory, Value = x.PropertyCategory }).Distinct().OrderBy(x => x.Text).ToList();
-            vm.PropertyStatuses = _context.PropertySheetTags.Select(x => new DropDownListItem { Text = x.Status, Value = x.StatusId }).Distinct().OrderBy(x => x.Text).ToList();
-            vm.HoldStatuses = _context.PropertySheetTags.Select(x => new DropDownListItem { Text = x.HoldStatus, Value = x.HoldStatusId }).Distinct().OrderBy(x => x.Text).ToList();
-            vm.SelectedPropertyTypeId = request.SelectedPropertyTypeId;
-            vm.SelectedPropertyCategory = request.SelectedPropertyCategory;
-            vm.SelectedPropertyStatusId = request.SelectedPropertyStatusId;
-            vm.SelectedPropertyHoldStatusId = request.SelectedPropertyHoldStatusId;
-            vm.PropertyItems = request.SortOrder switch
+            var items = request.SortOrder switch
             {
                 "caseNumber" => await _context.PropertySheetTags.OrderBy(x => x.TagsCaseNoRtf)
                     .Where(x => (string.IsNullOrEmpty(request.BarCodeSearch) || x.TagNumber == request.BarCodeSearch)
@@ -62,25 +51,21 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyList
                         && (string.IsNullOrEmpty(request.SelectedPropertyTypeId) || x.PropertyTypeId == request.SelectedPropertyTypeId)
                         && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
                         && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
-                        && (string.IsNullOrEmpty(request.SelectedPropertyHoldStatusId) || x.HoldStatusId == request.SelectedPropertyHoldStatusId)
+                        && (string.IsNullOrEmpty(request.SelectedHoldStatusId) || x.HoldStatusId == request.SelectedHoldStatusId)
                         && x.ObtainedDate != null)
-                    .Skip((request.PageNumber - 1) * request.PageSize)
-                    .Take(request.PageSize)
-                    .ProjectTo<PropertyListPropertyItemDto>(_mapper.ConfigurationProvider)
+                    .ProjectTo<PropertyListFileItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken),
                 "caseNumber_desc" => await _context.PropertySheetTags.OrderByDescending(x => x.TagsCaseNoRtf)
                     .Where(x => (string.IsNullOrEmpty(request.BarCodeSearch) || x.TagNumber == request.BarCodeSearch)
                         && (string.IsNullOrEmpty(request.CaseNumberSearch) || x.TagsCaseNoRtf == request.CaseNumberSearch)
                         && (string.IsNullOrEmpty(request.BarCodeSearch) || x.TagNumber == request.BarCodeSearch)
-                        && (string.IsNullOrEmpty(request.PropertySheetSearch) || x.TagsSheetNoRtf == request.PropertySheetSearch) 
+                        && (string.IsNullOrEmpty(request.PropertySheetSearch) || x.TagsSheetNoRtf == request.PropertySheetSearch)
                         && (string.IsNullOrEmpty(request.SelectedPropertyTypeId) || x.PropertyTypeId == request.SelectedPropertyTypeId)
                         && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
                         && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
-                        && (string.IsNullOrEmpty(request.SelectedPropertyHoldStatusId) || x.HoldStatusId == request.SelectedPropertyHoldStatusId)
+                        && (string.IsNullOrEmpty(request.SelectedHoldStatusId) || x.HoldStatusId == request.SelectedHoldStatusId)
                         && x.ObtainedDate != null)
-                    .Skip((request.PageNumber - 1) * request.PageSize)
-                    .Take(request.PageSize)
-                    .ProjectTo<PropertyListPropertyItemDto>(_mapper.ConfigurationProvider)
+                    .ProjectTo<PropertyListFileItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken),
                 "propertySheet" => await _context.PropertySheetTags.OrderBy(x => x.TagsSheetNoRtf)
                     .Where(x => (string.IsNullOrEmpty(request.BarCodeSearch) || x.TagNumber == request.BarCodeSearch)
@@ -90,11 +75,9 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyList
                         && (string.IsNullOrEmpty(request.SelectedPropertyTypeId) || x.PropertyTypeId == request.SelectedPropertyTypeId)
                         && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
                         && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
-                        && (string.IsNullOrEmpty(request.SelectedPropertyHoldStatusId) || x.HoldStatusId == request.SelectedPropertyHoldStatusId)
+                        && (string.IsNullOrEmpty(request.SelectedHoldStatusId) || x.HoldStatusId == request.SelectedHoldStatusId)
                         && x.ObtainedDate != null)
-                    .Skip((request.PageNumber - 1) * request.PageSize)
-                    .Take(request.PageSize)
-                    .ProjectTo<PropertyListPropertyItemDto>(_mapper.ConfigurationProvider)
+                    .ProjectTo<PropertyListFileItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken),
                 "propertySheet_desc" => await _context.PropertySheetTags.OrderByDescending(x => x.TagsSheetNoRtf)
                     .Where(x => (string.IsNullOrEmpty(request.BarCodeSearch) || x.TagNumber == request.BarCodeSearch)
@@ -104,11 +87,9 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyList
                         && (string.IsNullOrEmpty(request.SelectedPropertyTypeId) || x.PropertyTypeId == request.SelectedPropertyTypeId)
                         && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
                         && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
-                        && (string.IsNullOrEmpty(request.SelectedPropertyHoldStatusId) || x.HoldStatusId == request.SelectedPropertyHoldStatusId)
+                        && (string.IsNullOrEmpty(request.SelectedHoldStatusId) || x.HoldStatusId == request.SelectedHoldStatusId)
                         && x.ObtainedDate != null)
-                    .Skip((request.PageNumber - 1) * request.PageSize)
-                    .Take(request.PageSize)
-                    .ProjectTo<PropertyListPropertyItemDto>(_mapper.ConfigurationProvider)
+                    .ProjectTo<PropertyListFileItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken),
                 "dateObtained_asc" => await _context.PropertySheetTags.OrderBy(x => x.ObtainedDate)
                     .Where(x => (string.IsNullOrEmpty(request.BarCodeSearch) || x.TagNumber == request.BarCodeSearch)
@@ -118,11 +99,9 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyList
                         && (string.IsNullOrEmpty(request.SelectedPropertyTypeId) || x.PropertyTypeId == request.SelectedPropertyTypeId)
                         && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
                         && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
-                        && (string.IsNullOrEmpty(request.SelectedPropertyHoldStatusId) || x.HoldStatusId == request.SelectedPropertyHoldStatusId)
+                        && (string.IsNullOrEmpty(request.SelectedHoldStatusId) || x.HoldStatusId == request.SelectedHoldStatusId)
                         && x.ObtainedDate != null)
-                    .Skip((request.PageNumber - 1) * request.PageSize)
-                    .Take(request.PageSize)
-                    .ProjectTo<PropertyListPropertyItemDto>(_mapper.ConfigurationProvider)
+                    .ProjectTo<PropertyListFileItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken),
                 "barCode" => await _context.PropertySheetTags.OrderBy(x => x.TagNumber)
                     .Where(x => (string.IsNullOrEmpty(request.BarCodeSearch) || x.TagNumber == request.BarCodeSearch)
@@ -132,11 +111,9 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyList
                         && (string.IsNullOrEmpty(request.SelectedPropertyTypeId) || x.PropertyTypeId == request.SelectedPropertyTypeId)
                         && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
                         && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
-                        && (string.IsNullOrEmpty(request.SelectedPropertyHoldStatusId) || x.HoldStatusId == request.SelectedPropertyHoldStatusId)
+                        && (string.IsNullOrEmpty(request.SelectedHoldStatusId) || x.HoldStatusId == request.SelectedHoldStatusId)
                         && x.ObtainedDate != null)
-                    .Skip((request.PageNumber - 1) * request.PageSize)
-                    .Take(request.PageSize)
-                    .ProjectTo<PropertyListPropertyItemDto>(_mapper.ConfigurationProvider)
+                    .ProjectTo<PropertyListFileItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken),
                 "barCode_desc" => await _context.PropertySheetTags.OrderByDescending(x => x.TagNumber)
                     .Where(x => (string.IsNullOrEmpty(request.BarCodeSearch) || x.TagNumber == request.BarCodeSearch)
@@ -146,11 +123,9 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyList
                         && (string.IsNullOrEmpty(request.SelectedPropertyTypeId) || x.PropertyTypeId == request.SelectedPropertyTypeId)
                         && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
                         && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
-                        && (string.IsNullOrEmpty(request.SelectedPropertyHoldStatusId) || x.HoldStatusId == request.SelectedPropertyHoldStatusId)
+                        && (string.IsNullOrEmpty(request.SelectedHoldStatusId) || x.HoldStatusId == request.SelectedHoldStatusId)
                         && x.ObtainedDate != null)
-                    .Skip((request.PageNumber - 1) * request.PageSize)
-                    .Take(request.PageSize)
-                    .ProjectTo<PropertyListPropertyItemDto>(_mapper.ConfigurationProvider)
+                    .ProjectTo<PropertyListFileItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken),
                 "propertyType" => await _context.PropertySheetTags.OrderBy(x => x.PropertyType)
                     .Where(x => (string.IsNullOrEmpty(request.BarCodeSearch) || x.TagNumber == request.BarCodeSearch)
@@ -160,11 +135,8 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyList
                         && (string.IsNullOrEmpty(request.SelectedPropertyTypeId) || x.PropertyTypeId == request.SelectedPropertyTypeId)
                         && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
                         && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
-                        && (string.IsNullOrEmpty(request.SelectedPropertyHoldStatusId) || x.HoldStatusId == request.SelectedPropertyHoldStatusId)
                         && x.ObtainedDate != null)
-                    .Skip((request.PageNumber - 1) * request.PageSize)
-                    .Take(request.PageSize)
-                    .ProjectTo<PropertyListPropertyItemDto>(_mapper.ConfigurationProvider)
+                    .ProjectTo<PropertyListFileItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken),
                 "propertyType_desc" => await _context.PropertySheetTags.OrderByDescending(x => x.PropertyType)
                     .Where(x => (string.IsNullOrEmpty(request.BarCodeSearch) || x.TagNumber == request.BarCodeSearch)
@@ -174,11 +146,9 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyList
                         && (string.IsNullOrEmpty(request.SelectedPropertyTypeId) || x.PropertyTypeId == request.SelectedPropertyTypeId)
                         && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
                         && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
-                        && (string.IsNullOrEmpty(request.SelectedPropertyHoldStatusId) || x.HoldStatusId == request.SelectedPropertyHoldStatusId)
+                        && (string.IsNullOrEmpty(request.SelectedHoldStatusId) || x.HoldStatusId == request.SelectedHoldStatusId)
                         && x.ObtainedDate != null)
-                    .Skip((request.PageNumber - 1) * request.PageSize)
-                    .Take(request.PageSize)
-                    .ProjectTo<PropertyListPropertyItemDto>(_mapper.ConfigurationProvider)
+                    .ProjectTo<PropertyListFileItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken),
                 "propertyCategory" => await _context.PropertySheetTags.OrderBy(x => x.PropertyCategory)
                     .Where(x => (string.IsNullOrEmpty(request.BarCodeSearch) || x.TagNumber == request.BarCodeSearch)
@@ -188,11 +158,9 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyList
                         && (string.IsNullOrEmpty(request.SelectedPropertyTypeId) || x.PropertyTypeId == request.SelectedPropertyTypeId)
                         && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
                         && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
-                        && (string.IsNullOrEmpty(request.SelectedPropertyHoldStatusId) || x.HoldStatusId == request.SelectedPropertyHoldStatusId)
+                        && (string.IsNullOrEmpty(request.SelectedHoldStatusId) || x.HoldStatusId == request.SelectedHoldStatusId)
                         && x.ObtainedDate != null)
-                    .Skip((request.PageNumber - 1) * request.PageSize)
-                    .Take(request.PageSize)
-                    .ProjectTo<PropertyListPropertyItemDto>(_mapper.ConfigurationProvider)
+                    .ProjectTo<PropertyListFileItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken),
                 "propertyCategory_desc" => await _context.PropertySheetTags.OrderByDescending(x => x.PropertyCategory)
                     .Where(x => (string.IsNullOrEmpty(request.BarCodeSearch) || x.TagNumber == request.BarCodeSearch)
@@ -202,11 +170,9 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyList
                         && (string.IsNullOrEmpty(request.SelectedPropertyTypeId) || x.PropertyTypeId == request.SelectedPropertyTypeId)
                         && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
                         && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
-                        && (string.IsNullOrEmpty(request.SelectedPropertyHoldStatusId) || x.HoldStatusId == request.SelectedPropertyHoldStatusId)
+                        && (string.IsNullOrEmpty(request.SelectedHoldStatusId) || x.HoldStatusId == request.SelectedHoldStatusId)
                         && x.ObtainedDate != null)
-                    .Skip((request.PageNumber - 1) * request.PageSize)
-                    .Take(request.PageSize)
-                    .ProjectTo<PropertyListPropertyItemDto>(_mapper.ConfigurationProvider)
+                    .ProjectTo<PropertyListFileItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken),
                 "disposition" => await _context.PropertySheetTags.OrderBy(x => x.CurrentDisposition)
                     .Where(x => (string.IsNullOrEmpty(request.BarCodeSearch) || x.TagNumber == request.BarCodeSearch)
@@ -216,11 +182,9 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyList
                         && (string.IsNullOrEmpty(request.SelectedPropertyTypeId) || x.PropertyTypeId == request.SelectedPropertyTypeId)
                         && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
                         && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
-                        && (string.IsNullOrEmpty(request.SelectedPropertyHoldStatusId) || x.HoldStatusId == request.SelectedPropertyHoldStatusId)
+                        && (string.IsNullOrEmpty(request.SelectedHoldStatusId) || x.HoldStatusId == request.SelectedHoldStatusId)
                         && x.ObtainedDate != null)
-                    .Skip((request.PageNumber - 1) * request.PageSize)
-                    .Take(request.PageSize)
-                    .ProjectTo<PropertyListPropertyItemDto>(_mapper.ConfigurationProvider)
+                    .ProjectTo<PropertyListFileItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken),
                 "disposition_desc" => await _context.PropertySheetTags.OrderByDescending(x => x.CurrentDisposition)
                     .Where(x => (string.IsNullOrEmpty(request.BarCodeSearch) || x.TagNumber == request.BarCodeSearch)
@@ -230,11 +194,9 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyList
                         && (string.IsNullOrEmpty(request.SelectedPropertyTypeId) || x.PropertyTypeId == request.SelectedPropertyTypeId)
                         && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
                         && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
-                        && (string.IsNullOrEmpty(request.SelectedPropertyHoldStatusId) || x.HoldStatusId == request.SelectedPropertyHoldStatusId)
+                        && (string.IsNullOrEmpty(request.SelectedHoldStatusId) || x.HoldStatusId == request.SelectedHoldStatusId)
                         && x.ObtainedDate != null)
-                    .Skip((request.PageNumber - 1) * request.PageSize)
-                    .Take(request.PageSize)
-                    .ProjectTo<PropertyListPropertyItemDto>(_mapper.ConfigurationProvider)
+                    .ProjectTo<PropertyListFileItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken),
                 "location" => await _context.PropertySheetTags.OrderBy(x => x.CurrentDisposition)
                     .Where(x => (string.IsNullOrEmpty(request.BarCodeSearch) || x.TagNumber == request.BarCodeSearch)
@@ -244,11 +206,9 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyList
                         && (string.IsNullOrEmpty(request.SelectedPropertyTypeId) || x.PropertyTypeId == request.SelectedPropertyTypeId)
                         && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
                         && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
-                        && (string.IsNullOrEmpty(request.SelectedPropertyHoldStatusId) || x.HoldStatusId == request.SelectedPropertyHoldStatusId)
+                        && (string.IsNullOrEmpty(request.SelectedHoldStatusId) || x.HoldStatusId == request.SelectedHoldStatusId)
                         && x.ObtainedDate != null)
-                    .Skip((request.PageNumber - 1) * request.PageSize)
-                    .Take(request.PageSize)
-                    .ProjectTo<PropertyListPropertyItemDto>(_mapper.ConfigurationProvider)
+                    .ProjectTo<PropertyListFileItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken),
                 "location_desc" => await _context.PropertySheetTags.OrderByDescending(x => x.CurrentDisposition)
                     .Where(x => (string.IsNullOrEmpty(request.BarCodeSearch) || x.TagNumber == request.BarCodeSearch)
@@ -258,11 +218,9 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyList
                         && (string.IsNullOrEmpty(request.SelectedPropertyTypeId) || x.PropertyTypeId == request.SelectedPropertyTypeId)
                         && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
                         && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
-                        && (string.IsNullOrEmpty(request.SelectedPropertyHoldStatusId) || x.HoldStatusId == request.SelectedPropertyHoldStatusId)
+                        && (string.IsNullOrEmpty(request.SelectedHoldStatusId) || x.HoldStatusId == request.SelectedHoldStatusId)
                         && x.ObtainedDate != null)
-                    .Skip((request.PageNumber - 1) * request.PageSize)
-                    .Take(request.PageSize)
-                    .ProjectTo<PropertyListPropertyItemDto>(_mapper.ConfigurationProvider)
+                    .ProjectTo<PropertyListFileItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken),
                 "status" => await _context.PropertySheetTags.OrderBy(x => x.Status)
                     .Where(x => (string.IsNullOrEmpty(request.BarCodeSearch) || x.TagNumber == request.BarCodeSearch)
@@ -272,11 +230,9 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyList
                         && (string.IsNullOrEmpty(request.SelectedPropertyTypeId) || x.PropertyTypeId == request.SelectedPropertyTypeId)
                         && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
                         && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
-                        && (string.IsNullOrEmpty(request.SelectedPropertyHoldStatusId) || x.HoldStatusId == request.SelectedPropertyHoldStatusId)
+                        && (string.IsNullOrEmpty(request.SelectedHoldStatusId) || x.HoldStatusId == request.SelectedHoldStatusId)
                         && x.ObtainedDate != null)
-                    .Skip((request.PageNumber - 1) * request.PageSize)
-                    .Take(request.PageSize)
-                    .ProjectTo<PropertyListPropertyItemDto>(_mapper.ConfigurationProvider)
+                    .ProjectTo<PropertyListFileItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken),
                 "status_desc" => await _context.PropertySheetTags.OrderByDescending(x => x.Status)
                     .Where(x => (string.IsNullOrEmpty(request.BarCodeSearch) || x.TagNumber == request.BarCodeSearch)
@@ -286,11 +242,8 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyList
                         && (string.IsNullOrEmpty(request.SelectedPropertyTypeId) || x.PropertyTypeId == request.SelectedPropertyTypeId)
                         && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
                         && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
-                        && (string.IsNullOrEmpty(request.SelectedPropertyHoldStatusId) || x.HoldStatusId == request.SelectedPropertyHoldStatusId)
                         && x.ObtainedDate != null)
-                    .Skip((request.PageNumber - 1) * request.PageSize)
-                    .Take(request.PageSize)
-                    .ProjectTo<PropertyListPropertyItemDto>(_mapper.ConfigurationProvider)
+                    .ProjectTo<PropertyListFileItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken),
                 "holdStatus" => await _context.PropertySheetTags.OrderBy(x => x.HoldStatus)
                     .Where(x => (string.IsNullOrEmpty(request.BarCodeSearch) || x.TagNumber == request.BarCodeSearch)
@@ -300,11 +253,9 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyList
                         && (string.IsNullOrEmpty(request.SelectedPropertyTypeId) || x.PropertyTypeId == request.SelectedPropertyTypeId)
                         && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
                         && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
-                        && (string.IsNullOrEmpty(request.SelectedPropertyHoldStatusId) || x.HoldStatusId == request.SelectedPropertyHoldStatusId)
+                        && (string.IsNullOrEmpty(request.SelectedHoldStatusId) || x.HoldStatusId == request.SelectedHoldStatusId)
                         && x.ObtainedDate != null)
-                    .Skip((request.PageNumber - 1) * request.PageSize)
-                    .Take(request.PageSize)
-                    .ProjectTo<PropertyListPropertyItemDto>(_mapper.ConfigurationProvider)
+                    .ProjectTo<PropertyListFileItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken),
                 "holdStatus_desc" => await _context.PropertySheetTags.OrderByDescending(x => x.HoldStatus)
                     .Where(x => (string.IsNullOrEmpty(request.BarCodeSearch) || x.TagNumber == request.BarCodeSearch)
@@ -314,13 +265,10 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyList
                         && (string.IsNullOrEmpty(request.SelectedPropertyTypeId) || x.PropertyTypeId == request.SelectedPropertyTypeId)
                         && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
                         && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
-                        && (string.IsNullOrEmpty(request.SelectedPropertyHoldStatusId) || x.HoldStatusId == request.SelectedPropertyHoldStatusId)
                         && x.ObtainedDate != null)
-                    .Skip((request.PageNumber - 1) * request.PageSize)
-                    .Take(request.PageSize)
-                    .ProjectTo<PropertyListPropertyItemDto>(_mapper.ConfigurationProvider)
+                    .ProjectTo<PropertyListFileItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken),
-                _ => await _context.PropertySheetTags.OrderByDescending(x => x.ObtainedDate)
+                _ => await _context.PropertySheetTags.OrderBy(x => x.ObtainedDate)
                     .Where(x => (string.IsNullOrEmpty(request.BarCodeSearch) || x.TagNumber == request.BarCodeSearch)
                         && (string.IsNullOrEmpty(request.CaseNumberSearch) || x.TagsCaseNoRtf == request.CaseNumberSearch)
                         && (string.IsNullOrEmpty(request.BarCodeSearch) || x.TagNumber == request.BarCodeSearch)
@@ -328,24 +276,20 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyList
                         && (string.IsNullOrEmpty(request.SelectedPropertyTypeId) || x.PropertyTypeId == request.SelectedPropertyTypeId)
                         && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
                         && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
-                        && (string.IsNullOrEmpty(request.SelectedPropertyHoldStatusId) || x.HoldStatusId == request.SelectedPropertyHoldStatusId)
+                        && (string.IsNullOrEmpty(request.SelectedHoldStatusId) || x.HoldStatusId == request.SelectedHoldStatusId)
                         && x.ObtainedDate != null)
-                    .Skip((request.PageNumber - 1) * request.PageSize)
-                    .Take(request.PageSize)
-                    .ProjectTo<PropertyListPropertyItemDto>(_mapper.ConfigurationProvider)
+                    .ProjectTo<PropertyListFileItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken)
+            };  
+
+            var fileContent = _fileBuilder.BuildProductsFile(items);
+
+            var vm = new PropertyFileVm
+            {
+                Content = fileContent,
+                ContentType = "text/csv",
+                FileName = $"{_dateTime.Now:MM-dd-yy}-Property.csv"
             };
-            vm.PagingInfo.TotalItems = await _context.PropertySheetTags
-                .Where(x => (string.IsNullOrEmpty(request.BarCodeSearch) || x.TagNumber == request.BarCodeSearch)
-                    && (string.IsNullOrEmpty(request.CaseNumberSearch) || x.TagsCaseNoRtf == request.CaseNumberSearch)
-                    && (string.IsNullOrEmpty(request.BarCodeSearch) || x.TagNumber == request.BarCodeSearch)
-                    && (string.IsNullOrEmpty(request.PropertySheetSearch) || x.TagsSheetNoRtf == request.PropertySheetSearch)
-                    && (string.IsNullOrEmpty(request.SelectedPropertyTypeId) || x.PropertyTypeId == request.SelectedPropertyTypeId)
-                    && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
-                    && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
-                    && (string.IsNullOrEmpty(request.SelectedPropertyHoldStatusId) || x.HoldStatusId == request.SelectedPropertyHoldStatusId)
-                    && x.ObtainedDate != null)
-                .CountAsync(cancellationToken);
             return vm;
         }
     }

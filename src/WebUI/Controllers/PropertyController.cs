@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PropertyCore.Application.Property.Queries.GetPropertyDetail;
+using PropertyCore.Application.Property.Queries.GetPropertyFile;
 using PropertyCore.Application.Property.Queries.GetPropertyList;
 using System.Threading.Tasks;
 
@@ -32,6 +33,12 @@ namespace PropertyCore.WebUI.Controllers
             ViewData["Title"] = "Property Detail";
             ViewBag.ReturnUrl = returnUrl;
             return View(await Mediator.Send(request));
+        }
+        [HttpGet]
+        public async Task<FileResult> Download([FromQuery] GetPropertyFileQuery request, string returnUrl)
+        {
+            var vm = await Mediator.Send(request);
+            return File(vm.Content, vm.ContentType, vm.FileName);
         }
     }
 }

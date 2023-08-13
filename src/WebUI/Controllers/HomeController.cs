@@ -23,6 +23,7 @@ namespace PropertyCore.WebUI.Controllers
         [HttpGet]
         public IActionResult Index()
         {
+            ViewData["Title"] = "Home - PropertyCore";
             return View();
         }
         public IActionResult About(string returnUrl)
