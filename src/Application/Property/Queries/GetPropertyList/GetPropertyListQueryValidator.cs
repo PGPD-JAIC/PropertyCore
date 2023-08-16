@@ -35,7 +35,9 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyList
                 "status",
                 "status_desc",
                 "holdStatus",
-                "holdStatus_desc"
+                "holdStatus_desc",
+                "agencyName",
+                "agencyName_desc"
             };
             RuleFor(x => x.BarCodeSearch)
                 .MaximumLength(100)

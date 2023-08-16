@@ -104,6 +104,9 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyList
         /// Contains a value that can be used to sort the results list by the hold status column.
         /// </summary>
         public string HoldStatusSort { get; set; } = "";
-
+        /// <summary>
+        /// Contains a value that can be used to sort the results list by the agency name column.
+        /// </summary>
+        public string AgencyNameSort { get; set; } = "";
     }
 }

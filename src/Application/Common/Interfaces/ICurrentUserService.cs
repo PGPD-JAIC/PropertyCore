@@ -3,6 +3,9 @@
     /// <summary>
     /// Defines a service to retrieve information about the current user.
     /// </summary>
+    /// <remarks>
+    /// This is a test.
+    /// </remarks>
     public interface ICurrentUserService
     {
         /// <summary>

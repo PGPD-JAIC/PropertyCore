@@ -94,6 +94,10 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyList
         /// </summary>
         public string HoldStatus { get; set; }
         /// <summary>
+        /// The agency name taken from the associated Property Sheet.
+        /// </summary>
+        public string AgencyName { get; set; }
+        /// <summary>
         /// Creates a mapping between the entity and the data transfer class.
         /// </summary>
         /// <param name="profile"></param>
@@ -117,7 +121,8 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyList
                 .ForMember(x => x.CaseNumber, opt => opt.MapFrom(y => y.TagsCaseNoRtf))
                 .ForMember(x => x.PropertySheetNumber, opt => opt.MapFrom(y => y.TagsSheetNoRtf))
                 .ForMember(x => x.Status, opt => opt.MapFrom(y => y.Status))
-                .ForMember(x => x.HoldStatus, opt => opt.MapFrom(y => y.HoldStatus));
+                .ForMember(x => x.HoldStatus, opt => opt.MapFrom(y => y.HoldStatus))
+                .ForMember(x => x.AgencyName, opt => opt.MapFrom(y => y.Instance.AgencyId));
         }
     }
 }
