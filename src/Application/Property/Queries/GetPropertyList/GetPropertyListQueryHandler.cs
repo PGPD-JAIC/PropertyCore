@@ -41,6 +41,7 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyList
             vm.LocationSort = request.SortOrder == "location_desc" ? "location" : "location_desc";
             vm.StatusSort = request.SortOrder == "status_desc" ? "status" : "status_desc";
             vm.HoldStatusSort = request.SortOrder == "holdStatus_desc" ? "holdStatus" : "holdStatus_desc";
+            vm.AgencyNameSort = request.SortOrder == "agencyName_desc" ? "agencyName" : "agencyName_desc";
             vm.BarCode = request.BarCodeSearch;
             vm.CaseNumber = request.CaseNumberSearch;
             vm.PropertySheet = request.PropertySheetSearch;
@@ -320,6 +321,35 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyList
                     .Take(request.PageSize)
                     .ProjectTo<PropertyListPropertyItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken),
+                "agencyName" => await _context.PropertySheetTags.OrderBy(x => x.Instance.AgencyId)
+                    .Where(x => (string.IsNullOrEmpty(request.BarCodeSearch) || x.TagNumber == request.BarCodeSearch)
+                        && (string.IsNullOrEmpty(request.CaseNumberSearch) || x.TagsCaseNoRtf == request.CaseNumberSearch)
+                        && (string.IsNullOrEmpty(request.BarCodeSearch) || x.TagNumber == request.BarCodeSearch)
+                        && (string.IsNullOrEmpty(request.PropertySheetSearch) || x.TagsSheetNoRtf == request.PropertySheetSearch)
+                        && (string.IsNullOrEmpty(request.SelectedPropertyTypeId) || x.PropertyTypeId == request.SelectedPropertyTypeId)
+                        && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
+                        && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
+                        && (string.IsNullOrEmpty(request.SelectedPropertyHoldStatusId) || x.HoldStatusId == request.SelectedPropertyHoldStatusId)
+                        && x.ObtainedDate != null)
+                    .Skip((request.PageNumber - 1) * request.PageSize)
+                    .Take(request.PageSize)
+                    .ProjectTo<PropertyListPropertyItemDto>(_mapper.ConfigurationProvider)
+                    .ToListAsync(cancellationToken),
+                "agencyName_desc" => await _context.PropertySheetTags.OrderByDescending(x => x.Instance.AgencyId)
+                    .Where(x => (string.IsNullOrEmpty(request.BarCodeSearch) || x.TagNumber == request.BarCodeSearch)
+                        && (string.IsNullOrEmpty(request.CaseNumberSearch) || x.TagsCaseNoRtf == request.CaseNumberSearch)
+                        && (string.IsNullOrEmpty(request.BarCodeSearch) || x.TagNumber == request.BarCodeSearch)
+                        && (string.IsNullOrEmpty(request.PropertySheetSearch) || x.TagsSheetNoRtf == request.PropertySheetSearch)
+                        && (string.IsNullOrEmpty(request.SelectedPropertyTypeId) || x.PropertyTypeId == request.SelectedPropertyTypeId)
+                        && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
+                        && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
+                        && (string.IsNullOrEmpty(request.SelectedPropertyHoldStatusId) || x.HoldStatusId == request.SelectedPropertyHoldStatusId)
+                        && x.ObtainedDate != null)
+                    .Skip((request.PageNumber - 1) * request.PageSize)
+                    .Take(request.PageSize)
+                    .ProjectTo<PropertyListPropertyItemDto>(_mapper.ConfigurationProvider)
+                    .ToListAsync(cancellationToken),
+
                 _ => await _context.PropertySheetTags.OrderByDescending(x => x.ObtainedDate)
                     .Where(x => (string.IsNullOrEmpty(request.BarCodeSearch) || x.TagNumber == request.BarCodeSearch)
                         && (string.IsNullOrEmpty(request.CaseNumberSearch) || x.TagsCaseNoRtf == request.CaseNumberSearch)

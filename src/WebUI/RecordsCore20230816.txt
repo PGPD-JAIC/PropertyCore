@@ -1019,3 +1019,1068 @@ Error Number:4060,State:1,Class:11
 2023-08-16 10:56:39.010 -04:00 [INF] Request finished in 19.1304ms 200 application/json
 2023-08-16 10:56:45.772 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/services  
 2023-08-16 10:56:45.785 -04:00 [INF] Request finished in 12.6949ms 200 
+2023-08-16 12:42:25.360 -04:00 [INF] User profile is available. Using 'C:\Users\tjfellrath\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-16 12:42:25.479 -04:00 [INF] Start installing Hangfire SQL objects...
+2023-08-16 12:42:25.690 -04:00 [INF] Hangfire SQL objects installed.
+2023-08-16 12:42:25.738 -04:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\mssqllocaldb@Hangfire'
+2023-08-16 12:42:25.740 -04:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-08-16 12:42:25.742 -04:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-08-16 12:42:26.090 -04:00 [INF] Server pd88941:44148:6c405e73 successfully announced in 328.8603 ms
+2023-08-16 12:42:26.098 -04:00 [INF] Server pd88941:44148:6c405e73 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-08-16 12:42:26.120 -04:00 [INF] 1 servers were removed due to timeout
+2023-08-16 12:42:26.233 -04:00 [INF] Server pd88941:44148:6c405e73 all the dispatchers started
+2023-08-16 12:42:26.364 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-16 12:42:26.375 -04:00 [INF] Hosting environment: Development
+2023-08-16 12:42:26.377 -04:00 [INF] Content root path: C:\Users\tjfellrath\Source\Repos\PropertyCore\src\WebUI
+2023-08-16 12:42:26.406 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/  
+2023-08-16 12:42:26.438 -04:00 [WRN] Failed to determine the https port for redirect.
+2023-08-16 12:42:26.479 -04:00 [INF] Executing endpoint 'PropertyCore.WebUI.Controllers.HomeController.Index (PropertyCore.WebUI)'
+2023-08-16 12:42:26.503 -04:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller PropertyCore.WebUI.Controllers.HomeController (PropertyCore.WebUI).
+2023-08-16 12:42:30.191 -04:00 [INF] Executing ViewResult, running view Index.
+2023-08-16 12:42:30.860 -04:00 [INF] Executed ViewResult - view Index executed in 4348.3695ms.
+2023-08-16 12:42:30.866 -04:00 [INF] Executed action PropertyCore.WebUI.Controllers.HomeController.Index (PropertyCore.WebUI) in 4360.3138ms
+2023-08-16 12:42:30.871 -04:00 [INF] Executed endpoint 'PropertyCore.WebUI.Controllers.HomeController.Index (PropertyCore.WebUI)'
+2023-08-16 12:42:30.892 -04:00 [INF] Request finished in 4486.244ms 200 text/html; charset=utf-8
+2023-08-16 12:42:30.913 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/lib/bootstrap-dark/css/bootstrap-dark.min.css  
+2023-08-16 12:42:30.917 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/lib/bootstrap-dark/css/toggle-bootstrap.min.css  
+2023-08-16 12:42:30.923 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/css/sidebar.css  
+2023-08-16 12:42:30.926 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/lib/jquery/dist/jquery.min.js  
+2023-08-16 12:42:30.926 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/lib/bootstrap-dark/css/toggle-bootstrap-dark.min.css  
+2023-08-16 12:42:30.926 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/css/site.css  
+2023-08-16 12:42:30.935 -04:00 [INF] The file /lib/bootstrap-dark/css/toggle-bootstrap-dark.min.css was not modified
+2023-08-16 12:42:30.935 -04:00 [INF] The file /css/site.css was not modified
+2023-08-16 12:42:30.935 -04:00 [INF] The file /lib/bootstrap-dark/css/toggle-bootstrap.min.css was not modified
+2023-08-16 12:42:30.935 -04:00 [INF] The file /lib/jquery/dist/jquery.min.js was not modified
+2023-08-16 12:42:30.935 -04:00 [INF] The file /lib/bootstrap-dark/css/bootstrap-dark.min.css was not modified
+2023-08-16 12:42:30.935 -04:00 [INF] The file /css/sidebar.css was not modified
+2023-08-16 12:42:30.945 -04:00 [INF] Request finished in 32.5948ms 304 text/css
+2023-08-16 12:42:30.945 -04:00 [INF] Request finished in 18.811ms 304 text/css
+2023-08-16 12:42:30.945 -04:00 [INF] Request finished in 18.7468ms 304 text/css
+2023-08-16 12:42:30.945 -04:00 [INF] Request finished in 28.2007ms 304 text/css
+2023-08-16 12:42:30.945 -04:00 [INF] Request finished in 18.7988ms 304 application/javascript
+2023-08-16 12:42:30.954 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/lib/bootstrap-dark/js/bootstrap.bundle.min.js  
+2023-08-16 12:42:30.954 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/js/site.js?v=dLGP40S79Xnx6GqUthRF6NWvjvhQ1nOvdVSwaNcgG18  
+2023-08-16 12:42:30.945 -04:00 [INF] Request finished in 21.8178ms 304 text/css
+2023-08-16 12:42:30.951 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/js/sidebar.js  
+2023-08-16 12:42:30.974 -04:00 [INF] The file /js/site.js was not modified
+2023-08-16 12:42:30.974 -04:00 [INF] The file /lib/bootstrap-dark/js/bootstrap.bundle.min.js was not modified
+2023-08-16 12:42:30.975 -04:00 [INF] The file /js/sidebar.js was not modified
+2023-08-16 12:42:30.980 -04:00 [INF] Request finished in 26.6428ms 304 application/javascript
+2023-08-16 12:42:30.982 -04:00 [INF] Request finished in 29.3586ms 304 application/javascript
+2023-08-16 12:42:30.989 -04:00 [INF] Request finished in 32.5811ms 304 application/javascript
+2023-08-16 12:42:30.993 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_framework/aspnetcore-browser-refresh.js  
+2023-08-16 12:42:30.997 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/images/PGPDPatchXparent.png  
+2023-08-16 12:42:31.007 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_vs/browserLink  
+2023-08-16 12:42:31.008 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/images/BOHSI Logo Xparent BG.png  
+2023-08-16 12:42:31.010 -04:00 [INF] The file /images/PGPDPatchXparent.png was not modified
+2023-08-16 12:42:31.012 -04:00 [INF] The file /images/BOHSI Logo Xparent BG.png was not modified
+2023-08-16 12:42:31.014 -04:00 [INF] Request finished in 17.5307ms 304 image/png
+2023-08-16 12:42:31.016 -04:00 [INF] Request finished in 7.7222ms 304 image/png
+2023-08-16 12:42:31.025 -04:00 [INF] Request finished in 32.4394ms 200 application/javascript; charset=utf-8
+2023-08-16 12:42:31.044 -04:00 [INF] Request finished in 40.0988ms 200 text/javascript; charset=UTF-8
+2023-08-16 12:42:35.187 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/Property?returnUrl=%2FHome%2FIndex  
+2023-08-16 12:42:35.197 -04:00 [INF] Executing endpoint 'PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI)'
+2023-08-16 12:42:35.217 -04:00 [INF] Route matched with {action = "Index", controller = "Property"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery, System.String) on controller PropertyCore.WebUI.Controllers.PropertyController (PropertyCore.WebUI).
+2023-08-16 12:42:35.318 -04:00 [INF] RecordsCore Request: GetPropertyListQuery PGCNT\tjfellrath PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery
+2023-08-16 12:42:36.131 -04:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2023-08-16 12:42:36.180 -04:00 [INF] Entity Framework Core 3.0.0 initialized 'DHStoreContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled 
+2023-08-16 12:42:36.463 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[PropertyType] AS [Text], [t].[PropertyTypeID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[PropertyType], [p].[PropertyTypeID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[PropertyType]
+2023-08-16 12:42:36.647 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[PropertyCategory] AS [Text]
+FROM (
+    SELECT DISTINCT [p].[PropertyCategory]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[PropertyCategory]
+2023-08-16 12:42:36.694 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Status] AS [Text], [t].[StatusID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[Status], [p].[StatusID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[Status]
+2023-08-16 12:42:36.747 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[HoldStatus] AS [Text], [t].[HoldStatusID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[HoldStatus], [p].[HoldStatusID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[HoldStatus]
+2023-08-16 12:42:36.860 -04:00 [INF] Executing DbCommand [Parameters=[@__p_0='0', @__p_1='25'], CommandType='"Text"', CommandTimeout='30']
+SELECT [p0].[AgencyID] AS [AgencyName], [t].[TagNumber] AS [BarCode], [t].[TagsCaseNoRTF] AS [CaseNumber], [t].[CurrentDisposition], [t].[CurrentDispositionID], [t].[CurrentLocation], [t].[CurrentLocationID], [t].[Description], [t].[DropLocation], [t].[DropLocationID], [t].[Explain], [t].[HoldStatus], [t].[InstanceId], [t].[ObtainedByID] AS [ObtainedById], COALESCE([t].[ObtainedDate], '0001-01-01T00:00:00.000') AS [ObtainedDate], [t].[ObtainedFrom], [t].[PropertyCategory], [t].[TagsSheetNoRTF] AS [PropertySheetNumber], [t].[PropertyType], [t].[PropertyTypeID], [t].[SeqNo1], [t].[Status]
+FROM (
+    SELECT [p].[InstanceId], [p].[SeqNo1], [p].[AssignedTo], [p].[AssignedToID], [p].[BarrelLength], [p].[BicycleMake], [p].[BicycleMakeID], [p].[BicycleModel], [p].[BicycleModelID], [p].[BicycleSpeed], [p].[BicycleWheelSize], [p].[Biohazard], [p].[BiohazardID], [p].[BoatLength], [p].[BoatName], [p].[BoatType], [p].[BoatTypeID], [p].[CartridgesAtScene], [p].[CartridgesInChamber], [p].[CartridgesInCylinder], [p].[CartridgesInMagazine], [p].[CheckedBy], [p].[CheckedByID], [p].[CISBadgeNumber], [p].[CISOfficer], [p].[CISOfficerID], [p].[CISSupervisor], [p].[CISSupervisorID], [p].[Cocked], [p].[CockedID], [p].[Color], [p].[ColorID], [p].[Condition], [p].[CurrencyCoins], [p].[CurrencyFifties], [p].[CurrencyFives], [p].[CurrencyHundreds], [p].[CurrencyOnes], [p].[CurrencyOther], [p].[CurrencyTens], [p].[CurrencyTotal], [p].[CurrencyTwenties], [p].[CurrentDisposition], [p].[CurrentDispositionID], [p].[CurrentLocation], [p].[CurrentLocationID], [p].[DateInserted], [p].[Denomination], [p].[DenominationID], [p].[Description], [p].[DischargedCartridgesAtScene], [p].[DischargedCartridgesInCylinder], [p].[DisposalMethod], [p].[DisposalMethodID], [p].[DomesticViolence], [p].[DomesticViolenceID], [p].[DropLocation], [p].[DropLocationID], [p].[DrugFieldTestResults], [p].[DrugFieldTestResultsID], [p].[DrugMeasure], [p].[DrugMeasureID], [p].[DrugPkgdBy], [p].[DrugPkgdByID], [p].[DrugPkgdDateTime], [p].[DrugQuantity], [p].[DrugSealDateTime], [p].[DrugSealedBy], [p].[DrugSealedByID], [p].[DrugType], [p].[DrugTypeID], [p].[DrugWitness], [p].[DrugWitnessID], [p].[ExpectedReturnDate], [p].[Explain], [p].[Finish], [p].[FirearmAction], [p].[FirearmActionID], [p].[FirearmBadgeNumber], [p].[FirearmCaliber], [p].[FirearmCaliberID], [p].[FirearmCapacity], [p].[FirearmColor], [p].[FirearmColorID], [p].[FirearmMake], [p].[FirearmMakeModel], [p].[FirearmMakeModelID], [p].[FirearmMarkings], [p].[FirearmModel], [p].[FirearmQueryBy], [p].[FirearmQueryByID], [p].[FirearmType], [p].[FirearmTypeID], [p].[FirearmsPriority], [p].[FirearmsPriorityID], [p].[HIN], [p].[HoldStatus], [p].[HoldStatusID], [p].[HullShape], [p].[HullShapeID], [p].[hyppropdetails], [p].[IBRTypeCode], [p].[ID], [p].[IdentifyingMarks], [p].[Importer], [p].[ItemNumber], [p].[JuvenileInvolved], [p].[JuvenileInvolvedID], [p].[LabNumber], [p].[LabProcessingRequired], [p].[LabProcessingRequiredID], [p].[License], [p].[LicenseCountry], [p].[LicenseCountryID], [p].[LicenseExpDate], [p].[LicenseState], [p].[LicenseStateID], [p].[Loaded], [p].[LoadedID], [p].[Manufacturer], [p].[Merged], [p].[Model], [p].[NCICCheckedBy], [p].[NCICCheckedByID], [p].[NCICCrimeCode], [p].[NCICCrimeCodeID], [p].[NextReviewDate], [p].[Notes], [p].[NotifyMethod], [p].[NotifyMethodID], [p].[ObtainedByID], [p].[ObtainedByIDID], [p].[ObtainedDate], [p].[ObtainedFrom], [p].[OdometerReading], [p].[Offense], [p].[OffenseID], [p].[OrigSubmittingOfficer], [p].[OriginalSubmittingOfficer], [p].[ORINotifiedBy], [p].[OtherAgencyIdentifier], [p].[OwnerAppliedNumber], [p].[OwnerNotified], [p].[OwnerNotifiedBy], [p].[OwnerNotifiedByID], [p].[OwnerNotifiedID], [p].[OwnerNumber], [p].[pgcAgencyEntered], [p].[pgcCurrencyDimes], [p].[pgcCurrencyDollarCoins], [p].[pgcCurrencyHalfDollars], [p].[pgcCurrencyNickels], [p].[pgcCurrencyPennies], [p].[pgcCurrencyQuarters], [p].[pgcCurrencyWitness], [p].[pgcCurrencyWitnessID], [p].[pgcDrugCaseType], [p].[pgcDrugCaseTypeID], [p].[pgcLabProcessingType], [p].[pgcLabProcessingTypeID], [p].[pgcNCICEntry], [p].[pgcORINotified], [p].[pgcORINotifiedID], [p].[PGCNCICCheck], [p].[PGCNCICCheckID], [p].[Photo], [p].[PropDrugQuant], [p].[PropStatus], [p].[PropStatusID], [p].[PropertyCategory], [p].[PropertyType], [p].[PropertyTypeID], [p].[Propulsion], [p].[PropulsionID], [p].[Quantity], [p].[ReasonforVariance], [p].[ReasonforVarianceID], [p].[ReceiptIssued], [p].[ReceiptIssuedID], [p].[RecoveredforOtherJurisdiction], [p].[RecoveredforOtherJurisdictionID], [p].[RFIDNo], [p].[Safety], [p].[SafetyID], [p].[ScheduledPurgeDate], [p].[SecuritiesIssueDate], [p].[SecuritiesIssuer], [p].[SecuritiesType], [p].[SecuritiesTypeID], [p].[SeizedPendingForfeiture], [p].[SeizedPendingForfeitureID], [p].[SerialNumber], [p].[Status], [p].[StatusID], [p].[StatusOwnerPossessor], [p].[StatusOwnerPossessorID], [p].[Stolen], [p].[StolenID], [p].[TagNumber], [p].[TagsCaseNoRTF], [p].[TagsSheetNoRTF], [p].[TagsSummary], [p].[Units], [p].[USCoinTotal], [p].[USCurrencyTotal], [p].[Value], [p].[VehicleDescription], [p].[VehicleType], [p].[VehicleTypeID], [p].[VehicleYear]
+    FROM [PropertySheet.Tags] AS [p]
+    WHERE [p].[ObtainedDate] IS NOT NULL
+    ORDER BY [p].[ObtainedDate] DESC
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [PropertySheet] AS [p0] ON [t].[InstanceId] = [p0].[InstanceId]
+ORDER BY [t].[ObtainedDate] DESC
+2023-08-16 12:42:37.051 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [PropertySheet.Tags] AS [p]
+WHERE [p].[ObtainedDate] IS NOT NULL
+2023-08-16 12:42:37.089 -04:00 [WRN] RecordsCore Long Running Request: GetPropertyListQuery (1764 milliseconds) PGCNT\tjfellrath PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery
+2023-08-16 12:42:37.475 -04:00 [INF] Executing ViewResult, running view Index.
+2023-08-16 12:42:37.562 -04:00 [INF] Executed ViewResult - view Index executed in 467.3428ms.
+2023-08-16 12:42:37.566 -04:00 [INF] Executed action PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI) in 2345.9849ms
+2023-08-16 12:42:37.570 -04:00 [INF] Executed endpoint 'PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI)'
+2023-08-16 12:42:37.583 -04:00 [INF] Request finished in 2395.4286ms 200 text/html; charset=utf-8
+2023-08-16 12:42:37.595 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/lib/select2/css/select2.css  
+2023-08-16 12:42:37.598 -04:00 [INF] The file /lib/select2/css/select2.css was not modified
+2023-08-16 12:42:37.603 -04:00 [INF] Request finished in 7.7427ms 304 text/css
+2023-08-16 12:42:37.612 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_vs/browserLink  
+2023-08-16 12:42:37.612 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_framework/aspnetcore-browser-refresh.js  
+2023-08-16 12:42:37.617 -04:00 [INF] Request finished in 5.3626ms 200 application/javascript; charset=utf-8
+2023-08-16 12:42:37.623 -04:00 [INF] Request finished in 10.5263ms 200 text/javascript; charset=UTF-8
+2023-08-16 12:42:50.654 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/Property?page=%2FIndex  
+2023-08-16 12:42:50.664 -04:00 [INF] Executing endpoint 'PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI)'
+2023-08-16 12:42:50.668 -04:00 [INF] Route matched with {action = "Index", controller = "Property"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery, System.String) on controller PropertyCore.WebUI.Controllers.PropertyController (PropertyCore.WebUI).
+2023-08-16 12:42:50.678 -04:00 [INF] RecordsCore Request: GetPropertyListQuery PGCNT\tjfellrath PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery
+2023-08-16 12:42:50.701 -04:00 [INF] Entity Framework Core 3.0.0 initialized 'DHStoreContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled 
+2023-08-16 12:42:50.710 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[PropertyType] AS [Text], [t].[PropertyTypeID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[PropertyType], [p].[PropertyTypeID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[PropertyType]
+2023-08-16 12:42:50.869 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[PropertyCategory] AS [Text]
+FROM (
+    SELECT DISTINCT [p].[PropertyCategory]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[PropertyCategory]
+2023-08-16 12:42:50.910 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Status] AS [Text], [t].[StatusID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[Status], [p].[StatusID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[Status]
+2023-08-16 12:42:50.951 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[HoldStatus] AS [Text], [t].[HoldStatusID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[HoldStatus], [p].[HoldStatusID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[HoldStatus]
+2023-08-16 12:42:50.997 -04:00 [INF] Executing DbCommand [Parameters=[@__p_0='0', @__p_1='25'], CommandType='"Text"', CommandTimeout='30']
+SELECT [p0].[AgencyID] AS [AgencyName], [t].[TagNumber] AS [BarCode], [t].[TagsCaseNoRTF] AS [CaseNumber], [t].[CurrentDisposition], [t].[CurrentDispositionID], [t].[CurrentLocation], [t].[CurrentLocationID], [t].[Description], [t].[DropLocation], [t].[DropLocationID], [t].[Explain], [t].[HoldStatus], [t].[InstanceId], [t].[ObtainedByID] AS [ObtainedById], COALESCE([t].[ObtainedDate], '0001-01-01T00:00:00.000') AS [ObtainedDate], [t].[ObtainedFrom], [t].[PropertyCategory], [t].[TagsSheetNoRTF] AS [PropertySheetNumber], [t].[PropertyType], [t].[PropertyTypeID], [t].[SeqNo1], [t].[Status]
+FROM (
+    SELECT [p].[InstanceId], [p].[SeqNo1], [p].[AssignedTo], [p].[AssignedToID], [p].[BarrelLength], [p].[BicycleMake], [p].[BicycleMakeID], [p].[BicycleModel], [p].[BicycleModelID], [p].[BicycleSpeed], [p].[BicycleWheelSize], [p].[Biohazard], [p].[BiohazardID], [p].[BoatLength], [p].[BoatName], [p].[BoatType], [p].[BoatTypeID], [p].[CartridgesAtScene], [p].[CartridgesInChamber], [p].[CartridgesInCylinder], [p].[CartridgesInMagazine], [p].[CheckedBy], [p].[CheckedByID], [p].[CISBadgeNumber], [p].[CISOfficer], [p].[CISOfficerID], [p].[CISSupervisor], [p].[CISSupervisorID], [p].[Cocked], [p].[CockedID], [p].[Color], [p].[ColorID], [p].[Condition], [p].[CurrencyCoins], [p].[CurrencyFifties], [p].[CurrencyFives], [p].[CurrencyHundreds], [p].[CurrencyOnes], [p].[CurrencyOther], [p].[CurrencyTens], [p].[CurrencyTotal], [p].[CurrencyTwenties], [p].[CurrentDisposition], [p].[CurrentDispositionID], [p].[CurrentLocation], [p].[CurrentLocationID], [p].[DateInserted], [p].[Denomination], [p].[DenominationID], [p].[Description], [p].[DischargedCartridgesAtScene], [p].[DischargedCartridgesInCylinder], [p].[DisposalMethod], [p].[DisposalMethodID], [p].[DomesticViolence], [p].[DomesticViolenceID], [p].[DropLocation], [p].[DropLocationID], [p].[DrugFieldTestResults], [p].[DrugFieldTestResultsID], [p].[DrugMeasure], [p].[DrugMeasureID], [p].[DrugPkgdBy], [p].[DrugPkgdByID], [p].[DrugPkgdDateTime], [p].[DrugQuantity], [p].[DrugSealDateTime], [p].[DrugSealedBy], [p].[DrugSealedByID], [p].[DrugType], [p].[DrugTypeID], [p].[DrugWitness], [p].[DrugWitnessID], [p].[ExpectedReturnDate], [p].[Explain], [p].[Finish], [p].[FirearmAction], [p].[FirearmActionID], [p].[FirearmBadgeNumber], [p].[FirearmCaliber], [p].[FirearmCaliberID], [p].[FirearmCapacity], [p].[FirearmColor], [p].[FirearmColorID], [p].[FirearmMake], [p].[FirearmMakeModel], [p].[FirearmMakeModelID], [p].[FirearmMarkings], [p].[FirearmModel], [p].[FirearmQueryBy], [p].[FirearmQueryByID], [p].[FirearmType], [p].[FirearmTypeID], [p].[FirearmsPriority], [p].[FirearmsPriorityID], [p].[HIN], [p].[HoldStatus], [p].[HoldStatusID], [p].[HullShape], [p].[HullShapeID], [p].[hyppropdetails], [p].[IBRTypeCode], [p].[ID], [p].[IdentifyingMarks], [p].[Importer], [p].[ItemNumber], [p].[JuvenileInvolved], [p].[JuvenileInvolvedID], [p].[LabNumber], [p].[LabProcessingRequired], [p].[LabProcessingRequiredID], [p].[License], [p].[LicenseCountry], [p].[LicenseCountryID], [p].[LicenseExpDate], [p].[LicenseState], [p].[LicenseStateID], [p].[Loaded], [p].[LoadedID], [p].[Manufacturer], [p].[Merged], [p].[Model], [p].[NCICCheckedBy], [p].[NCICCheckedByID], [p].[NCICCrimeCode], [p].[NCICCrimeCodeID], [p].[NextReviewDate], [p].[Notes], [p].[NotifyMethod], [p].[NotifyMethodID], [p].[ObtainedByID], [p].[ObtainedByIDID], [p].[ObtainedDate], [p].[ObtainedFrom], [p].[OdometerReading], [p].[Offense], [p].[OffenseID], [p].[OrigSubmittingOfficer], [p].[OriginalSubmittingOfficer], [p].[ORINotifiedBy], [p].[OtherAgencyIdentifier], [p].[OwnerAppliedNumber], [p].[OwnerNotified], [p].[OwnerNotifiedBy], [p].[OwnerNotifiedByID], [p].[OwnerNotifiedID], [p].[OwnerNumber], [p].[pgcAgencyEntered], [p].[pgcCurrencyDimes], [p].[pgcCurrencyDollarCoins], [p].[pgcCurrencyHalfDollars], [p].[pgcCurrencyNickels], [p].[pgcCurrencyPennies], [p].[pgcCurrencyQuarters], [p].[pgcCurrencyWitness], [p].[pgcCurrencyWitnessID], [p].[pgcDrugCaseType], [p].[pgcDrugCaseTypeID], [p].[pgcLabProcessingType], [p].[pgcLabProcessingTypeID], [p].[pgcNCICEntry], [p].[pgcORINotified], [p].[pgcORINotifiedID], [p].[PGCNCICCheck], [p].[PGCNCICCheckID], [p].[Photo], [p].[PropDrugQuant], [p].[PropStatus], [p].[PropStatusID], [p].[PropertyCategory], [p].[PropertyType], [p].[PropertyTypeID], [p].[Propulsion], [p].[PropulsionID], [p].[Quantity], [p].[ReasonforVariance], [p].[ReasonforVarianceID], [p].[ReceiptIssued], [p].[ReceiptIssuedID], [p].[RecoveredforOtherJurisdiction], [p].[RecoveredforOtherJurisdictionID], [p].[RFIDNo], [p].[Safety], [p].[SafetyID], [p].[ScheduledPurgeDate], [p].[SecuritiesIssueDate], [p].[SecuritiesIssuer], [p].[SecuritiesType], [p].[SecuritiesTypeID], [p].[SeizedPendingForfeiture], [p].[SeizedPendingForfeitureID], [p].[SerialNumber], [p].[Status], [p].[StatusID], [p].[StatusOwnerPossessor], [p].[StatusOwnerPossessorID], [p].[Stolen], [p].[StolenID], [p].[TagNumber], [p].[TagsCaseNoRTF], [p].[TagsSheetNoRTF], [p].[TagsSummary], [p].[Units], [p].[USCoinTotal], [p].[USCurrencyTotal], [p].[Value], [p].[VehicleDescription], [p].[VehicleType], [p].[VehicleTypeID], [p].[VehicleYear]
+    FROM [PropertySheet.Tags] AS [p]
+    WHERE [p].[ObtainedDate] IS NOT NULL
+    ORDER BY [p].[ObtainedDate] DESC
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [PropertySheet] AS [p0] ON [t].[InstanceId] = [p0].[InstanceId]
+ORDER BY [t].[ObtainedDate] DESC
+2023-08-16 12:42:51.091 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [PropertySheet.Tags] AS [p]
+WHERE [p].[ObtainedDate] IS NOT NULL
+2023-08-16 12:42:51.122 -04:00 [INF] Executing ViewResult, running view Index.
+2023-08-16 12:42:51.187 -04:00 [INF] Executed ViewResult - view Index executed in 64.5025ms.
+2023-08-16 12:42:51.189 -04:00 [INF] Executed action PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI) in 516.2842ms
+2023-08-16 12:42:51.192 -04:00 [INF] Executed endpoint 'PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI)'
+2023-08-16 12:42:51.202 -04:00 [INF] Request finished in 547.7868ms 200 text/html; charset=utf-8
+2023-08-16 12:42:51.213 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_framework/aspnetcore-browser-refresh.js  
+2023-08-16 12:42:51.213 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_vs/browserLink  
+2023-08-16 12:42:51.222 -04:00 [INF] Request finished in 8.884ms 200 application/javascript; charset=utf-8
+2023-08-16 12:42:51.229 -04:00 [INF] Request finished in 15.9851ms 200 text/javascript; charset=UTF-8
+2023-08-16 12:42:53.347 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/Property?page=%2FIndex  
+2023-08-16 12:42:53.356 -04:00 [INF] Executing endpoint 'PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI)'
+2023-08-16 12:42:53.359 -04:00 [INF] Route matched with {action = "Index", controller = "Property"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery, System.String) on controller PropertyCore.WebUI.Controllers.PropertyController (PropertyCore.WebUI).
+2023-08-16 12:42:53.363 -04:00 [INF] RecordsCore Request: GetPropertyListQuery PGCNT\tjfellrath PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery
+2023-08-16 12:42:53.371 -04:00 [INF] Entity Framework Core 3.0.0 initialized 'DHStoreContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled 
+2023-08-16 12:42:53.375 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[PropertyType] AS [Text], [t].[PropertyTypeID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[PropertyType], [p].[PropertyTypeID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[PropertyType]
+2023-08-16 12:42:53.505 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[PropertyCategory] AS [Text]
+FROM (
+    SELECT DISTINCT [p].[PropertyCategory]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[PropertyCategory]
+2023-08-16 12:42:53.555 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Status] AS [Text], [t].[StatusID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[Status], [p].[StatusID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[Status]
+2023-08-16 12:42:53.600 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[HoldStatus] AS [Text], [t].[HoldStatusID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[HoldStatus], [p].[HoldStatusID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[HoldStatus]
+2023-08-16 12:42:53.654 -04:00 [INF] Executing DbCommand [Parameters=[@__p_0='0', @__p_1='25'], CommandType='"Text"', CommandTimeout='30']
+SELECT [p0].[AgencyID] AS [AgencyName], [t].[TagNumber] AS [BarCode], [t].[TagsCaseNoRTF] AS [CaseNumber], [t].[CurrentDisposition], [t].[CurrentDispositionID], [t].[CurrentLocation], [t].[CurrentLocationID], [t].[Description], [t].[DropLocation], [t].[DropLocationID], [t].[Explain], [t].[HoldStatus], [t].[InstanceId], [t].[ObtainedByID] AS [ObtainedById], COALESCE([t].[ObtainedDate], '0001-01-01T00:00:00.000') AS [ObtainedDate], [t].[ObtainedFrom], [t].[PropertyCategory], [t].[TagsSheetNoRTF] AS [PropertySheetNumber], [t].[PropertyType], [t].[PropertyTypeID], [t].[SeqNo1], [t].[Status]
+FROM (
+    SELECT [p].[InstanceId], [p].[SeqNo1], [p].[AssignedTo], [p].[AssignedToID], [p].[BarrelLength], [p].[BicycleMake], [p].[BicycleMakeID], [p].[BicycleModel], [p].[BicycleModelID], [p].[BicycleSpeed], [p].[BicycleWheelSize], [p].[Biohazard], [p].[BiohazardID], [p].[BoatLength], [p].[BoatName], [p].[BoatType], [p].[BoatTypeID], [p].[CartridgesAtScene], [p].[CartridgesInChamber], [p].[CartridgesInCylinder], [p].[CartridgesInMagazine], [p].[CheckedBy], [p].[CheckedByID], [p].[CISBadgeNumber], [p].[CISOfficer], [p].[CISOfficerID], [p].[CISSupervisor], [p].[CISSupervisorID], [p].[Cocked], [p].[CockedID], [p].[Color], [p].[ColorID], [p].[Condition], [p].[CurrencyCoins], [p].[CurrencyFifties], [p].[CurrencyFives], [p].[CurrencyHundreds], [p].[CurrencyOnes], [p].[CurrencyOther], [p].[CurrencyTens], [p].[CurrencyTotal], [p].[CurrencyTwenties], [p].[CurrentDisposition], [p].[CurrentDispositionID], [p].[CurrentLocation], [p].[CurrentLocationID], [p].[DateInserted], [p].[Denomination], [p].[DenominationID], [p].[Description], [p].[DischargedCartridgesAtScene], [p].[DischargedCartridgesInCylinder], [p].[DisposalMethod], [p].[DisposalMethodID], [p].[DomesticViolence], [p].[DomesticViolenceID], [p].[DropLocation], [p].[DropLocationID], [p].[DrugFieldTestResults], [p].[DrugFieldTestResultsID], [p].[DrugMeasure], [p].[DrugMeasureID], [p].[DrugPkgdBy], [p].[DrugPkgdByID], [p].[DrugPkgdDateTime], [p].[DrugQuantity], [p].[DrugSealDateTime], [p].[DrugSealedBy], [p].[DrugSealedByID], [p].[DrugType], [p].[DrugTypeID], [p].[DrugWitness], [p].[DrugWitnessID], [p].[ExpectedReturnDate], [p].[Explain], [p].[Finish], [p].[FirearmAction], [p].[FirearmActionID], [p].[FirearmBadgeNumber], [p].[FirearmCaliber], [p].[FirearmCaliberID], [p].[FirearmCapacity], [p].[FirearmColor], [p].[FirearmColorID], [p].[FirearmMake], [p].[FirearmMakeModel], [p].[FirearmMakeModelID], [p].[FirearmMarkings], [p].[FirearmModel], [p].[FirearmQueryBy], [p].[FirearmQueryByID], [p].[FirearmType], [p].[FirearmTypeID], [p].[FirearmsPriority], [p].[FirearmsPriorityID], [p].[HIN], [p].[HoldStatus], [p].[HoldStatusID], [p].[HullShape], [p].[HullShapeID], [p].[hyppropdetails], [p].[IBRTypeCode], [p].[ID], [p].[IdentifyingMarks], [p].[Importer], [p].[ItemNumber], [p].[JuvenileInvolved], [p].[JuvenileInvolvedID], [p].[LabNumber], [p].[LabProcessingRequired], [p].[LabProcessingRequiredID], [p].[License], [p].[LicenseCountry], [p].[LicenseCountryID], [p].[LicenseExpDate], [p].[LicenseState], [p].[LicenseStateID], [p].[Loaded], [p].[LoadedID], [p].[Manufacturer], [p].[Merged], [p].[Model], [p].[NCICCheckedBy], [p].[NCICCheckedByID], [p].[NCICCrimeCode], [p].[NCICCrimeCodeID], [p].[NextReviewDate], [p].[Notes], [p].[NotifyMethod], [p].[NotifyMethodID], [p].[ObtainedByID], [p].[ObtainedByIDID], [p].[ObtainedDate], [p].[ObtainedFrom], [p].[OdometerReading], [p].[Offense], [p].[OffenseID], [p].[OrigSubmittingOfficer], [p].[OriginalSubmittingOfficer], [p].[ORINotifiedBy], [p].[OtherAgencyIdentifier], [p].[OwnerAppliedNumber], [p].[OwnerNotified], [p].[OwnerNotifiedBy], [p].[OwnerNotifiedByID], [p].[OwnerNotifiedID], [p].[OwnerNumber], [p].[pgcAgencyEntered], [p].[pgcCurrencyDimes], [p].[pgcCurrencyDollarCoins], [p].[pgcCurrencyHalfDollars], [p].[pgcCurrencyNickels], [p].[pgcCurrencyPennies], [p].[pgcCurrencyQuarters], [p].[pgcCurrencyWitness], [p].[pgcCurrencyWitnessID], [p].[pgcDrugCaseType], [p].[pgcDrugCaseTypeID], [p].[pgcLabProcessingType], [p].[pgcLabProcessingTypeID], [p].[pgcNCICEntry], [p].[pgcORINotified], [p].[pgcORINotifiedID], [p].[PGCNCICCheck], [p].[PGCNCICCheckID], [p].[Photo], [p].[PropDrugQuant], [p].[PropStatus], [p].[PropStatusID], [p].[PropertyCategory], [p].[PropertyType], [p].[PropertyTypeID], [p].[Propulsion], [p].[PropulsionID], [p].[Quantity], [p].[ReasonforVariance], [p].[ReasonforVarianceID], [p].[ReceiptIssued], [p].[ReceiptIssuedID], [p].[RecoveredforOtherJurisdiction], [p].[RecoveredforOtherJurisdictionID], [p].[RFIDNo], [p].[Safety], [p].[SafetyID], [p].[ScheduledPurgeDate], [p].[SecuritiesIssueDate], [p].[SecuritiesIssuer], [p].[SecuritiesType], [p].[SecuritiesTypeID], [p].[SeizedPendingForfeiture], [p].[SeizedPendingForfeitureID], [p].[SerialNumber], [p].[Status], [p].[StatusID], [p].[StatusOwnerPossessor], [p].[StatusOwnerPossessorID], [p].[Stolen], [p].[StolenID], [p].[TagNumber], [p].[TagsCaseNoRTF], [p].[TagsSheetNoRTF], [p].[TagsSummary], [p].[Units], [p].[USCoinTotal], [p].[USCurrencyTotal], [p].[Value], [p].[VehicleDescription], [p].[VehicleType], [p].[VehicleTypeID], [p].[VehicleYear]
+    FROM [PropertySheet.Tags] AS [p]
+    WHERE [p].[ObtainedDate] IS NOT NULL
+    ORDER BY [p].[ObtainedDate] DESC
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [PropertySheet] AS [p0] ON [t].[InstanceId] = [p0].[InstanceId]
+ORDER BY [t].[ObtainedDate] DESC
+2023-08-16 12:42:53.760 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [PropertySheet.Tags] AS [p]
+WHERE [p].[ObtainedDate] IS NOT NULL
+2023-08-16 12:42:53.798 -04:00 [INF] Executing ViewResult, running view Index.
+2023-08-16 12:42:53.864 -04:00 [INF] Executed ViewResult - view Index executed in 65.9095ms.
+2023-08-16 12:42:53.867 -04:00 [INF] Executed action PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI) in 505.6893ms
+2023-08-16 12:42:53.869 -04:00 [INF] Executed endpoint 'PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI)'
+2023-08-16 12:42:53.879 -04:00 [INF] Request finished in 531.9859ms 200 text/html; charset=utf-8
+2023-08-16 12:42:53.895 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_framework/aspnetcore-browser-refresh.js  
+2023-08-16 12:42:53.927 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_vs/browserLink  
+2023-08-16 12:42:53.935 -04:00 [INF] Request finished in 38.7668ms 200 application/javascript; charset=utf-8
+2023-08-16 12:42:53.947 -04:00 [INF] Request finished in 19.712ms 200 text/javascript; charset=UTF-8
+2023-08-16 12:42:56.936 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/Property?page=%2FIndex  
+2023-08-16 12:42:56.943 -04:00 [INF] Executing endpoint 'PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI)'
+2023-08-16 12:42:56.947 -04:00 [INF] Route matched with {action = "Index", controller = "Property"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery, System.String) on controller PropertyCore.WebUI.Controllers.PropertyController (PropertyCore.WebUI).
+2023-08-16 12:42:56.952 -04:00 [INF] RecordsCore Request: GetPropertyListQuery PGCNT\tjfellrath PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery
+2023-08-16 12:42:56.956 -04:00 [INF] Entity Framework Core 3.0.0 initialized 'DHStoreContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled 
+2023-08-16 12:42:56.959 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[PropertyType] AS [Text], [t].[PropertyTypeID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[PropertyType], [p].[PropertyTypeID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[PropertyType]
+2023-08-16 12:42:57.125 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[PropertyCategory] AS [Text]
+FROM (
+    SELECT DISTINCT [p].[PropertyCategory]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[PropertyCategory]
+2023-08-16 12:42:57.169 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Status] AS [Text], [t].[StatusID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[Status], [p].[StatusID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[Status]
+2023-08-16 12:42:57.219 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[HoldStatus] AS [Text], [t].[HoldStatusID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[HoldStatus], [p].[HoldStatusID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[HoldStatus]
+2023-08-16 12:42:57.273 -04:00 [INF] Executing DbCommand [Parameters=[@__p_0='0', @__p_1='25'], CommandType='"Text"', CommandTimeout='30']
+SELECT [p0].[AgencyID] AS [AgencyName], [t].[TagNumber] AS [BarCode], [t].[TagsCaseNoRTF] AS [CaseNumber], [t].[CurrentDisposition], [t].[CurrentDispositionID], [t].[CurrentLocation], [t].[CurrentLocationID], [t].[Description], [t].[DropLocation], [t].[DropLocationID], [t].[Explain], [t].[HoldStatus], [t].[InstanceId], [t].[ObtainedByID] AS [ObtainedById], COALESCE([t].[ObtainedDate], '0001-01-01T00:00:00.000') AS [ObtainedDate], [t].[ObtainedFrom], [t].[PropertyCategory], [t].[TagsSheetNoRTF] AS [PropertySheetNumber], [t].[PropertyType], [t].[PropertyTypeID], [t].[SeqNo1], [t].[Status]
+FROM (
+    SELECT [p].[InstanceId], [p].[SeqNo1], [p].[AssignedTo], [p].[AssignedToID], [p].[BarrelLength], [p].[BicycleMake], [p].[BicycleMakeID], [p].[BicycleModel], [p].[BicycleModelID], [p].[BicycleSpeed], [p].[BicycleWheelSize], [p].[Biohazard], [p].[BiohazardID], [p].[BoatLength], [p].[BoatName], [p].[BoatType], [p].[BoatTypeID], [p].[CartridgesAtScene], [p].[CartridgesInChamber], [p].[CartridgesInCylinder], [p].[CartridgesInMagazine], [p].[CheckedBy], [p].[CheckedByID], [p].[CISBadgeNumber], [p].[CISOfficer], [p].[CISOfficerID], [p].[CISSupervisor], [p].[CISSupervisorID], [p].[Cocked], [p].[CockedID], [p].[Color], [p].[ColorID], [p].[Condition], [p].[CurrencyCoins], [p].[CurrencyFifties], [p].[CurrencyFives], [p].[CurrencyHundreds], [p].[CurrencyOnes], [p].[CurrencyOther], [p].[CurrencyTens], [p].[CurrencyTotal], [p].[CurrencyTwenties], [p].[CurrentDisposition], [p].[CurrentDispositionID], [p].[CurrentLocation], [p].[CurrentLocationID], [p].[DateInserted], [p].[Denomination], [p].[DenominationID], [p].[Description], [p].[DischargedCartridgesAtScene], [p].[DischargedCartridgesInCylinder], [p].[DisposalMethod], [p].[DisposalMethodID], [p].[DomesticViolence], [p].[DomesticViolenceID], [p].[DropLocation], [p].[DropLocationID], [p].[DrugFieldTestResults], [p].[DrugFieldTestResultsID], [p].[DrugMeasure], [p].[DrugMeasureID], [p].[DrugPkgdBy], [p].[DrugPkgdByID], [p].[DrugPkgdDateTime], [p].[DrugQuantity], [p].[DrugSealDateTime], [p].[DrugSealedBy], [p].[DrugSealedByID], [p].[DrugType], [p].[DrugTypeID], [p].[DrugWitness], [p].[DrugWitnessID], [p].[ExpectedReturnDate], [p].[Explain], [p].[Finish], [p].[FirearmAction], [p].[FirearmActionID], [p].[FirearmBadgeNumber], [p].[FirearmCaliber], [p].[FirearmCaliberID], [p].[FirearmCapacity], [p].[FirearmColor], [p].[FirearmColorID], [p].[FirearmMake], [p].[FirearmMakeModel], [p].[FirearmMakeModelID], [p].[FirearmMarkings], [p].[FirearmModel], [p].[FirearmQueryBy], [p].[FirearmQueryByID], [p].[FirearmType], [p].[FirearmTypeID], [p].[FirearmsPriority], [p].[FirearmsPriorityID], [p].[HIN], [p].[HoldStatus], [p].[HoldStatusID], [p].[HullShape], [p].[HullShapeID], [p].[hyppropdetails], [p].[IBRTypeCode], [p].[ID], [p].[IdentifyingMarks], [p].[Importer], [p].[ItemNumber], [p].[JuvenileInvolved], [p].[JuvenileInvolvedID], [p].[LabNumber], [p].[LabProcessingRequired], [p].[LabProcessingRequiredID], [p].[License], [p].[LicenseCountry], [p].[LicenseCountryID], [p].[LicenseExpDate], [p].[LicenseState], [p].[LicenseStateID], [p].[Loaded], [p].[LoadedID], [p].[Manufacturer], [p].[Merged], [p].[Model], [p].[NCICCheckedBy], [p].[NCICCheckedByID], [p].[NCICCrimeCode], [p].[NCICCrimeCodeID], [p].[NextReviewDate], [p].[Notes], [p].[NotifyMethod], [p].[NotifyMethodID], [p].[ObtainedByID], [p].[ObtainedByIDID], [p].[ObtainedDate], [p].[ObtainedFrom], [p].[OdometerReading], [p].[Offense], [p].[OffenseID], [p].[OrigSubmittingOfficer], [p].[OriginalSubmittingOfficer], [p].[ORINotifiedBy], [p].[OtherAgencyIdentifier], [p].[OwnerAppliedNumber], [p].[OwnerNotified], [p].[OwnerNotifiedBy], [p].[OwnerNotifiedByID], [p].[OwnerNotifiedID], [p].[OwnerNumber], [p].[pgcAgencyEntered], [p].[pgcCurrencyDimes], [p].[pgcCurrencyDollarCoins], [p].[pgcCurrencyHalfDollars], [p].[pgcCurrencyNickels], [p].[pgcCurrencyPennies], [p].[pgcCurrencyQuarters], [p].[pgcCurrencyWitness], [p].[pgcCurrencyWitnessID], [p].[pgcDrugCaseType], [p].[pgcDrugCaseTypeID], [p].[pgcLabProcessingType], [p].[pgcLabProcessingTypeID], [p].[pgcNCICEntry], [p].[pgcORINotified], [p].[pgcORINotifiedID], [p].[PGCNCICCheck], [p].[PGCNCICCheckID], [p].[Photo], [p].[PropDrugQuant], [p].[PropStatus], [p].[PropStatusID], [p].[PropertyCategory], [p].[PropertyType], [p].[PropertyTypeID], [p].[Propulsion], [p].[PropulsionID], [p].[Quantity], [p].[ReasonforVariance], [p].[ReasonforVarianceID], [p].[ReceiptIssued], [p].[ReceiptIssuedID], [p].[RecoveredforOtherJurisdiction], [p].[RecoveredforOtherJurisdictionID], [p].[RFIDNo], [p].[Safety], [p].[SafetyID], [p].[ScheduledPurgeDate], [p].[SecuritiesIssueDate], [p].[SecuritiesIssuer], [p].[SecuritiesType], [p].[SecuritiesTypeID], [p].[SeizedPendingForfeiture], [p].[SeizedPendingForfeitureID], [p].[SerialNumber], [p].[Status], [p].[StatusID], [p].[StatusOwnerPossessor], [p].[StatusOwnerPossessorID], [p].[Stolen], [p].[StolenID], [p].[TagNumber], [p].[TagsCaseNoRTF], [p].[TagsSheetNoRTF], [p].[TagsSummary], [p].[Units], [p].[USCoinTotal], [p].[USCurrencyTotal], [p].[Value], [p].[VehicleDescription], [p].[VehicleType], [p].[VehicleTypeID], [p].[VehicleYear]
+    FROM [PropertySheet.Tags] AS [p]
+    WHERE [p].[ObtainedDate] IS NOT NULL
+    ORDER BY [p].[ObtainedDate] DESC
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [PropertySheet] AS [p0] ON [t].[InstanceId] = [p0].[InstanceId]
+ORDER BY [t].[ObtainedDate] DESC
+2023-08-16 12:42:57.392 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [PropertySheet.Tags] AS [p]
+WHERE [p].[ObtainedDate] IS NOT NULL
+2023-08-16 12:42:57.429 -04:00 [INF] Executing ViewResult, running view Index.
+2023-08-16 12:42:57.468 -04:00 [INF] Executed ViewResult - view Index executed in 39.8026ms.
+2023-08-16 12:42:57.473 -04:00 [INF] Executed action PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI) in 523.9407ms
+2023-08-16 12:42:57.475 -04:00 [INF] Executed endpoint 'PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI)'
+2023-08-16 12:42:57.485 -04:00 [INF] Request finished in 548.7875ms 200 text/html; charset=utf-8
+2023-08-16 12:42:57.538 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_framework/aspnetcore-browser-refresh.js  
+2023-08-16 12:42:57.538 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_vs/browserLink  
+2023-08-16 12:42:57.549 -04:00 [INF] Request finished in 10.6524ms 200 application/javascript; charset=utf-8
+2023-08-16 12:42:57.558 -04:00 [INF] Request finished in 19.8426ms 200 text/javascript; charset=UTF-8
+2023-08-16 12:43:07.727 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/Property?page=%2FIndex  
+2023-08-16 12:43:07.737 -04:00 [INF] Executing endpoint 'PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI)'
+2023-08-16 12:43:07.742 -04:00 [INF] Route matched with {action = "Index", controller = "Property"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery, System.String) on controller PropertyCore.WebUI.Controllers.PropertyController (PropertyCore.WebUI).
+2023-08-16 12:43:07.747 -04:00 [INF] RecordsCore Request: GetPropertyListQuery PGCNT\tjfellrath PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery
+2023-08-16 12:43:07.751 -04:00 [INF] Entity Framework Core 3.0.0 initialized 'DHStoreContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled 
+2023-08-16 12:43:07.757 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[PropertyType] AS [Text], [t].[PropertyTypeID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[PropertyType], [p].[PropertyTypeID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[PropertyType]
+2023-08-16 12:43:07.910 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[PropertyCategory] AS [Text]
+FROM (
+    SELECT DISTINCT [p].[PropertyCategory]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[PropertyCategory]
+2023-08-16 12:43:07.961 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Status] AS [Text], [t].[StatusID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[Status], [p].[StatusID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[Status]
+2023-08-16 12:43:08.008 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[HoldStatus] AS [Text], [t].[HoldStatusID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[HoldStatus], [p].[HoldStatusID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[HoldStatus]
+2023-08-16 12:43:08.089 -04:00 [INF] Executing DbCommand [Parameters=[@__p_0='0', @__p_1='25'], CommandType='"Text"', CommandTimeout='30']
+SELECT [p0].[AgencyID] AS [AgencyName], [t].[TagNumber] AS [BarCode], [t].[TagsCaseNoRTF] AS [CaseNumber], [t].[CurrentDisposition], [t].[CurrentDispositionID], [t].[CurrentLocation], [t].[CurrentLocationID], [t].[Description], [t].[DropLocation], [t].[DropLocationID], [t].[Explain], [t].[HoldStatus], [t].[InstanceId], [t].[ObtainedByID] AS [ObtainedById], COALESCE([t].[ObtainedDate], '0001-01-01T00:00:00.000') AS [ObtainedDate], [t].[ObtainedFrom], [t].[PropertyCategory], [t].[TagsSheetNoRTF] AS [PropertySheetNumber], [t].[PropertyType], [t].[PropertyTypeID], [t].[SeqNo1], [t].[Status]
+FROM (
+    SELECT [p].[InstanceId], [p].[SeqNo1], [p].[AssignedTo], [p].[AssignedToID], [p].[BarrelLength], [p].[BicycleMake], [p].[BicycleMakeID], [p].[BicycleModel], [p].[BicycleModelID], [p].[BicycleSpeed], [p].[BicycleWheelSize], [p].[Biohazard], [p].[BiohazardID], [p].[BoatLength], [p].[BoatName], [p].[BoatType], [p].[BoatTypeID], [p].[CartridgesAtScene], [p].[CartridgesInChamber], [p].[CartridgesInCylinder], [p].[CartridgesInMagazine], [p].[CheckedBy], [p].[CheckedByID], [p].[CISBadgeNumber], [p].[CISOfficer], [p].[CISOfficerID], [p].[CISSupervisor], [p].[CISSupervisorID], [p].[Cocked], [p].[CockedID], [p].[Color], [p].[ColorID], [p].[Condition], [p].[CurrencyCoins], [p].[CurrencyFifties], [p].[CurrencyFives], [p].[CurrencyHundreds], [p].[CurrencyOnes], [p].[CurrencyOther], [p].[CurrencyTens], [p].[CurrencyTotal], [p].[CurrencyTwenties], [p].[CurrentDisposition], [p].[CurrentDispositionID], [p].[CurrentLocation], [p].[CurrentLocationID], [p].[DateInserted], [p].[Denomination], [p].[DenominationID], [p].[Description], [p].[DischargedCartridgesAtScene], [p].[DischargedCartridgesInCylinder], [p].[DisposalMethod], [p].[DisposalMethodID], [p].[DomesticViolence], [p].[DomesticViolenceID], [p].[DropLocation], [p].[DropLocationID], [p].[DrugFieldTestResults], [p].[DrugFieldTestResultsID], [p].[DrugMeasure], [p].[DrugMeasureID], [p].[DrugPkgdBy], [p].[DrugPkgdByID], [p].[DrugPkgdDateTime], [p].[DrugQuantity], [p].[DrugSealDateTime], [p].[DrugSealedBy], [p].[DrugSealedByID], [p].[DrugType], [p].[DrugTypeID], [p].[DrugWitness], [p].[DrugWitnessID], [p].[ExpectedReturnDate], [p].[Explain], [p].[Finish], [p].[FirearmAction], [p].[FirearmActionID], [p].[FirearmBadgeNumber], [p].[FirearmCaliber], [p].[FirearmCaliberID], [p].[FirearmCapacity], [p].[FirearmColor], [p].[FirearmColorID], [p].[FirearmMake], [p].[FirearmMakeModel], [p].[FirearmMakeModelID], [p].[FirearmMarkings], [p].[FirearmModel], [p].[FirearmQueryBy], [p].[FirearmQueryByID], [p].[FirearmType], [p].[FirearmTypeID], [p].[FirearmsPriority], [p].[FirearmsPriorityID], [p].[HIN], [p].[HoldStatus], [p].[HoldStatusID], [p].[HullShape], [p].[HullShapeID], [p].[hyppropdetails], [p].[IBRTypeCode], [p].[ID], [p].[IdentifyingMarks], [p].[Importer], [p].[ItemNumber], [p].[JuvenileInvolved], [p].[JuvenileInvolvedID], [p].[LabNumber], [p].[LabProcessingRequired], [p].[LabProcessingRequiredID], [p].[License], [p].[LicenseCountry], [p].[LicenseCountryID], [p].[LicenseExpDate], [p].[LicenseState], [p].[LicenseStateID], [p].[Loaded], [p].[LoadedID], [p].[Manufacturer], [p].[Merged], [p].[Model], [p].[NCICCheckedBy], [p].[NCICCheckedByID], [p].[NCICCrimeCode], [p].[NCICCrimeCodeID], [p].[NextReviewDate], [p].[Notes], [p].[NotifyMethod], [p].[NotifyMethodID], [p].[ObtainedByID], [p].[ObtainedByIDID], [p].[ObtainedDate], [p].[ObtainedFrom], [p].[OdometerReading], [p].[Offense], [p].[OffenseID], [p].[OrigSubmittingOfficer], [p].[OriginalSubmittingOfficer], [p].[ORINotifiedBy], [p].[OtherAgencyIdentifier], [p].[OwnerAppliedNumber], [p].[OwnerNotified], [p].[OwnerNotifiedBy], [p].[OwnerNotifiedByID], [p].[OwnerNotifiedID], [p].[OwnerNumber], [p].[pgcAgencyEntered], [p].[pgcCurrencyDimes], [p].[pgcCurrencyDollarCoins], [p].[pgcCurrencyHalfDollars], [p].[pgcCurrencyNickels], [p].[pgcCurrencyPennies], [p].[pgcCurrencyQuarters], [p].[pgcCurrencyWitness], [p].[pgcCurrencyWitnessID], [p].[pgcDrugCaseType], [p].[pgcDrugCaseTypeID], [p].[pgcLabProcessingType], [p].[pgcLabProcessingTypeID], [p].[pgcNCICEntry], [p].[pgcORINotified], [p].[pgcORINotifiedID], [p].[PGCNCICCheck], [p].[PGCNCICCheckID], [p].[Photo], [p].[PropDrugQuant], [p].[PropStatus], [p].[PropStatusID], [p].[PropertyCategory], [p].[PropertyType], [p].[PropertyTypeID], [p].[Propulsion], [p].[PropulsionID], [p].[Quantity], [p].[ReasonforVariance], [p].[ReasonforVarianceID], [p].[ReceiptIssued], [p].[ReceiptIssuedID], [p].[RecoveredforOtherJurisdiction], [p].[RecoveredforOtherJurisdictionID], [p].[RFIDNo], [p].[Safety], [p].[SafetyID], [p].[ScheduledPurgeDate], [p].[SecuritiesIssueDate], [p].[SecuritiesIssuer], [p].[SecuritiesType], [p].[SecuritiesTypeID], [p].[SeizedPendingForfeiture], [p].[SeizedPendingForfeitureID], [p].[SerialNumber], [p].[Status], [p].[StatusID], [p].[StatusOwnerPossessor], [p].[StatusOwnerPossessorID], [p].[Stolen], [p].[StolenID], [p].[TagNumber], [p].[TagsCaseNoRTF], [p].[TagsSheetNoRTF], [p].[TagsSummary], [p].[Units], [p].[USCoinTotal], [p].[USCurrencyTotal], [p].[Value], [p].[VehicleDescription], [p].[VehicleType], [p].[VehicleTypeID], [p].[VehicleYear]
+    FROM [PropertySheet.Tags] AS [p]
+    WHERE [p].[ObtainedDate] IS NOT NULL
+    ORDER BY [p].[ObtainedDate] DESC
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [PropertySheet] AS [p0] ON [t].[InstanceId] = [p0].[InstanceId]
+ORDER BY [t].[ObtainedDate] DESC
+2023-08-16 12:43:08.186 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [PropertySheet.Tags] AS [p]
+WHERE [p].[ObtainedDate] IS NOT NULL
+2023-08-16 12:43:08.219 -04:00 [INF] Executing ViewResult, running view Index.
+2023-08-16 12:43:08.268 -04:00 [INF] Executed ViewResult - view Index executed in 48.7226ms.
+2023-08-16 12:43:08.271 -04:00 [INF] Executed action PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI) in 526.4493ms
+2023-08-16 12:43:08.273 -04:00 [INF] Executed endpoint 'PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI)'
+2023-08-16 12:43:08.283 -04:00 [INF] Request finished in 556.585ms 200 text/html; charset=utf-8
+2023-08-16 12:43:08.311 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_framework/aspnetcore-browser-refresh.js  
+2023-08-16 12:43:08.311 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_vs/browserLink  
+2023-08-16 12:43:08.317 -04:00 [INF] Request finished in 5.0776ms 200 application/javascript; charset=utf-8
+2023-08-16 12:43:08.331 -04:00 [INF] Request finished in 19.0307ms 200 text/javascript; charset=UTF-8
+2023-08-16 12:43:10.809 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/Property?page=%2FIndex  
+2023-08-16 12:43:10.816 -04:00 [INF] Executing endpoint 'PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI)'
+2023-08-16 12:43:10.821 -04:00 [INF] Route matched with {action = "Index", controller = "Property"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery, System.String) on controller PropertyCore.WebUI.Controllers.PropertyController (PropertyCore.WebUI).
+2023-08-16 12:43:10.824 -04:00 [INF] RecordsCore Request: GetPropertyListQuery PGCNT\tjfellrath PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery
+2023-08-16 12:43:10.827 -04:00 [INF] Entity Framework Core 3.0.0 initialized 'DHStoreContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled 
+2023-08-16 12:43:10.829 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[PropertyType] AS [Text], [t].[PropertyTypeID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[PropertyType], [p].[PropertyTypeID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[PropertyType]
+2023-08-16 12:43:10.960 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[PropertyCategory] AS [Text]
+FROM (
+    SELECT DISTINCT [p].[PropertyCategory]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[PropertyCategory]
+2023-08-16 12:43:11.009 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Status] AS [Text], [t].[StatusID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[Status], [p].[StatusID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[Status]
+2023-08-16 12:43:11.055 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[HoldStatus] AS [Text], [t].[HoldStatusID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[HoldStatus], [p].[HoldStatusID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[HoldStatus]
+2023-08-16 12:43:11.104 -04:00 [INF] Executing DbCommand [Parameters=[@__p_0='0', @__p_1='25'], CommandType='"Text"', CommandTimeout='30']
+SELECT [p0].[AgencyID] AS [AgencyName], [t].[TagNumber] AS [BarCode], [t].[TagsCaseNoRTF] AS [CaseNumber], [t].[CurrentDisposition], [t].[CurrentDispositionID], [t].[CurrentLocation], [t].[CurrentLocationID], [t].[Description], [t].[DropLocation], [t].[DropLocationID], [t].[Explain], [t].[HoldStatus], [t].[InstanceId], [t].[ObtainedByID] AS [ObtainedById], COALESCE([t].[ObtainedDate], '0001-01-01T00:00:00.000') AS [ObtainedDate], [t].[ObtainedFrom], [t].[PropertyCategory], [t].[TagsSheetNoRTF] AS [PropertySheetNumber], [t].[PropertyType], [t].[PropertyTypeID], [t].[SeqNo1], [t].[Status]
+FROM (
+    SELECT [p].[InstanceId], [p].[SeqNo1], [p].[AssignedTo], [p].[AssignedToID], [p].[BarrelLength], [p].[BicycleMake], [p].[BicycleMakeID], [p].[BicycleModel], [p].[BicycleModelID], [p].[BicycleSpeed], [p].[BicycleWheelSize], [p].[Biohazard], [p].[BiohazardID], [p].[BoatLength], [p].[BoatName], [p].[BoatType], [p].[BoatTypeID], [p].[CartridgesAtScene], [p].[CartridgesInChamber], [p].[CartridgesInCylinder], [p].[CartridgesInMagazine], [p].[CheckedBy], [p].[CheckedByID], [p].[CISBadgeNumber], [p].[CISOfficer], [p].[CISOfficerID], [p].[CISSupervisor], [p].[CISSupervisorID], [p].[Cocked], [p].[CockedID], [p].[Color], [p].[ColorID], [p].[Condition], [p].[CurrencyCoins], [p].[CurrencyFifties], [p].[CurrencyFives], [p].[CurrencyHundreds], [p].[CurrencyOnes], [p].[CurrencyOther], [p].[CurrencyTens], [p].[CurrencyTotal], [p].[CurrencyTwenties], [p].[CurrentDisposition], [p].[CurrentDispositionID], [p].[CurrentLocation], [p].[CurrentLocationID], [p].[DateInserted], [p].[Denomination], [p].[DenominationID], [p].[Description], [p].[DischargedCartridgesAtScene], [p].[DischargedCartridgesInCylinder], [p].[DisposalMethod], [p].[DisposalMethodID], [p].[DomesticViolence], [p].[DomesticViolenceID], [p].[DropLocation], [p].[DropLocationID], [p].[DrugFieldTestResults], [p].[DrugFieldTestResultsID], [p].[DrugMeasure], [p].[DrugMeasureID], [p].[DrugPkgdBy], [p].[DrugPkgdByID], [p].[DrugPkgdDateTime], [p].[DrugQuantity], [p].[DrugSealDateTime], [p].[DrugSealedBy], [p].[DrugSealedByID], [p].[DrugType], [p].[DrugTypeID], [p].[DrugWitness], [p].[DrugWitnessID], [p].[ExpectedReturnDate], [p].[Explain], [p].[Finish], [p].[FirearmAction], [p].[FirearmActionID], [p].[FirearmBadgeNumber], [p].[FirearmCaliber], [p].[FirearmCaliberID], [p].[FirearmCapacity], [p].[FirearmColor], [p].[FirearmColorID], [p].[FirearmMake], [p].[FirearmMakeModel], [p].[FirearmMakeModelID], [p].[FirearmMarkings], [p].[FirearmModel], [p].[FirearmQueryBy], [p].[FirearmQueryByID], [p].[FirearmType], [p].[FirearmTypeID], [p].[FirearmsPriority], [p].[FirearmsPriorityID], [p].[HIN], [p].[HoldStatus], [p].[HoldStatusID], [p].[HullShape], [p].[HullShapeID], [p].[hyppropdetails], [p].[IBRTypeCode], [p].[ID], [p].[IdentifyingMarks], [p].[Importer], [p].[ItemNumber], [p].[JuvenileInvolved], [p].[JuvenileInvolvedID], [p].[LabNumber], [p].[LabProcessingRequired], [p].[LabProcessingRequiredID], [p].[License], [p].[LicenseCountry], [p].[LicenseCountryID], [p].[LicenseExpDate], [p].[LicenseState], [p].[LicenseStateID], [p].[Loaded], [p].[LoadedID], [p].[Manufacturer], [p].[Merged], [p].[Model], [p].[NCICCheckedBy], [p].[NCICCheckedByID], [p].[NCICCrimeCode], [p].[NCICCrimeCodeID], [p].[NextReviewDate], [p].[Notes], [p].[NotifyMethod], [p].[NotifyMethodID], [p].[ObtainedByID], [p].[ObtainedByIDID], [p].[ObtainedDate], [p].[ObtainedFrom], [p].[OdometerReading], [p].[Offense], [p].[OffenseID], [p].[OrigSubmittingOfficer], [p].[OriginalSubmittingOfficer], [p].[ORINotifiedBy], [p].[OtherAgencyIdentifier], [p].[OwnerAppliedNumber], [p].[OwnerNotified], [p].[OwnerNotifiedBy], [p].[OwnerNotifiedByID], [p].[OwnerNotifiedID], [p].[OwnerNumber], [p].[pgcAgencyEntered], [p].[pgcCurrencyDimes], [p].[pgcCurrencyDollarCoins], [p].[pgcCurrencyHalfDollars], [p].[pgcCurrencyNickels], [p].[pgcCurrencyPennies], [p].[pgcCurrencyQuarters], [p].[pgcCurrencyWitness], [p].[pgcCurrencyWitnessID], [p].[pgcDrugCaseType], [p].[pgcDrugCaseTypeID], [p].[pgcLabProcessingType], [p].[pgcLabProcessingTypeID], [p].[pgcNCICEntry], [p].[pgcORINotified], [p].[pgcORINotifiedID], [p].[PGCNCICCheck], [p].[PGCNCICCheckID], [p].[Photo], [p].[PropDrugQuant], [p].[PropStatus], [p].[PropStatusID], [p].[PropertyCategory], [p].[PropertyType], [p].[PropertyTypeID], [p].[Propulsion], [p].[PropulsionID], [p].[Quantity], [p].[ReasonforVariance], [p].[ReasonforVarianceID], [p].[ReceiptIssued], [p].[ReceiptIssuedID], [p].[RecoveredforOtherJurisdiction], [p].[RecoveredforOtherJurisdictionID], [p].[RFIDNo], [p].[Safety], [p].[SafetyID], [p].[ScheduledPurgeDate], [p].[SecuritiesIssueDate], [p].[SecuritiesIssuer], [p].[SecuritiesType], [p].[SecuritiesTypeID], [p].[SeizedPendingForfeiture], [p].[SeizedPendingForfeitureID], [p].[SerialNumber], [p].[Status], [p].[StatusID], [p].[StatusOwnerPossessor], [p].[StatusOwnerPossessorID], [p].[Stolen], [p].[StolenID], [p].[TagNumber], [p].[TagsCaseNoRTF], [p].[TagsSheetNoRTF], [p].[TagsSummary], [p].[Units], [p].[USCoinTotal], [p].[USCurrencyTotal], [p].[Value], [p].[VehicleDescription], [p].[VehicleType], [p].[VehicleTypeID], [p].[VehicleYear]
+    FROM [PropertySheet.Tags] AS [p]
+    WHERE [p].[ObtainedDate] IS NOT NULL
+    ORDER BY [p].[ObtainedDate] DESC
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [PropertySheet] AS [p0] ON [t].[InstanceId] = [p0].[InstanceId]
+ORDER BY [t].[ObtainedDate] DESC
+2023-08-16 12:43:11.203 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [PropertySheet.Tags] AS [p]
+WHERE [p].[ObtainedDate] IS NOT NULL
+2023-08-16 12:43:11.240 -04:00 [INF] Executing ViewResult, running view Index.
+2023-08-16 12:43:11.315 -04:00 [INF] Executed ViewResult - view Index executed in 75.6394ms.
+2023-08-16 12:43:11.320 -04:00 [INF] Executed action PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI) in 497.2726ms
+2023-08-16 12:43:11.323 -04:00 [INF] Executed endpoint 'PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI)'
+2023-08-16 12:43:11.639 -04:00 [INF] Request finished in 829.3607ms 200 text/html; charset=utf-8
+2023-08-16 12:43:11.683 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_vs/browserLink  
+2023-08-16 12:43:11.690 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_framework/aspnetcore-browser-refresh.js  
+2023-08-16 12:43:11.694 -04:00 [INF] Request finished in 10.2578ms 200 application/javascript; charset=utf-8
+2023-08-16 12:43:11.706 -04:00 [INF] Request finished in 22.3088ms 200 text/javascript; charset=UTF-8
+2023-08-16 12:43:13.635 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/Property?page=%2FIndex  
+2023-08-16 12:43:13.645 -04:00 [INF] Executing endpoint 'PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI)'
+2023-08-16 12:43:13.650 -04:00 [INF] Route matched with {action = "Index", controller = "Property"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery, System.String) on controller PropertyCore.WebUI.Controllers.PropertyController (PropertyCore.WebUI).
+2023-08-16 12:43:13.657 -04:00 [INF] RecordsCore Request: GetPropertyListQuery PGCNT\tjfellrath PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery
+2023-08-16 12:43:13.660 -04:00 [INF] Entity Framework Core 3.0.0 initialized 'DHStoreContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled 
+2023-08-16 12:43:13.663 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[PropertyType] AS [Text], [t].[PropertyTypeID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[PropertyType], [p].[PropertyTypeID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[PropertyType]
+2023-08-16 12:43:13.837 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[PropertyCategory] AS [Text]
+FROM (
+    SELECT DISTINCT [p].[PropertyCategory]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[PropertyCategory]
+2023-08-16 12:43:13.877 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Status] AS [Text], [t].[StatusID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[Status], [p].[StatusID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[Status]
+2023-08-16 12:43:13.923 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[HoldStatus] AS [Text], [t].[HoldStatusID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[HoldStatus], [p].[HoldStatusID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[HoldStatus]
+2023-08-16 12:43:13.973 -04:00 [INF] Executing DbCommand [Parameters=[@__p_0='0', @__p_1='25'], CommandType='"Text"', CommandTimeout='30']
+SELECT [p0].[AgencyID] AS [AgencyName], [t].[TagNumber] AS [BarCode], [t].[TagsCaseNoRTF] AS [CaseNumber], [t].[CurrentDisposition], [t].[CurrentDispositionID], [t].[CurrentLocation], [t].[CurrentLocationID], [t].[Description], [t].[DropLocation], [t].[DropLocationID], [t].[Explain], [t].[HoldStatus], [t].[InstanceId], [t].[ObtainedByID] AS [ObtainedById], COALESCE([t].[ObtainedDate], '0001-01-01T00:00:00.000') AS [ObtainedDate], [t].[ObtainedFrom], [t].[PropertyCategory], [t].[TagsSheetNoRTF] AS [PropertySheetNumber], [t].[PropertyType], [t].[PropertyTypeID], [t].[SeqNo1], [t].[Status]
+FROM (
+    SELECT [p].[InstanceId], [p].[SeqNo1], [p].[AssignedTo], [p].[AssignedToID], [p].[BarrelLength], [p].[BicycleMake], [p].[BicycleMakeID], [p].[BicycleModel], [p].[BicycleModelID], [p].[BicycleSpeed], [p].[BicycleWheelSize], [p].[Biohazard], [p].[BiohazardID], [p].[BoatLength], [p].[BoatName], [p].[BoatType], [p].[BoatTypeID], [p].[CartridgesAtScene], [p].[CartridgesInChamber], [p].[CartridgesInCylinder], [p].[CartridgesInMagazine], [p].[CheckedBy], [p].[CheckedByID], [p].[CISBadgeNumber], [p].[CISOfficer], [p].[CISOfficerID], [p].[CISSupervisor], [p].[CISSupervisorID], [p].[Cocked], [p].[CockedID], [p].[Color], [p].[ColorID], [p].[Condition], [p].[CurrencyCoins], [p].[CurrencyFifties], [p].[CurrencyFives], [p].[CurrencyHundreds], [p].[CurrencyOnes], [p].[CurrencyOther], [p].[CurrencyTens], [p].[CurrencyTotal], [p].[CurrencyTwenties], [p].[CurrentDisposition], [p].[CurrentDispositionID], [p].[CurrentLocation], [p].[CurrentLocationID], [p].[DateInserted], [p].[Denomination], [p].[DenominationID], [p].[Description], [p].[DischargedCartridgesAtScene], [p].[DischargedCartridgesInCylinder], [p].[DisposalMethod], [p].[DisposalMethodID], [p].[DomesticViolence], [p].[DomesticViolenceID], [p].[DropLocation], [p].[DropLocationID], [p].[DrugFieldTestResults], [p].[DrugFieldTestResultsID], [p].[DrugMeasure], [p].[DrugMeasureID], [p].[DrugPkgdBy], [p].[DrugPkgdByID], [p].[DrugPkgdDateTime], [p].[DrugQuantity], [p].[DrugSealDateTime], [p].[DrugSealedBy], [p].[DrugSealedByID], [p].[DrugType], [p].[DrugTypeID], [p].[DrugWitness], [p].[DrugWitnessID], [p].[ExpectedReturnDate], [p].[Explain], [p].[Finish], [p].[FirearmAction], [p].[FirearmActionID], [p].[FirearmBadgeNumber], [p].[FirearmCaliber], [p].[FirearmCaliberID], [p].[FirearmCapacity], [p].[FirearmColor], [p].[FirearmColorID], [p].[FirearmMake], [p].[FirearmMakeModel], [p].[FirearmMakeModelID], [p].[FirearmMarkings], [p].[FirearmModel], [p].[FirearmQueryBy], [p].[FirearmQueryByID], [p].[FirearmType], [p].[FirearmTypeID], [p].[FirearmsPriority], [p].[FirearmsPriorityID], [p].[HIN], [p].[HoldStatus], [p].[HoldStatusID], [p].[HullShape], [p].[HullShapeID], [p].[hyppropdetails], [p].[IBRTypeCode], [p].[ID], [p].[IdentifyingMarks], [p].[Importer], [p].[ItemNumber], [p].[JuvenileInvolved], [p].[JuvenileInvolvedID], [p].[LabNumber], [p].[LabProcessingRequired], [p].[LabProcessingRequiredID], [p].[License], [p].[LicenseCountry], [p].[LicenseCountryID], [p].[LicenseExpDate], [p].[LicenseState], [p].[LicenseStateID], [p].[Loaded], [p].[LoadedID], [p].[Manufacturer], [p].[Merged], [p].[Model], [p].[NCICCheckedBy], [p].[NCICCheckedByID], [p].[NCICCrimeCode], [p].[NCICCrimeCodeID], [p].[NextReviewDate], [p].[Notes], [p].[NotifyMethod], [p].[NotifyMethodID], [p].[ObtainedByID], [p].[ObtainedByIDID], [p].[ObtainedDate], [p].[ObtainedFrom], [p].[OdometerReading], [p].[Offense], [p].[OffenseID], [p].[OrigSubmittingOfficer], [p].[OriginalSubmittingOfficer], [p].[ORINotifiedBy], [p].[OtherAgencyIdentifier], [p].[OwnerAppliedNumber], [p].[OwnerNotified], [p].[OwnerNotifiedBy], [p].[OwnerNotifiedByID], [p].[OwnerNotifiedID], [p].[OwnerNumber], [p].[pgcAgencyEntered], [p].[pgcCurrencyDimes], [p].[pgcCurrencyDollarCoins], [p].[pgcCurrencyHalfDollars], [p].[pgcCurrencyNickels], [p].[pgcCurrencyPennies], [p].[pgcCurrencyQuarters], [p].[pgcCurrencyWitness], [p].[pgcCurrencyWitnessID], [p].[pgcDrugCaseType], [p].[pgcDrugCaseTypeID], [p].[pgcLabProcessingType], [p].[pgcLabProcessingTypeID], [p].[pgcNCICEntry], [p].[pgcORINotified], [p].[pgcORINotifiedID], [p].[PGCNCICCheck], [p].[PGCNCICCheckID], [p].[Photo], [p].[PropDrugQuant], [p].[PropStatus], [p].[PropStatusID], [p].[PropertyCategory], [p].[PropertyType], [p].[PropertyTypeID], [p].[Propulsion], [p].[PropulsionID], [p].[Quantity], [p].[ReasonforVariance], [p].[ReasonforVarianceID], [p].[ReceiptIssued], [p].[ReceiptIssuedID], [p].[RecoveredforOtherJurisdiction], [p].[RecoveredforOtherJurisdictionID], [p].[RFIDNo], [p].[Safety], [p].[SafetyID], [p].[ScheduledPurgeDate], [p].[SecuritiesIssueDate], [p].[SecuritiesIssuer], [p].[SecuritiesType], [p].[SecuritiesTypeID], [p].[SeizedPendingForfeiture], [p].[SeizedPendingForfeitureID], [p].[SerialNumber], [p].[Status], [p].[StatusID], [p].[StatusOwnerPossessor], [p].[StatusOwnerPossessorID], [p].[Stolen], [p].[StolenID], [p].[TagNumber], [p].[TagsCaseNoRTF], [p].[TagsSheetNoRTF], [p].[TagsSummary], [p].[Units], [p].[USCoinTotal], [p].[USCurrencyTotal], [p].[Value], [p].[VehicleDescription], [p].[VehicleType], [p].[VehicleTypeID], [p].[VehicleYear]
+    FROM [PropertySheet.Tags] AS [p]
+    WHERE [p].[ObtainedDate] IS NOT NULL
+    ORDER BY [p].[ObtainedDate] DESC
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [PropertySheet] AS [p0] ON [t].[InstanceId] = [p0].[InstanceId]
+ORDER BY [t].[ObtainedDate] DESC
+2023-08-16 12:43:14.076 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [PropertySheet.Tags] AS [p]
+WHERE [p].[ObtainedDate] IS NOT NULL
+2023-08-16 12:43:14.107 -04:00 [INF] Executing ViewResult, running view Index.
+2023-08-16 12:43:14.146 -04:00 [INF] Executed ViewResult - view Index executed in 38.8952ms.
+2023-08-16 12:43:14.149 -04:00 [INF] Executed action PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI) in 495.041ms
+2023-08-16 12:43:14.152 -04:00 [INF] Executed endpoint 'PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI)'
+2023-08-16 12:43:14.163 -04:00 [INF] Request finished in 527.6635ms 200 text/html; charset=utf-8
+2023-08-16 12:43:14.211 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_framework/aspnetcore-browser-refresh.js  
+2023-08-16 12:43:14.211 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_vs/browserLink  
+2023-08-16 12:43:14.216 -04:00 [INF] Request finished in 4.2646ms 200 application/javascript; charset=utf-8
+2023-08-16 12:43:14.223 -04:00 [INF] Request finished in 11.8345ms 200 text/javascript; charset=UTF-8
+2023-08-16 12:51:29.806 -04:00 [INF] User profile is available. Using 'C:\Users\tjfellrath\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-16 12:51:29.884 -04:00 [INF] Start installing Hangfire SQL objects...
+2023-08-16 12:51:31.225 -04:00 [INF] Hangfire SQL objects installed.
+2023-08-16 12:51:31.284 -04:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\mssqllocaldb@Hangfire'
+2023-08-16 12:51:31.286 -04:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-08-16 12:51:31.288 -04:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-08-16 12:51:31.628 -04:00 [INF] Server pd88941:45240:0827e5ae successfully announced in 318.9818 ms
+2023-08-16 12:51:31.640 -04:00 [INF] Server pd88941:45240:0827e5ae is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-08-16 12:51:31.665 -04:00 [INF] 1 servers were removed due to timeout
+2023-08-16 12:51:31.740 -04:00 [INF] Server pd88941:45240:0827e5ae all the dispatchers started
+2023-08-16 12:51:31.887 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-16 12:51:31.896 -04:00 [INF] Hosting environment: Development
+2023-08-16 12:51:31.898 -04:00 [INF] Content root path: C:\Users\tjfellrath\Source\Repos\PropertyCore\src\WebUI
+2023-08-16 12:51:31.929 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/  
+2023-08-16 12:51:31.974 -04:00 [WRN] Failed to determine the https port for redirect.
+2023-08-16 12:51:32.015 -04:00 [INF] Executing endpoint 'PropertyCore.WebUI.Controllers.HomeController.Index (PropertyCore.WebUI)'
+2023-08-16 12:51:32.047 -04:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller PropertyCore.WebUI.Controllers.HomeController (PropertyCore.WebUI).
+2023-08-16 12:51:36.401 -04:00 [INF] Executing ViewResult, running view Index.
+2023-08-16 12:51:37.247 -04:00 [INF] Executed ViewResult - view Index executed in 5188.0501ms.
+2023-08-16 12:51:37.255 -04:00 [INF] Executed action PropertyCore.WebUI.Controllers.HomeController.Index (PropertyCore.WebUI) in 5203.6923ms
+2023-08-16 12:51:37.258 -04:00 [INF] Executed endpoint 'PropertyCore.WebUI.Controllers.HomeController.Index (PropertyCore.WebUI)'
+2023-08-16 12:51:37.291 -04:00 [INF] Request finished in 5363.3366ms 200 text/html; charset=utf-8
+2023-08-16 12:51:37.349 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_framework/aspnetcore-browser-refresh.js  
+2023-08-16 12:51:37.356 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_vs/browserLink  
+2023-08-16 12:51:37.360 -04:00 [INF] Request finished in 10.1907ms 200 application/javascript; charset=utf-8
+2023-08-16 12:51:37.380 -04:00 [INF] Request finished in 24.3174ms 200 text/javascript; charset=UTF-8
+2023-08-16 12:51:41.731 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/Property?returnUrl=%2FHome%2FIndex  
+2023-08-16 12:51:41.741 -04:00 [INF] Executing endpoint 'PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI)'
+2023-08-16 12:51:41.767 -04:00 [INF] Route matched with {action = "Index", controller = "Property"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery, System.String) on controller PropertyCore.WebUI.Controllers.PropertyController (PropertyCore.WebUI).
+2023-08-16 12:51:41.867 -04:00 [INF] RecordsCore Request: GetPropertyListQuery PGCNT\tjfellrath PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery
+2023-08-16 12:51:42.774 -04:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2023-08-16 12:51:42.826 -04:00 [INF] Entity Framework Core 3.0.0 initialized 'DHStoreContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled 
+2023-08-16 12:51:43.207 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[PropertyType] AS [Text], [t].[PropertyTypeID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[PropertyType], [p].[PropertyTypeID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[PropertyType]
+2023-08-16 12:51:43.433 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[PropertyCategory] AS [Text]
+FROM (
+    SELECT DISTINCT [p].[PropertyCategory]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[PropertyCategory]
+2023-08-16 12:51:43.485 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Status] AS [Text], [t].[StatusID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[Status], [p].[StatusID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[Status]
+2023-08-16 12:51:43.537 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[HoldStatus] AS [Text], [t].[HoldStatusID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[HoldStatus], [p].[HoldStatusID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[HoldStatus]
+2023-08-16 12:51:43.703 -04:00 [INF] Executing DbCommand [Parameters=[@__p_0='0', @__p_1='25'], CommandType='"Text"', CommandTimeout='30']
+SELECT [p0].[AgencyID] AS [AgencyName], [t].[TagNumber] AS [BarCode], [t].[TagsCaseNoRTF] AS [CaseNumber], [t].[CurrentDisposition], [t].[CurrentDispositionID], [t].[CurrentLocation], [t].[CurrentLocationID], [t].[Description], [t].[DropLocation], [t].[DropLocationID], [t].[Explain], [t].[HoldStatus], [t].[InstanceId], [t].[ObtainedByID] AS [ObtainedById], COALESCE([t].[ObtainedDate], '0001-01-01T00:00:00.000') AS [ObtainedDate], [t].[ObtainedFrom], [t].[PropertyCategory], [t].[TagsSheetNoRTF] AS [PropertySheetNumber], [t].[PropertyType], [t].[PropertyTypeID], [t].[SeqNo1], [t].[Status]
+FROM (
+    SELECT [p].[InstanceId], [p].[SeqNo1], [p].[AssignedTo], [p].[AssignedToID], [p].[BarrelLength], [p].[BicycleMake], [p].[BicycleMakeID], [p].[BicycleModel], [p].[BicycleModelID], [p].[BicycleSpeed], [p].[BicycleWheelSize], [p].[Biohazard], [p].[BiohazardID], [p].[BoatLength], [p].[BoatName], [p].[BoatType], [p].[BoatTypeID], [p].[CartridgesAtScene], [p].[CartridgesInChamber], [p].[CartridgesInCylinder], [p].[CartridgesInMagazine], [p].[CheckedBy], [p].[CheckedByID], [p].[CISBadgeNumber], [p].[CISOfficer], [p].[CISOfficerID], [p].[CISSupervisor], [p].[CISSupervisorID], [p].[Cocked], [p].[CockedID], [p].[Color], [p].[ColorID], [p].[Condition], [p].[CurrencyCoins], [p].[CurrencyFifties], [p].[CurrencyFives], [p].[CurrencyHundreds], [p].[CurrencyOnes], [p].[CurrencyOther], [p].[CurrencyTens], [p].[CurrencyTotal], [p].[CurrencyTwenties], [p].[CurrentDisposition], [p].[CurrentDispositionID], [p].[CurrentLocation], [p].[CurrentLocationID], [p].[DateInserted], [p].[Denomination], [p].[DenominationID], [p].[Description], [p].[DischargedCartridgesAtScene], [p].[DischargedCartridgesInCylinder], [p].[DisposalMethod], [p].[DisposalMethodID], [p].[DomesticViolence], [p].[DomesticViolenceID], [p].[DropLocation], [p].[DropLocationID], [p].[DrugFieldTestResults], [p].[DrugFieldTestResultsID], [p].[DrugMeasure], [p].[DrugMeasureID], [p].[DrugPkgdBy], [p].[DrugPkgdByID], [p].[DrugPkgdDateTime], [p].[DrugQuantity], [p].[DrugSealDateTime], [p].[DrugSealedBy], [p].[DrugSealedByID], [p].[DrugType], [p].[DrugTypeID], [p].[DrugWitness], [p].[DrugWitnessID], [p].[ExpectedReturnDate], [p].[Explain], [p].[Finish], [p].[FirearmAction], [p].[FirearmActionID], [p].[FirearmBadgeNumber], [p].[FirearmCaliber], [p].[FirearmCaliberID], [p].[FirearmCapacity], [p].[FirearmColor], [p].[FirearmColorID], [p].[FirearmMake], [p].[FirearmMakeModel], [p].[FirearmMakeModelID], [p].[FirearmMarkings], [p].[FirearmModel], [p].[FirearmQueryBy], [p].[FirearmQueryByID], [p].[FirearmType], [p].[FirearmTypeID], [p].[FirearmsPriority], [p].[FirearmsPriorityID], [p].[HIN], [p].[HoldStatus], [p].[HoldStatusID], [p].[HullShape], [p].[HullShapeID], [p].[hyppropdetails], [p].[IBRTypeCode], [p].[ID], [p].[IdentifyingMarks], [p].[Importer], [p].[ItemNumber], [p].[JuvenileInvolved], [p].[JuvenileInvolvedID], [p].[LabNumber], [p].[LabProcessingRequired], [p].[LabProcessingRequiredID], [p].[License], [p].[LicenseCountry], [p].[LicenseCountryID], [p].[LicenseExpDate], [p].[LicenseState], [p].[LicenseStateID], [p].[Loaded], [p].[LoadedID], [p].[Manufacturer], [p].[Merged], [p].[Model], [p].[NCICCheckedBy], [p].[NCICCheckedByID], [p].[NCICCrimeCode], [p].[NCICCrimeCodeID], [p].[NextReviewDate], [p].[Notes], [p].[NotifyMethod], [p].[NotifyMethodID], [p].[ObtainedByID], [p].[ObtainedByIDID], [p].[ObtainedDate], [p].[ObtainedFrom], [p].[OdometerReading], [p].[Offense], [p].[OffenseID], [p].[OrigSubmittingOfficer], [p].[OriginalSubmittingOfficer], [p].[ORINotifiedBy], [p].[OtherAgencyIdentifier], [p].[OwnerAppliedNumber], [p].[OwnerNotified], [p].[OwnerNotifiedBy], [p].[OwnerNotifiedByID], [p].[OwnerNotifiedID], [p].[OwnerNumber], [p].[pgcAgencyEntered], [p].[pgcCurrencyDimes], [p].[pgcCurrencyDollarCoins], [p].[pgcCurrencyHalfDollars], [p].[pgcCurrencyNickels], [p].[pgcCurrencyPennies], [p].[pgcCurrencyQuarters], [p].[pgcCurrencyWitness], [p].[pgcCurrencyWitnessID], [p].[pgcDrugCaseType], [p].[pgcDrugCaseTypeID], [p].[pgcLabProcessingType], [p].[pgcLabProcessingTypeID], [p].[pgcNCICEntry], [p].[pgcORINotified], [p].[pgcORINotifiedID], [p].[PGCNCICCheck], [p].[PGCNCICCheckID], [p].[Photo], [p].[PropDrugQuant], [p].[PropStatus], [p].[PropStatusID], [p].[PropertyCategory], [p].[PropertyType], [p].[PropertyTypeID], [p].[Propulsion], [p].[PropulsionID], [p].[Quantity], [p].[ReasonforVariance], [p].[ReasonforVarianceID], [p].[ReceiptIssued], [p].[ReceiptIssuedID], [p].[RecoveredforOtherJurisdiction], [p].[RecoveredforOtherJurisdictionID], [p].[RFIDNo], [p].[Safety], [p].[SafetyID], [p].[ScheduledPurgeDate], [p].[SecuritiesIssueDate], [p].[SecuritiesIssuer], [p].[SecuritiesType], [p].[SecuritiesTypeID], [p].[SeizedPendingForfeiture], [p].[SeizedPendingForfeitureID], [p].[SerialNumber], [p].[Status], [p].[StatusID], [p].[StatusOwnerPossessor], [p].[StatusOwnerPossessorID], [p].[Stolen], [p].[StolenID], [p].[TagNumber], [p].[TagsCaseNoRTF], [p].[TagsSheetNoRTF], [p].[TagsSummary], [p].[Units], [p].[USCoinTotal], [p].[USCurrencyTotal], [p].[Value], [p].[VehicleDescription], [p].[VehicleType], [p].[VehicleTypeID], [p].[VehicleYear]
+    FROM [PropertySheet.Tags] AS [p]
+    WHERE [p].[ObtainedDate] IS NOT NULL
+    ORDER BY [p].[ObtainedDate] DESC
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [PropertySheet] AS [p0] ON [t].[InstanceId] = [p0].[InstanceId]
+ORDER BY [t].[ObtainedDate] DESC
+2023-08-16 12:51:44.395 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [PropertySheet.Tags] AS [p]
+WHERE [p].[ObtainedDate] IS NOT NULL
+2023-08-16 12:51:44.437 -04:00 [WRN] RecordsCore Long Running Request: GetPropertyListQuery (2564 milliseconds) PGCNT\tjfellrath PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery
+2023-08-16 12:51:45.016 -04:00 [INF] Executing ViewResult, running view Index.
+2023-08-16 12:51:45.083 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/Property?returnUrl=%2FHome%2FIndex  
+2023-08-16 12:51:45.093 -04:00 [INF] Executing endpoint 'PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI)'
+2023-08-16 12:51:45.097 -04:00 [INF] Route matched with {action = "Index", controller = "Property"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery, System.String) on controller PropertyCore.WebUI.Controllers.PropertyController (PropertyCore.WebUI).
+2023-08-16 12:51:45.101 -04:00 [INF] RecordsCore Request: GetPropertyListQuery PGCNT\tjfellrath PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery
+2023-08-16 12:51:45.127 -04:00 [INF] Entity Framework Core 3.0.0 initialized 'DHStoreContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled 
+2023-08-16 12:51:45.136 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[PropertyType] AS [Text], [t].[PropertyTypeID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[PropertyType], [p].[PropertyTypeID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[PropertyType]
+2023-08-16 12:51:45.195 -04:00 [INF] Executed ViewResult - view Index executed in 748.6952ms.
+2023-08-16 12:51:45.198 -04:00 [INF] Executed action PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI) in 3426.6542ms
+2023-08-16 12:51:45.200 -04:00 [INF] Executed endpoint 'PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI)'
+2023-08-16 12:51:45.215 -04:00 [INF] Request finished in 3484.3773ms 200 text/html; charset=utf-8
+2023-08-16 12:51:45.306 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[PropertyCategory] AS [Text]
+FROM (
+    SELECT DISTINCT [p].[PropertyCategory]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[PropertyCategory]
+2023-08-16 12:51:45.348 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Status] AS [Text], [t].[StatusID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[Status], [p].[StatusID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[Status]
+2023-08-16 12:51:45.391 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[HoldStatus] AS [Text], [t].[HoldStatusID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[HoldStatus], [p].[HoldStatusID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[HoldStatus]
+2023-08-16 12:51:45.441 -04:00 [INF] Executing DbCommand [Parameters=[@__p_0='0', @__p_1='25'], CommandType='"Text"', CommandTimeout='30']
+SELECT [p0].[AgencyID] AS [AgencyName], [t].[TagNumber] AS [BarCode], [t].[TagsCaseNoRTF] AS [CaseNumber], [t].[CurrentDisposition], [t].[CurrentDispositionID], [t].[CurrentLocation], [t].[CurrentLocationID], [t].[Description], [t].[DropLocation], [t].[DropLocationID], [t].[Explain], [t].[HoldStatus], [t].[InstanceId], [t].[ObtainedByID] AS [ObtainedById], COALESCE([t].[ObtainedDate], '0001-01-01T00:00:00.000') AS [ObtainedDate], [t].[ObtainedFrom], [t].[PropertyCategory], [t].[TagsSheetNoRTF] AS [PropertySheetNumber], [t].[PropertyType], [t].[PropertyTypeID], [t].[SeqNo1], [t].[Status]
+FROM (
+    SELECT [p].[InstanceId], [p].[SeqNo1], [p].[AssignedTo], [p].[AssignedToID], [p].[BarrelLength], [p].[BicycleMake], [p].[BicycleMakeID], [p].[BicycleModel], [p].[BicycleModelID], [p].[BicycleSpeed], [p].[BicycleWheelSize], [p].[Biohazard], [p].[BiohazardID], [p].[BoatLength], [p].[BoatName], [p].[BoatType], [p].[BoatTypeID], [p].[CartridgesAtScene], [p].[CartridgesInChamber], [p].[CartridgesInCylinder], [p].[CartridgesInMagazine], [p].[CheckedBy], [p].[CheckedByID], [p].[CISBadgeNumber], [p].[CISOfficer], [p].[CISOfficerID], [p].[CISSupervisor], [p].[CISSupervisorID], [p].[Cocked], [p].[CockedID], [p].[Color], [p].[ColorID], [p].[Condition], [p].[CurrencyCoins], [p].[CurrencyFifties], [p].[CurrencyFives], [p].[CurrencyHundreds], [p].[CurrencyOnes], [p].[CurrencyOther], [p].[CurrencyTens], [p].[CurrencyTotal], [p].[CurrencyTwenties], [p].[CurrentDisposition], [p].[CurrentDispositionID], [p].[CurrentLocation], [p].[CurrentLocationID], [p].[DateInserted], [p].[Denomination], [p].[DenominationID], [p].[Description], [p].[DischargedCartridgesAtScene], [p].[DischargedCartridgesInCylinder], [p].[DisposalMethod], [p].[DisposalMethodID], [p].[DomesticViolence], [p].[DomesticViolenceID], [p].[DropLocation], [p].[DropLocationID], [p].[DrugFieldTestResults], [p].[DrugFieldTestResultsID], [p].[DrugMeasure], [p].[DrugMeasureID], [p].[DrugPkgdBy], [p].[DrugPkgdByID], [p].[DrugPkgdDateTime], [p].[DrugQuantity], [p].[DrugSealDateTime], [p].[DrugSealedBy], [p].[DrugSealedByID], [p].[DrugType], [p].[DrugTypeID], [p].[DrugWitness], [p].[DrugWitnessID], [p].[ExpectedReturnDate], [p].[Explain], [p].[Finish], [p].[FirearmAction], [p].[FirearmActionID], [p].[FirearmBadgeNumber], [p].[FirearmCaliber], [p].[FirearmCaliberID], [p].[FirearmCapacity], [p].[FirearmColor], [p].[FirearmColorID], [p].[FirearmMake], [p].[FirearmMakeModel], [p].[FirearmMakeModelID], [p].[FirearmMarkings], [p].[FirearmModel], [p].[FirearmQueryBy], [p].[FirearmQueryByID], [p].[FirearmType], [p].[FirearmTypeID], [p].[FirearmsPriority], [p].[FirearmsPriorityID], [p].[HIN], [p].[HoldStatus], [p].[HoldStatusID], [p].[HullShape], [p].[HullShapeID], [p].[hyppropdetails], [p].[IBRTypeCode], [p].[ID], [p].[IdentifyingMarks], [p].[Importer], [p].[ItemNumber], [p].[JuvenileInvolved], [p].[JuvenileInvolvedID], [p].[LabNumber], [p].[LabProcessingRequired], [p].[LabProcessingRequiredID], [p].[License], [p].[LicenseCountry], [p].[LicenseCountryID], [p].[LicenseExpDate], [p].[LicenseState], [p].[LicenseStateID], [p].[Loaded], [p].[LoadedID], [p].[Manufacturer], [p].[Merged], [p].[Model], [p].[NCICCheckedBy], [p].[NCICCheckedByID], [p].[NCICCrimeCode], [p].[NCICCrimeCodeID], [p].[NextReviewDate], [p].[Notes], [p].[NotifyMethod], [p].[NotifyMethodID], [p].[ObtainedByID], [p].[ObtainedByIDID], [p].[ObtainedDate], [p].[ObtainedFrom], [p].[OdometerReading], [p].[Offense], [p].[OffenseID], [p].[OrigSubmittingOfficer], [p].[OriginalSubmittingOfficer], [p].[ORINotifiedBy], [p].[OtherAgencyIdentifier], [p].[OwnerAppliedNumber], [p].[OwnerNotified], [p].[OwnerNotifiedBy], [p].[OwnerNotifiedByID], [p].[OwnerNotifiedID], [p].[OwnerNumber], [p].[pgcAgencyEntered], [p].[pgcCurrencyDimes], [p].[pgcCurrencyDollarCoins], [p].[pgcCurrencyHalfDollars], [p].[pgcCurrencyNickels], [p].[pgcCurrencyPennies], [p].[pgcCurrencyQuarters], [p].[pgcCurrencyWitness], [p].[pgcCurrencyWitnessID], [p].[pgcDrugCaseType], [p].[pgcDrugCaseTypeID], [p].[pgcLabProcessingType], [p].[pgcLabProcessingTypeID], [p].[pgcNCICEntry], [p].[pgcORINotified], [p].[pgcORINotifiedID], [p].[PGCNCICCheck], [p].[PGCNCICCheckID], [p].[Photo], [p].[PropDrugQuant], [p].[PropStatus], [p].[PropStatusID], [p].[PropertyCategory], [p].[PropertyType], [p].[PropertyTypeID], [p].[Propulsion], [p].[PropulsionID], [p].[Quantity], [p].[ReasonforVariance], [p].[ReasonforVarianceID], [p].[ReceiptIssued], [p].[ReceiptIssuedID], [p].[RecoveredforOtherJurisdiction], [p].[RecoveredforOtherJurisdictionID], [p].[RFIDNo], [p].[Safety], [p].[SafetyID], [p].[ScheduledPurgeDate], [p].[SecuritiesIssueDate], [p].[SecuritiesIssuer], [p].[SecuritiesType], [p].[SecuritiesTypeID], [p].[SeizedPendingForfeiture], [p].[SeizedPendingForfeitureID], [p].[SerialNumber], [p].[Status], [p].[StatusID], [p].[StatusOwnerPossessor], [p].[StatusOwnerPossessorID], [p].[Stolen], [p].[StolenID], [p].[TagNumber], [p].[TagsCaseNoRTF], [p].[TagsSheetNoRTF], [p].[TagsSummary], [p].[Units], [p].[USCoinTotal], [p].[USCurrencyTotal], [p].[Value], [p].[VehicleDescription], [p].[VehicleType], [p].[VehicleTypeID], [p].[VehicleYear]
+    FROM [PropertySheet.Tags] AS [p]
+    WHERE [p].[ObtainedDate] IS NOT NULL
+    ORDER BY [p].[ObtainedDate] DESC
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [PropertySheet] AS [p0] ON [t].[InstanceId] = [p0].[InstanceId]
+ORDER BY [t].[ObtainedDate] DESC
+2023-08-16 12:51:45.547 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [PropertySheet.Tags] AS [p]
+WHERE [p].[ObtainedDate] IS NOT NULL
+2023-08-16 12:51:45.657 -04:00 [WRN] RecordsCore Long Running Request: GetPropertyListQuery (554 milliseconds) PGCNT\tjfellrath PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery
+2023-08-16 12:51:45.663 -04:00 [INF] Executing ViewResult, running view Index.
+2023-08-16 12:51:45.707 -04:00 [INF] Executed ViewResult - view Index executed in 45.33ms.
+2023-08-16 12:51:45.712 -04:00 [INF] Executed action PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI) in 613.3874ms
+2023-08-16 12:51:45.715 -04:00 [INF] Executed endpoint 'PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI)'
+2023-08-16 12:51:45.728 -04:00 [INF] Request finished in 645.3137ms 200 text/html; charset=utf-8
+2023-08-16 12:51:45.785 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_framework/aspnetcore-browser-refresh.js  
+2023-08-16 12:51:45.788 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_vs/browserLink  
+2023-08-16 12:51:45.791 -04:00 [INF] Request finished in 4.3658ms 200 application/javascript; charset=utf-8
+2023-08-16 12:51:45.800 -04:00 [INF] Request finished in 11.8984ms 200 text/javascript; charset=UTF-8
+2023-08-16 12:51:48.872 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/Property?sortOrder=agencyName_desc&page=%2FIndex  
+2023-08-16 12:51:48.883 -04:00 [INF] Executing endpoint 'PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI)'
+2023-08-16 12:51:48.888 -04:00 [INF] Route matched with {action = "Index", controller = "Property"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery, System.String) on controller PropertyCore.WebUI.Controllers.PropertyController (PropertyCore.WebUI).
+2023-08-16 12:51:48.905 -04:00 [INF] RecordsCore Request: GetPropertyListQuery PGCNT\tjfellrath PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery
+2023-08-16 12:51:49.005 -04:00 [INF] Executed action PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI) in 114.8885ms
+2023-08-16 12:51:49.008 -04:00 [INF] Executed endpoint 'PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI)'
+2023-08-16 12:51:49.012 -04:00 [ERR] An unhandled exception has occurred while executing the request.
+FluentValidation.ValidationException: Validation failed: 
+ -- SortOrder: Must be a valid sorting value: ,dateObtained_asc,caseNumber_desc,caseNumber,propertySheet_desc,propertySheet,barCode,barCode_desc,propertyType,propertyType_desc,propertyCategory,propertyCategory_desc,disposition,disposition_desc,location,location_desc,status,status_desc,holdStatus,holdStatus_desc
+   at PropertyCore.Application.Common.Behaviors.RequestValidationBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Users\tjfellrath\Source\Repos\PropertyCore\src\Application\Common\Behaviors\RequestValidationBehavior.cs:line 48
+   at MediatR.Internal.RequestHandlerWrapperImpl`2.<>c__DisplayClass0_1.<Handle>b__2()
+   at PropertyCore.Application.Common.Behaviors.RequestPerformanceBehavior`2.Handle(TRequest request, CancellationToken cancellation, RequestHandlerDelegate`1 next) in C:\Users\tjfellrath\Source\Repos\PropertyCore\src\Application\Common\Behaviors\RequestPerformanceBehavior.cs:line 43
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at PropertyCore.WebUI.Controllers.PropertyController.Index(GetPropertyListQuery request, String returnUrl) in C:\Users\tjfellrath\Source\Repos\PropertyCore\src\WebUI\Controllers\PropertyController.cs:line 21
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-08-16 12:51:49.051 -04:00 [INF] Request finished in 178.587ms 404 
+2023-08-16 12:52:09.405 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_framework/aspnetcore-browser-refresh.js  
+2023-08-16 12:52:09.409 -04:00 [INF] Request finished in 4.1363ms 200 application/javascript; charset=utf-8
+2023-08-16 12:55:25.002 -04:00 [INF] User profile is available. Using 'C:\Users\tjfellrath\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-16 12:55:25.091 -04:00 [INF] Start installing Hangfire SQL objects...
+2023-08-16 12:55:25.394 -04:00 [INF] Hangfire SQL objects installed.
+2023-08-16 12:55:25.462 -04:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\mssqllocaldb@Hangfire'
+2023-08-16 12:55:25.464 -04:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-08-16 12:55:25.466 -04:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-08-16 12:55:25.833 -04:00 [INF] Server pd88941:29984:390ca505 successfully announced in 314.6174 ms
+2023-08-16 12:55:25.842 -04:00 [INF] Server pd88941:29984:390ca505 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-08-16 12:55:25.992 -04:00 [INF] Server pd88941:29984:390ca505 all the dispatchers started
+2023-08-16 12:55:26.146 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-16 12:55:26.155 -04:00 [INF] Hosting environment: Development
+2023-08-16 12:55:26.157 -04:00 [INF] Content root path: C:\Users\tjfellrath\Source\Repos\PropertyCore\src\WebUI
+2023-08-16 12:55:26.189 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/  
+2023-08-16 12:55:26.233 -04:00 [WRN] Failed to determine the https port for redirect.
+2023-08-16 12:55:26.290 -04:00 [INF] Executing endpoint 'PropertyCore.WebUI.Controllers.HomeController.Index (PropertyCore.WebUI)'
+2023-08-16 12:55:26.338 -04:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller PropertyCore.WebUI.Controllers.HomeController (PropertyCore.WebUI).
+2023-08-16 12:55:30.310 -04:00 [INF] Executing ViewResult, running view Index.
+2023-08-16 12:55:31.219 -04:00 [INF] Executed ViewResult - view Index executed in 4865.4913ms.
+2023-08-16 12:55:31.225 -04:00 [INF] Executed action PropertyCore.WebUI.Controllers.HomeController.Index (PropertyCore.WebUI) in 4883.1499ms
+2023-08-16 12:55:31.228 -04:00 [INF] Executed endpoint 'PropertyCore.WebUI.Controllers.HomeController.Index (PropertyCore.WebUI)'
+2023-08-16 12:55:31.250 -04:00 [INF] Request finished in 5062.6436ms 200 text/html; charset=utf-8
+2023-08-16 12:55:31.273 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/lib/bootstrap-dark/css/bootstrap-dark.min.css  
+2023-08-16 12:55:31.280 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/lib/bootstrap-dark/css/toggle-bootstrap.min.css  
+2023-08-16 12:55:31.284 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/css/sidebar.css  
+2023-08-16 12:55:31.287 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/lib/bootstrap-dark/css/toggle-bootstrap-dark.min.css  
+2023-08-16 12:55:31.289 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/lib/jquery/dist/jquery.min.js  
+2023-08-16 12:55:31.289 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/css/site.css  
+2023-08-16 12:55:31.296 -04:00 [INF] The file /lib/bootstrap-dark/css/toggle-bootstrap.min.css was not modified
+2023-08-16 12:55:31.296 -04:00 [INF] The file /css/sidebar.css was not modified
+2023-08-16 12:55:31.296 -04:00 [INF] The file /lib/jquery/dist/jquery.min.js was not modified
+2023-08-16 12:55:31.296 -04:00 [INF] The file /lib/bootstrap-dark/css/bootstrap-dark.min.css was not modified
+2023-08-16 12:55:31.296 -04:00 [INF] The file /lib/bootstrap-dark/css/toggle-bootstrap-dark.min.css was not modified
+2023-08-16 12:55:31.296 -04:00 [INF] The file /css/site.css was not modified
+2023-08-16 12:55:31.308 -04:00 [INF] Request finished in 23.8589ms 304 text/css
+2023-08-16 12:55:31.308 -04:00 [INF] Request finished in 19.3236ms 304 application/javascript
+2023-08-16 12:55:31.308 -04:00 [INF] Request finished in 35.0021ms 304 text/css
+2023-08-16 12:55:31.308 -04:00 [INF] Request finished in 20.9709ms 304 text/css
+2023-08-16 12:55:31.327 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/js/site.js?v=dLGP40S79Xnx6GqUthRF6NWvjvhQ1nOvdVSwaNcgG18  
+2023-08-16 12:55:31.308 -04:00 [INF] Request finished in 19.4105ms 304 text/css
+2023-08-16 12:55:31.308 -04:00 [INF] Request finished in 28.0102ms 304 text/css
+2023-08-16 12:55:31.313 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/lib/bootstrap-dark/js/bootstrap.bundle.min.js  
+2023-08-16 12:55:31.327 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/js/sidebar.js  
+2023-08-16 12:55:31.343 -04:00 [INF] The file /js/site.js was not modified
+2023-08-16 12:55:31.348 -04:00 [INF] The file /lib/bootstrap-dark/js/bootstrap.bundle.min.js was not modified
+2023-08-16 12:55:31.351 -04:00 [INF] The file /js/sidebar.js was not modified
+2023-08-16 12:55:31.355 -04:00 [INF] Request finished in 27.2105ms 304 application/javascript
+2023-08-16 12:55:31.355 -04:00 [INF] Request finished in 42.1864ms 304 application/javascript
+2023-08-16 12:55:31.357 -04:00 [INF] Request finished in 30.9031ms 304 application/javascript
+2023-08-16 12:55:31.368 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_framework/aspnetcore-browser-refresh.js  
+2023-08-16 12:55:31.370 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/images/PGPDPatchXparent.png  
+2023-08-16 12:55:31.373 -04:00 [INF] The file /images/PGPDPatchXparent.png was not modified
+2023-08-16 12:55:31.377 -04:00 [INF] Request finished in 6.8023ms 304 image/png
+2023-08-16 12:55:31.377 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_vs/browserLink  
+2023-08-16 12:55:31.385 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/images/BOHSI Logo Xparent BG.png  
+2023-08-16 12:55:31.388 -04:00 [INF] The file /images/BOHSI Logo Xparent BG.png was not modified
+2023-08-16 12:55:31.390 -04:00 [INF] Request finished in 22.6585ms 200 application/javascript; charset=utf-8
+2023-08-16 12:55:31.393 -04:00 [INF] Request finished in 7.9269ms 304 image/png
+2023-08-16 12:55:31.421 -04:00 [INF] Request finished in 44.13ms 200 text/javascript; charset=UTF-8
+2023-08-16 12:55:34.487 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/Property?returnUrl=%2FHome%2FIndex  
+2023-08-16 12:55:34.497 -04:00 [INF] Executing endpoint 'PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI)'
+2023-08-16 12:55:34.515 -04:00 [INF] Route matched with {action = "Index", controller = "Property"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery, System.String) on controller PropertyCore.WebUI.Controllers.PropertyController (PropertyCore.WebUI).
+2023-08-16 12:55:34.618 -04:00 [INF] RecordsCore Request: GetPropertyListQuery PGCNT\tjfellrath PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery
+2023-08-16 12:55:35.521 -04:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2023-08-16 12:55:35.575 -04:00 [INF] Entity Framework Core 3.0.0 initialized 'DHStoreContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled 
+2023-08-16 12:55:35.969 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[PropertyType] AS [Text], [t].[PropertyTypeID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[PropertyType], [p].[PropertyTypeID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[PropertyType]
+2023-08-16 12:55:36.150 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[PropertyCategory] AS [Text]
+FROM (
+    SELECT DISTINCT [p].[PropertyCategory]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[PropertyCategory]
+2023-08-16 12:55:36.199 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Status] AS [Text], [t].[StatusID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[Status], [p].[StatusID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[Status]
+2023-08-16 12:55:36.249 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[HoldStatus] AS [Text], [t].[HoldStatusID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[HoldStatus], [p].[HoldStatusID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[HoldStatus]
+2023-08-16 12:55:36.368 -04:00 [INF] Executing DbCommand [Parameters=[@__p_0='0', @__p_1='25'], CommandType='"Text"', CommandTimeout='30']
+SELECT [p0].[AgencyID] AS [AgencyName], [t].[TagNumber] AS [BarCode], [t].[TagsCaseNoRTF] AS [CaseNumber], [t].[CurrentDisposition], [t].[CurrentDispositionID], [t].[CurrentLocation], [t].[CurrentLocationID], [t].[Description], [t].[DropLocation], [t].[DropLocationID], [t].[Explain], [t].[HoldStatus], [t].[InstanceId], [t].[ObtainedByID] AS [ObtainedById], COALESCE([t].[ObtainedDate], '0001-01-01T00:00:00.000') AS [ObtainedDate], [t].[ObtainedFrom], [t].[PropertyCategory], [t].[TagsSheetNoRTF] AS [PropertySheetNumber], [t].[PropertyType], [t].[PropertyTypeID], [t].[SeqNo1], [t].[Status]
+FROM (
+    SELECT [p].[InstanceId], [p].[SeqNo1], [p].[AssignedTo], [p].[AssignedToID], [p].[BarrelLength], [p].[BicycleMake], [p].[BicycleMakeID], [p].[BicycleModel], [p].[BicycleModelID], [p].[BicycleSpeed], [p].[BicycleWheelSize], [p].[Biohazard], [p].[BiohazardID], [p].[BoatLength], [p].[BoatName], [p].[BoatType], [p].[BoatTypeID], [p].[CartridgesAtScene], [p].[CartridgesInChamber], [p].[CartridgesInCylinder], [p].[CartridgesInMagazine], [p].[CheckedBy], [p].[CheckedByID], [p].[CISBadgeNumber], [p].[CISOfficer], [p].[CISOfficerID], [p].[CISSupervisor], [p].[CISSupervisorID], [p].[Cocked], [p].[CockedID], [p].[Color], [p].[ColorID], [p].[Condition], [p].[CurrencyCoins], [p].[CurrencyFifties], [p].[CurrencyFives], [p].[CurrencyHundreds], [p].[CurrencyOnes], [p].[CurrencyOther], [p].[CurrencyTens], [p].[CurrencyTotal], [p].[CurrencyTwenties], [p].[CurrentDisposition], [p].[CurrentDispositionID], [p].[CurrentLocation], [p].[CurrentLocationID], [p].[DateInserted], [p].[Denomination], [p].[DenominationID], [p].[Description], [p].[DischargedCartridgesAtScene], [p].[DischargedCartridgesInCylinder], [p].[DisposalMethod], [p].[DisposalMethodID], [p].[DomesticViolence], [p].[DomesticViolenceID], [p].[DropLocation], [p].[DropLocationID], [p].[DrugFieldTestResults], [p].[DrugFieldTestResultsID], [p].[DrugMeasure], [p].[DrugMeasureID], [p].[DrugPkgdBy], [p].[DrugPkgdByID], [p].[DrugPkgdDateTime], [p].[DrugQuantity], [p].[DrugSealDateTime], [p].[DrugSealedBy], [p].[DrugSealedByID], [p].[DrugType], [p].[DrugTypeID], [p].[DrugWitness], [p].[DrugWitnessID], [p].[ExpectedReturnDate], [p].[Explain], [p].[Finish], [p].[FirearmAction], [p].[FirearmActionID], [p].[FirearmBadgeNumber], [p].[FirearmCaliber], [p].[FirearmCaliberID], [p].[FirearmCapacity], [p].[FirearmColor], [p].[FirearmColorID], [p].[FirearmMake], [p].[FirearmMakeModel], [p].[FirearmMakeModelID], [p].[FirearmMarkings], [p].[FirearmModel], [p].[FirearmQueryBy], [p].[FirearmQueryByID], [p].[FirearmType], [p].[FirearmTypeID], [p].[FirearmsPriority], [p].[FirearmsPriorityID], [p].[HIN], [p].[HoldStatus], [p].[HoldStatusID], [p].[HullShape], [p].[HullShapeID], [p].[hyppropdetails], [p].[IBRTypeCode], [p].[ID], [p].[IdentifyingMarks], [p].[Importer], [p].[ItemNumber], [p].[JuvenileInvolved], [p].[JuvenileInvolvedID], [p].[LabNumber], [p].[LabProcessingRequired], [p].[LabProcessingRequiredID], [p].[License], [p].[LicenseCountry], [p].[LicenseCountryID], [p].[LicenseExpDate], [p].[LicenseState], [p].[LicenseStateID], [p].[Loaded], [p].[LoadedID], [p].[Manufacturer], [p].[Merged], [p].[Model], [p].[NCICCheckedBy], [p].[NCICCheckedByID], [p].[NCICCrimeCode], [p].[NCICCrimeCodeID], [p].[NextReviewDate], [p].[Notes], [p].[NotifyMethod], [p].[NotifyMethodID], [p].[ObtainedByID], [p].[ObtainedByIDID], [p].[ObtainedDate], [p].[ObtainedFrom], [p].[OdometerReading], [p].[Offense], [p].[OffenseID], [p].[OrigSubmittingOfficer], [p].[OriginalSubmittingOfficer], [p].[ORINotifiedBy], [p].[OtherAgencyIdentifier], [p].[OwnerAppliedNumber], [p].[OwnerNotified], [p].[OwnerNotifiedBy], [p].[OwnerNotifiedByID], [p].[OwnerNotifiedID], [p].[OwnerNumber], [p].[pgcAgencyEntered], [p].[pgcCurrencyDimes], [p].[pgcCurrencyDollarCoins], [p].[pgcCurrencyHalfDollars], [p].[pgcCurrencyNickels], [p].[pgcCurrencyPennies], [p].[pgcCurrencyQuarters], [p].[pgcCurrencyWitness], [p].[pgcCurrencyWitnessID], [p].[pgcDrugCaseType], [p].[pgcDrugCaseTypeID], [p].[pgcLabProcessingType], [p].[pgcLabProcessingTypeID], [p].[pgcNCICEntry], [p].[pgcORINotified], [p].[pgcORINotifiedID], [p].[PGCNCICCheck], [p].[PGCNCICCheckID], [p].[Photo], [p].[PropDrugQuant], [p].[PropStatus], [p].[PropStatusID], [p].[PropertyCategory], [p].[PropertyType], [p].[PropertyTypeID], [p].[Propulsion], [p].[PropulsionID], [p].[Quantity], [p].[ReasonforVariance], [p].[ReasonforVarianceID], [p].[ReceiptIssued], [p].[ReceiptIssuedID], [p].[RecoveredforOtherJurisdiction], [p].[RecoveredforOtherJurisdictionID], [p].[RFIDNo], [p].[Safety], [p].[SafetyID], [p].[ScheduledPurgeDate], [p].[SecuritiesIssueDate], [p].[SecuritiesIssuer], [p].[SecuritiesType], [p].[SecuritiesTypeID], [p].[SeizedPendingForfeiture], [p].[SeizedPendingForfeitureID], [p].[SerialNumber], [p].[Status], [p].[StatusID], [p].[StatusOwnerPossessor], [p].[StatusOwnerPossessorID], [p].[Stolen], [p].[StolenID], [p].[TagNumber], [p].[TagsCaseNoRTF], [p].[TagsSheetNoRTF], [p].[TagsSummary], [p].[Units], [p].[USCoinTotal], [p].[USCurrencyTotal], [p].[Value], [p].[VehicleDescription], [p].[VehicleType], [p].[VehicleTypeID], [p].[VehicleYear]
+    FROM [PropertySheet.Tags] AS [p]
+    WHERE [p].[ObtainedDate] IS NOT NULL
+    ORDER BY [p].[ObtainedDate] DESC
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [PropertySheet] AS [p0] ON [t].[InstanceId] = [p0].[InstanceId]
+ORDER BY [t].[ObtainedDate] DESC
+2023-08-16 12:55:36.599 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [PropertySheet.Tags] AS [p]
+WHERE [p].[ObtainedDate] IS NOT NULL
+2023-08-16 12:55:36.633 -04:00 [WRN] RecordsCore Long Running Request: GetPropertyListQuery (2008 milliseconds) PGCNT\tjfellrath PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery
+2023-08-16 12:55:37.034 -04:00 [INF] Executing ViewResult, running view Index.
+2023-08-16 12:55:37.136 -04:00 [INF] Executed ViewResult - view Index executed in 496.4576ms.
+2023-08-16 12:55:37.139 -04:00 [INF] Executed action PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI) in 2620.7421ms
+2023-08-16 12:55:37.141 -04:00 [INF] Executed endpoint 'PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI)'
+2023-08-16 12:55:37.157 -04:00 [INF] Request finished in 2670.1598ms 200 text/html; charset=utf-8
+2023-08-16 12:55:37.167 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/lib/select2/css/select2.css  
+2023-08-16 12:55:37.172 -04:00 [INF] The file /lib/select2/css/select2.css was not modified
+2023-08-16 12:55:37.175 -04:00 [INF] Request finished in 8.4822ms 304 text/css
+2023-08-16 12:55:37.198 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_framework/aspnetcore-browser-refresh.js  
+2023-08-16 12:55:37.198 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_vs/browserLink  
+2023-08-16 12:55:37.204 -04:00 [INF] Request finished in 5.7539ms 200 application/javascript; charset=utf-8
+2023-08-16 12:55:37.218 -04:00 [INF] Request finished in 19.5327ms 200 text/javascript; charset=UTF-8
+2023-08-16 12:55:39.016 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/Property?sortOrder=agencyName_desc&page=%2FIndex  
+2023-08-16 12:55:39.026 -04:00 [INF] Executing endpoint 'PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI)'
+2023-08-16 12:55:39.031 -04:00 [INF] Route matched with {action = "Index", controller = "Property"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery, System.String) on controller PropertyCore.WebUI.Controllers.PropertyController (PropertyCore.WebUI).
+2023-08-16 12:55:39.037 -04:00 [INF] RecordsCore Request: GetPropertyListQuery PGCNT\tjfellrath PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery
+2023-08-16 12:55:39.058 -04:00 [INF] Entity Framework Core 3.0.0 initialized 'DHStoreContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled 
+2023-08-16 12:55:39.067 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[PropertyType] AS [Text], [t].[PropertyTypeID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[PropertyType], [p].[PropertyTypeID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[PropertyType]
+2023-08-16 12:55:39.559 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[PropertyCategory] AS [Text]
+FROM (
+    SELECT DISTINCT [p].[PropertyCategory]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[PropertyCategory]
+2023-08-16 12:55:39.609 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Status] AS [Text], [t].[StatusID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[Status], [p].[StatusID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[Status]
+2023-08-16 12:55:39.667 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[HoldStatus] AS [Text], [t].[HoldStatusID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[HoldStatus], [p].[HoldStatusID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[HoldStatus]
+2023-08-16 12:55:40.469 -04:00 [INF] Executing DbCommand [Parameters=[@__p_0='0', @__p_1='25'], CommandType='"Text"', CommandTimeout='30']
+SELECT [p1].[AgencyID] AS [AgencyName], [t].[TagNumber] AS [BarCode], [t].[TagsCaseNoRTF] AS [CaseNumber], [t].[CurrentDisposition], [t].[CurrentDispositionID], [t].[CurrentLocation], [t].[CurrentLocationID], [t].[Description], [t].[DropLocation], [t].[DropLocationID], [t].[Explain], [t].[HoldStatus], [t].[InstanceId], [t].[ObtainedByID] AS [ObtainedById], COALESCE([t].[ObtainedDate], '0001-01-01T00:00:00.000') AS [ObtainedDate], [t].[ObtainedFrom], [t].[PropertyCategory], [t].[TagsSheetNoRTF] AS [PropertySheetNumber], [t].[PropertyType], [t].[PropertyTypeID], [t].[SeqNo1], [t].[Status]
+FROM (
+    SELECT [p].[InstanceId], [p].[SeqNo1], [p].[AssignedTo], [p].[AssignedToID], [p].[BarrelLength], [p].[BicycleMake], [p].[BicycleMakeID], [p].[BicycleModel], [p].[BicycleModelID], [p].[BicycleSpeed], [p].[BicycleWheelSize], [p].[Biohazard], [p].[BiohazardID], [p].[BoatLength], [p].[BoatName], [p].[BoatType], [p].[BoatTypeID], [p].[CartridgesAtScene], [p].[CartridgesInChamber], [p].[CartridgesInCylinder], [p].[CartridgesInMagazine], [p].[CheckedBy], [p].[CheckedByID], [p].[CISBadgeNumber], [p].[CISOfficer], [p].[CISOfficerID], [p].[CISSupervisor], [p].[CISSupervisorID], [p].[Cocked], [p].[CockedID], [p].[Color], [p].[ColorID], [p].[Condition], [p].[CurrencyCoins], [p].[CurrencyFifties], [p].[CurrencyFives], [p].[CurrencyHundreds], [p].[CurrencyOnes], [p].[CurrencyOther], [p].[CurrencyTens], [p].[CurrencyTotal], [p].[CurrencyTwenties], [p].[CurrentDisposition], [p].[CurrentDispositionID], [p].[CurrentLocation], [p].[CurrentLocationID], [p].[DateInserted], [p].[Denomination], [p].[DenominationID], [p].[Description], [p].[DischargedCartridgesAtScene], [p].[DischargedCartridgesInCylinder], [p].[DisposalMethod], [p].[DisposalMethodID], [p].[DomesticViolence], [p].[DomesticViolenceID], [p].[DropLocation], [p].[DropLocationID], [p].[DrugFieldTestResults], [p].[DrugFieldTestResultsID], [p].[DrugMeasure], [p].[DrugMeasureID], [p].[DrugPkgdBy], [p].[DrugPkgdByID], [p].[DrugPkgdDateTime], [p].[DrugQuantity], [p].[DrugSealDateTime], [p].[DrugSealedBy], [p].[DrugSealedByID], [p].[DrugType], [p].[DrugTypeID], [p].[DrugWitness], [p].[DrugWitnessID], [p].[ExpectedReturnDate], [p].[Explain], [p].[Finish], [p].[FirearmAction], [p].[FirearmActionID], [p].[FirearmBadgeNumber], [p].[FirearmCaliber], [p].[FirearmCaliberID], [p].[FirearmCapacity], [p].[FirearmColor], [p].[FirearmColorID], [p].[FirearmMake], [p].[FirearmMakeModel], [p].[FirearmMakeModelID], [p].[FirearmMarkings], [p].[FirearmModel], [p].[FirearmQueryBy], [p].[FirearmQueryByID], [p].[FirearmType], [p].[FirearmTypeID], [p].[FirearmsPriority], [p].[FirearmsPriorityID], [p].[HIN], [p].[HoldStatus], [p].[HoldStatusID], [p].[HullShape], [p].[HullShapeID], [p].[hyppropdetails], [p].[IBRTypeCode], [p].[ID], [p].[IdentifyingMarks], [p].[Importer], [p].[ItemNumber], [p].[JuvenileInvolved], [p].[JuvenileInvolvedID], [p].[LabNumber], [p].[LabProcessingRequired], [p].[LabProcessingRequiredID], [p].[License], [p].[LicenseCountry], [p].[LicenseCountryID], [p].[LicenseExpDate], [p].[LicenseState], [p].[LicenseStateID], [p].[Loaded], [p].[LoadedID], [p].[Manufacturer], [p].[Merged], [p].[Model], [p].[NCICCheckedBy], [p].[NCICCheckedByID], [p].[NCICCrimeCode], [p].[NCICCrimeCodeID], [p].[NextReviewDate], [p].[Notes], [p].[NotifyMethod], [p].[NotifyMethodID], [p].[ObtainedByID], [p].[ObtainedByIDID], [p].[ObtainedDate], [p].[ObtainedFrom], [p].[OdometerReading], [p].[Offense], [p].[OffenseID], [p].[OrigSubmittingOfficer], [p].[OriginalSubmittingOfficer], [p].[ORINotifiedBy], [p].[OtherAgencyIdentifier], [p].[OwnerAppliedNumber], [p].[OwnerNotified], [p].[OwnerNotifiedBy], [p].[OwnerNotifiedByID], [p].[OwnerNotifiedID], [p].[OwnerNumber], [p].[pgcAgencyEntered], [p].[pgcCurrencyDimes], [p].[pgcCurrencyDollarCoins], [p].[pgcCurrencyHalfDollars], [p].[pgcCurrencyNickels], [p].[pgcCurrencyPennies], [p].[pgcCurrencyQuarters], [p].[pgcCurrencyWitness], [p].[pgcCurrencyWitnessID], [p].[pgcDrugCaseType], [p].[pgcDrugCaseTypeID], [p].[pgcLabProcessingType], [p].[pgcLabProcessingTypeID], [p].[pgcNCICEntry], [p].[pgcORINotified], [p].[pgcORINotifiedID], [p].[PGCNCICCheck], [p].[PGCNCICCheckID], [p].[Photo], [p].[PropDrugQuant], [p].[PropStatus], [p].[PropStatusID], [p].[PropertyCategory], [p].[PropertyType], [p].[PropertyTypeID], [p].[Propulsion], [p].[PropulsionID], [p].[Quantity], [p].[ReasonforVariance], [p].[ReasonforVarianceID], [p].[ReceiptIssued], [p].[ReceiptIssuedID], [p].[RecoveredforOtherJurisdiction], [p].[RecoveredforOtherJurisdictionID], [p].[RFIDNo], [p].[Safety], [p].[SafetyID], [p].[ScheduledPurgeDate], [p].[SecuritiesIssueDate], [p].[SecuritiesIssuer], [p].[SecuritiesType], [p].[SecuritiesTypeID], [p].[SeizedPendingForfeiture], [p].[SeizedPendingForfeitureID], [p].[SerialNumber], [p].[Status], [p].[StatusID], [p].[StatusOwnerPossessor], [p].[StatusOwnerPossessorID], [p].[Stolen], [p].[StolenID], [p].[TagNumber], [p].[TagsCaseNoRTF], [p].[TagsSheetNoRTF], [p].[TagsSummary], [p].[Units], [p].[USCoinTotal], [p].[USCurrencyTotal], [p].[Value], [p].[VehicleDescription], [p].[VehicleType], [p].[VehicleTypeID], [p].[VehicleYear], [p0].[InstanceId] AS [InstanceId0], [p0].[AgencyID]
+    FROM [PropertySheet.Tags] AS [p]
+    INNER JOIN [PropertySheet] AS [p0] ON [p].[InstanceId] = [p0].[InstanceId]
+    WHERE [p].[ObtainedDate] IS NOT NULL
+    ORDER BY [p0].[AgencyID] DESC
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [PropertySheet] AS [p1] ON [t].[InstanceId] = [p1].[InstanceId]
+ORDER BY [t].[AgencyID] DESC
+2023-08-16 12:55:41.210 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [PropertySheet.Tags] AS [p]
+WHERE [p].[ObtainedDate] IS NOT NULL
+2023-08-16 12:55:41.247 -04:00 [WRN] RecordsCore Long Running Request: GetPropertyListQuery (2208 milliseconds) PGCNT\tjfellrath PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery
+2023-08-16 12:55:41.251 -04:00 [INF] Executing ViewResult, running view Index.
+2023-08-16 12:55:41.287 -04:00 [INF] Executed ViewResult - view Index executed in 36.4573ms.
+2023-08-16 12:55:41.290 -04:00 [INF] Executed action PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI) in 2256.7814ms
+2023-08-16 12:55:41.291 -04:00 [INF] Executed endpoint 'PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI)'
+2023-08-16 12:55:41.303 -04:00 [INF] Request finished in 2286.6927ms 200 text/html; charset=utf-8
+2023-08-16 12:55:41.351 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_vs/browserLink  
+2023-08-16 12:55:41.351 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_framework/aspnetcore-browser-refresh.js  
+2023-08-16 12:55:41.355 -04:00 [INF] Request finished in 4.5269ms 200 application/javascript; charset=utf-8
+2023-08-16 12:55:41.360 -04:00 [INF] Request finished in 9.5033ms 200 text/javascript; charset=UTF-8
+2023-08-16 12:55:43.548 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/Property?sortOrder=agencyName&page=%2FIndex  
+2023-08-16 12:55:43.557 -04:00 [INF] Executing endpoint 'PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI)'
+2023-08-16 12:55:43.563 -04:00 [INF] Route matched with {action = "Index", controller = "Property"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery, System.String) on controller PropertyCore.WebUI.Controllers.PropertyController (PropertyCore.WebUI).
+2023-08-16 12:55:43.569 -04:00 [INF] RecordsCore Request: GetPropertyListQuery PGCNT\tjfellrath PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery
+2023-08-16 12:55:43.579 -04:00 [INF] Entity Framework Core 3.0.0 initialized 'DHStoreContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled 
+2023-08-16 12:55:43.583 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[PropertyType] AS [Text], [t].[PropertyTypeID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[PropertyType], [p].[PropertyTypeID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[PropertyType]
+2023-08-16 12:55:44.583 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[PropertyCategory] AS [Text]
+FROM (
+    SELECT DISTINCT [p].[PropertyCategory]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[PropertyCategory]
+2023-08-16 12:55:44.632 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Status] AS [Text], [t].[StatusID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[Status], [p].[StatusID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[Status]
+2023-08-16 12:55:44.681 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[HoldStatus] AS [Text], [t].[HoldStatusID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[HoldStatus], [p].[HoldStatusID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[HoldStatus]
+2023-08-16 12:55:44.737 -04:00 [INF] Executing DbCommand [Parameters=[@__p_0='0', @__p_1='25'], CommandType='"Text"', CommandTimeout='30']
+SELECT [p1].[AgencyID] AS [AgencyName], [t].[TagNumber] AS [BarCode], [t].[TagsCaseNoRTF] AS [CaseNumber], [t].[CurrentDisposition], [t].[CurrentDispositionID], [t].[CurrentLocation], [t].[CurrentLocationID], [t].[Description], [t].[DropLocation], [t].[DropLocationID], [t].[Explain], [t].[HoldStatus], [t].[InstanceId], [t].[ObtainedByID] AS [ObtainedById], COALESCE([t].[ObtainedDate], '0001-01-01T00:00:00.000') AS [ObtainedDate], [t].[ObtainedFrom], [t].[PropertyCategory], [t].[TagsSheetNoRTF] AS [PropertySheetNumber], [t].[PropertyType], [t].[PropertyTypeID], [t].[SeqNo1], [t].[Status]
+FROM (
+    SELECT [p].[InstanceId], [p].[SeqNo1], [p].[AssignedTo], [p].[AssignedToID], [p].[BarrelLength], [p].[BicycleMake], [p].[BicycleMakeID], [p].[BicycleModel], [p].[BicycleModelID], [p].[BicycleSpeed], [p].[BicycleWheelSize], [p].[Biohazard], [p].[BiohazardID], [p].[BoatLength], [p].[BoatName], [p].[BoatType], [p].[BoatTypeID], [p].[CartridgesAtScene], [p].[CartridgesInChamber], [p].[CartridgesInCylinder], [p].[CartridgesInMagazine], [p].[CheckedBy], [p].[CheckedByID], [p].[CISBadgeNumber], [p].[CISOfficer], [p].[CISOfficerID], [p].[CISSupervisor], [p].[CISSupervisorID], [p].[Cocked], [p].[CockedID], [p].[Color], [p].[ColorID], [p].[Condition], [p].[CurrencyCoins], [p].[CurrencyFifties], [p].[CurrencyFives], [p].[CurrencyHundreds], [p].[CurrencyOnes], [p].[CurrencyOther], [p].[CurrencyTens], [p].[CurrencyTotal], [p].[CurrencyTwenties], [p].[CurrentDisposition], [p].[CurrentDispositionID], [p].[CurrentLocation], [p].[CurrentLocationID], [p].[DateInserted], [p].[Denomination], [p].[DenominationID], [p].[Description], [p].[DischargedCartridgesAtScene], [p].[DischargedCartridgesInCylinder], [p].[DisposalMethod], [p].[DisposalMethodID], [p].[DomesticViolence], [p].[DomesticViolenceID], [p].[DropLocation], [p].[DropLocationID], [p].[DrugFieldTestResults], [p].[DrugFieldTestResultsID], [p].[DrugMeasure], [p].[DrugMeasureID], [p].[DrugPkgdBy], [p].[DrugPkgdByID], [p].[DrugPkgdDateTime], [p].[DrugQuantity], [p].[DrugSealDateTime], [p].[DrugSealedBy], [p].[DrugSealedByID], [p].[DrugType], [p].[DrugTypeID], [p].[DrugWitness], [p].[DrugWitnessID], [p].[ExpectedReturnDate], [p].[Explain], [p].[Finish], [p].[FirearmAction], [p].[FirearmActionID], [p].[FirearmBadgeNumber], [p].[FirearmCaliber], [p].[FirearmCaliberID], [p].[FirearmCapacity], [p].[FirearmColor], [p].[FirearmColorID], [p].[FirearmMake], [p].[FirearmMakeModel], [p].[FirearmMakeModelID], [p].[FirearmMarkings], [p].[FirearmModel], [p].[FirearmQueryBy], [p].[FirearmQueryByID], [p].[FirearmType], [p].[FirearmTypeID], [p].[FirearmsPriority], [p].[FirearmsPriorityID], [p].[HIN], [p].[HoldStatus], [p].[HoldStatusID], [p].[HullShape], [p].[HullShapeID], [p].[hyppropdetails], [p].[IBRTypeCode], [p].[ID], [p].[IdentifyingMarks], [p].[Importer], [p].[ItemNumber], [p].[JuvenileInvolved], [p].[JuvenileInvolvedID], [p].[LabNumber], [p].[LabProcessingRequired], [p].[LabProcessingRequiredID], [p].[License], [p].[LicenseCountry], [p].[LicenseCountryID], [p].[LicenseExpDate], [p].[LicenseState], [p].[LicenseStateID], [p].[Loaded], [p].[LoadedID], [p].[Manufacturer], [p].[Merged], [p].[Model], [p].[NCICCheckedBy], [p].[NCICCheckedByID], [p].[NCICCrimeCode], [p].[NCICCrimeCodeID], [p].[NextReviewDate], [p].[Notes], [p].[NotifyMethod], [p].[NotifyMethodID], [p].[ObtainedByID], [p].[ObtainedByIDID], [p].[ObtainedDate], [p].[ObtainedFrom], [p].[OdometerReading], [p].[Offense], [p].[OffenseID], [p].[OrigSubmittingOfficer], [p].[OriginalSubmittingOfficer], [p].[ORINotifiedBy], [p].[OtherAgencyIdentifier], [p].[OwnerAppliedNumber], [p].[OwnerNotified], [p].[OwnerNotifiedBy], [p].[OwnerNotifiedByID], [p].[OwnerNotifiedID], [p].[OwnerNumber], [p].[pgcAgencyEntered], [p].[pgcCurrencyDimes], [p].[pgcCurrencyDollarCoins], [p].[pgcCurrencyHalfDollars], [p].[pgcCurrencyNickels], [p].[pgcCurrencyPennies], [p].[pgcCurrencyQuarters], [p].[pgcCurrencyWitness], [p].[pgcCurrencyWitnessID], [p].[pgcDrugCaseType], [p].[pgcDrugCaseTypeID], [p].[pgcLabProcessingType], [p].[pgcLabProcessingTypeID], [p].[pgcNCICEntry], [p].[pgcORINotified], [p].[pgcORINotifiedID], [p].[PGCNCICCheck], [p].[PGCNCICCheckID], [p].[Photo], [p].[PropDrugQuant], [p].[PropStatus], [p].[PropStatusID], [p].[PropertyCategory], [p].[PropertyType], [p].[PropertyTypeID], [p].[Propulsion], [p].[PropulsionID], [p].[Quantity], [p].[ReasonforVariance], [p].[ReasonforVarianceID], [p].[ReceiptIssued], [p].[ReceiptIssuedID], [p].[RecoveredforOtherJurisdiction], [p].[RecoveredforOtherJurisdictionID], [p].[RFIDNo], [p].[Safety], [p].[SafetyID], [p].[ScheduledPurgeDate], [p].[SecuritiesIssueDate], [p].[SecuritiesIssuer], [p].[SecuritiesType], [p].[SecuritiesTypeID], [p].[SeizedPendingForfeiture], [p].[SeizedPendingForfeitureID], [p].[SerialNumber], [p].[Status], [p].[StatusID], [p].[StatusOwnerPossessor], [p].[StatusOwnerPossessorID], [p].[Stolen], [p].[StolenID], [p].[TagNumber], [p].[TagsCaseNoRTF], [p].[TagsSheetNoRTF], [p].[TagsSummary], [p].[Units], [p].[USCoinTotal], [p].[USCurrencyTotal], [p].[Value], [p].[VehicleDescription], [p].[VehicleType], [p].[VehicleTypeID], [p].[VehicleYear], [p0].[InstanceId] AS [InstanceId0], [p0].[AgencyID]
+    FROM [PropertySheet.Tags] AS [p]
+    INNER JOIN [PropertySheet] AS [p0] ON [p].[InstanceId] = [p0].[InstanceId]
+    WHERE [p].[ObtainedDate] IS NOT NULL
+    ORDER BY [p0].[AgencyID]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [PropertySheet] AS [p1] ON [t].[InstanceId] = [p1].[InstanceId]
+ORDER BY [t].[AgencyID]
+2023-08-16 12:55:44.884 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [PropertySheet.Tags] AS [p]
+WHERE [p].[ObtainedDate] IS NOT NULL
+2023-08-16 12:55:44.926 -04:00 [WRN] RecordsCore Long Running Request: GetPropertyListQuery (1353 milliseconds) PGCNT\tjfellrath PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery
+2023-08-16 12:55:44.931 -04:00 [INF] Executing ViewResult, running view Index.
+2023-08-16 12:55:44.984 -04:00 [INF] Executed ViewResult - view Index executed in 52.4447ms.
+2023-08-16 12:55:44.987 -04:00 [INF] Executed action PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI) in 1421.5772ms
+2023-08-16 12:55:44.990 -04:00 [INF] Executed endpoint 'PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI)'
+2023-08-16 12:55:45.001 -04:00 [INF] Request finished in 1452.8117ms 200 text/html; charset=utf-8
+2023-08-16 12:55:45.012 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_vs/browserLink  
+2023-08-16 12:55:45.012 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_framework/aspnetcore-browser-refresh.js  
+2023-08-16 12:55:45.018 -04:00 [INF] Request finished in 6.7479ms 200 application/javascript; charset=utf-8
+2023-08-16 12:55:45.023 -04:00 [INF] Request finished in 11.1445ms 200 text/javascript; charset=UTF-8
+2023-08-16 12:56:11.704 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/Property  
+2023-08-16 12:56:11.712 -04:00 [INF] Executing endpoint 'PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI)'
+2023-08-16 12:56:11.718 -04:00 [INF] Route matched with {action = "Index", controller = "Property"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery, System.String) on controller PropertyCore.WebUI.Controllers.PropertyController (PropertyCore.WebUI).
+2023-08-16 12:56:11.723 -04:00 [INF] RecordsCore Request: GetPropertyListQuery PGCNT\tjfellrath PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery
+2023-08-16 12:56:11.725 -04:00 [INF] Entity Framework Core 3.0.0 initialized 'DHStoreContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled 
+2023-08-16 12:56:11.730 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[PropertyType] AS [Text], [t].[PropertyTypeID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[PropertyType], [p].[PropertyTypeID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[PropertyType]
+2023-08-16 12:56:11.879 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[PropertyCategory] AS [Text]
+FROM (
+    SELECT DISTINCT [p].[PropertyCategory]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[PropertyCategory]
+2023-08-16 12:56:11.925 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Status] AS [Text], [t].[StatusID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[Status], [p].[StatusID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[Status]
+2023-08-16 12:56:12.609 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[HoldStatus] AS [Text], [t].[HoldStatusID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[HoldStatus], [p].[HoldStatusID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[HoldStatus]
+2023-08-16 12:56:12.658 -04:00 [INF] Executing DbCommand [Parameters=[@__p_0='0', @__p_1='25'], CommandType='"Text"', CommandTimeout='30']
+SELECT [p0].[AgencyID] AS [AgencyName], [t].[TagNumber] AS [BarCode], [t].[TagsCaseNoRTF] AS [CaseNumber], [t].[CurrentDisposition], [t].[CurrentDispositionID], [t].[CurrentLocation], [t].[CurrentLocationID], [t].[Description], [t].[DropLocation], [t].[DropLocationID], [t].[Explain], [t].[HoldStatus], [t].[InstanceId], [t].[ObtainedByID] AS [ObtainedById], COALESCE([t].[ObtainedDate], '0001-01-01T00:00:00.000') AS [ObtainedDate], [t].[ObtainedFrom], [t].[PropertyCategory], [t].[TagsSheetNoRTF] AS [PropertySheetNumber], [t].[PropertyType], [t].[PropertyTypeID], [t].[SeqNo1], [t].[Status]
+FROM (
+    SELECT [p].[InstanceId], [p].[SeqNo1], [p].[AssignedTo], [p].[AssignedToID], [p].[BarrelLength], [p].[BicycleMake], [p].[BicycleMakeID], [p].[BicycleModel], [p].[BicycleModelID], [p].[BicycleSpeed], [p].[BicycleWheelSize], [p].[Biohazard], [p].[BiohazardID], [p].[BoatLength], [p].[BoatName], [p].[BoatType], [p].[BoatTypeID], [p].[CartridgesAtScene], [p].[CartridgesInChamber], [p].[CartridgesInCylinder], [p].[CartridgesInMagazine], [p].[CheckedBy], [p].[CheckedByID], [p].[CISBadgeNumber], [p].[CISOfficer], [p].[CISOfficerID], [p].[CISSupervisor], [p].[CISSupervisorID], [p].[Cocked], [p].[CockedID], [p].[Color], [p].[ColorID], [p].[Condition], [p].[CurrencyCoins], [p].[CurrencyFifties], [p].[CurrencyFives], [p].[CurrencyHundreds], [p].[CurrencyOnes], [p].[CurrencyOther], [p].[CurrencyTens], [p].[CurrencyTotal], [p].[CurrencyTwenties], [p].[CurrentDisposition], [p].[CurrentDispositionID], [p].[CurrentLocation], [p].[CurrentLocationID], [p].[DateInserted], [p].[Denomination], [p].[DenominationID], [p].[Description], [p].[DischargedCartridgesAtScene], [p].[DischargedCartridgesInCylinder], [p].[DisposalMethod], [p].[DisposalMethodID], [p].[DomesticViolence], [p].[DomesticViolenceID], [p].[DropLocation], [p].[DropLocationID], [p].[DrugFieldTestResults], [p].[DrugFieldTestResultsID], [p].[DrugMeasure], [p].[DrugMeasureID], [p].[DrugPkgdBy], [p].[DrugPkgdByID], [p].[DrugPkgdDateTime], [p].[DrugQuantity], [p].[DrugSealDateTime], [p].[DrugSealedBy], [p].[DrugSealedByID], [p].[DrugType], [p].[DrugTypeID], [p].[DrugWitness], [p].[DrugWitnessID], [p].[ExpectedReturnDate], [p].[Explain], [p].[Finish], [p].[FirearmAction], [p].[FirearmActionID], [p].[FirearmBadgeNumber], [p].[FirearmCaliber], [p].[FirearmCaliberID], [p].[FirearmCapacity], [p].[FirearmColor], [p].[FirearmColorID], [p].[FirearmMake], [p].[FirearmMakeModel], [p].[FirearmMakeModelID], [p].[FirearmMarkings], [p].[FirearmModel], [p].[FirearmQueryBy], [p].[FirearmQueryByID], [p].[FirearmType], [p].[FirearmTypeID], [p].[FirearmsPriority], [p].[FirearmsPriorityID], [p].[HIN], [p].[HoldStatus], [p].[HoldStatusID], [p].[HullShape], [p].[HullShapeID], [p].[hyppropdetails], [p].[IBRTypeCode], [p].[ID], [p].[IdentifyingMarks], [p].[Importer], [p].[ItemNumber], [p].[JuvenileInvolved], [p].[JuvenileInvolvedID], [p].[LabNumber], [p].[LabProcessingRequired], [p].[LabProcessingRequiredID], [p].[License], [p].[LicenseCountry], [p].[LicenseCountryID], [p].[LicenseExpDate], [p].[LicenseState], [p].[LicenseStateID], [p].[Loaded], [p].[LoadedID], [p].[Manufacturer], [p].[Merged], [p].[Model], [p].[NCICCheckedBy], [p].[NCICCheckedByID], [p].[NCICCrimeCode], [p].[NCICCrimeCodeID], [p].[NextReviewDate], [p].[Notes], [p].[NotifyMethod], [p].[NotifyMethodID], [p].[ObtainedByID], [p].[ObtainedByIDID], [p].[ObtainedDate], [p].[ObtainedFrom], [p].[OdometerReading], [p].[Offense], [p].[OffenseID], [p].[OrigSubmittingOfficer], [p].[OriginalSubmittingOfficer], [p].[ORINotifiedBy], [p].[OtherAgencyIdentifier], [p].[OwnerAppliedNumber], [p].[OwnerNotified], [p].[OwnerNotifiedBy], [p].[OwnerNotifiedByID], [p].[OwnerNotifiedID], [p].[OwnerNumber], [p].[pgcAgencyEntered], [p].[pgcCurrencyDimes], [p].[pgcCurrencyDollarCoins], [p].[pgcCurrencyHalfDollars], [p].[pgcCurrencyNickels], [p].[pgcCurrencyPennies], [p].[pgcCurrencyQuarters], [p].[pgcCurrencyWitness], [p].[pgcCurrencyWitnessID], [p].[pgcDrugCaseType], [p].[pgcDrugCaseTypeID], [p].[pgcLabProcessingType], [p].[pgcLabProcessingTypeID], [p].[pgcNCICEntry], [p].[pgcORINotified], [p].[pgcORINotifiedID], [p].[PGCNCICCheck], [p].[PGCNCICCheckID], [p].[Photo], [p].[PropDrugQuant], [p].[PropStatus], [p].[PropStatusID], [p].[PropertyCategory], [p].[PropertyType], [p].[PropertyTypeID], [p].[Propulsion], [p].[PropulsionID], [p].[Quantity], [p].[ReasonforVariance], [p].[ReasonforVarianceID], [p].[ReceiptIssued], [p].[ReceiptIssuedID], [p].[RecoveredforOtherJurisdiction], [p].[RecoveredforOtherJurisdictionID], [p].[RFIDNo], [p].[Safety], [p].[SafetyID], [p].[ScheduledPurgeDate], [p].[SecuritiesIssueDate], [p].[SecuritiesIssuer], [p].[SecuritiesType], [p].[SecuritiesTypeID], [p].[SeizedPendingForfeiture], [p].[SeizedPendingForfeitureID], [p].[SerialNumber], [p].[Status], [p].[StatusID], [p].[StatusOwnerPossessor], [p].[StatusOwnerPossessorID], [p].[Stolen], [p].[StolenID], [p].[TagNumber], [p].[TagsCaseNoRTF], [p].[TagsSheetNoRTF], [p].[TagsSummary], [p].[Units], [p].[USCoinTotal], [p].[USCurrencyTotal], [p].[Value], [p].[VehicleDescription], [p].[VehicleType], [p].[VehicleTypeID], [p].[VehicleYear]
+    FROM [PropertySheet.Tags] AS [p]
+    WHERE [p].[ObtainedDate] IS NOT NULL
+    ORDER BY [p].[ObtainedDate] DESC
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [PropertySheet] AS [p0] ON [t].[InstanceId] = [p0].[InstanceId]
+ORDER BY [t].[ObtainedDate] DESC
+2023-08-16 12:56:12.841 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [PropertySheet.Tags] AS [p]
+WHERE [p].[ObtainedDate] IS NOT NULL
+2023-08-16 12:56:12.871 -04:00 [WRN] RecordsCore Long Running Request: GetPropertyListQuery (1146 milliseconds) PGCNT\tjfellrath PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery
+2023-08-16 12:56:12.876 -04:00 [INF] Executing ViewResult, running view Index.
+2023-08-16 12:56:12.945 -04:00 [INF] Executed ViewResult - view Index executed in 68.7307ms.
+2023-08-16 12:56:12.947 -04:00 [INF] Executed action PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI) in 1226.2035ms
+2023-08-16 12:56:12.949 -04:00 [INF] Executed endpoint 'PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI)'
+2023-08-16 12:56:12.957 -04:00 [INF] Request finished in 1253.8086ms 200 text/html; charset=utf-8
+2023-08-16 12:56:13.001 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_vs/browserLink  
+2023-08-16 12:56:13.001 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_framework/aspnetcore-browser-refresh.js  
+2023-08-16 12:56:13.006 -04:00 [INF] Request finished in 5.131ms 200 application/javascript; charset=utf-8
+2023-08-16 12:56:13.010 -04:00 [INF] Request finished in 9.6768ms 200 text/javascript; charset=UTF-8
+2023-08-16 12:56:29.162 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/Property?sortOrder=agencyName_desc&page=%2FIndex  
+2023-08-16 12:56:29.169 -04:00 [INF] Executing endpoint 'PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI)'
+2023-08-16 12:56:29.174 -04:00 [INF] Route matched with {action = "Index", controller = "Property"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery, System.String) on controller PropertyCore.WebUI.Controllers.PropertyController (PropertyCore.WebUI).
+2023-08-16 12:56:29.178 -04:00 [INF] RecordsCore Request: GetPropertyListQuery PGCNT\tjfellrath PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery
+2023-08-16 12:56:29.182 -04:00 [INF] Entity Framework Core 3.0.0 initialized 'DHStoreContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled 
+2023-08-16 12:56:29.185 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[PropertyType] AS [Text], [t].[PropertyTypeID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[PropertyType], [p].[PropertyTypeID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[PropertyType]
+2023-08-16 12:56:29.333 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[PropertyCategory] AS [Text]
+FROM (
+    SELECT DISTINCT [p].[PropertyCategory]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[PropertyCategory]
+2023-08-16 12:56:29.371 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Status] AS [Text], [t].[StatusID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[Status], [p].[StatusID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[Status]
+2023-08-16 12:56:29.411 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[HoldStatus] AS [Text], [t].[HoldStatusID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[HoldStatus], [p].[HoldStatusID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[HoldStatus]
+2023-08-16 12:56:29.628 -04:00 [INF] Executing DbCommand [Parameters=[@__p_0='0', @__p_1='25'], CommandType='"Text"', CommandTimeout='30']
+SELECT [p1].[AgencyID] AS [AgencyName], [t].[TagNumber] AS [BarCode], [t].[TagsCaseNoRTF] AS [CaseNumber], [t].[CurrentDisposition], [t].[CurrentDispositionID], [t].[CurrentLocation], [t].[CurrentLocationID], [t].[Description], [t].[DropLocation], [t].[DropLocationID], [t].[Explain], [t].[HoldStatus], [t].[InstanceId], [t].[ObtainedByID] AS [ObtainedById], COALESCE([t].[ObtainedDate], '0001-01-01T00:00:00.000') AS [ObtainedDate], [t].[ObtainedFrom], [t].[PropertyCategory], [t].[TagsSheetNoRTF] AS [PropertySheetNumber], [t].[PropertyType], [t].[PropertyTypeID], [t].[SeqNo1], [t].[Status]
+FROM (
+    SELECT [p].[InstanceId], [p].[SeqNo1], [p].[AssignedTo], [p].[AssignedToID], [p].[BarrelLength], [p].[BicycleMake], [p].[BicycleMakeID], [p].[BicycleModel], [p].[BicycleModelID], [p].[BicycleSpeed], [p].[BicycleWheelSize], [p].[Biohazard], [p].[BiohazardID], [p].[BoatLength], [p].[BoatName], [p].[BoatType], [p].[BoatTypeID], [p].[CartridgesAtScene], [p].[CartridgesInChamber], [p].[CartridgesInCylinder], [p].[CartridgesInMagazine], [p].[CheckedBy], [p].[CheckedByID], [p].[CISBadgeNumber], [p].[CISOfficer], [p].[CISOfficerID], [p].[CISSupervisor], [p].[CISSupervisorID], [p].[Cocked], [p].[CockedID], [p].[Color], [p].[ColorID], [p].[Condition], [p].[CurrencyCoins], [p].[CurrencyFifties], [p].[CurrencyFives], [p].[CurrencyHundreds], [p].[CurrencyOnes], [p].[CurrencyOther], [p].[CurrencyTens], [p].[CurrencyTotal], [p].[CurrencyTwenties], [p].[CurrentDisposition], [p].[CurrentDispositionID], [p].[CurrentLocation], [p].[CurrentLocationID], [p].[DateInserted], [p].[Denomination], [p].[DenominationID], [p].[Description], [p].[DischargedCartridgesAtScene], [p].[DischargedCartridgesInCylinder], [p].[DisposalMethod], [p].[DisposalMethodID], [p].[DomesticViolence], [p].[DomesticViolenceID], [p].[DropLocation], [p].[DropLocationID], [p].[DrugFieldTestResults], [p].[DrugFieldTestResultsID], [p].[DrugMeasure], [p].[DrugMeasureID], [p].[DrugPkgdBy], [p].[DrugPkgdByID], [p].[DrugPkgdDateTime], [p].[DrugQuantity], [p].[DrugSealDateTime], [p].[DrugSealedBy], [p].[DrugSealedByID], [p].[DrugType], [p].[DrugTypeID], [p].[DrugWitness], [p].[DrugWitnessID], [p].[ExpectedReturnDate], [p].[Explain], [p].[Finish], [p].[FirearmAction], [p].[FirearmActionID], [p].[FirearmBadgeNumber], [p].[FirearmCaliber], [p].[FirearmCaliberID], [p].[FirearmCapacity], [p].[FirearmColor], [p].[FirearmColorID], [p].[FirearmMake], [p].[FirearmMakeModel], [p].[FirearmMakeModelID], [p].[FirearmMarkings], [p].[FirearmModel], [p].[FirearmQueryBy], [p].[FirearmQueryByID], [p].[FirearmType], [p].[FirearmTypeID], [p].[FirearmsPriority], [p].[FirearmsPriorityID], [p].[HIN], [p].[HoldStatus], [p].[HoldStatusID], [p].[HullShape], [p].[HullShapeID], [p].[hyppropdetails], [p].[IBRTypeCode], [p].[ID], [p].[IdentifyingMarks], [p].[Importer], [p].[ItemNumber], [p].[JuvenileInvolved], [p].[JuvenileInvolvedID], [p].[LabNumber], [p].[LabProcessingRequired], [p].[LabProcessingRequiredID], [p].[License], [p].[LicenseCountry], [p].[LicenseCountryID], [p].[LicenseExpDate], [p].[LicenseState], [p].[LicenseStateID], [p].[Loaded], [p].[LoadedID], [p].[Manufacturer], [p].[Merged], [p].[Model], [p].[NCICCheckedBy], [p].[NCICCheckedByID], [p].[NCICCrimeCode], [p].[NCICCrimeCodeID], [p].[NextReviewDate], [p].[Notes], [p].[NotifyMethod], [p].[NotifyMethodID], [p].[ObtainedByID], [p].[ObtainedByIDID], [p].[ObtainedDate], [p].[ObtainedFrom], [p].[OdometerReading], [p].[Offense], [p].[OffenseID], [p].[OrigSubmittingOfficer], [p].[OriginalSubmittingOfficer], [p].[ORINotifiedBy], [p].[OtherAgencyIdentifier], [p].[OwnerAppliedNumber], [p].[OwnerNotified], [p].[OwnerNotifiedBy], [p].[OwnerNotifiedByID], [p].[OwnerNotifiedID], [p].[OwnerNumber], [p].[pgcAgencyEntered], [p].[pgcCurrencyDimes], [p].[pgcCurrencyDollarCoins], [p].[pgcCurrencyHalfDollars], [p].[pgcCurrencyNickels], [p].[pgcCurrencyPennies], [p].[pgcCurrencyQuarters], [p].[pgcCurrencyWitness], [p].[pgcCurrencyWitnessID], [p].[pgcDrugCaseType], [p].[pgcDrugCaseTypeID], [p].[pgcLabProcessingType], [p].[pgcLabProcessingTypeID], [p].[pgcNCICEntry], [p].[pgcORINotified], [p].[pgcORINotifiedID], [p].[PGCNCICCheck], [p].[PGCNCICCheckID], [p].[Photo], [p].[PropDrugQuant], [p].[PropStatus], [p].[PropStatusID], [p].[PropertyCategory], [p].[PropertyType], [p].[PropertyTypeID], [p].[Propulsion], [p].[PropulsionID], [p].[Quantity], [p].[ReasonforVariance], [p].[ReasonforVarianceID], [p].[ReceiptIssued], [p].[ReceiptIssuedID], [p].[RecoveredforOtherJurisdiction], [p].[RecoveredforOtherJurisdictionID], [p].[RFIDNo], [p].[Safety], [p].[SafetyID], [p].[ScheduledPurgeDate], [p].[SecuritiesIssueDate], [p].[SecuritiesIssuer], [p].[SecuritiesType], [p].[SecuritiesTypeID], [p].[SeizedPendingForfeiture], [p].[SeizedPendingForfeitureID], [p].[SerialNumber], [p].[Status], [p].[StatusID], [p].[StatusOwnerPossessor], [p].[StatusOwnerPossessorID], [p].[Stolen], [p].[StolenID], [p].[TagNumber], [p].[TagsCaseNoRTF], [p].[TagsSheetNoRTF], [p].[TagsSummary], [p].[Units], [p].[USCoinTotal], [p].[USCurrencyTotal], [p].[Value], [p].[VehicleDescription], [p].[VehicleType], [p].[VehicleTypeID], [p].[VehicleYear], [p0].[InstanceId] AS [InstanceId0], [p0].[AgencyID]
+    FROM [PropertySheet.Tags] AS [p]
+    INNER JOIN [PropertySheet] AS [p0] ON [p].[InstanceId] = [p0].[InstanceId]
+    WHERE [p].[ObtainedDate] IS NOT NULL
+    ORDER BY [p0].[AgencyID] DESC
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [PropertySheet] AS [p1] ON [t].[InstanceId] = [p1].[InstanceId]
+ORDER BY [t].[AgencyID] DESC
+2023-08-16 12:56:29.750 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [PropertySheet.Tags] AS [p]
+WHERE [p].[ObtainedDate] IS NOT NULL
+2023-08-16 12:56:29.781 -04:00 [WRN] RecordsCore Long Running Request: GetPropertyListQuery (600 milliseconds) PGCNT\tjfellrath PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery
+2023-08-16 12:56:29.784 -04:00 [INF] Executing ViewResult, running view Index.
+2023-08-16 12:56:29.856 -04:00 [INF] Executed ViewResult - view Index executed in 72.3831ms.
+2023-08-16 12:56:29.859 -04:00 [INF] Executed action PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI) in 683.2833ms
+2023-08-16 12:56:29.861 -04:00 [INF] Executed endpoint 'PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI)'
+2023-08-16 12:56:29.873 -04:00 [INF] Request finished in 711.338ms 200 text/html; charset=utf-8
+2023-08-16 12:56:29.925 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_framework/aspnetcore-browser-refresh.js  
+2023-08-16 12:56:29.925 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_vs/browserLink  
+2023-08-16 12:56:29.934 -04:00 [INF] Request finished in 9.4282ms 200 application/javascript; charset=utf-8
+2023-08-16 12:56:29.941 -04:00 [INF] Request finished in 15.9381ms 200 text/javascript; charset=UTF-8
+2023-08-16 12:56:33.107 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/Property?sortOrder=agencyName&page=%2FIndex  
+2023-08-16 12:56:33.116 -04:00 [INF] Executing endpoint 'PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI)'
+2023-08-16 12:56:33.118 -04:00 [INF] Route matched with {action = "Index", controller = "Property"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery, System.String) on controller PropertyCore.WebUI.Controllers.PropertyController (PropertyCore.WebUI).
+2023-08-16 12:56:33.121 -04:00 [INF] RecordsCore Request: GetPropertyListQuery PGCNT\tjfellrath PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery
+2023-08-16 12:56:33.123 -04:00 [INF] Entity Framework Core 3.0.0 initialized 'DHStoreContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled 
+2023-08-16 12:56:33.125 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[PropertyType] AS [Text], [t].[PropertyTypeID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[PropertyType], [p].[PropertyTypeID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[PropertyType]
+2023-08-16 12:56:33.635 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[PropertyCategory] AS [Text]
+FROM (
+    SELECT DISTINCT [p].[PropertyCategory]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[PropertyCategory]
+2023-08-16 12:56:33.678 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Status] AS [Text], [t].[StatusID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[Status], [p].[StatusID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[Status]
+2023-08-16 12:56:33.722 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[HoldStatus] AS [Text], [t].[HoldStatusID] AS [Value]
+FROM (
+    SELECT DISTINCT [p].[HoldStatus], [p].[HoldStatusID]
+    FROM [PropertySheet.Tags] AS [p]
+) AS [t]
+ORDER BY [t].[HoldStatus]
+2023-08-16 12:56:33.773 -04:00 [INF] Executing DbCommand [Parameters=[@__p_0='0', @__p_1='25'], CommandType='"Text"', CommandTimeout='30']
+SELECT [p1].[AgencyID] AS [AgencyName], [t].[TagNumber] AS [BarCode], [t].[TagsCaseNoRTF] AS [CaseNumber], [t].[CurrentDisposition], [t].[CurrentDispositionID], [t].[CurrentLocation], [t].[CurrentLocationID], [t].[Description], [t].[DropLocation], [t].[DropLocationID], [t].[Explain], [t].[HoldStatus], [t].[InstanceId], [t].[ObtainedByID] AS [ObtainedById], COALESCE([t].[ObtainedDate], '0001-01-01T00:00:00.000') AS [ObtainedDate], [t].[ObtainedFrom], [t].[PropertyCategory], [t].[TagsSheetNoRTF] AS [PropertySheetNumber], [t].[PropertyType], [t].[PropertyTypeID], [t].[SeqNo1], [t].[Status]
+FROM (
+    SELECT [p].[InstanceId], [p].[SeqNo1], [p].[AssignedTo], [p].[AssignedToID], [p].[BarrelLength], [p].[BicycleMake], [p].[BicycleMakeID], [p].[BicycleModel], [p].[BicycleModelID], [p].[BicycleSpeed], [p].[BicycleWheelSize], [p].[Biohazard], [p].[BiohazardID], [p].[BoatLength], [p].[BoatName], [p].[BoatType], [p].[BoatTypeID], [p].[CartridgesAtScene], [p].[CartridgesInChamber], [p].[CartridgesInCylinder], [p].[CartridgesInMagazine], [p].[CheckedBy], [p].[CheckedByID], [p].[CISBadgeNumber], [p].[CISOfficer], [p].[CISOfficerID], [p].[CISSupervisor], [p].[CISSupervisorID], [p].[Cocked], [p].[CockedID], [p].[Color], [p].[ColorID], [p].[Condition], [p].[CurrencyCoins], [p].[CurrencyFifties], [p].[CurrencyFives], [p].[CurrencyHundreds], [p].[CurrencyOnes], [p].[CurrencyOther], [p].[CurrencyTens], [p].[CurrencyTotal], [p].[CurrencyTwenties], [p].[CurrentDisposition], [p].[CurrentDispositionID], [p].[CurrentLocation], [p].[CurrentLocationID], [p].[DateInserted], [p].[Denomination], [p].[DenominationID], [p].[Description], [p].[DischargedCartridgesAtScene], [p].[DischargedCartridgesInCylinder], [p].[DisposalMethod], [p].[DisposalMethodID], [p].[DomesticViolence], [p].[DomesticViolenceID], [p].[DropLocation], [p].[DropLocationID], [p].[DrugFieldTestResults], [p].[DrugFieldTestResultsID], [p].[DrugMeasure], [p].[DrugMeasureID], [p].[DrugPkgdBy], [p].[DrugPkgdByID], [p].[DrugPkgdDateTime], [p].[DrugQuantity], [p].[DrugSealDateTime], [p].[DrugSealedBy], [p].[DrugSealedByID], [p].[DrugType], [p].[DrugTypeID], [p].[DrugWitness], [p].[DrugWitnessID], [p].[ExpectedReturnDate], [p].[Explain], [p].[Finish], [p].[FirearmAction], [p].[FirearmActionID], [p].[FirearmBadgeNumber], [p].[FirearmCaliber], [p].[FirearmCaliberID], [p].[FirearmCapacity], [p].[FirearmColor], [p].[FirearmColorID], [p].[FirearmMake], [p].[FirearmMakeModel], [p].[FirearmMakeModelID], [p].[FirearmMarkings], [p].[FirearmModel], [p].[FirearmQueryBy], [p].[FirearmQueryByID], [p].[FirearmType], [p].[FirearmTypeID], [p].[FirearmsPriority], [p].[FirearmsPriorityID], [p].[HIN], [p].[HoldStatus], [p].[HoldStatusID], [p].[HullShape], [p].[HullShapeID], [p].[hyppropdetails], [p].[IBRTypeCode], [p].[ID], [p].[IdentifyingMarks], [p].[Importer], [p].[ItemNumber], [p].[JuvenileInvolved], [p].[JuvenileInvolvedID], [p].[LabNumber], [p].[LabProcessingRequired], [p].[LabProcessingRequiredID], [p].[License], [p].[LicenseCountry], [p].[LicenseCountryID], [p].[LicenseExpDate], [p].[LicenseState], [p].[LicenseStateID], [p].[Loaded], [p].[LoadedID], [p].[Manufacturer], [p].[Merged], [p].[Model], [p].[NCICCheckedBy], [p].[NCICCheckedByID], [p].[NCICCrimeCode], [p].[NCICCrimeCodeID], [p].[NextReviewDate], [p].[Notes], [p].[NotifyMethod], [p].[NotifyMethodID], [p].[ObtainedByID], [p].[ObtainedByIDID], [p].[ObtainedDate], [p].[ObtainedFrom], [p].[OdometerReading], [p].[Offense], [p].[OffenseID], [p].[OrigSubmittingOfficer], [p].[OriginalSubmittingOfficer], [p].[ORINotifiedBy], [p].[OtherAgencyIdentifier], [p].[OwnerAppliedNumber], [p].[OwnerNotified], [p].[OwnerNotifiedBy], [p].[OwnerNotifiedByID], [p].[OwnerNotifiedID], [p].[OwnerNumber], [p].[pgcAgencyEntered], [p].[pgcCurrencyDimes], [p].[pgcCurrencyDollarCoins], [p].[pgcCurrencyHalfDollars], [p].[pgcCurrencyNickels], [p].[pgcCurrencyPennies], [p].[pgcCurrencyQuarters], [p].[pgcCurrencyWitness], [p].[pgcCurrencyWitnessID], [p].[pgcDrugCaseType], [p].[pgcDrugCaseTypeID], [p].[pgcLabProcessingType], [p].[pgcLabProcessingTypeID], [p].[pgcNCICEntry], [p].[pgcORINotified], [p].[pgcORINotifiedID], [p].[PGCNCICCheck], [p].[PGCNCICCheckID], [p].[Photo], [p].[PropDrugQuant], [p].[PropStatus], [p].[PropStatusID], [p].[PropertyCategory], [p].[PropertyType], [p].[PropertyTypeID], [p].[Propulsion], [p].[PropulsionID], [p].[Quantity], [p].[ReasonforVariance], [p].[ReasonforVarianceID], [p].[ReceiptIssued], [p].[ReceiptIssuedID], [p].[RecoveredforOtherJurisdiction], [p].[RecoveredforOtherJurisdictionID], [p].[RFIDNo], [p].[Safety], [p].[SafetyID], [p].[ScheduledPurgeDate], [p].[SecuritiesIssueDate], [p].[SecuritiesIssuer], [p].[SecuritiesType], [p].[SecuritiesTypeID], [p].[SeizedPendingForfeiture], [p].[SeizedPendingForfeitureID], [p].[SerialNumber], [p].[Status], [p].[StatusID], [p].[StatusOwnerPossessor], [p].[StatusOwnerPossessorID], [p].[Stolen], [p].[StolenID], [p].[TagNumber], [p].[TagsCaseNoRTF], [p].[TagsSheetNoRTF], [p].[TagsSummary], [p].[Units], [p].[USCoinTotal], [p].[USCurrencyTotal], [p].[Value], [p].[VehicleDescription], [p].[VehicleType], [p].[VehicleTypeID], [p].[VehicleYear], [p0].[InstanceId] AS [InstanceId0], [p0].[AgencyID]
+    FROM [PropertySheet.Tags] AS [p]
+    INNER JOIN [PropertySheet] AS [p0] ON [p].[InstanceId] = [p0].[InstanceId]
+    WHERE [p].[ObtainedDate] IS NOT NULL
+    ORDER BY [p0].[AgencyID]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [PropertySheet] AS [p1] ON [t].[InstanceId] = [p1].[InstanceId]
+ORDER BY [t].[AgencyID]
+2023-08-16 12:56:33.892 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [PropertySheet.Tags] AS [p]
+WHERE [p].[ObtainedDate] IS NOT NULL
+2023-08-16 12:56:33.924 -04:00 [WRN] RecordsCore Long Running Request: GetPropertyListQuery (801 milliseconds) PGCNT\tjfellrath PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery
+2023-08-16 12:56:33.932 -04:00 [INF] Executing ViewResult, running view Index.
+2023-08-16 12:56:33.988 -04:00 [INF] Executed ViewResult - view Index executed in 57.2357ms.
+2023-08-16 12:56:33.991 -04:00 [INF] Executed action PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI) in 871.2255ms
+2023-08-16 12:56:33.993 -04:00 [INF] Executed endpoint 'PropertyCore.WebUI.Controllers.PropertyController.Index (PropertyCore.WebUI)'
+2023-08-16 12:56:34.001 -04:00 [INF] Request finished in 894.2167ms 200 text/html; charset=utf-8
+2023-08-16 12:56:34.017 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_vs/browserLink  
+2023-08-16 12:56:34.017 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_framework/aspnetcore-browser-refresh.js  
+2023-08-16 12:56:34.022 -04:00 [INF] Request finished in 4.5133ms 200 application/javascript; charset=utf-8
+2023-08-16 12:56:34.031 -04:00 [INF] Request finished in 13.8515ms 200 text/javascript; charset=UTF-8
