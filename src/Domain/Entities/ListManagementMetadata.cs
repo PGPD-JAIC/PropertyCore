@@ -1,9 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace PropertyCore.Domain.Entities
 {
-    public partial class PropertySheetMetadata
+    public partial class ListManagementMetadata
     {
         public Guid InstanceId { get; set; }
         public string InstanceSecurity { get; set; }
@@ -23,6 +22,6 @@ namespace PropertyCore.Domain.Entities
         public bool IsSealed { get; set; }
         public DateTime? DateInserted { get; set; }
 
-        public virtual PropertySheet Instance { get; set; }
+        public virtual ListManagement Instance { get; set; }
     }
 }

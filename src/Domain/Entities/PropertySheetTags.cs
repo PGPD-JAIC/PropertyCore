@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace PropertyCore.Domain.Entities.DHStore
-{
+namespace PropertyCore.Domain.Entities
+{ 
     public partial class PropertySheetTags
     {
         public PropertySheetTags()

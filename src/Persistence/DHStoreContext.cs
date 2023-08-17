@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PropertyCore.Application.Common.Interfaces;
 using PropertyCore.Common;
-using PropertyCore.Domain.Entities.DHStore;
+using PropertyCore.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -32,12 +32,30 @@ namespace PropertyCore.Persistence
             _currentUserService = currentUserService;
             _dateTime = dateTime;
         }
-
+        /// <summary>
+        /// <inheritdoc/>
+        /// </summary>
         public virtual DbSet<Property> Property { get; set; }
-
+        /// <summary>
+        /// <inheritdoc/>
+        /// </summary>
         public DbSet<PropertySheetTags> PropertySheetTags { get; set; }
-
+        /// <summary>
+        /// <inheritdoc/>
+        /// </summary>
         public DbSet<PropertySheetMetadata> PropertySheetMetadata { get; set; }
+        /// <summary>
+        /// <inheritdoc/>
+        /// </summary>
+        public virtual DbSet<ListManagement> ListManagement { get; set; }
+        /// <summary>
+        /// <inheritdoc/>
+        /// </summary>
+        public virtual DbSet<ListManagementCode> ListManagementCodes { get; set; }
+        /// <summary>
+        /// <inheritdoc/>
+        /// </summary>
+        public virtual DbSet<ListManagementCodeAttributes> ListManagementCodeAttributes { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -2888,6 +2906,280 @@ namespace PropertyCore.Persistence
                     .HasMaxLength(512)
                     .IsUnicode(false);
             });
+
+
+            #region ListManagement
+            modelBuilder.Entity<ListManagement>(entity =>
+            {
+                entity.HasKey(e => e.InstanceId);
+
+                entity.Property(e => e.InstanceId).ValueGeneratedNever();
+
+                entity.Property(e => e.DateInserted)
+                    .HasColumnType("datetime")
+                    .HasDefaultValueSql("(getutcdate())");
+
+                entity.Property(e => e.LastUpdated).HasColumnType("datetime");
+
+                entity.Property(e => e.LastUpdated1)
+                    .HasColumnName("last_updated")
+                    .HasColumnType("datetime");
+
+                entity.Property(e => e.Name)
+                    .HasMaxLength(40)
+                    .IsUnicode(false);
+            });
+
+            modelBuilder.Entity<ListManagementAttributeDef>(entity =>
+            {
+                entity.HasKey(e => new { e.InstanceId, e.SeqNo1 });
+
+                entity.ToTable("ListManagement.AttributeDef");
+
+                entity.Property(e => e.Created).HasColumnType("datetime");
+
+                entity.Property(e => e.DateInserted)
+                    .HasColumnType("datetime")
+                    .HasDefaultValueSql("(getutcdate())");
+
+                entity.Property(e => e.Description)
+                    .HasMaxLength(512)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Name)
+                    .HasMaxLength(512)
+                    .IsUnicode(false);
+
+                entity.HasOne(d => d.Instance)
+                    .WithMany(p => p.ListManagementAttributeDef)
+                    .HasForeignKey(d => d.InstanceId)
+                    .HasConstraintName("FK_ListManagement.AttributeDef_ListManagement");
+            });
+
+            modelBuilder.Entity<ListManagementAttributesattributedef>(entity =>
+            {
+                entity.HasKey(e => new { e.InstanceId, e.SeqNo1 });
+
+                entity.ToTable("ListManagement.attributesattributedef");
+
+                entity.Property(e => e.Created)
+                    .HasColumnName("created")
+                    .HasColumnType("datetime");
+
+                entity.Property(e => e.DateInserted)
+                    .HasColumnType("datetime")
+                    .HasDefaultValueSql("(getutcdate())");
+
+                entity.Property(e => e.Description)
+                    .HasColumnName("description")
+                    .HasMaxLength(512)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Name)
+                    .HasColumnName("name")
+                    .HasMaxLength(512)
+                    .IsUnicode(false);
+
+                entity.HasOne(d => d.Instance)
+                    .WithMany(p => p.ListManagementAttributesattributedef)
+                    .HasForeignKey(d => d.InstanceId)
+                    .HasConstraintName("FK_ListManagement.attributesattributedef_ListManagement");
+            });
+
+            modelBuilder.Entity<ListManagementCode>(entity =>
+            {
+                entity.HasKey(e => new { e.InstanceId, e.SeqNo1 });
+
+                entity.ToTable("ListManagement.Code");
+
+                entity.Property(e => e.DateInserted)
+                    .HasColumnType("datetime")
+                    .HasDefaultValueSql("(getutcdate())");
+
+                entity.Property(e => e.EndDate).HasColumnType("datetime");
+
+                entity.Property(e => e.EndDate1)
+                    .HasColumnName("end_date")
+                    .HasColumnType("datetime");
+
+                entity.Property(e => e.Id)
+                    .HasColumnName("ID")
+                    .HasMaxLength(512)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.LastUpdated).HasColumnType("datetime");
+
+                entity.Property(e => e.LastUpdated1)
+                    .HasColumnName("last_updated")
+                    .HasColumnType("datetime");
+
+                entity.Property(e => e.StartDate).HasColumnType("datetime");
+
+                entity.Property(e => e.StartDate1)
+                    .HasColumnName("start_date")
+                    .HasColumnType("datetime");
+
+                entity.Property(e => e.Type)
+                    .HasMaxLength(512)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Version)
+                    .HasMaxLength(512)
+                    .IsUnicode(false);
+
+                entity.HasOne(d => d.Instance)
+                    .WithMany(p => p.ListManagementCode)
+                    .HasForeignKey(d => d.InstanceId)
+                    .HasConstraintName("FK_ListManagement.Code_ListManagement");
+            });
+
+            modelBuilder.Entity<ListManagementCodeAttribute>(entity =>
+            {
+                entity.HasKey(e => new { e.InstanceId, e.SeqNo1, e.SeqNo2 });
+
+                entity.ToTable("ListManagement.code.attribute");
+
+                entity.Property(e => e.DateInserted)
+                    .HasColumnType("datetime")
+                    .HasDefaultValueSql("(getutcdate())");
+
+                entity.Property(e => e.Name)
+                    .HasColumnName("name")
+                    .HasMaxLength(512)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Value)
+                    .HasColumnName("value")
+                    .HasMaxLength(512)
+                    .IsUnicode(false);
+
+                entity.HasOne(d => d.ListManagementCode)
+                    .WithMany(p => p.ListManagementCodeAttribute)
+                    .HasForeignKey(d => new { d.InstanceId, d.SeqNo1 })
+                    .HasConstraintName("FK_ListManagement.code.attribute_ListManagement.code");
+            });
+
+            modelBuilder.Entity<ListManagementCodeAttributes>(entity =>
+            {
+                entity.HasKey(e => new { e.InstanceId, e.SeqNo1, e.SeqNo2 });
+
+                entity.ToTable("ListManagement.Code.Attributes");
+
+                entity.Property(e => e.DateInserted)
+                    .HasColumnType("datetime")
+                    .HasDefaultValueSql("(getutcdate())");
+
+                entity.Property(e => e.Name)
+                    .HasMaxLength(512)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Value)
+                    .HasMaxLength(512)
+                    .IsUnicode(false);
+
+                entity.HasOne(d => d.ListManagementCode)
+                    .WithMany(p => p.ListManagementCodeAttributes)
+                    .HasForeignKey(d => new { d.InstanceId, d.SeqNo1 })
+                    .HasConstraintName("FK_ListManagement.Code.Attributes_ListManagement.Code");
+            });
+
+            modelBuilder.Entity<ListManagementCodeEntry>(entity =>
+            {
+                entity.HasKey(e => new { e.InstanceId, e.SeqNo1, e.SeqNo2 });
+
+                entity.ToTable("ListManagement.code.entry");
+
+                entity.Property(e => e.DateInserted)
+                    .HasColumnType("datetime")
+                    .HasDefaultValueSql("(getutcdate())");
+
+                entity.Property(e => e.Description)
+                    .HasColumnName("description")
+                    .HasMaxLength(512)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Locale)
+                    .HasColumnName("locale")
+                    .HasMaxLength(512)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Name)
+                    .HasColumnName("name")
+                    .HasMaxLength(512)
+                    .IsUnicode(false);
+
+                entity.HasOne(d => d.ListManagementCode)
+                    .WithMany(p => p.ListManagementCodeEntry)
+                    .HasForeignKey(d => new { d.InstanceId, d.SeqNo1 })
+                    .HasConstraintName("FK_ListManagement.code.entry_ListManagement.code");
+            });
+
+            modelBuilder.Entity<ListManagementCodeGroupEntry>(entity =>
+            {
+                entity.HasKey(e => new { e.InstanceId, e.SeqNo1, e.SeqNo2 });
+
+                entity.ToTable("ListManagement.Code.GroupEntry");
+
+                entity.Property(e => e.DateInserted)
+                    .HasColumnType("datetime")
+                    .HasDefaultValueSql("(getutcdate())");
+
+                entity.Property(e => e.Description)
+                    .HasMaxLength(512)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Locale)
+                    .HasMaxLength(512)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Name)
+                    .HasMaxLength(512)
+                    .IsUnicode(false);
+
+                entity.HasOne(d => d.ListManagementCode)
+                    .WithMany(p => p.ListManagementCodeGroupEntry)
+                    .HasForeignKey(d => new { d.InstanceId, d.SeqNo1 })
+                    .HasConstraintName("FK_ListManagement.Code.GroupEntry_ListManagement.Code");
+            });
+
+            modelBuilder.Entity<ListManagementMetadata>(entity =>
+            {
+                entity.HasKey(e => e.InstanceId);
+
+                entity.ToTable("ListManagement__Metadata");
+
+                entity.Property(e => e.InstanceId).ValueGeneratedNever();
+
+                entity.Property(e => e.DateCreated).HasColumnType("datetime");
+
+                entity.Property(e => e.DateInserted)
+                    .HasColumnType("datetime")
+                    .HasDefaultValueSql("(getutcdate())");
+
+                entity.Property(e => e.DateUpdated).HasColumnType("datetime");
+
+                entity.Property(e => e.InstanceLocation).HasColumnType("xml");
+
+                entity.Property(e => e.InstanceSecurity).HasColumnType("xml");
+
+                entity.Property(e => e.WorkflowStage)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Xcoordinate)
+                    .HasColumnName("XCoordinate")
+                    .HasColumnType("decimal(18, 14)");
+
+                entity.Property(e => e.Ycoordinate)
+                    .HasColumnName("YCoordinate")
+                    .HasColumnType("decimal(18, 14)");
+
+                entity.HasOne(d => d.Instance)
+                    .WithOne(p => p.ListManagementMetadata)
+                    .HasForeignKey<ListManagementMetadata>(d => d.InstanceId)
+                    .HasConstraintName("FK_ListManagement__Metadata_ListManagement");
+            });
+            #endregion ListManagement
         }
     }
 }

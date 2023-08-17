@@ -69,7 +69,12 @@
                                  page-class-selected="active"
                                  page-url-sortOrder="@Model.CurrentSort"
                                  page-url-barCodeSearch="@Model.BarCode"
-                                 page-url-caseNumberSearch="@Model.PropertySheet"
+                                 page-url-caseNumberSearch="@Model.CaseNumber"
+                                 page-url-propertySheetSearch="@Model.PropertySheet"
+                                 page-url-selectedPropertyTypeId="@Model.SelectedPropertyTypeId"
+                                 page-url-selectedPropertyCategory="@Model.SelectedPropertyCategory"
+                                 page-url-selectedPropertyStatusId="@Model.SelectedPropertyStatusId"
+                                 page-url-selectedPropertyHoldStatusId="@Model.SelectedPropertyHoldStatusId"
                                  class="btn-group">
                             </div>
                         </th>
@@ -87,6 +92,10 @@
                                asp-route-caseNumberSearch="@Model.CaseNumber"
                                asp-route-barCodeSearch="@Model.BarCode"
                                asp-route-propertySheetSearch="@Model.PropertySheet"
+                               asp-route-selectedPropertyTypeId="@Model.SelectedPropertyTypeId"
+                               asp-route-selectedPropertyCategory="@Model.SelectedPropertyCategory"
+                               asp-route-selectedPropertyStatusId="@Model.SelectedPropertyStatusId"
+                               asp-route-selectedPropertyHoldStatusId="@Model.SelectedPropertyHoldStatusId"
                                title="Sort by Agency Name">
                                 Agency Name
                                 @if (Model.CurrentSort == "agencyName_desc")
@@ -106,6 +115,10 @@
                                asp-route-caseNumberSearch="@Model.CaseNumber"
                                asp-route-barCodeSearch="@Model.BarCode"
                                asp-route-propertySheetSearch="@Model.PropertySheet"
+                               asp-route-selectedPropertyTypeId="@Model.SelectedPropertyTypeId"
+                               asp-route-selectedPropertyCategory="@Model.SelectedPropertyCategory"
+                               asp-route-selectedPropertyStatusId="@Model.SelectedPropertyStatusId"
+                               asp-route-selectedPropertyHoldStatusId="@Model.SelectedPropertyHoldStatusId"
                                title="Sort by Bar Code">
                                 BarCode
                                 @if (Model.CurrentSort == "barCode_desc")
@@ -125,6 +138,10 @@
                                asp-route-caseNumberSearch="@Model.CaseNumber"
                                asp-route-barCodeSearch="@Model.BarCode"
                                asp-route-propertySheetSearch="@Model.PropertySheet"
+                               asp-route-selectedPropertyTypeId="@Model.SelectedPropertyTypeId"
+                               asp-route-selectedPropertyCategory="@Model.SelectedPropertyCategory"
+                               asp-route-selectedPropertyStatusId="@Model.SelectedPropertyStatusId"
+                               asp-route-selectedPropertyHoldStatusId="@Model.SelectedPropertyHoldStatusId"
                                title="Sort by Property Type">
                                 Type
                                 @if (Model.CurrentSort == "propertyType_desc")
@@ -143,6 +160,10 @@
                                asp-route-caseNumberSearch="@Model.CaseNumber"
                                asp-route-barCodeSearch="@Model.BarCode"
                                asp-route-propertySheetSearch="@Model.PropertySheet"
+                               asp-route-selectedPropertyTypeId="@Model.SelectedPropertyTypeId"
+                               asp-route-selectedPropertyCategory="@Model.SelectedPropertyCategory"
+                               asp-route-selectedPropertyStatusId="@Model.SelectedPropertyStatusId"
+                               asp-route-selectedPropertyHoldStatusId="@Model.SelectedPropertyHoldStatusId"
                                title="Sort by Property Category">
                                 Category
                                 @if (Model.CurrentSort == "propertyCategory_desc")
@@ -161,6 +182,10 @@
                                asp-route-caseNumberSearch="@Model.CaseNumber"
                                asp-route-barCodeSearch="@Model.BarCode"
                                asp-route-propertySheetSearch="@Model.PropertySheet"
+                               asp-route-selectedPropertyTypeId="@Model.SelectedPropertyTypeId"
+                               asp-route-selectedPropertyCategory="@Model.SelectedPropertyCategory"
+                               asp-route-selectedPropertyStatusId="@Model.SelectedPropertyStatusId"
+                               asp-route-selectedPropertyHoldStatusId="@Model.SelectedPropertyHoldStatusId"
                                title="Sort by Property Status">
                                 Status
                                 @if (Model.CurrentSort == "status_desc")
@@ -179,6 +204,10 @@
                                asp-route-caseNumberSearch="@Model.CaseNumber"
                                asp-route-barCodeSearch="@Model.BarCode"
                                asp-route-propertySheetSearch="@Model.PropertySheet"
+                               asp-route-selectedPropertyTypeId="@Model.SelectedPropertyTypeId"
+                               asp-route-selectedPropertyCategory="@Model.SelectedPropertyCategory"
+                               asp-route-selectedPropertyStatusId="@Model.SelectedPropertyStatusId"
+                               asp-route-selectedPropertyHoldStatusId="@Model.SelectedPropertyHoldStatusId"
                                title="Sort by Date Obtained">
                                 Date Obtained
                                 @if (Model.CurrentSort == "dateObtained_asc")
@@ -197,6 +226,10 @@
                                asp-route-caseNumberSearch="@Model.CaseNumber"
                                asp-route-barCodeSearch="@Model.BarCode"
                                asp-route-propertySheetSearch="@Model.PropertySheet"
+                               asp-route-selectedPropertyTypeId="@Model.SelectedPropertyTypeId"
+                               asp-route-selectedPropertyCategory="@Model.SelectedPropertyCategory"
+                               asp-route-selectedPropertyStatusId="@Model.SelectedPropertyStatusId"
+                               asp-route-selectedPropertyHoldStatusId="@Model.SelectedPropertyHoldStatusId"
                                title="Sort by Case Number">
                                 Case Number
                                 @if (Model.CurrentSort == "caseNumber_desc")
@@ -215,6 +248,10 @@
                                asp-route-caseNumberSearch="@Model.CaseNumber"
                                asp-route-barCodeSearch="@Model.BarCode"
                                asp-route-propertySheetSearch="@Model.PropertySheet"
+                               asp-route-selectedPropertyTypeId="@Model.SelectedPropertyTypeId"
+                               asp-route-selectedPropertyCategory="@Model.SelectedPropertyCategory"
+                               asp-route-selectedPropertyStatusId="@Model.SelectedPropertyStatusId"
+                               asp-route-selectedPropertyHoldStatusId="@Model.SelectedPropertyHoldStatusId"
                                title="Sort by Property Sheet">
                                 Property Sheet
                                 @if (Model.CurrentSort == "propertySheet_desc")
@@ -233,6 +270,10 @@
                                asp-route-caseNumberSearch="@Model.CaseNumber"
                                asp-route-barCodeSearch="@Model.BarCode"
                                asp-route-propertySheetSearch="@Model.PropertySheet"
+                               asp-route-selectedPropertyTypeId="@Model.SelectedPropertyTypeId"
+                               asp-route-selectedPropertyCategory="@Model.SelectedPropertyCategory"
+                               asp-route-selectedPropertyStatusId="@Model.SelectedPropertyStatusId"
+                               asp-route-selectedPropertyHoldStatusId="@Model.SelectedPropertyHoldStatusId"
                                title="Sort by Disposition">
                                 Disposition
                                 @if (Model.CurrentSort == "disposition_desc")
@@ -251,6 +292,10 @@
                                asp-route-caseNumberSearch="@Model.CaseNumber"
                                asp-route-barCodeSearch="@Model.BarCode"
                                asp-route-propertySheetSearch="@Model.PropertySheet"
+                               asp-route-selectedPropertyTypeId="@Model.SelectedPropertyTypeId"
+                               asp-route-selectedPropertyCategory="@Model.SelectedPropertyCategory"
+                               asp-route-selectedPropertyStatusId="@Model.SelectedPropertyStatusId"
+                               asp-route-selectedPropertyHoldStatusId="@Model.SelectedPropertyHoldStatusId"
                                title="Sort by Location">
                                 Location
                                 @if (Model.CurrentSort == "location_desc")
@@ -269,6 +314,10 @@
                                asp-route-caseNumberSearch="@Model.CaseNumber"
                                asp-route-barCodeSearch="@Model.BarCode"
                                asp-route-propertySheetSearch="@Model.PropertySheet"
+                               asp-route-selectedPropertyTypeId="@Model.SelectedPropertyTypeId"
+                               asp-route-selectedPropertyCategory="@Model.SelectedPropertyCategory"
+                               asp-route-selectedPropertyStatusId="@Model.SelectedPropertyStatusId"
+                               asp-route-selectedPropertyHoldStatusId="@Model.SelectedPropertyHoldStatusId"
                                title="Sort by Hold Status">
                                 Hold Status
                                 @if (Model.CurrentSort == "holdStatus_desc")

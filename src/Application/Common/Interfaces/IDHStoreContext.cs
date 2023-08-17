@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using PropertyCore.Domain.Entities.DHStore;
+using PropertyCore.Domain.Entities;
 
 namespace PropertyCore.Application.Common.Interfaces
 {
@@ -9,9 +9,9 @@ namespace PropertyCore.Application.Common.Interfaces
     public interface IDHStoreContext
     {
         /// <summary>
-        /// A <see cref="DbSet{Domain.Entities.DHStore.Property}"/> containing Property Entries.
+        /// A <see cref="DbSet{Domain.Entities}"/> containing Property Entries.
         /// </summary>
-        DbSet<Domain.Entities.DHStore.Property> Property { get; }
+        DbSet<Domain.Entities.Property> Property { get; }
         /// <summary>
         /// A <see cref="DbSet{PropertySheetTags}"/> containing property sheet tag entries.
         /// </summary>
@@ -20,5 +20,8 @@ namespace PropertyCore.Application.Common.Interfaces
         /// A <see cref="DbSet{PropertySheetMetadata}"/> containing property sheet metadata entires.
         /// </summary>
         DbSet<PropertySheetMetadata> PropertySheetMetadata { get; }
+        DbSet<ListManagement> ListManagement { get; }
+        DbSet<ListManagementCode> ListManagementCodes { get; }
+        DbSet<ListManagementCodeAttributes> ListManagementCodeAttributes { get; }
     }
 }

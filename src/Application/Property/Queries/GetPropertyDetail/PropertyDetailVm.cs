@@ -1,5 +1,5 @@
 ﻿using PropertyCore.Application.Common.Mappings;
-using PropertyCore.Domain.Entities.DHStore;
+using PropertyCore.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
