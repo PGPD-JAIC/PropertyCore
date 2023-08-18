@@ -99,3 +99,15 @@ html {
     background: rgb(237,4,4);
     background: linear-gradient(152deg, rgba(237,4,4,1) 0%, rgba(77,0,0,0) 100%);
 }
+
+.stickyHeaderTable {
+    height: 200px;
+    overflow-y:auto;
+}
+
+.stickyHeaderTable thead th {
+    position:sticky;
+    top:0px;
+    background-color: #191d21;
+    border-top:1px #191d21;
+}

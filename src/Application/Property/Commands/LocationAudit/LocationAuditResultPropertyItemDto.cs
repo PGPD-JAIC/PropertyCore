@@ -19,9 +19,17 @@ namespace PropertyCore.Application.Property.Commands.LocationAudit
         /// </summary>
         public string BarCode { get; set; }
         /// <summary>
+        /// The item count of the entity.
+        /// </summary>
+        public string ItemQuantity { get; set; }
+        /// <summary>
         /// The Property Type of the entity.
         /// </summary>
         public string PropertyType { get; set; }
+        /// <summary>
+        /// The Description of the entity.
+        /// </summary>
+        public string Description { get; set; }
         /// <summary>
         /// The Category of the entity.
         /// </summary>
@@ -30,6 +38,14 @@ namespace PropertyCore.Application.Property.Commands.LocationAudit
         /// The current location of the entity.
         /// </summary>
         public string CurrentLocation { get; set; }
+        /// <summary>
+        /// The current disposition of the entity.
+        /// </summary>
+        public string CurrentDisposition { get; set; }
+        /// <summary>
+        /// The current hold status of the entity.
+        /// </summary>
+        public string HoldStatus { get; set; }
         /// <summary>
         /// The case number of the case associated with the entity.
         /// </summary>
@@ -48,11 +64,15 @@ namespace PropertyCore.Application.Property.Commands.LocationAudit
                 .ForMember(x => x.InstanceId, opt => opt.MapFrom(y => y.InstanceId))
                 .ForMember(x => x.SeqNo1, opt => opt.MapFrom(y => y.SeqNo1))
                 .ForMember(x => x.BarCode, opt => opt.MapFrom(y => y.TagNumber))
-                .ForMember(x => x.PropertyType, opt => opt.MapFrom(y => y.PropertyTypeId))
+                .ForMember(x => x.PropertyType, opt => opt.MapFrom(y => y.PropertyType))
+                .ForMember(x => x.ItemQuantity, opt => opt.MapFrom(y => y.Quantity))
+                .ForMember(x => x.Description, opt => opt.MapFrom(y => y.Description))
                 .ForMember(x => x.PropertyCategory, opt => opt.MapFrom(y => y.PropertyCategory))
                 .ForMember(x => x.CaseNumber, opt => opt.MapFrom(y => y.TagsCaseNoRtf))
                 .ForMember(x => x.PropertySheetNumber, opt => opt.MapFrom(y => y.TagsSheetNoRtf))
-                .ForMember(x => x.CurrentLocation, opt => opt.MapFrom(y => y.CurrentLocation));
+                .ForMember(x => x.CurrentLocation, opt => opt.MapFrom(y => y.CurrentLocation))
+                .ForMember(x => x.CurrentDisposition, opt => opt.MapFrom(y => y.CurrentDisposition))
+                .ForMember(x => x.HoldStatus, opt => opt.MapFrom(y => y.HoldStatus));
         }
     }
 }
