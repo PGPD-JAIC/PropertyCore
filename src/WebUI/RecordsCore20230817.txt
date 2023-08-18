@@ -123,3 +123,306 @@ WHERE [p].[ObtainedDate] IS NOT NULL
 2023-08-17 12:58:16.254 -04:00 [INF] Request finished in 4.8547ms 200 application/javascript; charset=utf-8
 2023-08-17 12:58:16.270 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_vs/browserLink  
 2023-08-17 12:58:16.293 -04:00 [INF] Request finished in 23.037ms 200 text/javascript; charset=UTF-8
+2023-08-17 15:58:10.903 -04:00 [INF] User profile is available. Using 'C:\Users\jcsmith1\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-17 15:58:11.424 -04:00 [INF] Start installing Hangfire SQL objects...
+2023-08-17 15:58:16.317 -04:00 [INF] Hangfire SQL objects installed.
+2023-08-17 15:58:16.574 -04:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\mssqllocaldb@PropertyCoreHangfire'
+2023-08-17 15:58:16.578 -04:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-08-17 15:58:16.599 -04:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-08-17 15:58:17.667 -04:00 [INF] Server pol81553:71096:86b30c2f successfully announced in 999.9521 ms
+2023-08-17 15:58:17.690 -04:00 [INF] Server pol81553:71096:86b30c2f is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-08-17 15:58:17.767 -04:00 [INF] 1 servers were removed due to timeout
+2023-08-17 15:58:18.409 -04:00 [INF] Server pol81553:71096:86b30c2f all the dispatchers started
+2023-08-17 15:58:18.780 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-17 15:58:18.800 -04:00 [INF] Hosting environment: Development
+2023-08-17 15:58:18.808 -04:00 [INF] Content root path: C:\Users\jcsmith1\Source\Repos\PropertyCore\src\WebUI
+2023-08-17 15:58:18.906 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/  
+2023-08-17 15:58:19.013 -04:00 [WRN] Failed to determine the https port for redirect.
+2023-08-17 15:58:19.161 -04:00 [INF] Executing endpoint 'PropertyCore.WebUI.Controllers.HomeController.Index (PropertyCore.WebUI)'
+2023-08-17 15:58:19.249 -04:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller PropertyCore.WebUI.Controllers.HomeController (PropertyCore.WebUI).
+2023-08-17 15:58:19.365 -04:00 [INF] Executing ViewResult, running view Index.
+2023-08-17 15:58:20.373 -04:00 [INF] Executed ViewResult - view Index executed in 1091.1254ms.
+2023-08-17 15:58:20.386 -04:00 [INF] Executed action PropertyCore.WebUI.Controllers.HomeController.Index (PropertyCore.WebUI) in 1120.5561ms
+2023-08-17 15:58:20.405 -04:00 [INF] Executed endpoint 'PropertyCore.WebUI.Controllers.HomeController.Index (PropertyCore.WebUI)'
+2023-08-17 15:58:20.732 -04:00 [INF] Request finished in 1826.3247ms 200 text/html; charset=utf-8
+2023-08-17 15:58:21.039 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_framework/aspnetcore-browser-refresh.js  
+2023-08-17 15:58:21.108 -04:00 [INF] Request finished in 69.2232ms 200 application/javascript; charset=utf-8
+2023-08-17 15:58:21.108 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_vs/browserLink  
+2023-08-17 15:58:21.442 -04:00 [INF] Request finished in 334.2537ms 200 text/javascript; charset=UTF-8
+2023-08-17 15:58:52.850 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/Admin?returnUrl=%2FHome%2FIndex  
+2023-08-17 15:58:52.941 -04:00 [INF] Request finished in 91.964ms 404 
+2023-08-17 15:58:55.541 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_framework/aspnetcore-browser-refresh.js  
+2023-08-17 15:58:55.553 -04:00 [INF] Request finished in 11.6678ms 200 application/javascript; charset=utf-8
+2023-08-17 17:03:21.840 -04:00 [INF] User profile is available. Using 'C:\Users\jcsmith1\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-17 17:03:22.223 -04:00 [INF] Start installing Hangfire SQL objects...
+2023-08-17 17:03:27.350 -04:00 [INF] Hangfire SQL objects installed.
+2023-08-17 17:03:27.658 -04:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\mssqllocaldb@PropertyCoreHangfire'
+2023-08-17 17:03:27.664 -04:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-08-17 17:03:27.670 -04:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-08-17 17:03:29.397 -04:00 [INF] Server pol81553:52156:a8442df4 successfully announced in 1634.3291 ms
+2023-08-17 17:03:29.419 -04:00 [INF] Server pol81553:52156:a8442df4 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-08-17 17:03:29.457 -04:00 [INF] 1 servers were removed due to timeout
+2023-08-17 17:03:30.206 -04:00 [INF] Server pol81553:52156:a8442df4 all the dispatchers started
+2023-08-17 17:03:30.758 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-17 17:03:30.766 -04:00 [INF] Hosting environment: Development
+2023-08-17 17:03:30.772 -04:00 [INF] Content root path: C:\Users\jcsmith1\Source\Repos\PropertyCore\src\WebUI
+2023-08-17 17:03:30.896 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/  
+2023-08-17 17:03:31.030 -04:00 [WRN] Failed to determine the https port for redirect.
+2023-08-17 17:03:31.206 -04:00 [INF] Executing endpoint 'PropertyCore.WebUI.Controllers.HomeController.Index (PropertyCore.WebUI)'
+2023-08-17 17:03:31.336 -04:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller PropertyCore.WebUI.Controllers.HomeController (PropertyCore.WebUI).
+2023-08-17 17:03:31.459 -04:00 [INF] Executing ViewResult, running view Index.
+2023-08-17 17:03:32.541 -04:00 [INF] Executed ViewResult - view Index executed in 1165.606ms.
+2023-08-17 17:03:32.562 -04:00 [INF] Executed action PropertyCore.WebUI.Controllers.HomeController.Index (PropertyCore.WebUI) in 1207.156ms
+2023-08-17 17:03:32.570 -04:00 [INF] Executed endpoint 'PropertyCore.WebUI.Controllers.HomeController.Index (PropertyCore.WebUI)'
+2023-08-17 17:03:32.905 -04:00 [INF] Request finished in 2012.3445ms 200 text/html; charset=utf-8
+2023-08-17 17:03:33.105 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_framework/aspnetcore-browser-refresh.js  
+2023-08-17 17:03:33.145 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_vs/browserLink  
+2023-08-17 17:03:33.141 -04:00 [INF] Request finished in 34.8244ms 200 application/javascript; charset=utf-8
+2023-08-17 17:03:33.498 -04:00 [INF] Request finished in 353.1968ms 200 text/javascript; charset=UTF-8
+2023-08-17 17:03:35.869 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/Property/LocationAudit?returnUrl=%2FHome%2FIndex  
+2023-08-17 17:03:35.901 -04:00 [INF] Executing endpoint 'PropertyCore.WebUI.Controllers.PropertyController.LocationAudit (PropertyCore.WebUI)'
+2023-08-17 17:03:35.972 -04:00 [INF] Route matched with {action = "LocationAudit", controller = "Property"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LocationAudit(System.String) on controller PropertyCore.WebUI.Controllers.PropertyController (PropertyCore.WebUI).
+2023-08-17 17:03:36.462 -04:00 [INF] RecordsCore Request: GetPGPDPropertyLocationsQuery PGCNT\JCSmith1 PropertyCore.Application.Lists.Queries.GetPGPDPropertyLocation.GetPGPDPropertyLocationsQuery
+2023-08-17 17:03:38.745 -04:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2023-08-17 17:03:38.844 -04:00 [INF] Entity Framework Core 3.0.0 initialized 'DHStoreContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled 
+2023-08-17 17:03:39.518 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT DISTINCT [l].[Value] AS [Text]
+FROM [ListManagement.Code.Attributes] AS [l]
+WHERE (CONVERT(VARCHAR(36), [l].[InstanceId]) = N'04D52599-B589-4779-ACA8-D1A90C35F31D') AND ([l].[SeqNo2] = 0)
+2023-08-17 17:03:39.639 -04:00 [WRN] RecordsCore Long Running Request: GetPGPDPropertyLocationsQuery (3132 milliseconds) PGCNT\JCSmith1 PropertyCore.Application.Lists.Queries.GetPGPDPropertyLocation.GetPGPDPropertyLocationsQuery
+2023-08-17 17:03:39.664 -04:00 [INF] Executing ViewResult, running view LocationAudit.
+2023-08-17 17:03:39.862 -04:00 [INF] Executed ViewResult - view LocationAudit executed in 211.0309ms.
+2023-08-17 17:03:39.874 -04:00 [INF] Executed action PropertyCore.WebUI.Controllers.PropertyController.LocationAudit (PropertyCore.WebUI) in 3897.5376ms
+2023-08-17 17:03:39.885 -04:00 [INF] Executed endpoint 'PropertyCore.WebUI.Controllers.PropertyController.LocationAudit (PropertyCore.WebUI)'
+2023-08-17 17:03:39.910 -04:00 [INF] Request finished in 4041.8154ms 200 text/html; charset=utf-8
+2023-08-17 17:03:39.941 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_framework/aspnetcore-browser-refresh.js  
+2023-08-17 17:03:39.941 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_vs/browserLink  
+2023-08-17 17:03:39.970 -04:00 [INF] Request finished in 29.2954ms 200 application/javascript; charset=utf-8
+2023-08-17 17:03:40.008 -04:00 [INF] Request finished in 66.6202ms 200 text/javascript; charset=UTF-8
+2023-08-17 17:04:20.823 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/  
+2023-08-17 17:04:20.841 -04:00 [INF] Executing endpoint 'PropertyCore.WebUI.Controllers.HomeController.Index (PropertyCore.WebUI)'
+2023-08-17 17:04:20.846 -04:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller PropertyCore.WebUI.Controllers.HomeController (PropertyCore.WebUI).
+2023-08-17 17:04:20.856 -04:00 [INF] Executing ViewResult, running view Index.
+2023-08-17 17:04:20.923 -04:00 [INF] Executed ViewResult - view Index executed in 67.2806ms.
+2023-08-17 17:04:20.927 -04:00 [INF] Executed action PropertyCore.WebUI.Controllers.HomeController.Index (PropertyCore.WebUI) in 77.7115ms
+2023-08-17 17:04:20.933 -04:00 [INF] Executed endpoint 'PropertyCore.WebUI.Controllers.HomeController.Index (PropertyCore.WebUI)'
+2023-08-17 17:04:20.941 -04:00 [INF] Request finished in 119.8804ms 200 text/html; charset=utf-8
+2023-08-17 17:04:20.989 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_framework/aspnetcore-browser-refresh.js  
+2023-08-17 17:04:20.994 -04:00 [INF] Request finished in 4.563ms 200 application/javascript; charset=utf-8
+2023-08-17 17:04:21.024 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_vs/browserLink  
+2023-08-17 17:04:21.047 -04:00 [INF] Request finished in 22.802ms 200 text/javascript; charset=UTF-8
+2023-08-17 17:04:55.617 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/Property/LocationAudit?returnUrl=%2FHome%2FIndex  
+2023-08-17 17:04:55.631 -04:00 [INF] Executing endpoint 'PropertyCore.WebUI.Controllers.PropertyController.LocationAudit (PropertyCore.WebUI)'
+2023-08-17 17:04:55.638 -04:00 [INF] Route matched with {action = "LocationAudit", controller = "Property"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LocationAudit(System.String) on controller PropertyCore.WebUI.Controllers.PropertyController (PropertyCore.WebUI).
+2023-08-17 17:04:55.656 -04:00 [INF] RecordsCore Request: GetPGPDPropertyLocationsQuery PGCNT\tjfellrath PropertyCore.Application.Lists.Queries.GetPGPDPropertyLocation.GetPGPDPropertyLocationsQuery
+2023-08-17 17:04:55.694 -04:00 [INF] Entity Framework Core 3.0.0 initialized 'DHStoreContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled 
+2023-08-17 17:04:55.712 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT DISTINCT [l].[Value] AS [Text]
+FROM [ListManagement.Code.Attributes] AS [l]
+WHERE (CONVERT(VARCHAR(36), [l].[InstanceId]) = N'04D52599-B589-4779-ACA8-D1A90C35F31D') AND ([l].[SeqNo2] = 0)
+2023-08-17 17:04:59.262 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/Property/LocationAudit?returnUrl=%2FHome%2FIndex  
+2023-08-17 17:04:59.271 -04:00 [INF] Executing endpoint 'PropertyCore.WebUI.Controllers.PropertyController.LocationAudit (PropertyCore.WebUI)'
+2023-08-17 17:04:59.281 -04:00 [INF] Route matched with {action = "LocationAudit", controller = "Property"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LocationAudit(System.String) on controller PropertyCore.WebUI.Controllers.PropertyController (PropertyCore.WebUI).
+2023-08-17 17:04:59.288 -04:00 [INF] RecordsCore Request: GetPGPDPropertyLocationsQuery PGCNT\tjfellrath PropertyCore.Application.Lists.Queries.GetPGPDPropertyLocation.GetPGPDPropertyLocationsQuery
+2023-08-17 17:04:59.300 -04:00 [INF] Entity Framework Core 3.0.0 initialized 'DHStoreContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled 
+2023-08-17 17:04:59.314 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT DISTINCT [l].[Value] AS [Text]
+FROM [ListManagement.Code.Attributes] AS [l]
+WHERE (CONVERT(VARCHAR(36), [l].[InstanceId]) = N'04D52599-B589-4779-ACA8-D1A90C35F31D') AND ([l].[SeqNo2] = 0)
+2023-08-17 17:05:01.446 -04:00 [INF] Executing ViewResult, running view LocationAudit.
+2023-08-17 17:05:01.456 -04:00 [INF] Executing ViewResult, running view LocationAudit.
+2023-08-17 17:05:01.589 -04:00 [INF] Executed ViewResult - view LocationAudit executed in 5842.9171ms.
+2023-08-17 17:05:01.596 -04:00 [INF] Executed action PropertyCore.WebUI.Controllers.PropertyController.LocationAudit (PropertyCore.WebUI) in 5950.1ms
+2023-08-17 17:05:01.596 -04:00 [INF] Executed ViewResult - view LocationAudit executed in 2248.5951ms.
+2023-08-17 17:05:01.605 -04:00 [INF] Executed endpoint 'PropertyCore.WebUI.Controllers.PropertyController.LocationAudit (PropertyCore.WebUI)'
+2023-08-17 17:05:01.615 -04:00 [INF] Executed action PropertyCore.WebUI.Controllers.PropertyController.LocationAudit (PropertyCore.WebUI) in 2330.0685ms
+2023-08-17 17:05:01.624 -04:00 [INF] Executed endpoint 'PropertyCore.WebUI.Controllers.PropertyController.LocationAudit (PropertyCore.WebUI)'
+2023-08-17 17:05:01.626 -04:00 [INF] Request finished in 6009.0031ms 200 text/html; charset=utf-8
+2023-08-17 17:05:01.636 -04:00 [INF] Request finished in 2374.3339ms 200 text/html; charset=utf-8
+2023-08-17 17:05:01.667 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_framework/aspnetcore-browser-refresh.js  
+2023-08-17 17:05:01.673 -04:00 [INF] Request finished in 5.8222ms 200 application/javascript; charset=utf-8
+2023-08-17 17:05:01.725 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_vs/browserLink  
+2023-08-17 17:05:01.740 -04:00 [INF] Request finished in 14.5903ms 200 text/javascript; charset=UTF-8
+2023-08-17 17:48:27.352 -04:00 [INF] User profile is available. Using 'C:\Users\jcsmith1\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-17 17:48:27.637 -04:00 [INF] Start installing Hangfire SQL objects...
+2023-08-17 17:48:31.500 -04:00 [INF] Hangfire SQL objects installed.
+2023-08-17 17:48:31.709 -04:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\mssqllocaldb@PropertyCoreHangfire'
+2023-08-17 17:48:31.719 -04:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-08-17 17:48:31.724 -04:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-08-17 17:48:32.502 -04:00 [INF] Server pol81553:67196:77c8f042 successfully announced in 728.3096 ms
+2023-08-17 17:48:32.527 -04:00 [INF] Server pol81553:67196:77c8f042 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-08-17 17:48:32.562 -04:00 [INF] 1 servers were removed due to timeout
+2023-08-17 17:48:33.012 -04:00 [INF] Server pol81553:67196:77c8f042 all the dispatchers started
+2023-08-17 17:48:33.376 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-17 17:48:33.388 -04:00 [INF] Hosting environment: Development
+2023-08-17 17:48:33.403 -04:00 [INF] Content root path: C:\Users\jcsmith1\Source\Repos\PropertyCore\src\WebUI
+2023-08-17 17:48:33.544 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/  
+2023-08-17 17:48:33.544 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/  
+2023-08-17 17:48:33.658 -04:00 [WRN] Failed to determine the https port for redirect.
+2023-08-17 17:48:33.770 -04:00 [INF] Executing endpoint 'PropertyCore.WebUI.Controllers.HomeController.Index (PropertyCore.WebUI)'
+2023-08-17 17:48:33.773 -04:00 [INF] Executing endpoint 'PropertyCore.WebUI.Controllers.HomeController.Index (PropertyCore.WebUI)'
+2023-08-17 17:48:33.876 -04:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller PropertyCore.WebUI.Controllers.HomeController (PropertyCore.WebUI).
+2023-08-17 17:48:33.876 -04:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller PropertyCore.WebUI.Controllers.HomeController (PropertyCore.WebUI).
+2023-08-17 17:48:34.003 -04:00 [INF] Executing ViewResult, running view Index.
+2023-08-17 17:48:34.003 -04:00 [INF] Executing ViewResult, running view Index.
+2023-08-17 17:48:34.807 -04:00 [INF] Executed ViewResult - view Index executed in 881.1317ms.
+2023-08-17 17:48:34.807 -04:00 [INF] Executed ViewResult - view Index executed in 882.0415ms.
+2023-08-17 17:48:34.833 -04:00 [INF] Executed action PropertyCore.WebUI.Controllers.HomeController.Index (PropertyCore.WebUI) in 933.8782ms
+2023-08-17 17:48:34.833 -04:00 [INF] Executed action PropertyCore.WebUI.Controllers.HomeController.Index (PropertyCore.WebUI) in 933.8782ms
+2023-08-17 17:48:34.844 -04:00 [INF] Executed endpoint 'PropertyCore.WebUI.Controllers.HomeController.Index (PropertyCore.WebUI)'
+2023-08-17 17:48:34.844 -04:00 [INF] Executed endpoint 'PropertyCore.WebUI.Controllers.HomeController.Index (PropertyCore.WebUI)'
+2023-08-17 17:48:36.373 -04:00 [INF] Request finished in 2831.1708ms 200 text/html; charset=utf-8
+2023-08-17 17:48:36.373 -04:00 [INF] Request finished in 2831.1708ms 200 text/html; charset=utf-8
+2023-08-17 17:48:36.503 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_framework/aspnetcore-browser-refresh.js  
+2023-08-17 17:48:36.512 -04:00 [INF] Request finished in 9.0378ms 200 application/javascript; charset=utf-8
+2023-08-17 17:48:36.609 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_vs/browserLink  
+2023-08-17 17:48:36.671 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_framework/aspnetcore-browser-refresh.js  
+2023-08-17 17:48:36.730 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_vs/browserLink  
+2023-08-17 17:48:36.741 -04:00 [INF] Request finished in 69.2197ms 200 application/javascript; charset=utf-8
+2023-08-17 17:48:36.871 -04:00 [INF] Request finished in 263.2667ms 200 text/javascript; charset=UTF-8
+2023-08-17 17:48:36.932 -04:00 [INF] Request finished in 201.825ms 200 text/javascript; charset=UTF-8
+2023-08-17 17:48:39.073 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/Property/LocationAudit?returnUrl=%2FHome%2FIndex  
+2023-08-17 17:48:39.108 -04:00 [INF] Executing endpoint 'PropertyCore.WebUI.Controllers.PropertyController.LocationAudit (PropertyCore.WebUI)'
+2023-08-17 17:48:39.150 -04:00 [INF] Route matched with {action = "LocationAudit", controller = "Property"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LocationAudit(System.String) on controller PropertyCore.WebUI.Controllers.PropertyController (PropertyCore.WebUI).
+2023-08-17 17:48:39.409 -04:00 [INF] RecordsCore Request: GetPGPDPropertyLocationsQuery PGCNT\JCSmith1 PropertyCore.Application.Lists.Queries.GetPGPDPropertyLocation.GetPGPDPropertyLocationsQuery
+2023-08-17 17:48:41.411 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/Property/LocationAudit?returnUrl=%2FHome%2FIndex  
+2023-08-17 17:48:41.440 -04:00 [INF] Executing endpoint 'PropertyCore.WebUI.Controllers.PropertyController.LocationAudit (PropertyCore.WebUI)'
+2023-08-17 17:48:41.444 -04:00 [INF] Route matched with {action = "LocationAudit", controller = "Property"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LocationAudit(System.String) on controller PropertyCore.WebUI.Controllers.PropertyController (PropertyCore.WebUI).
+2023-08-17 17:48:41.451 -04:00 [INF] RecordsCore Request: GetPGPDPropertyLocationsQuery PGCNT\tjfellrath PropertyCore.Application.Lists.Queries.GetPGPDPropertyLocation.GetPGPDPropertyLocationsQuery
+2023-08-17 17:48:41.902 -04:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2023-08-17 17:48:42.013 -04:00 [INF] Entity Framework Core 3.0.0 initialized 'DHStoreContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled 
+2023-08-17 17:48:42.013 -04:00 [INF] Entity Framework Core 3.0.0 initialized 'DHStoreContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled 
+2023-08-17 17:48:43.016 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT (
+    SELECT TOP(1) [l].[Description]
+    FROM [ListManagement.Code.GroupEntry] AS [l]
+    WHERE ([l0].[InstanceId] = [l].[InstanceId]) AND ([l0].[SeqNo1] = [l].[SeqNo1])) AS [Text], [l0].[ID] AS [Value]
+FROM [ListManagement.Code] AS [l0]
+WHERE CONVERT(VARCHAR(36), [l0].[InstanceId]) = N'04D52599-B589-4779-ACA8-D1A90C35F31D'
+2023-08-17 17:48:43.016 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT (
+    SELECT TOP(1) [l].[Description]
+    FROM [ListManagement.Code.GroupEntry] AS [l]
+    WHERE ([l0].[InstanceId] = [l].[InstanceId]) AND ([l0].[SeqNo1] = [l].[SeqNo1])) AS [Text], [l0].[ID] AS [Value]
+FROM [ListManagement.Code] AS [l0]
+WHERE CONVERT(VARCHAR(36), [l0].[InstanceId]) = N'04D52599-B589-4779-ACA8-D1A90C35F31D'
+2023-08-17 17:48:43.307 -04:00 [WRN] RecordsCore Long Running Request: GetPGPDPropertyLocationsQuery (1838 milliseconds) PGCNT\tjfellrath PropertyCore.Application.Lists.Queries.GetPGPDPropertyLocation.GetPGPDPropertyLocationsQuery
+2023-08-17 17:48:43.307 -04:00 [WRN] RecordsCore Long Running Request: GetPGPDPropertyLocationsQuery (3888 milliseconds) PGCNT\JCSmith1 PropertyCore.Application.Lists.Queries.GetPGPDPropertyLocation.GetPGPDPropertyLocationsQuery
+2023-08-17 17:48:43.345 -04:00 [INF] Executing ViewResult, running view LocationAudit.
+2023-08-17 17:48:43.345 -04:00 [INF] Executing ViewResult, running view LocationAudit.
+2023-08-17 17:48:43.704 -04:00 [INF] Executed ViewResult - view LocationAudit executed in 369.0441ms.
+2023-08-17 17:48:43.711 -04:00 [INF] Executed ViewResult - view LocationAudit executed in 375.8262ms.
+2023-08-17 17:48:43.713 -04:00 [INF] Executed action PropertyCore.WebUI.Controllers.PropertyController.LocationAudit (PropertyCore.WebUI) in 4545.6694ms
+2023-08-17 17:48:43.719 -04:00 [INF] Executed action PropertyCore.WebUI.Controllers.PropertyController.LocationAudit (PropertyCore.WebUI) in 2271.6554ms
+2023-08-17 17:48:43.724 -04:00 [INF] Executed endpoint 'PropertyCore.WebUI.Controllers.PropertyController.LocationAudit (PropertyCore.WebUI)'
+2023-08-17 17:48:43.740 -04:00 [INF] Executed endpoint 'PropertyCore.WebUI.Controllers.PropertyController.LocationAudit (PropertyCore.WebUI)'
+2023-08-17 17:48:44.124 -04:00 [INF] Request finished in 5052.3931ms 200 text/html; charset=utf-8
+2023-08-17 17:48:44.124 -04:00 [INF] Request finished in 2713.5773ms 200 text/html; charset=utf-8
+2023-08-17 17:48:44.623 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_framework/aspnetcore-browser-refresh.js  
+2023-08-17 17:48:44.623 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_vs/browserLink  
+2023-08-17 17:48:44.647 -04:00 [INF] Request finished in 24.5095ms 200 application/javascript; charset=utf-8
+2023-08-17 17:48:44.675 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_framework/aspnetcore-browser-refresh.js  
+2023-08-17 17:48:44.691 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_vs/browserLink  
+2023-08-17 17:48:44.779 -04:00 [INF] Request finished in 104.3207ms 200 application/javascript; charset=utf-8
+2023-08-17 17:48:44.811 -04:00 [INF] Request finished in 120.5818ms 200 text/javascript; charset=UTF-8
+2023-08-17 17:48:44.822 -04:00 [INF] Request finished in 198.8869ms 200 text/javascript; charset=UTF-8
+2023-08-17 17:53:52.205 -04:00 [INF] User profile is available. Using 'C:\Users\jcsmith1\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-17 17:53:52.548 -04:00 [INF] Start installing Hangfire SQL objects...
+2023-08-17 17:53:53.274 -04:00 [INF] Hangfire SQL objects installed.
+2023-08-17 17:53:53.543 -04:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\mssqllocaldb@PropertyCoreHangfire'
+2023-08-17 17:53:53.580 -04:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2023-08-17 17:53:53.587 -04:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2023-08-17 17:53:54.701 -04:00 [INF] Server pol81553:55680:9f380519 successfully announced in 1027.3319 ms
+2023-08-17 17:53:54.723 -04:00 [INF] Server pol81553:55680:9f380519 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2023-08-17 17:53:55.705 -04:00 [INF] Server pol81553:55680:9f380519 all the dispatchers started
+2023-08-17 17:53:56.188 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-17 17:53:56.222 -04:00 [INF] Hosting environment: Development
+2023-08-17 17:53:56.227 -04:00 [INF] Content root path: C:\Users\jcsmith1\Source\Repos\PropertyCore\src\WebUI
+2023-08-17 17:53:56.346 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/  
+2023-08-17 17:53:56.346 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/  
+2023-08-17 17:53:56.577 -04:00 [WRN] Failed to determine the https port for redirect.
+2023-08-17 17:53:56.754 -04:00 [INF] Executing endpoint 'PropertyCore.WebUI.Controllers.HomeController.Index (PropertyCore.WebUI)'
+2023-08-17 17:53:56.754 -04:00 [INF] Executing endpoint 'PropertyCore.WebUI.Controllers.HomeController.Index (PropertyCore.WebUI)'
+2023-08-17 17:53:56.870 -04:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller PropertyCore.WebUI.Controllers.HomeController (PropertyCore.WebUI).
+2023-08-17 17:53:56.870 -04:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller PropertyCore.WebUI.Controllers.HomeController (PropertyCore.WebUI).
+2023-08-17 17:53:56.977 -04:00 [INF] Executing ViewResult, running view Index.
+2023-08-17 17:53:56.977 -04:00 [INF] Executing ViewResult, running view Index.
+2023-08-17 17:53:57.907 -04:00 [INF] Executed ViewResult - view Index executed in 985.6548ms.
+2023-08-17 17:53:57.907 -04:00 [INF] Executed ViewResult - view Index executed in 982.5347ms.
+2023-08-17 17:53:57.991 -04:00 [INF] Executed action PropertyCore.WebUI.Controllers.HomeController.Index (PropertyCore.WebUI) in 1100.7882ms
+2023-08-17 17:53:58.010 -04:00 [INF] Executed action PropertyCore.WebUI.Controllers.HomeController.Index (PropertyCore.WebUI) in 1118.0591ms
+2023-08-17 17:53:58.028 -04:00 [INF] Executed endpoint 'PropertyCore.WebUI.Controllers.HomeController.Index (PropertyCore.WebUI)'
+2023-08-17 17:53:58.053 -04:00 [INF] Executed endpoint 'PropertyCore.WebUI.Controllers.HomeController.Index (PropertyCore.WebUI)'
+2023-08-17 17:53:58.123 -04:00 [INF] Request finished in 1780.2237ms 200 text/html; charset=utf-8
+2023-08-17 17:53:58.123 -04:00 [INF] Request finished in 1780.224ms 200 text/html; charset=utf-8
+2023-08-17 17:53:58.454 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_framework/aspnetcore-browser-refresh.js  
+2023-08-17 17:53:58.487 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_vs/browserLink  
+2023-08-17 17:53:58.498 -04:00 [INF] Request finished in 44.346ms 200 application/javascript; charset=utf-8
+2023-08-17 17:53:58.656 -04:00 [INF] Request finished in 168.7063ms 200 text/javascript; charset=UTF-8
+2023-08-17 17:53:58.785 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_framework/aspnetcore-browser-refresh.js  
+2023-08-17 17:53:58.793 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_vs/browserLink  
+2023-08-17 17:53:58.846 -04:00 [INF] Request finished in 61.0396ms 200 application/javascript; charset=utf-8
+2023-08-17 17:53:58.929 -04:00 [INF] Request finished in 135.422ms 200 text/javascript; charset=UTF-8
+2023-08-17 17:54:01.801 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/Property/LocationAudit?returnUrl=%2FHome%2FIndex  
+2023-08-17 17:54:01.852 -04:00 [INF] Executing endpoint 'PropertyCore.WebUI.Controllers.PropertyController.LocationAudit (PropertyCore.WebUI)'
+2023-08-17 17:54:01.930 -04:00 [INF] Route matched with {action = "LocationAudit", controller = "Property"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LocationAudit(System.String) on controller PropertyCore.WebUI.Controllers.PropertyController (PropertyCore.WebUI).
+2023-08-17 17:54:02.030 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/Property/LocationAudit?returnUrl=%2FHome%2FIndex  
+2023-08-17 17:54:02.068 -04:00 [INF] Executing endpoint 'PropertyCore.WebUI.Controllers.PropertyController.LocationAudit (PropertyCore.WebUI)'
+2023-08-17 17:54:02.080 -04:00 [INF] Route matched with {action = "LocationAudit", controller = "Property"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LocationAudit(System.String) on controller PropertyCore.WebUI.Controllers.PropertyController (PropertyCore.WebUI).
+2023-08-17 17:54:02.223 -04:00 [INF] RecordsCore Request: GetPGPDPropertyLocationsQuery PGCNT\JCSmith1 PropertyCore.Application.Lists.Queries.GetPGPDPropertyLocation.GetPGPDPropertyLocationsQuery
+2023-08-17 17:54:02.223 -04:00 [INF] RecordsCore Request: GetPGPDPropertyLocationsQuery PGCNT\tjfellrath PropertyCore.Application.Lists.Queries.GetPGPDPropertyLocation.GetPGPDPropertyLocationsQuery
+2023-08-17 17:54:04.583 -04:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2023-08-17 17:54:04.690 -04:00 [INF] Entity Framework Core 3.0.0 initialized 'DHStoreContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled 
+2023-08-17 17:54:04.690 -04:00 [INF] Entity Framework Core 3.0.0 initialized 'DHStoreContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled 
+2023-08-17 17:54:05.612 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT (
+    SELECT TOP(1) [l].[Description]
+    FROM [ListManagement.Code.GroupEntry] AS [l]
+    WHERE ([l0].[InstanceId] = [l].[InstanceId]) AND ([l0].[SeqNo1] = [l].[SeqNo1])) AS [Text], [l0].[ID] AS [Value]
+FROM [ListManagement.Code] AS [l0]
+WHERE CONVERT(VARCHAR(36), [l0].[InstanceId]) = N'04D52599-B589-4779-ACA8-D1A90C35F31D'
+2023-08-17 17:54:05.612 -04:00 [INF] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT (
+    SELECT TOP(1) [l].[Description]
+    FROM [ListManagement.Code.GroupEntry] AS [l]
+    WHERE ([l0].[InstanceId] = [l].[InstanceId]) AND ([l0].[SeqNo1] = [l].[SeqNo1])) AS [Text], [l0].[ID] AS [Value]
+FROM [ListManagement.Code] AS [l0]
+WHERE CONVERT(VARCHAR(36), [l0].[InstanceId]) = N'04D52599-B589-4779-ACA8-D1A90C35F31D'
+2023-08-17 17:54:05.957 -04:00 [WRN] RecordsCore Long Running Request: GetPGPDPropertyLocationsQuery (3720 milliseconds) PGCNT\JCSmith1 PropertyCore.Application.Lists.Queries.GetPGPDPropertyLocation.GetPGPDPropertyLocationsQuery
+2023-08-17 17:54:05.957 -04:00 [WRN] RecordsCore Long Running Request: GetPGPDPropertyLocationsQuery (3720 milliseconds) PGCNT\tjfellrath PropertyCore.Application.Lists.Queries.GetPGPDPropertyLocation.GetPGPDPropertyLocationsQuery
+2023-08-17 17:54:06.003 -04:00 [INF] Executing ViewResult, running view LocationAudit.
+2023-08-17 17:54:06.003 -04:00 [INF] Executing ViewResult, running view LocationAudit.
+2023-08-17 17:54:06.411 -04:00 [INF] Executed ViewResult - view LocationAudit executed in 414.1685ms.
+2023-08-17 17:54:06.426 -04:00 [INF] Executed action PropertyCore.WebUI.Controllers.PropertyController.LocationAudit (PropertyCore.WebUI) in 4472.8259ms
+2023-08-17 17:54:06.432 -04:00 [INF] Executed endpoint 'PropertyCore.WebUI.Controllers.PropertyController.LocationAudit (PropertyCore.WebUI)'
+2023-08-17 17:54:06.439 -04:00 [INF] Executed ViewResult - view LocationAudit executed in 441.6877ms.
+2023-08-17 17:54:06.454 -04:00 [INF] Executed action PropertyCore.WebUI.Controllers.PropertyController.LocationAudit (PropertyCore.WebUI) in 4371.4169ms
+2023-08-17 17:54:06.463 -04:00 [INF] Executed endpoint 'PropertyCore.WebUI.Controllers.PropertyController.LocationAudit (PropertyCore.WebUI)'
+2023-08-17 17:54:06.816 -04:00 [INF] Request finished in 5015.5028ms 200 text/html; charset=utf-8
+2023-08-17 17:54:06.831 -04:00 [INF] Request finished in 4801.8273ms 200 text/html; charset=utf-8
+2023-08-17 17:54:07.322 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_framework/aspnetcore-browser-refresh.js  
+2023-08-17 17:54:07.326 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_vs/browserLink  
+2023-08-17 17:54:07.334 -04:00 [INF] Request finished in 12.5231ms 200 application/javascript; charset=utf-8
+2023-08-17 17:54:07.366 -04:00 [INF] Request finished in 40.3001ms 200 text/javascript; charset=UTF-8
+2023-08-17 17:54:07.572 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_framework/aspnetcore-browser-refresh.js  
+2023-08-17 17:54:07.572 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:58874/_vs/browserLink  
+2023-08-17 17:54:07.596 -04:00 [INF] Request finished in 23.9957ms 200 application/javascript; charset=utf-8
+2023-08-17 17:54:07.707 -04:00 [INF] Request finished in 135.087ms 200 text/javascript; charset=UTF-8
+2023-08-17 17:54:55.981 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:58874/Property/PropertyAudit?returnUrl=%2FHome%2FIndex application/x-www-form-urlencoded 82413
+2023-08-17 17:54:56.026 -04:00 [INF] Request finished in 46.9425ms 404 

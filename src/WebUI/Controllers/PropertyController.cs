@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using PropertyCore.Application.Lists.Queries.GetPGPDPropertyLocation;
+using PropertyCore.Application.Property.Commands.LocationAudit;
 using PropertyCore.Application.Property.Queries.GetPropertyDetail;
 using PropertyCore.Application.Property.Queries.GetPropertyFile;
 using PropertyCore.Application.Property.Queries.GetPropertyList;
@@ -39,6 +41,36 @@ namespace PropertyCore.WebUI.Controllers
         {
             var vm = await Mediator.Send(request);
             return File(vm.Content, vm.ContentType, vm.FileName);
+        }
+        [HttpGet]
+        public async Task<IActionResult> LocationAudit([FromQuery] string returnUrl)
+        {
+            ViewData["ActiveMenu"] = "Property";
+            ViewData["Title"] = "PropertyAudit";
+            ViewBag.ReturnUrl = returnUrl;
+            ViewBag.PropertyLocations = await Mediator.Send(new GetPGPDPropertyLocationsQuery());
+            return View(new LocationAuditCommand());
+        }
+        [HttpPost]
+        public async Task<IActionResult> LocationAudit([FromForm] LocationAuditCommand command, [FromQuery] string returnUrl)
+        {
+            if (!ModelState.IsValid)
+            {
+                ViewData["ActiveMenu"] = "Property";
+                ViewData["Title"] = "Property Audit: Error";
+                ViewBag.ReturnUrl = returnUrl;
+                ViewBag.PropertyLocations = await Mediator.Send(new GetPGPDPropertyLocationsQuery());
+                return View(command);
+            }
+            var result = await Mediator.Send(command);
+            return View("AuditResults", result);
+        }
+        
+        public IActionResult AuditResults(LocationAuditResultVm request)
+        {
+            ViewData["ActiveMenu"] = "Property";
+            ViewData["Title"] = "Property Audit Results";
+            return View(request);
         }
     }
 }

@@ -56,6 +56,10 @@ namespace PropertyCore.Persistence
         /// <inheritdoc/>
         /// </summary>
         public virtual DbSet<ListManagementCodeAttributes> ListManagementCodeAttributes { get; set; }
+        /// <summary>
+        /// <inheritdoc/>
+        /// </summary>
+        public virtual DbSet<ListManagementCodeGroupEntry> ListManagementCodeGroupEntries { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

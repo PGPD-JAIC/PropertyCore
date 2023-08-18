@@ -98,7 +98,7 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyList
         /// </summary>
         public string AgencyName { get; set; }
         /// <summary>
-        /// Creates a mapping between the entity and the data transfer class.
+        /// Creates a mapping between the entity and the DTO.
         /// </summary>
         /// <param name="profile"></param>
         public void Mapping(MappingProfile profile)

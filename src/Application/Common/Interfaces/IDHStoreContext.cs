@@ -20,8 +20,21 @@ namespace PropertyCore.Application.Common.Interfaces
         /// A <see cref="DbSet{PropertySheetMetadata}"/> containing property sheet metadata entires.
         /// </summary>
         DbSet<PropertySheetMetadata> PropertySheetMetadata { get; }
+        /// <summary>
+        /// A <see cref="DbSet{ListManagement}"/> containing List Management object entries.
+        /// </summary>
         DbSet<ListManagement> ListManagement { get; }
+        /// <summary>
+        /// A <see cref="DbSet{ListManagementCode}"/> containing List Management Code entries.
+        /// </summary>
         DbSet<ListManagementCode> ListManagementCodes { get; }
+        /// <summary>
+        /// A <see cref="DbSet{ListManagementCodeAttributes}"/> containing List Managemetn Code Attribute entries.
+        /// </summary>
         DbSet<ListManagementCodeAttributes> ListManagementCodeAttributes { get; }
+        /// <summary>
+        /// A <see cref="DbSet{ListManagementCodeGroupEntry}"/> containing the List Management Code Group Entries.
+        /// </summary>
+        DbSet<ListManagementCodeGroupEntry> ListManagementCodeGroupEntries { get; }
     }
 }

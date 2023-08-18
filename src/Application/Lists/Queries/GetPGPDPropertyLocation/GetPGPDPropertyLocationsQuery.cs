@@ -1,10 +1,10 @@
 ﻿using MediatR;
-using PropertyCore.Application.Common.Models;
+using PropertyCore.Application.Common.Interfaces;
 using System.Collections.Generic;
 
 namespace PropertyCore.Application.Lists.Queries.GetPGPDPropertyLocation
 {
-    public class GetPGPDPropertyLocationsQuery : IRequest<List<DropDownListItem>>
+    public class GetPGPDPropertyLocationsQuery : IRequest<List<PropertyLocationDto>>
     {
     }
 }
