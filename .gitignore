@@ -362,3 +362,4 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 /src/WebUI/RecordsCore20230816.txt
+/src/WebUI/RecordsCore20230818.txt
