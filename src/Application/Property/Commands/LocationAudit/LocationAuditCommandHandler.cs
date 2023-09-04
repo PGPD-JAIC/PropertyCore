@@ -27,11 +27,20 @@ namespace PropertyCore.Application.Property.Commands.LocationAudit
         public async Task<LocationAuditResultVm> Handle(LocationAuditCommand command, CancellationToken cancellationToken)
         {
             List<string> barCodes = command.BarCodes.Split(new string[] { "\r\n", "\r", "\n" }, System.StringSplitOptions.None).ToList();
+            var vm = new LocationAuditResultVm
+            {
+                BarCodes = command.BarCodes
+            };
+
             var items = await _context.PropertySheetTags
                 .Where(x => x.CurrentLocationId == command.LocationId)
                 .ProjectTo<LocationAuditResultPropertyItemDto>(_mapper.ConfigurationProvider)
-                .ToListAsync(cancellationToken);
-            var vm = new LocationAuditResultVm();
+            .ToListAsync(cancellationToken);
+
+            vm.Location = await _context.ListManagementCodes.Where(x => x.InstanceId.ToString() == "04D52599-B589-4779-ACA8-D1A90C35F31D" && x.Id == command.LocationId)
+                .ProjectTo<LocationAuditLocationDto>(_mapper.ConfigurationProvider)
+                .FirstOrDefaultAsync();
+                        
             foreach (var item in items)
             {
                 if (barCodes.Contains(item.BarCode))

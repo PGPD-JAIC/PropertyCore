@@ -14,7 +14,7 @@ namespace WebUI
                 .Enrich.FromLogContext()
                 .WriteTo.Console(new RenderedCompactJsonFormatter())
                 .WriteTo.Debug(outputTemplate: DateTime.Now.ToString())
-                .WriteTo.File("RecordsCore.txt", rollingInterval: RollingInterval.Day)
+                .WriteTo.File("PropertyCore_Log.txt", rollingInterval: RollingInterval.Day)
                 .CreateLogger();
             CreateHostBuilder(args).Build().Run();
         }

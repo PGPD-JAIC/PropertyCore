@@ -101,13 +101,13 @@ html {
 }
 
 .stickyHeaderTable {
-    height: 200px;
-    overflow-y:auto;
+    height: 205px;
+    overflow-y: auto;
 }
 
-.stickyHeaderTable thead th {
-    position:sticky;
-    top:0px;
-    background-color: #191d21;
-    border-top:1px #191d21;
-}
+    .stickyHeaderTable .table thead th {
+        position: sticky;
+        top: 0px;
+        background-color: #191d21;
+        border-top: 1px #191d21;
+    }

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PropertyCore.Application.Lists.Queries.GetPGPDPropertyLocation;
 using PropertyCore.Application.Property.Commands.LocationAudit;
+using PropertyCore.Application.Property.Queries.GetAuditFile;
 using PropertyCore.Application.Property.Queries.GetPropertyDetail;
 using PropertyCore.Application.Property.Queries.GetPropertyFile;
 using PropertyCore.Application.Property.Queries.GetPropertyList;
@@ -51,6 +52,7 @@ namespace PropertyCore.WebUI.Controllers
             ViewBag.PropertyLocations = await Mediator.Send(new GetPGPDPropertyLocationsQuery());
             return View(new LocationAuditCommand());
         }
+        
         [HttpPost]
         public async Task<IActionResult> LocationAudit([FromForm] LocationAuditCommand command, [FromQuery] string returnUrl)
         {
@@ -65,7 +67,12 @@ namespace PropertyCore.WebUI.Controllers
             var result = await Mediator.Send(command);
             return View("AuditResults", result);
         }
-        
+        [HttpPost]
+        public async Task<IActionResult> LocationFile([FromForm] GetAuditFileQuery request)
+        {
+            var vm = await Mediator.Send(request);
+            return File(vm.Content, vm.ContentType, vm.FileName);
+        }
         public IActionResult AuditResults(LocationAuditResultVm request)
         {
             ViewData["ActiveMenu"] = "Property";

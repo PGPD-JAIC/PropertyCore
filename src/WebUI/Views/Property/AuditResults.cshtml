@@ -7,10 +7,18 @@
     {
         <a href="@ViewBag.ReturnUrl"><i class="fas fa-angle-left"></i> Back</a>
     }
+    <a asp-controller="Property" asp-action="Audit"><i class="fas fa-angle-left"></i> Property Audit</a>
+
     <hr />
     <br />
-    <h4>Successfully found <span class="text-success">@Model.FoundItemsCount</span> items.</h4>
+    <h3>@Model.Location.Type - @Model.Location.Name</h3>
+    <form asp-action="LocationFile" method="post">
+        <input type="hidden" id="LocationId" name="LocationId" value="@Model.Location.Id" />
+        <input type="hidden" asp-for="@Model.BarCodes" />
+        <button type="submit" class="btn btn-success"><i class="far fa-file-excel"></i> Download Results</button>
+    </form>
     <br />
+    <h4>Successfully found <span class="text-success">@Model.FoundItemsCount</span> items.</h4>
     <hr />
     <h4><span class="text-danger">@Model.NotPresent.Count</span> Scanned Items found outside Location</h4>
     @if(Model.NotPresent.Count > 0)

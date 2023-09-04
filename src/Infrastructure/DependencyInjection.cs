@@ -5,6 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using PropertyCore.Application.Common.Interfaces;
 using PropertyCore.Common;
 using PropertyCore.Infrastructure.Files;
+using PropertyCore.Infrastructure.Files.OpenXML.SpreadsheetML;
 using System;
 
 namespace PropertyCore.Infrastructure
@@ -18,6 +19,7 @@ namespace PropertyCore.Infrastructure
         {
             services.AddTransient<ICsvFileBuilder, CsvFileBuilder>();
             services.AddTransient<IDateTime, MachineDateTime>();
+            services.AddTransient<ISpreadSheetBuilder, SpreadSheetBuilder>();
             // Add Hangfire services.
             services.AddHangfire(config => config
                 .SetDataCompatibilityLevel(CompatibilityLevel.Version_170)

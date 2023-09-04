@@ -1,9 +1,6 @@
-﻿namespace PropertyCore.Application.Property.Queries.GetPropertyFile
+﻿namespace PropertyCore.Application.Property.Queries.GetAuditFile
 {
-    /// <summary>
-    /// Viewmodel class used to return a list of Property Items in a file.
-    /// </summary>
-    public class PropertyFileVm
+    public class AuditFileVm
     {
         /// <summary>
         /// The name of the file.
@@ -17,6 +14,5 @@
         /// The file contents.
         /// </summary>
         public byte[] Content { get; set; }
-
     }
 }

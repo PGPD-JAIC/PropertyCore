@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using PropertyCore.Infrastructure.Files.OpenXML.SpreadsheetML;
 
 namespace PropertyCore.WebUI.Controllers
 {
@@ -34,7 +35,9 @@ namespace PropertyCore.WebUI.Controllers
         }
         public IActionResult Test()
         {
-            ViewData["Title"] = "PropertyCore Test Page";
+            //SpreadSheetBuilder testBuilder = new SpreadSheetBuilder();
+
+            //return File(testBuilder.Generate(), "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "AuditTest.xlsx");
             return View();
         }
     }
