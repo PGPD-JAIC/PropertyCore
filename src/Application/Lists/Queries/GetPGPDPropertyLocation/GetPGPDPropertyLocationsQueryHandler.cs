@@ -27,6 +27,7 @@ namespace PropertyCore.Application.Lists.Queries.GetPGPDPropertyLocation
         {
             return await _context.ListManagementCodes.Where(x => x.InstanceId.ToString() == "04D52599-B589-4779-ACA8-D1A90C35F31D")
                 .ProjectTo<PropertyLocationDto>(_mapper.ConfigurationProvider)
+                .OrderBy(x => x.Text)
                 .ToListAsync(cancellationToken);
         }
 
