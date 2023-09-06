@@ -59,6 +59,9 @@
                             <li class="@(Model.ActiveLink == "PropertyAudit" ? "active" : "")">
                                 <a asp-action="LocationAudit" asp-controller="Property" asp-route-returnUrl="/Home/Index">Location Audit</a>
                             </li>
+                            <li class="@(Model.ActiveLink == "LocationInventory" ? "active" : "")">
+                                <a asp-action="LocationInventory" asp-controller="Property" asp-route-returnUrl="/Home/Index">Location Inventory</a>
+                            </li>
                         </ul>
                     </div>
                 </li>

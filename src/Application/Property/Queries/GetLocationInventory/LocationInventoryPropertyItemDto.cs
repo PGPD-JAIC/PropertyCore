@@ -1,30 +1,40 @@
 ﻿using PropertyCore.Application.Common.Mappings;
+using PropertyCore.Application.Property.Queries.GetAuditFile;
+using PropertyCore.Application.Property.Queries.GetPropertyList;
 using PropertyCore.Domain.Entities;
 using System;
 
-namespace PropertyCore.Application.Property.Queries.GetPropertyFile
+namespace PropertyCore.Application.Property.Queries.GetLocationInventory
 {
     /// <summary>
     /// Data transfer class used to relay details of a <see cref="PropertySheetTags"/> entity.
     /// </summary>
-    public class PropertyListFileItemDto : IMapFrom<PropertySheetTags>
+    public class LocationInventoryPropertyItemDto : IMapFrom<PropertySheetTags>
     {
         /// <summary>
-        /// The submitting agency of the item.
+        /// The Instance Id of the entity.
         /// </summary>
-        public string Agency { get; set; }
+        public Guid InstanceId { get; set; }
+        /// <summary>
+        /// The Sequence Number of the entity.
+        /// </summary>
+        public int SeqNo1 { get; set; }
         /// <summary>
         /// The Bar Code of the entity.
         /// </summary>
         public string BarCode { get; set; }
         /// <summary>
-        /// The Description of the entity.
+        /// The item count of the entity.
         /// </summary>
-        public string Description { get; set; }
+        public string ItemQuantity { get; set; }
         /// <summary>
         /// The Property Type of the entity.
         /// </summary>
         public string PropertyType { get; set; }
+        /// <summary>
+        /// The Description of the entity.
+        /// </summary>
+        public string Description { get; set; }
         /// <summary>
         /// The Category of the entity.
         /// </summary>
@@ -38,21 +48,9 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyFile
         /// </summary>
         public string CurrentDisposition { get; set; }
         /// <summary>
-        /// The Date/Time that the entity was obtained.
+        /// The current hold status of the entity.
         /// </summary>
-        public DateTime ObtainedDate { get; set; }
-        /// <summary>
-        /// The name of the person from whom the property item associated with the entity was obtained.
-        /// </summary>
-        public string ObtainedFrom { get; set; }
-        /// <summary>
-        /// The explanation of the entity.
-        /// </summary>
-        public string Explain { get; set; }
-        /// <summary>
-        /// The drop location of the property item associated with the entity.
-        /// </summary>
-        public string DropLocation { get; set; }
+        public string HoldStatus { get; set; }
         /// <summary>
         /// The case number of the case associated with the entity.
         /// </summary>
@@ -62,32 +60,23 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyFile
         /// </summary>
         public string PropertySheetNumber { get; set; }
         /// <summary>
-        /// The status of the property.
-        /// </summary>
-        public string Status { get; set; }
-        /// <summary>
-        /// The Hold Status of the property.
-        /// </summary>
-        public string HoldStatus { get; set; }
-        /// <summary>
-        /// Creates a mapping between the entity and the data transfer class.
+        /// Creates a mapping between the entity class and the DTO.
         /// </summary>
         /// <param name="profile"></param>
         public void Mapping(MappingProfile profile)
         {
-            profile.CreateMap<PropertySheetTags, PropertyListFileItemDto>()
-                .ForMember(x => x.Agency, opt => opt.MapFrom(y => y.Instance.AgencyId))
+            profile.CreateMap<PropertySheetTags, LocationInventoryPropertyItemDto>()
+                .ForMember(x => x.InstanceId, opt => opt.MapFrom(y => y.InstanceId))
+                .ForMember(x => x.SeqNo1, opt => opt.MapFrom(y => y.SeqNo1))
                 .ForMember(x => x.BarCode, opt => opt.MapFrom(y => y.TagNumber))
+                .ForMember(x => x.PropertyType, opt => opt.MapFrom(y => y.PropertyType))
+                .ForMember(x => x.ItemQuantity, opt => opt.MapFrom(y => y.Quantity))
                 .ForMember(x => x.Description, opt => opt.MapFrom(y => y.Description))
                 .ForMember(x => x.PropertyCategory, opt => opt.MapFrom(y => y.PropertyCategory))
-                .ForMember(x => x.CurrentLocation, opt => opt.MapFrom(y => y.CurrentLocation))
-                .ForMember(x => x.CurrentDisposition, opt => opt.MapFrom(y => y.CurrentDisposition))
-                .ForMember(x => x.ObtainedFrom, opt => opt.MapFrom(y => y.ObtainedFrom))
-                .ForMember(x => x.Explain, opt => opt.MapFrom(y => y.Explain))
-                .ForMember(x => x.DropLocation, opt => opt.MapFrom(y => y.DropLocation))
                 .ForMember(x => x.CaseNumber, opt => opt.MapFrom(y => y.TagsCaseNoRtf))
                 .ForMember(x => x.PropertySheetNumber, opt => opt.MapFrom(y => y.TagsSheetNoRtf))
-                .ForMember(x => x.Status, opt => opt.MapFrom(y => y.Status))
+                .ForMember(x => x.CurrentLocation, opt => opt.MapFrom(y => y.CurrentLocation))
+                .ForMember(x => x.CurrentDisposition, opt => opt.MapFrom(y => y.CurrentDisposition))
                 .ForMember(x => x.HoldStatus, opt => opt.MapFrom(y => y.HoldStatus));
         }
     }

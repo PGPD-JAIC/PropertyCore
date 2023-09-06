@@ -20,6 +20,7 @@ namespace PropertyCore.Infrastructure
             services.AddTransient<ICsvFileBuilder, CsvFileBuilder>();
             services.AddTransient<IDateTime, MachineDateTime>();
             services.AddTransient<ISpreadSheetBuilder, SpreadSheetBuilder>();
+            services.AddTransient<ILocationInventorySpreadsheetBuilder, LocationInventorySpreadSheetBuilder>();
             // Add Hangfire services.
             services.AddHangfire(config => config
                 .SetDataCompatibilityLevel(CompatibilityLevel.Version_170)

@@ -216,9 +216,10 @@
     cursor: pointer;
     float: right;
     font-weight: bold;
-    height: 26px;
+    height: 16px;
     margin-right: 20px;
     padding-right: 0px;
+    color: red;
 
 }
 .select2-container--default .select2-selection--single .select2-selection__placeholder {

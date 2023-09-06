@@ -1,7 +1,7 @@
-﻿namespace PropertyCore.Application.Property.Queries.GetAuditFile
+﻿namespace PropertyCore.Application.Property.Queries.GetLocationInventoryFile
 {
     // TODO: consider generic FileResult class
-    public class AuditFileVm
+    public class LocationInventoryFileVm
     {
         /// <summary>
         /// The name of the file.

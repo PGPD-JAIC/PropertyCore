@@ -7,6 +7,11 @@
     <form action="" method="get" class="floatingForm">
         <div class="form-row align-items-top mb-2">
             <div class="col-md-3">
+                <select name="SelectedRealmId" id="SelectedRealmId" style="width: 100%" class="form-control form-control-sm selectpicker" asp-items="@(new SelectList(Model.Realms, "Value", "Text", Model.SelectedRealmId))">
+                    <option disabled selected>Choose Realm</option>
+                </select>
+            </div>
+            <div class="col-md-3">
                 <input type="text" name="BarCodeSearch" class="form-control form-control-sm" value="@Model.BarCode" placeholder="Search by Bar Code" />
             </div>
             <div class="col-md-3">
@@ -50,6 +55,7 @@
                     || !string.IsNullOrEmpty(Model.SelectedPropertyCategory)
                     || !string.IsNullOrEmpty(Model.SelectedPropertyStatusId)
                     || !string.IsNullOrEmpty(Model.SelectedPropertyHoldStatusId)
+                    || !string.IsNullOrEmpty(Model.SelectedRealmId)
                 )
                 {
                     <a type="reset" class="btn btn-info" asp-action="Index" asp-controller="Property"><i class="fas fa-arrow-left"></i> Reset</a>
@@ -410,6 +416,10 @@
             });
             $("#SelectedPropertyHoldStatusId").select2({
                 placeholder: "Select Hold Status",
+                allowClear: true
+            });
+            $("#SelectedRealmId").select2({
+                placeholder: "Working In",
                 allowClear: true
             });
         });

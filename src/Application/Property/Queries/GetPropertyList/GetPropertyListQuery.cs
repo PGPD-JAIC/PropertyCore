@@ -36,6 +36,10 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyList
         /// </summary>
         public string SelectedPropertyHoldStatusId { get; set; } = "";
         /// <summary>
+        /// An optional ID for the selected realm. Defaults to PGPD Realm.
+        /// </summary>
+        public string SelectedRealmId { get; set; } = "";
+        /// <summary>
         /// An optional sort order string that will sort the result list.
         /// </summary>
         public string SortOrder { get; set; } = "";

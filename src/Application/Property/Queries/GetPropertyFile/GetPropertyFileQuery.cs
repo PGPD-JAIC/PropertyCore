@@ -36,6 +36,10 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyFile
         /// </summary>
         public string SelectedHoldStatusId { get; set; } = "";
         /// <summary>
+        /// An optional ID for the Realm.
+        /// </summary>
+        public string SelectedRealmId { get; set; } = "";
+        /// <summary>
         /// An optional sort order string that will sort the result list.
         /// </summary>
         public string SortOrder { get; set; } = "";

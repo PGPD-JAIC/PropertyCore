@@ -52,6 +52,7 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyFile
                         && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
                         && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
                         && (string.IsNullOrEmpty(request.SelectedHoldStatusId) || x.HoldStatusId == request.SelectedHoldStatusId)
+                        && (string.IsNullOrEmpty(request.SelectedRealmId) || x.Instance.PropertySheetMetadata.OwnerId.ToString() == request.SelectedRealmId)
                         && x.ObtainedDate != null)
                     .ProjectTo<PropertyListFileItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken),
@@ -64,6 +65,7 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyFile
                         && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
                         && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
                         && (string.IsNullOrEmpty(request.SelectedHoldStatusId) || x.HoldStatusId == request.SelectedHoldStatusId)
+                        && (string.IsNullOrEmpty(request.SelectedRealmId) || x.Instance.PropertySheetMetadata.OwnerId.ToString() == request.SelectedRealmId)
                         && x.ObtainedDate != null)
                     .ProjectTo<PropertyListFileItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken),
@@ -76,6 +78,7 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyFile
                         && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
                         && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
                         && (string.IsNullOrEmpty(request.SelectedHoldStatusId) || x.HoldStatusId == request.SelectedHoldStatusId)
+                        && (string.IsNullOrEmpty(request.SelectedRealmId) || x.Instance.PropertySheetMetadata.OwnerId.ToString() == request.SelectedRealmId)
                         && x.ObtainedDate != null)
                     .ProjectTo<PropertyListFileItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken),
@@ -88,6 +91,7 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyFile
                         && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
                         && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
                         && (string.IsNullOrEmpty(request.SelectedHoldStatusId) || x.HoldStatusId == request.SelectedHoldStatusId)
+                        && (string.IsNullOrEmpty(request.SelectedRealmId) || x.Instance.PropertySheetMetadata.OwnerId.ToString() == request.SelectedRealmId)
                         && x.ObtainedDate != null)
                     .ProjectTo<PropertyListFileItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken),
@@ -100,6 +104,7 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyFile
                         && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
                         && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
                         && (string.IsNullOrEmpty(request.SelectedHoldStatusId) || x.HoldStatusId == request.SelectedHoldStatusId)
+                        && (string.IsNullOrEmpty(request.SelectedRealmId) || x.Instance.PropertySheetMetadata.OwnerId.ToString() == request.SelectedRealmId)
                         && x.ObtainedDate != null)
                     .ProjectTo<PropertyListFileItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken),
@@ -112,6 +117,7 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyFile
                         && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
                         && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
                         && (string.IsNullOrEmpty(request.SelectedHoldStatusId) || x.HoldStatusId == request.SelectedHoldStatusId)
+                        && (string.IsNullOrEmpty(request.SelectedRealmId) || x.Instance.PropertySheetMetadata.OwnerId.ToString() == request.SelectedRealmId)
                         && x.ObtainedDate != null)
                     .ProjectTo<PropertyListFileItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken),
@@ -124,6 +130,7 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyFile
                         && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
                         && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
                         && (string.IsNullOrEmpty(request.SelectedHoldStatusId) || x.HoldStatusId == request.SelectedHoldStatusId)
+                        && (string.IsNullOrEmpty(request.SelectedRealmId) || x.Instance.PropertySheetMetadata.OwnerId.ToString() == request.SelectedRealmId)
                         && x.ObtainedDate != null)
                     .ProjectTo<PropertyListFileItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken),
@@ -135,6 +142,7 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyFile
                         && (string.IsNullOrEmpty(request.SelectedPropertyTypeId) || x.PropertyTypeId == request.SelectedPropertyTypeId)
                         && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
                         && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
+                        && (string.IsNullOrEmpty(request.SelectedRealmId) || x.Instance.PropertySheetMetadata.OwnerId.ToString() == request.SelectedRealmId)
                         && x.ObtainedDate != null)
                     .ProjectTo<PropertyListFileItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken),
@@ -147,6 +155,7 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyFile
                         && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
                         && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
                         && (string.IsNullOrEmpty(request.SelectedHoldStatusId) || x.HoldStatusId == request.SelectedHoldStatusId)
+                        && (string.IsNullOrEmpty(request.SelectedRealmId) || x.Instance.PropertySheetMetadata.OwnerId.ToString() == request.SelectedRealmId)
                         && x.ObtainedDate != null)
                     .ProjectTo<PropertyListFileItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken),
@@ -159,6 +168,7 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyFile
                         && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
                         && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
                         && (string.IsNullOrEmpty(request.SelectedHoldStatusId) || x.HoldStatusId == request.SelectedHoldStatusId)
+                        && (string.IsNullOrEmpty(request.SelectedRealmId) || x.Instance.PropertySheetMetadata.OwnerId.ToString() == request.SelectedRealmId)
                         && x.ObtainedDate != null)
                     .ProjectTo<PropertyListFileItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken),
@@ -171,6 +181,7 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyFile
                         && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
                         && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
                         && (string.IsNullOrEmpty(request.SelectedHoldStatusId) || x.HoldStatusId == request.SelectedHoldStatusId)
+                        && (string.IsNullOrEmpty(request.SelectedRealmId) || x.Instance.PropertySheetMetadata.OwnerId.ToString() == request.SelectedRealmId)
                         && x.ObtainedDate != null)
                     .ProjectTo<PropertyListFileItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken),
@@ -183,6 +194,7 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyFile
                         && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
                         && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
                         && (string.IsNullOrEmpty(request.SelectedHoldStatusId) || x.HoldStatusId == request.SelectedHoldStatusId)
+                        && (string.IsNullOrEmpty(request.SelectedRealmId) || x.Instance.PropertySheetMetadata.OwnerId.ToString() == request.SelectedRealmId)
                         && x.ObtainedDate != null)
                     .ProjectTo<PropertyListFileItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken),
@@ -195,6 +207,7 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyFile
                         && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
                         && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
                         && (string.IsNullOrEmpty(request.SelectedHoldStatusId) || x.HoldStatusId == request.SelectedHoldStatusId)
+                        && (string.IsNullOrEmpty(request.SelectedRealmId) || x.Instance.PropertySheetMetadata.OwnerId.ToString() == request.SelectedRealmId)
                         && x.ObtainedDate != null)
                     .ProjectTo<PropertyListFileItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken),
@@ -207,6 +220,7 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyFile
                         && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
                         && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
                         && (string.IsNullOrEmpty(request.SelectedHoldStatusId) || x.HoldStatusId == request.SelectedHoldStatusId)
+                        && (string.IsNullOrEmpty(request.SelectedRealmId) || x.Instance.PropertySheetMetadata.OwnerId.ToString() == request.SelectedRealmId)
                         && x.ObtainedDate != null)
                     .ProjectTo<PropertyListFileItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken),
@@ -219,6 +233,7 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyFile
                         && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
                         && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
                         && (string.IsNullOrEmpty(request.SelectedHoldStatusId) || x.HoldStatusId == request.SelectedHoldStatusId)
+                        && (string.IsNullOrEmpty(request.SelectedRealmId) || x.Instance.PropertySheetMetadata.OwnerId.ToString() == request.SelectedRealmId)
                         && x.ObtainedDate != null)
                     .ProjectTo<PropertyListFileItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken),
@@ -231,6 +246,7 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyFile
                         && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
                         && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
                         && (string.IsNullOrEmpty(request.SelectedHoldStatusId) || x.HoldStatusId == request.SelectedHoldStatusId)
+                        && (string.IsNullOrEmpty(request.SelectedRealmId) || x.Instance.PropertySheetMetadata.OwnerId.ToString() == request.SelectedRealmId)
                         && x.ObtainedDate != null)
                     .ProjectTo<PropertyListFileItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken),
@@ -242,6 +258,7 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyFile
                         && (string.IsNullOrEmpty(request.SelectedPropertyTypeId) || x.PropertyTypeId == request.SelectedPropertyTypeId)
                         && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
                         && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
+                        && (string.IsNullOrEmpty(request.SelectedRealmId) || x.Instance.PropertySheetMetadata.OwnerId.ToString() == request.SelectedRealmId)
                         && x.ObtainedDate != null)
                     .ProjectTo<PropertyListFileItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken),
@@ -254,6 +271,7 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyFile
                         && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
                         && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
                         && (string.IsNullOrEmpty(request.SelectedHoldStatusId) || x.HoldStatusId == request.SelectedHoldStatusId)
+                        && (string.IsNullOrEmpty(request.SelectedRealmId) || x.Instance.PropertySheetMetadata.OwnerId.ToString() == request.SelectedRealmId)
                         && x.ObtainedDate != null)
                     .ProjectTo<PropertyListFileItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken),
@@ -265,6 +283,7 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyFile
                         && (string.IsNullOrEmpty(request.SelectedPropertyTypeId) || x.PropertyTypeId == request.SelectedPropertyTypeId)
                         && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
                         && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
+                        && (string.IsNullOrEmpty(request.SelectedRealmId) || x.Instance.PropertySheetMetadata.OwnerId.ToString() == request.SelectedRealmId)
                         && x.ObtainedDate != null)
                     .ProjectTo<PropertyListFileItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken),
@@ -277,6 +296,7 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyFile
                         && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
                         && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
                         && (string.IsNullOrEmpty(request.SelectedHoldStatusId) || x.HoldStatusId == request.SelectedHoldStatusId)
+                        && (string.IsNullOrEmpty(request.SelectedRealmId) || x.Instance.PropertySheetMetadata.OwnerId.ToString() == request.SelectedRealmId)
                         && x.ObtainedDate != null)
                     .ProjectTo<PropertyListFileItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken),
@@ -288,6 +308,7 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyFile
                         && (string.IsNullOrEmpty(request.SelectedPropertyTypeId) || x.PropertyTypeId == request.SelectedPropertyTypeId)
                         && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
                         && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
+                        && (string.IsNullOrEmpty(request.SelectedRealmId) || x.Instance.PropertySheetMetadata.OwnerId.ToString() == request.SelectedRealmId)
                         && x.ObtainedDate != null)
                     .ProjectTo<PropertyListFileItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken),
@@ -300,6 +321,7 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyFile
                         && (string.IsNullOrEmpty(request.SelectedPropertyCategory) || x.PropertyCategory == request.SelectedPropertyCategory)
                         && (string.IsNullOrEmpty(request.SelectedPropertyStatusId) || x.StatusId == request.SelectedPropertyStatusId)
                         && (string.IsNullOrEmpty(request.SelectedHoldStatusId) || x.HoldStatusId == request.SelectedHoldStatusId)
+                        && (string.IsNullOrEmpty(request.SelectedRealmId) || x.Instance.PropertySheetMetadata.OwnerId.ToString() == request.SelectedRealmId)
                         && x.ObtainedDate != null)
                     .ProjectTo<PropertyListFileItemDto>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken)

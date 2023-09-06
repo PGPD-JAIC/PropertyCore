@@ -1,0 +1,149 @@
+﻿@using PropertyCore.Application.Property.Queries.GetLocationInventory;
+@model LocationInventoryVm
+<div>
+    <h2>Location Inventory</h2>
+    <hr />
+    <form asp-action="LocationInventory" asp-route-returnUrl="@ViewBag.ReturnUrl">
+        <div class="form-row align-items-top mb-2">
+            <div class="col-md-3">
+                <select name="SelectedLocationId" id="LocationId" style="width: 100%" class="form-control form-control-sm selectpicker" asp-items="@(new SelectList(Model.Locations, "Value", "Text", Model.SelectedLocationId))">
+                    <option disabled selected>Choose Location</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row align-items-top mb-2">
+            <div class="col-auto mb-2">
+                <button type="submit" class="btn btn-primary" formaction="/Property/LocationInventory" formmethod="get"><i class="fas fa-search"></i> Search</button>
+                <button type="submit" class="btn btn-success" id="filterSubmit" formaction="/Property/LocationInventoryFile" formmethod="post"><i class="far fa-file-excel"></i> Download</button>
+                @if (!string.IsNullOrEmpty(Model.SelectedLocationId))
+                {
+                    <a type="reset" class="btn btn-info" asp-action="LocationAudit" asp-controller="Property" asp-route-returnUrl="@ViewBag.ReturnUrl"><i class="fas fa-arrow-left"></i> Reset</a>
+                }
+            </div>
+        </div>
+    </form>
+    <br />
+    @if(!string.IsNullOrEmpty(Model.SelectedLocationId)){
+        <h4>Found <span class="text-success">@Model.Items.Count</span> items.</h4>
+    }
+    <hr />
+    @if(Model.Items.Count > 0)
+    {
+        <div class="table-responsive-sm">
+            <table class="table table-striped table-sm">
+                <thead>
+                    <tr>
+                        <th colspan="9">
+                            <div page-model="@Model.PagingInfo" page-action="LocationInventory" page-classes-enabled="true"
+                                 page-class="" page-class-normal=""
+                                 page-class-selected="active"
+                                 page-url-selectedLocationId="@Model.SelectedLocationId"
+                                 class="btn-group">
+                            </div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th colspan="9">
+                            <small>@Model.PagingInfo.Caption</small>
+                        </th>                        
+                    </tr>
+                    <tr>
+                        <th>
+                            Barcode
+                        </th>
+                        <th>
+                            Case No
+                        </th>
+                        <th>
+                            Sheet No
+                        </th>
+                        <th>
+                            Location
+                        </th>
+                        <th>
+                            Disposition
+                        </th>
+                        <th>
+                            Type
+                        </th>
+                        <th>
+                            Count
+                        </th>
+                        <th>
+                            Hold Status
+                        </th>
+                        <th>
+                            Description
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Items)
+                    {
+                        <tr>
+                            <td>
+                                <a asp-controller="Property"
+                                   asp-action="Details"
+                                   asp-route-InstanceId="@item.InstanceId"
+                                   asp-route-SeqNo1="@item.SeqNo1"
+                                   asp-route-returnUrl="/Property/LocationAudit@(!String.IsNullOrEmpty(Context.Request.QueryString.ToString()) ? $"{Context.Request.QueryString}" : "")"
+                                   target="_blank">
+                                    @item.BarCode
+                                </a>
+                            </td>
+                            <td>
+                                @item.CaseNumber
+                            </td>
+                            <td>
+                                @item.PropertySheetNumber
+                            </td>
+                            <td class="text-danger">
+                                @item.CurrentLocation
+                            </td>
+                            <td>
+                                @item.CurrentDisposition
+                            </td>
+                            <td>
+                                @item.PropertyType
+                            </td>
+                            <td>
+                                @item.ItemQuantity
+                            </td>
+                            <td>
+                                @item.HoldStatus
+                            </td>
+                            <td>
+                                @item.Description
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+    else if (!string.IsNullOrEmpty(Model.SelectedLocationId))
+    {
+        <div class="text-center">
+            <h5>No Property Items Found</h5>
+        </div>
+    }
+    else{
+
+    }
+</div>
+
+@section Head {
+    <link href="~/lib/select2/css/select2.css" rel="stylesheet" />
+}
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#SelectedLocationId").select2({
+                placeholder: "Select Location",
+                allowClear: true
+            });
+        });
+    </script>
+}

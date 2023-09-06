@@ -2,6 +2,8 @@
 using PropertyCore.Application.Lists.Queries.GetPGPDPropertyLocation;
 using PropertyCore.Application.Property.Commands.LocationAudit;
 using PropertyCore.Application.Property.Queries.GetAuditFile;
+using PropertyCore.Application.Property.Queries.GetLocationInventory;
+using PropertyCore.Application.Property.Queries.GetLocationInventoryFile;
 using PropertyCore.Application.Property.Queries.GetPropertyDetail;
 using PropertyCore.Application.Property.Queries.GetPropertyFile;
 using PropertyCore.Application.Property.Queries.GetPropertyList;
@@ -23,6 +25,21 @@ namespace PropertyCore.WebUI.Controllers
             ViewBag.ReturnUrl = returnUrl;
             return View(await Mediator.Send(request));
         }
+        [HttpGet]
+        public async Task<IActionResult> LocationInventory([FromQuery] GetLocationInventoryQuery request, string returnUrl)
+        {
+            ViewData["ActiveMenu"] = "Property";
+            ViewData["ActiveLink"] = "LocationInventory";
+            ViewData["Title"] = "Location Inventory";
+            ViewBag.ReturnUrl = returnUrl;
+            return View(await Mediator.Send(request));
+        }
+        [HttpPost]
+        public async Task<IActionResult> LocationInventoryFile([FromForm] GetLocationInventoryFileQuery request)
+        {
+            var vm = await Mediator.Send(request);
+            return File(vm.Content, vm.ContentType, vm.FileName);
+        }
         /// <summary>
         /// Returns a detailed view of a charge.
         /// </summary>
@@ -37,6 +54,7 @@ namespace PropertyCore.WebUI.Controllers
             ViewBag.ReturnUrl = returnUrl;
             return View(await Mediator.Send(request));
         }
+        // TODO: Rename to Location Audit download
         [HttpGet]
         public async Task<FileResult> Download([FromQuery] GetPropertyFileQuery request, string returnUrl)
         {

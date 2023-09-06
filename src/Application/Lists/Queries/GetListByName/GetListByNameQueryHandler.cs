@@ -29,12 +29,9 @@ namespace PropertyCore.Application.Lists.Queries.GetListByName
                 .Where(x => (x.Name == request.Name && (x.ListManagementMetadata.OwnerId == Guid.Empty || x.ListManagementMetadata.OwnerId.ToString() == "9454125D-7B75-4453-BC5B-A37A48B248A7")))
                 .Select(y => y.InstanceId)
                 .ToList();
-            if (listIds == null)
-            {
-                throw new NotFoundException("No list found.", nameof(request.Name));
-            }
-
-            return await _context.ListManagementCodes.Where(x => listIds.Contains(x.InstanceId)).Select(y => new DropDownListItem { Value = y.Id, Text = y.ListManagementCodeGroupEntry.First().Description }).ToListAsync();
+            return listIds == null
+                ? throw new NotFoundException("No list found.", nameof(request.Name))
+                : await _context.ListManagementCodes.Where(x => listIds.Contains(x.InstanceId)).Select(y => new DropDownListItem { Value = y.Id, Text = y.ListManagementCodeGroupEntry.First().Description }).ToListAsync();
         }
     }
 }

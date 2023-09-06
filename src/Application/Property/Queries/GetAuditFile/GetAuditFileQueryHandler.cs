@@ -74,7 +74,7 @@ namespace PropertyCore.Application.Property.Queries.GetAuditFile
             {
                 Content = fileContent,
                 ContentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-                FileName = $"Audit Results - Location: {results.Location.Name} {_dateTime.Now.ToString("MM-dd-yy")}.xlsx"
+                FileName = $"Audit Results - Location: {results.Location.Name} {_dateTime.Now:MM-dd-yy}.xlsx"
             };
             return vm;
         }

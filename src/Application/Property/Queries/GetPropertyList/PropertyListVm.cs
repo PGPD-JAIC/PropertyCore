@@ -29,6 +29,10 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyList
         /// </summary>
         public ICollection<DropDownListItem> HoldStatuses { get; set; }
         /// <summary>
+        /// A colleciton of <see cref="DropDownListItem"/> containing RMS Realm Identifiers.
+        /// </summary>
+        public ICollection<DropDownListItem> Realms { get; set; }
+        /// <summary>
         /// A paging info object used to provide paging functionality.
         /// </summary>
         public PagingInfo PagingInfo { get; set; }
@@ -48,6 +52,10 @@ namespace PropertyCore.Application.Property.Queries.GetPropertyList
         /// The value of the selected property hold status Id, if any.
         /// </summary>
         public string SelectedPropertyHoldStatusId { get; set; }
+        /// <summary>
+        /// An optional ID for the selected realm. Defaults to PGPD Realm.
+        /// </summary>
+        public string SelectedRealmId { get; set; } = "";
         /// <summary>
         /// Contains any value provided in the BarCodeSearch of the associated query.
         /// </summary>
