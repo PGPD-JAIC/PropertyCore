@@ -363,3 +363,5 @@ MigrationBackup/
 FodyWeavers.xsd
 /src/WebUI/PropertyCore_Log*.txt
 
+# DocFX Generation Files
+docfx_project/
