@@ -3,6 +3,7 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>PropertyCore.WebUI</RootNamespace>
     <AssemblyName>PropertyCore.WebUI</AssemblyName>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <CopyRefAssembliesToPublishDirectory>false</CopyRefAssembliesToPublishDirectory>
     <UserSecretsId>14011334-6463-48ed-9483-0811211c3e0c</UserSecretsId>
   </PropertyGroup>

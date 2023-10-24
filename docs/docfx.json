@@ -4,7 +4,7 @@
       "src": [
         {
           "files": [
-            "src/Application/bin/Debug/netstandard2.1/PropertyCore.Application.dll"
+            "src/Application/**.csproj"
           ],
           "src": "../"
         }
@@ -17,7 +17,7 @@
       "src": [
         {
           "files": [
-            "src/Common/bin/Debug/netstandard2.1/PropertyCore.Common.dll"
+            "src/Common/**.csproj"
           ],
           "src": "../"
         }
@@ -30,7 +30,7 @@
       "src": [
         {
           "files": [
-            "src/Domain/bin/Debug/netstandard2.1/PropertyCore.Domain.dll"
+            "src/Domain/**.csproj"
           ],
           "src": "../"
         }
@@ -43,7 +43,7 @@
       "src": [
         {
           "files": [
-            "src/Infrastructure/bin/Debug/netcoreapp3.1/PropertyCore.Infrastructure.dll"
+            "src/Infrastructure/**.csproj"
           ],
           "src": "../"
         }
@@ -56,7 +56,7 @@
       "src": [
         {
           "files": [
-            "src/Persistence/bin/Debug/netcoreapp3.1/PropertyCore.Persistence.dll"
+            "src/Persistence/**.csproj"
           ],
           "src": "../"
         }
@@ -69,7 +69,7 @@
       "src": [
         {
           "files": [
-            "src/WebUI/bin/Debug/netcoreapp3.1/PropertyCore.WebUI.dll"
+            "src/WebUI/**.csproj"
           ],
           "src": "../"
         }
