@@ -1,0 +1,146 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "src/Application/bin/Debug/netstandard2.1/PropertyCore.Application.dll"
+          ],
+          "src": "../"
+        }
+      ],
+      "dest": "api/Application",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false
+    },
+    {
+      "src": [
+        {
+          "files": [
+            "src/Common/bin/Debug/netstandard2.1/PropertyCore.Common.dll"
+          ],
+          "src": "../"
+        }
+      ],
+      "dest": "api/Common",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false
+    },
+    {
+      "src": [
+        {
+          "files": [
+            "src/Domain/bin/Debug/netstandard2.1/PropertyCore.Domain.dll"
+          ],
+          "src": "../"
+        }
+      ],
+      "dest": "api/Domain",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false
+    },
+    {
+      "src": [
+        {
+          "files": [
+            "src/Infrastructure/bin/Debug/netcoreapp3.1/PropertyCore.Infrastructure.dll"
+          ],
+          "src": "../"
+        }
+      ],
+      "dest": "api/Infrastructure",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false
+    },
+    {
+      "src": [
+        {
+          "files": [
+            "src/Persistence/bin/Debug/netcoreapp3.1/PropertyCore.Persistence.dll"
+          ],
+          "src": "../"
+        }
+      ],
+      "dest": "api/Persistence",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false
+    },
+    {
+      "src": [
+        {
+          "files": [
+            "src/WebUI/bin/Debug/netcoreapp3.1/PropertyCore.WebUI.dll"
+          ],
+          "src": "../"
+        }
+      ],
+      "dest": "api/WebUI",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "api/**.yml",
+          "api/**/index.md",
+          "api/index.md"
+        ]
+      },
+      {
+        "files": [
+          "articles/**.md",
+          "articles/**/toc.yml",
+          "toc.yml",
+          "*.md"
+        ]
+      },
+      {
+        "files": [
+          "faq/**.md",          
+          "faq/toc.yml"
+        ]
+      },
+      {
+        "files": [
+          "help/**.md",
+          "help/toc.yml"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ]
+      }
+    ],
+    "overwrite": [
+      {
+        "files": [
+          "apidoc/**.md"
+        ],
+        "exclude": [
+          "obj/**",
+          "_site/**"
+        ]
+      }
+    ],
+    "dest": "_site",
+    "globalMetadata": {
+      "_appTitle": "PropertyCore Documentation",
+      "_enableSearch": "true"
+    },
+    "fileMetadataFiles": [],
+    "template": [
+      "default"
+    ],
+    "postProcessors": [],
+    "markdownEngineName": "markdig",
+    "noLangKeyword": false,
+    "keepFileLink": false,
+    "cleanupCacheHistory": false,
+    "disableGitFeatures": false
+  }
+}
