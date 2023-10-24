@@ -1,0 +1,2312 @@
+{
+  "homepages": [],
+  "source_base_path": "D:/a/PropertyCore/PropertyCore/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Common.Behaviors.RequestAuthorizationBehavior-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Common.Behaviors.RequestAuthorizationBehavior-2.html",
+          "hash": "BVxmrO2kRRODoxwDV/p9Q9mp/R+w4eDj4NWP/Vgr7dU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Common.Behaviors.RequestLogger-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Common.Behaviors.RequestLogger-1.html",
+          "hash": "JdqzQQJOF4hcQGiXW0CABq15pJl1nfAAGHEBYDvCAPM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Common.Behaviors.RequestPerformanceBehavior-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Common.Behaviors.RequestPerformanceBehavior-2.html",
+          "hash": "MjOlyr5ie/31eNvHmtduPIr3kZ4bQVLn0HIOTJpKlEY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Common.Behaviors.RequestValidationBehavior-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Common.Behaviors.RequestValidationBehavior-2.html",
+          "hash": "gxUxCnHXWOsMrEUYS+a8f7WkVQMz9EYXW0vo3wQ1YkQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Common.Behaviors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Common.Behaviors.html",
+          "hash": "XtjBeXSh+QJlZQgBBlK+7jEgkg/XCZMMYz4nsWvcxeM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Common.Exceptions.BadRequestException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Common.Exceptions.BadRequestException.html",
+          "hash": "KjkP6sJnnMNHpowQU2CzY52fPxqe/w7KGDGy99flYh4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Common.Exceptions.NotFoundException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Common.Exceptions.NotFoundException.html",
+          "hash": "qbksu3HdXaVCiRDuym4LH4aEFHcM1RgZed0QpFbQR1Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Common.Exceptions.UnauthorizedException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Common.Exceptions.UnauthorizedException.html",
+          "hash": "Fyz1Ah1lEIcP7hz3WESg+Qe1pDIZbyBg0dKbd2jj+Mo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Common.Exceptions.ValidationException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Common.Exceptions.ValidationException.html",
+          "hash": "jDvzUt7D38qcbutTcQeNLNGEyQVJ075N7G0lANAwgCI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Common.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Common.Exceptions.html",
+          "hash": "11eQEivBYbtiR92hVK3I/jeFQGHXAANR+VcOwo+wsoM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Common.Interfaces.IAuthorizer-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Common.Interfaces.IAuthorizer-1.html",
+          "hash": "4Ui6RdTreFSa0jiNgrC09nN9B5UPyNTQQwVqfAPKmF0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Common.Interfaces.ICsvFileBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Common.Interfaces.ICsvFileBuilder.html",
+          "hash": "z2GsDZoS4YrdJleKTgZNz12IIOE2BVodQx3tbicR/GE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Common.Interfaces.ICurrentUserService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Common.Interfaces.ICurrentUserService.html",
+          "hash": "XVjvRh2c9zEkgOMaF40QT4YJxQdbcbSNuuyuV7u2K/U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Common.Interfaces.IDHStoreContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Common.Interfaces.IDHStoreContext.html",
+          "hash": "fi+S3Zxo7oAYidhbMNvHuv6hSrWHFjlDraagEmxtEzo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Common.Interfaces.IDropDownListItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Common.Interfaces.IDropDownListItem.html",
+          "hash": "BYOao3fys0/AidK5WVyryQqHC3gDRVUQqHkfinb/wLc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Common.Interfaces.ILocationInventorySpreadsheetBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Common.Interfaces.ILocationInventorySpreadsheetBuilder.html",
+          "hash": "Z41qkc94Q6BVI7LWaimgyJRbaLoVPmCANNshB6e+q1M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Common.Interfaces.INotificationService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Common.Interfaces.INotificationService.html",
+          "hash": "q79Z2U8syScQwUYpcXjbN5vkm2OXoBHyw57aFpq386o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Common.Interfaces.ISpreadSheetBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Common.Interfaces.ISpreadSheetBuilder.html",
+          "hash": "pfV25x6igZH0qMFSvIJBeEA9BhsIua0kdX2WtA8Q+oE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Common.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Common.Interfaces.html",
+          "hash": "FsyNBfQOHqjnAF/j+S+Gdo+yv+J4K2F9BHGUizMjAK0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Common.Mappings.IMapFrom-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Common.Mappings.IMapFrom-1.html",
+          "hash": "M9/Fql9auNDlL7L+7OnuPf+mSxg2Z1uP4EptQ5U5N6o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Common.Mappings.MappingProfile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Common.Mappings.MappingProfile.html",
+          "hash": "mK0/hScQIafxEM1RojonZGC+3w8JxMiGWGull4UgHzs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Common.Mappings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Common.Mappings.html",
+          "hash": "qCKOx8j6Q0JshuiIHvzbupyLhQVP8i05QmR9UMt2tck="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Common.Models.AddAuthorizers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Common.Models.AddAuthorizers.html",
+          "hash": "c1Sxiw84+pjO1c+JqI5w8zANRgu938gpJNOUP4O7O7g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Common.Models.AuthorizationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Common.Models.AuthorizationResult.html",
+          "hash": "vLY2c4ANqD7EZbOEhMDleIShtJQpG525Q7sfoOMO3Rk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Common.Models.DropDownListItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Common.Models.DropDownListItem.html",
+          "hash": "J4zv+hluGO4q2owqURrHL6eItCV9uuqSABGJCdqA3F0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Common.Models.PagingInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Common.Models.PagingInfo.html",
+          "hash": "yYrGtPBQVzBIOQC8Zc2qywnAw4QQ/LlbDmmCxf00NP8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Common.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Common.Models.html",
+          "hash": "kveA6y6J1RNsV8en8RFx0eT+xu8ZbNBJ/nuliBCb++U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.DependencyInjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.DependencyInjection.html",
+          "hash": "hzPrigcw6M6e1L15XuoFGnDzyBfNyFniibMyAjxEorQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Lists.Queries.GetListByName.GetListByNameQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Lists.Queries.GetListByName.GetListByNameQuery.html",
+          "hash": "ndul/ZlGXC/vfKKDris+e/G3kNMjPkWbEru7KjqP4qU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Lists.Queries.GetListByName.GetListByNameQueryHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Lists.Queries.GetListByName.GetListByNameQueryHandler.html",
+          "hash": "AtQXY6UE31tNSswHomEgPu1n/tBCh5FCuS/7nDvEOPg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Lists.Queries.GetListByName.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Lists.Queries.GetListByName.html",
+          "hash": "HDtZz4Lhyh1kLXilkqj4hfADSZz/DbVXfCGmeX9lD8M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Lists.Queries.GetPGPDPropertyLocation.GetPGPDPropertyLocationsQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Lists.Queries.GetPGPDPropertyLocation.GetPGPDPropertyLocationsQuery.html",
+          "hash": "0qY0fiYuKqFIsRObshDnaLVBi48wJALJq0EdJZwkygo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Lists.Queries.GetPGPDPropertyLocation.GetPGPDPropertyLocationsQueryHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Lists.Queries.GetPGPDPropertyLocation.GetPGPDPropertyLocationsQueryHandler.html",
+          "hash": "qteL6idWs0HaadNkCTq67GyczR0maV2AkL6wd4XfBDo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Lists.Queries.GetPGPDPropertyLocation.PropertyLocationDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Lists.Queries.GetPGPDPropertyLocation.PropertyLocationDto.html",
+          "hash": "2MnFfZIfokfOwbc1Ss3kbr1jXqWRCIiXZIGeK1s8ugM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Lists.Queries.GetPGPDPropertyLocation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Lists.Queries.GetPGPDPropertyLocation.html",
+          "hash": "TcRIXF8GGKo8cBy92GCI1oR31slaqjUer9NQ7FWbfXo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Lists.Queries.GetPGPDPropertyLocationGroupType.GetPGPDPropertyLocationGroupTypeQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Lists.Queries.GetPGPDPropertyLocationGroupType.GetPGPDPropertyLocationGroupTypeQuery.html",
+          "hash": "JEC0aRsX6NsbxbwcBP+D689ngcGI2gW4SKN3U8hZtR8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Lists.Queries.GetPGPDPropertyLocationGroupType.GetPGPDPropertyLocationGroupTypeQueryHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Lists.Queries.GetPGPDPropertyLocationGroupType.GetPGPDPropertyLocationGroupTypeQueryHandler.html",
+          "hash": "/3eqz6pN/6crT6KaJc2R0K+sLjpNp6q+zzSwOYQG5/g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Lists.Queries.GetPGPDPropertyLocationGroupType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Lists.Queries.GetPGPDPropertyLocationGroupType.html",
+          "hash": "iCAZDtPlMLD6VBtleZZFm0ChhOYwcW7YBjlKIid/lxE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Lists.Queries.GetRMSRealmQuery.GetRMSRealmQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Lists.Queries.GetRMSRealmQuery.GetRMSRealmQuery.html",
+          "hash": "XJO+UuFUhNC9F6nX1XWgq9GOOKylRY9omL3f5NFHzw0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Lists.Queries.GetRMSRealmQuery.GetRMSRealmQueryHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Lists.Queries.GetRMSRealmQuery.GetRMSRealmQueryHandler.html",
+          "hash": "gyVDyp+eRWlfEDpeW1J3im0tfU+DWHvkgB8vwAEi6IU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Lists.Queries.GetRMSRealmQuery.RMSRealmDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Lists.Queries.GetRMSRealmQuery.RMSRealmDto.html",
+          "hash": "Zj2ckgyKSo8fPIZTXTaKMqfgi4symqXikIrk7CB99sg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Lists.Queries.GetRMSRealmQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Lists.Queries.GetRMSRealmQuery.html",
+          "hash": "0qIZmxx5VWbyV2vnniN/46yQw0a+V6ll1dPsFPzB/eU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Models.MessageDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Models.MessageDto.html",
+          "hash": "bXy6sOaR45QI6vELcPKrbwWKJh+zoIP9oNp7qfCbMak="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Models.html",
+          "hash": "3j/IaqeiUqEOi/w7YpZg9hkBOHrRmZGyyqdovZYRiGg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Commands.LocationAudit.LocationAuditCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Commands.LocationAudit.LocationAuditCommand.html",
+          "hash": "zAF4Og8xULgaJAPEW0YMptlFsSzK3r9U6Tnpiag9udA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Commands.LocationAudit.LocationAuditCommandHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Commands.LocationAudit.LocationAuditCommandHandler.html",
+          "hash": "r+QITrg5OunakspADoPIfk2nyqt7iCSxZ+ziKJKA4fg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Commands.LocationAudit.LocationAuditCommandValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Commands.LocationAudit.LocationAuditCommandValidator.html",
+          "hash": "quCiTQEaYsRTLoqeWDQZhWV8spncSPvQxvEvInuv+Is="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Commands.LocationAudit.LocationAuditLocationDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Commands.LocationAudit.LocationAuditLocationDto.html",
+          "hash": "+paqQrVl1L7J3KTRc6968nHVY3GBsFSn+KA39k+Utuo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Commands.LocationAudit.LocationAuditResultPropertyItemDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Commands.LocationAudit.LocationAuditResultPropertyItemDto.html",
+          "hash": "1nPUFp9y1ZbnacbDk8EbrAPTqgc/KjzQB5zZH4w3BsY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Commands.LocationAudit.LocationAuditResultVm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Commands.LocationAudit.LocationAuditResultVm.html",
+          "hash": "zSCZ0wSNf32ZBLzNSyDH63rlZcXMwfr4UFX2a3EvPzo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Commands.LocationAudit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Commands.LocationAudit.html",
+          "hash": "tVxP0c7XjeJ+MNjUlFUa4CuZG3P1LIGSwDkdcLKUmUU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetAuditFile.AuditFileLocationDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetAuditFile.AuditFileLocationDto.html",
+          "hash": "HCzOKzHMf4CreIFO0fJ8njOIwGij1NEcqihLdJtQYaw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetAuditFile.AuditFilePropertyItemDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetAuditFile.AuditFilePropertyItemDto.html",
+          "hash": "xqPEMI/Qz/H5cA4g+81YCHhS4NtMs4eeZr37/nKzUPM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetAuditFile.AuditFileResults.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetAuditFile.AuditFileResults.html",
+          "hash": "bDUBC2/tY6sn621/IuQSbP9ZqlmNuPmjw1e2i7iegTs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetAuditFile.AuditFileVm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetAuditFile.AuditFileVm.html",
+          "hash": "wo5UiL8AmyThFx3UzRGZ2bFcogY9YEPZI9h86H/1Ko0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetAuditFile.GetAuditFileQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetAuditFile.GetAuditFileQuery.html",
+          "hash": "XQihZyKatgmB2HgYgfZ/Tv6PNsKmLQI86sOxHUGG83g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetAuditFile.GetAuditFileQueryHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetAuditFile.GetAuditFileQueryHandler.html",
+          "hash": "VtKil6HEBC/KAP9axiThq/DdkNNBQtt/N8IHVVvuVXI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetAuditFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetAuditFile.html",
+          "hash": "GoogOCcD8MWsFH9GBetd7iuqGbPZ/fh9UYAZKyfNLN0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetLocationInventory.GetLocationInventoryQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetLocationInventory.GetLocationInventoryQuery.html",
+          "hash": "Qv/+e4lk1/p0QGgaInTs3MAktsLXBm5I1c8kt1oefw0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetLocationInventory.GetLocationInventoryQueryHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetLocationInventory.GetLocationInventoryQueryHandler.html",
+          "hash": "94tqHECrKa5yrFx8+9JbGOR2A+FoUdVaLovzYVpZ21k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetLocationInventory.LocationInventoryPropertyItemDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetLocationInventory.LocationInventoryPropertyItemDto.html",
+          "hash": "WJABlxMxw2hlUiLx/b9HdH86OCnJPOLuLPgFTBky01s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetLocationInventory.LocationInventoryVm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetLocationInventory.LocationInventoryVm.html",
+          "hash": "wGxxtID9lOSpmqsakWL516qbEBs5Q5VSe2YzIs0BI5g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetLocationInventory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetLocationInventory.html",
+          "hash": "kSWNw9DkyXtqcQIuxksdStf3zyu6MImQ9GfzAG26Vns="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetLocationInventoryFile.GetLocationInventoryFileQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetLocationInventoryFile.GetLocationInventoryFileQuery.html",
+          "hash": "BYsYcm4XoTCEbysQmoqDy6GlO5PYl2WN6bMarTiVfbE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetLocationInventoryFile.GetLocationInventoryFileQueryHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetLocationInventoryFile.GetLocationInventoryFileQueryHandler.html",
+          "hash": "sKXGfBWij0h448ZPnaLsto+rvtaYCV4WfXBKVrcHkms="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetLocationInventoryFile.LocationInventoryFileLocationDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetLocationInventoryFile.LocationInventoryFileLocationDto.html",
+          "hash": "si958t/nSe9CTDz3HY9a/V+CPK1yzuDRvHS96k1LnSw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetLocationInventoryFile.LocationInventoryFilePropertyItemDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetLocationInventoryFile.LocationInventoryFilePropertyItemDto.html",
+          "hash": "DkpKxdng0TWxoGQBKyQP7gaXqP8p3LD8jQQquINqbaM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetLocationInventoryFile.LocationInventoryFileVm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetLocationInventoryFile.LocationInventoryFileVm.html",
+          "hash": "w45CzW7Hb+pbwkp2E48VNy94R5nnuTLhlNTa6Ts/+Zg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetLocationInventoryFile.LocationInventoryResults.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetLocationInventoryFile.LocationInventoryResults.html",
+          "hash": "ddja8Qa66obGF96qPSXEQ3fnQ4m6fQ6SLuJ762KRioA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetLocationInventoryFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetLocationInventoryFile.html",
+          "hash": "PaFwIi5YIkHwuJIB8bGc0TzH6/Wo0/M5Z6ndpgvE1yM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetPropertyDetail.ChainOfCustodyDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetPropertyDetail.ChainOfCustodyDto.html",
+          "hash": "B+qj9ZOSObUQba3kbhMpf1EsL8A2Vy3QX/tqG8JRsLk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetPropertyDetail.GetPropertyDetailQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetPropertyDetail.GetPropertyDetailQuery.html",
+          "hash": "xJqfvmIVGRPJAvx4vXmFlaMQGv6NgGpABLqHjkH+fMk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetPropertyDetail.GetPropertyDetailQueryHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetPropertyDetail.GetPropertyDetailQueryHandler.html",
+          "hash": "KoS0R8QYzGFMPXk4SwX4dawKJ7vp1l+blt19nyEmOfE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetPropertyDetail.GetPropertyDetailQueryValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetPropertyDetail.GetPropertyDetailQueryValidator.html",
+          "hash": "jfRLWgGwXIT0Hv1NPe1A4mqaXTqVozo5DHX3hSal294="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetPropertyDetail.PropertyDetailVm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetPropertyDetail.PropertyDetailVm.html",
+          "hash": "gbgv+KNocj5y7cnAo/pQFhlax5Yme76/n/iAadUiMlU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetPropertyDetail.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetPropertyDetail.html",
+          "hash": "nNJR55KkS8tZaOIYTvV480tf2P5J+o+zP7hz+FsMXMU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetPropertyFile.GetPropertyFileQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetPropertyFile.GetPropertyFileQuery.html",
+          "hash": "Xs52BoYvLP3WqwbIDenuqmid1AQNGaj3rUknK366tIQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetPropertyFile.GetPropertyFileQueryHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetPropertyFile.GetPropertyFileQueryHandler.html",
+          "hash": "7vf7N0H2q/tGY8ZL27Wkp+EVm5Vq2oHCxwcrX26qyRE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetPropertyFile.GetPropertyFileQueryValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetPropertyFile.GetPropertyFileQueryValidator.html",
+          "hash": "fMz1FYjsawTBkRiW83Hsvxh7QWrBF7U2ivblcROZqow="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetPropertyFile.PropertyFileVm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetPropertyFile.PropertyFileVm.html",
+          "hash": "bSUc7o7WTIxEMAWQ5qK+5dTPcO1saPAUVxaMP0C1WiI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetPropertyFile.PropertyListFileItemDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetPropertyFile.PropertyListFileItemDto.html",
+          "hash": "oUDvVjMumLRgyPRlsPVH1Ktt5ObA6NCFX+ZLl+44Se0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetPropertyFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetPropertyFile.html",
+          "hash": "v+AXZeh2fUqm+u+6F+vT8ZRTDembWGx0RmGn2cwqOuI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQuery.html",
+          "hash": "JKrOGHF45Nc7MERfQQMyWFloVn5zkOoxCmuH46yb2bY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQueryHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQueryHandler.html",
+          "hash": "bXal/Sz0EDDP3aBOR1mohWsvno53nXRzL4WRpljFyi0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQueryValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetPropertyList.GetPropertyListQueryValidator.html",
+          "hash": "2gRk2nja0Khc+/LHothcj8ggBfM+m+UYH84PonWFUIA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetPropertyList.PropertyListPropertyItemDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetPropertyList.PropertyListPropertyItemDto.html",
+          "hash": "LhWrsG/58dvsJKgOeUpr9HCcicNZdwyRd8FGTg2ePj4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetPropertyList.PropertyListVm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetPropertyList.PropertyListVm.html",
+          "hash": "OHhbP9jFLQdjfutNraEbo8XxdoF4TXWkoz0xlQbcaI0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetPropertyList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.Property.Queries.GetPropertyList.html",
+          "hash": "Kxt8HAqz8NzyfBk9Dc3pEd/JU8RHU1XVhshKesh1nQc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application/PropertyCore.Application.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/PropertyCore.Application.html",
+          "hash": "2VAZ3wn7JgzEen+69l+yJa+ogYW7DvSRuNZFBcQmD5g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/Application/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/index.html",
+          "hash": "7m6T93TX60Grs2iexuXIDjSfck2TaA66yRmgJrICQ74="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/Application/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application/toc.html",
+          "hash": "y3Cl053dQXLZRGs/sFoHQJw1QrkuuXhutsm9yru4nyA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Common/PropertyCore.Common.Extensions.EnumExtensionMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Common/PropertyCore.Common.Extensions.EnumExtensionMethods.html",
+          "hash": "FaoCV9j6ic3fS6cWKDI7o+M67QxIIbSKg7EN9tPHbsw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Common/PropertyCore.Common.Extensions.LinqExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Common/PropertyCore.Common.Extensions.LinqExtensions.html",
+          "hash": "khKboaJPnS19Bls7mp0IrApDWou6ckExhbaHTfnTbL0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Common/PropertyCore.Common.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Common/PropertyCore.Common.Extensions.html",
+          "hash": "nzTJkhSOrZZz0QM+K8HuZrHAZMZS/hyYN7owjGUDqzw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Common/PropertyCore.Common.IDateTime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Common/PropertyCore.Common.IDateTime.html",
+          "hash": "3KMf0Q5U0DXawScFtPsCRRFGNh09SNx1L3I6kP1ZB+8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Common/PropertyCore.Common.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Common/PropertyCore.Common.html",
+          "hash": "mB0xXrSbN1WE5YvT+whmX1rM5wHuGCw7/O1sSxVbJlM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/Common/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/Common/index.html",
+          "hash": "1vivwAbyyVNvum2qa/8w/3iTTR7K+4i5yXXdAaNaZrI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/Common/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Common/toc.html",
+          "hash": "co/wRZ6Wgvh6pD6yvFsG/XVpX2THsnPtjD9UlJHQVbU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain/PropertyCore.Domain.Entities.ListManagement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain/PropertyCore.Domain.Entities.ListManagement.html",
+          "hash": "WqtcEKePzFG3uUuw4goRtpFAuOJNrW2ZtTePZKu++xY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain/PropertyCore.Domain.Entities.ListManagementAttributeDef.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain/PropertyCore.Domain.Entities.ListManagementAttributeDef.html",
+          "hash": "QiJfiV0SUJNlCWg7GGBxeXLtZ1XgFPlpOorVyW9zVkg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain/PropertyCore.Domain.Entities.ListManagementAttributesattributedef.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain/PropertyCore.Domain.Entities.ListManagementAttributesattributedef.html",
+          "hash": "oazMqj2T1dvLEJe5hqsmbb0M+sOlKCm7qmPuBdQ6nNU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain/PropertyCore.Domain.Entities.ListManagementCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain/PropertyCore.Domain.Entities.ListManagementCode.html",
+          "hash": "OvvfHBqOOvTnsOgH5n7BRGi4a95U0t80vEEHBiofOcw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain/PropertyCore.Domain.Entities.ListManagementCodeAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain/PropertyCore.Domain.Entities.ListManagementCodeAttribute.html",
+          "hash": "Xls8IV6t4NRNHI02WBVJ4heQVb/GH3MfVlxyCvo8BlI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain/PropertyCore.Domain.Entities.ListManagementCodeAttributes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain/PropertyCore.Domain.Entities.ListManagementCodeAttributes.html",
+          "hash": "/X8SBdWiJA0XCOpBXnQNrc+AaEWNM6dNIrf+9vfg/UA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain/PropertyCore.Domain.Entities.ListManagementCodeEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain/PropertyCore.Domain.Entities.ListManagementCodeEntry.html",
+          "hash": "ovACEDHuPFNe5zjet/EeK1nDmBEWs54VYdnr1x/sorI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain/PropertyCore.Domain.Entities.ListManagementCodeGroupEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain/PropertyCore.Domain.Entities.ListManagementCodeGroupEntry.html",
+          "hash": "JIZry1Q6B19kt6EGSCgxTFHHVjdhChJ3mFA7MfIwBqU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain/PropertyCore.Domain.Entities.ListManagementMetadata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain/PropertyCore.Domain.Entities.ListManagementMetadata.html",
+          "hash": "CLVx4+Iv7skPt/iZkTSsip4YpkaJPzFpsLOitARRM7s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain/PropertyCore.Domain.Entities.Property.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain/PropertyCore.Domain.Entities.Property.html",
+          "hash": "308T76ZJAzOWZN92Ad4LrLNwu3d/QEhbYnDQlVKNFRY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertyAlerts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertyAlerts.html",
+          "hash": "g5okVCgXkUQFfevp3VAyVzyORGYIC/l/Knf0z2fVDq4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertyMetadata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertyMetadata.html",
+          "hash": "zeMQXlWlhYL9SaCzIObJEvwmroQsJm+ar0nJ1gdzMAQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertyPropertyAlert.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertyPropertyAlert.html",
+          "hash": "xwUT1IPBKOhB0Bq/LI+CQ60QqI6YqgFopN4qCIgThpg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertySheet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertySheet.html",
+          "hash": "ilQkWAz4YDRhEDqHqJ5uzDsgVTUA+2pRF/AM7KiXzhE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertySheetAssistingOfficers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertySheetAssistingOfficers.html",
+          "hash": "fmDpVAoAriwLBivGeLfw+wcxTFnEEQCjpH5tX/ZtYNs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertySheetCurrency.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertySheetCurrency.html",
+          "hash": "u9GdbQKr6BSGmD5/44WcxeQ7ZnWoXYLrsocK7fCdgq8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertySheetFieldTransaction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertySheetFieldTransaction.html",
+          "hash": "tskAtMCFlLu2WtNiAMHxTP3IusGcT1OyjoLpOZwnf6s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertySheetForeignCurrency.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertySheetForeignCurrency.html",
+          "hash": "7ZflF1/HVYqfiMeIcqPMjYGNMuLUY92ax4X+crN4aWo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertySheetInvolvedPeople.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertySheetInvolvedPeople.html",
+          "hash": "Hox0O3vRYk+6CRiwUhgFxFF3mseI8e/fvZTQb4VYUJ8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertySheetInvolvedPeopleAddresses.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertySheetInvolvedPeopleAddresses.html",
+          "hash": "UgHxA9rjVrSsQhzu8IAhpzV32pmibnqV2aCe9BM2C64="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertySheetInvolvedPeoplePhone.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertySheetInvolvedPeoplePhone.html",
+          "hash": "a8tBIheTRrmaNQqGwNQWWKkRTwsrW+vVo5hMtlYSG0k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertySheetMetadata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertySheetMetadata.html",
+          "hash": "I1AjV96GLo7OMeMzR50l8MsAYVyEvqidBkVBijNaXgI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertySheetPgcAssociatedProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertySheetPgcAssociatedProperty.html",
+          "hash": "PoeEJ89+wOFj1LQ3KZWpUVHI8HSCVtOTO4eRyQFjsVk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertySheetPgcAssociatedPropertyConclusion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertySheetPgcAssociatedPropertyConclusion.html",
+          "hash": "avtnP+27rFzFJYO3JoAmXEscFDM3cuFTXcBnXa6FHXY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertySheetPgcPropColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertySheetPgcPropColor.html",
+          "hash": "EeoZgn8qtaGe6jrv3pUzrXBdGQshkHo9SIeHmNMQpcc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertySheetPgcPropertyTag.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertySheetPgcPropertyTag.html",
+          "hash": "uqV+FbI015BHmjV9dJl6pKG8VbnE3R3f7bNvs/ZhNCI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertySheetPgcTransactions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertySheetPgcTransactions.html",
+          "hash": "CFlDJeYoDVZu7AGMoPnb2wPl72cACy/ihT62OWO29JQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertySheetTags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertySheetTags.html",
+          "hash": "J6l+88MyTNMltFLMsl1sV6muMEZJKp1k4oD0Rw18WJs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertySheetTagsChainOfCustody.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertySheetTagsChainOfCustody.html",
+          "hash": "GXxTTDzgYwRlgIw0rvV06OKwttEhg2bx4l29LWxYXzg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertySheetTagsRelatedPerson.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertySheetTagsRelatedPerson.html",
+          "hash": "aoZ2y746ZH6vsumWYZtQcxABbqGXLIz5BRr4QpSDJII="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertySheetTagsVehicleColors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertySheetTagsVehicleColors.html",
+          "hash": "N54rCpLimQ/wQBjIQP9mkpaEFrjdmlE3lJuVht0pm7c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertyTransactionDetails.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain/PropertyCore.Domain.Entities.PropertyTransactionDetails.html",
+          "hash": "yqeXYeTcw1d0jWn665ZpUWsdxn3GcWm5rjWUx7GE0Gw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain/PropertyCore.Domain.Entities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain/PropertyCore.Domain.Entities.html",
+          "hash": "C+PRAEXmRrFkWjRovw1DQ8QhNBmi0655ei52Dx/9czw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/Domain/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain/index.html",
+          "hash": "FulResueYUeCS8ZMpXukVD/Bi/QoUeVHQa2BPBtCASM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/Domain/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain/toc.html",
+          "hash": "NjRv9dwZ0HMQgHa4aM/6klzBiqdfr30XxQ4G6W1J5GE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure/PropertyCore.Infrastructure.DependencyInjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure/PropertyCore.Infrastructure.DependencyInjection.html",
+          "hash": "x886UeVkBhSLHl5u0v7Ypk4YJVa/Qsm3bEUJ6gP2u+c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure/PropertyCore.Infrastructure.EmailSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure/PropertyCore.Infrastructure.EmailSettings.html",
+          "hash": "ANRYGk8rIm/L84Ns6FWARNHfAT/zgbzX2fEPkbWsOQ0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure/PropertyCore.Infrastructure.Files.CsvFileBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure/PropertyCore.Infrastructure.Files.CsvFileBuilder.html",
+          "hash": "Kot0kk4Z9xD19M1QEI+xJUGl+W/T7FmsikJ0kQF/7No="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure/PropertyCore.Infrastructure.Files.OpenXML.SpreadsheetML.LocationInventorySpreadSheetBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure/PropertyCore.Infrastructure.Files.OpenXML.SpreadsheetML.LocationInventorySpreadSheetBuilder.html",
+          "hash": "Mxz3PGtH3rdKohlhjpcdU4i3rPD/8vuSkUA+fZb3Ezo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure/PropertyCore.Infrastructure.Files.OpenXML.SpreadsheetML.SpreadSheetBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure/PropertyCore.Infrastructure.Files.OpenXML.SpreadsheetML.SpreadSheetBuilder.html",
+          "hash": "kZvm/grZggJQ6O2mSs+6pJ013kWW9ZwUIDyrInSn9Gk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure/PropertyCore.Infrastructure.Files.OpenXML.SpreadsheetML.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure/PropertyCore.Infrastructure.Files.OpenXML.SpreadsheetML.html",
+          "hash": "xvHtTwlz4+DZOj+MNdbbBbuAedu1yz4KRPWgZzFYqAk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure/PropertyCore.Infrastructure.Files.PropertyListFileItemMap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure/PropertyCore.Infrastructure.Files.PropertyListFileItemMap.html",
+          "hash": "HguZAft9RFOhDhxv7lYG8aErrr1MpMCL4RNxb7xw6/s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure/PropertyCore.Infrastructure.Files.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure/PropertyCore.Infrastructure.Files.html",
+          "hash": "JlIn+w91zoUrQfP7rLG6UHmjFje6maZxbO9+EkLYP9g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure/PropertyCore.Infrastructure.MachineDateTime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure/PropertyCore.Infrastructure.MachineDateTime.html",
+          "hash": "viW/8MxNAm8aCf82RrhTiaAfTKE+URp3G05bFZYrrDA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure/PropertyCore.Infrastructure.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure/PropertyCore.Infrastructure.html",
+          "hash": "4jqcBC44uWP+QturXAXHCVckiZu3c/zA5l83Zb5Wcqg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/Infrastructure/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure/index.html",
+          "hash": "/ihlROgPHkx3gSJ67XOTTdSZQ9640sHfm5qij+WuOR0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/Infrastructure/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure/toc.html",
+          "hash": "ldg/dTKACw7KyOkqhJKX+yPpeHrMIeh1UCvv3BkhJ6A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Persistence/PropertyCore.Persistence.DHStoreContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Persistence/PropertyCore.Persistence.DHStoreContext.html",
+          "hash": "UWl0CCoQabkGR6SmAyz1Fe4lpJECu6q+BziSCWkTv5w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Persistence/PropertyCore.Persistence.DHStoreContextFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Persistence/PropertyCore.Persistence.DHStoreContextFactory.html",
+          "hash": "WigU0lG8Dg7FJ4TPAPExYST6sIe6sUoxHob8vcuyQYE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Persistence/PropertyCore.Persistence.DHStoreDesignTimeDbContextFactoryBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Persistence/PropertyCore.Persistence.DHStoreDesignTimeDbContextFactoryBase-1.html",
+          "hash": "RodIvmMLskstntzWSz6904wcB+rnhSIb5L0tHmaUh14="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Persistence/PropertyCore.Persistence.DependencyInjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Persistence/PropertyCore.Persistence.DependencyInjection.html",
+          "hash": "GTQTQKU6eWCcmX9fKJPMDf68LrwZmE94nG7elodFK9k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Persistence/PropertyCore.Persistence.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Persistence/PropertyCore.Persistence.html",
+          "hash": "n0H7w0A7SEoeT+11Wr5f7RlnzWXlVPgS8GFksaUagSk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/Persistence/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/Persistence/index.html",
+          "hash": "Zzg0SkjZkgqo/HQnh3zAaaNHSrNmSRbwlgandXKE3GE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/Persistence/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Persistence/toc.html",
+          "hash": "pFYlQnRWxslXlEZGvPAyyjpaqv/rigLkVZN+64f46bU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebUI/PropertyCore.WebUI.Common.CustomExceptionHandlerMiddleware.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebUI/PropertyCore.WebUI.Common.CustomExceptionHandlerMiddleware.html",
+          "hash": "rkKOBy5vUS77bDLHaP/qYADhgC8sfRiQcRZazj1V/vg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebUI/PropertyCore.WebUI.Common.CustomExceptionHandlerMiddlewareExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebUI/PropertyCore.WebUI.Common.CustomExceptionHandlerMiddlewareExtensions.html",
+          "hash": "K28yaUl+eiLn/1K0NoNa/w8Vwzmk5CYLyLtFp1He6Fg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebUI/PropertyCore.WebUI.Common.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebUI/PropertyCore.WebUI.Common.html",
+          "hash": "hYjTmeK5Uinb7JMOUWrdQLfQqs8AVlzpHdMesI9uDts="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebUI/PropertyCore.WebUI.Controllers.API.BaseApiController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebUI/PropertyCore.WebUI.Controllers.API.BaseApiController.html",
+          "hash": "BCGuwpp51SruL0LzcIcruNmeBzcLtSb8qkq59sTYnps="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebUI/PropertyCore.WebUI.Controllers.API.ListManagementController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebUI/PropertyCore.WebUI.Controllers.API.ListManagementController.html",
+          "hash": "L/bwKH7xbfSDx1frZJJQk7wumWqgpsKfUk4Ifiz5YIk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebUI/PropertyCore.WebUI.Controllers.API.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebUI/PropertyCore.WebUI.Controllers.API.html",
+          "hash": "IzUiUcXWPYKQrdQV9/x6ConD2v0j/EDdH9VczZ7U5Ks="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebUI/PropertyCore.WebUI.Controllers.BaseController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebUI/PropertyCore.WebUI.Controllers.BaseController.html",
+          "hash": "WN438wR7OQNwP8B41feo2NYybcc6cViu28EHVaLo+iI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebUI/PropertyCore.WebUI.Controllers.HomeController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebUI/PropertyCore.WebUI.Controllers.HomeController.html",
+          "hash": "/eyM0Ia+WN2nTTC13YV4YvwCVSEy4xaw3k9b4SMFmZs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebUI/PropertyCore.WebUI.Controllers.PropertyController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebUI/PropertyCore.WebUI.Controllers.PropertyController.html",
+          "hash": "nbcfl24NWy5G5Tq+LNyfOAJXpTJleozTV5pdrzP+at0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebUI/PropertyCore.WebUI.Controllers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebUI/PropertyCore.WebUI.Controllers.html",
+          "hash": "Ig1Dv5r0OtlBXpMYulAqBRdx+yhz0zCQU5pFSA6N7/Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebUI/PropertyCore.WebUI.Filters.HangfireDashAuthorizationFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebUI/PropertyCore.WebUI.Filters.HangfireDashAuthorizationFilter.html",
+          "hash": "vm8/8fHyLB+JMYXbeZA1ahhGZ4H6BJDhI7Zj67iJ444="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebUI/PropertyCore.WebUI.Filters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebUI/PropertyCore.WebUI.Filters.html",
+          "hash": "zx9OVc/eJAfZTLt0UhEvyBRcr6v7cI0GHm29bjMpaFA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebUI/PropertyCore.WebUI.Models.SideBarViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebUI/PropertyCore.WebUI.Models.SideBarViewModel.html",
+          "hash": "MMy5Smwx+nBU2FgpDrrJfOOiDjnAoIVC8QBiOpD2I5k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebUI/PropertyCore.WebUI.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebUI/PropertyCore.WebUI.Models.html",
+          "hash": "pwnKdXTtR6AW/n5ktt7C84XnjX7BCoyplfNpuQwzaN0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebUI/PropertyCore.WebUI.Services.ClaimsLoader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebUI/PropertyCore.WebUI.Services.ClaimsLoader.html",
+          "hash": "98nlB2qxWdBywBuCL+ggIyoo8Kr5/UZk4EIc84OMJNo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebUI/PropertyCore.WebUI.Services.CurrentUserService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebUI/PropertyCore.WebUI.Services.CurrentUserService.html",
+          "hash": "/1OsWpNjgbXLrLD4GBAJ1LMLk+gdKWVUSETRtaHOgTk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebUI/PropertyCore.WebUI.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebUI/PropertyCore.WebUI.Services.html",
+          "hash": "1tugVSR2z0hEEagJaQ3vCo2yYMstVQm7oSMDC06zYso="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebUI/PropertyCore.WebUI.TagHelpers.PageLinkTagHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebUI/PropertyCore.WebUI.TagHelpers.PageLinkTagHelper.html",
+          "hash": "UUKXctMjYZNWLiCKGNBPm8xHK1mcxSCP47QEXBMe0S0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebUI/PropertyCore.WebUI.TagHelpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebUI/PropertyCore.WebUI.TagHelpers.html",
+          "hash": "jZyCcB3pc+mrvlE7ucN48FnYKSgXO6ZITMGU7I9/adk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebUI/WebUI.Program.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebUI/WebUI.Program.html",
+          "hash": "1RMqljLlvKvJVcK7G0+zoN9IWWJQ7si/RWlgekzwSBg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebUI/WebUI.Startup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebUI/WebUI.Startup.html",
+          "hash": "r1YxCdS+7SKCHaEHxiIRn1hdNpc+ofvtYcM2ZxkztM0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WebUI/WebUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebUI/WebUI.html",
+          "hash": "bFWluvGQZr6O+XZtOOFti0JvTr6M/bXzDbFMTqrNaJ4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/WebUI/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebUI/index.html",
+          "hash": "l2Fo4nDj/4WT3sdUPaPbjJ+e8MG2sipcPcMGnw27ORw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/WebUI/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WebUI/toc.html",
+          "hash": "1X0tdj8u2gqHRKjSeRFBnsCNNN7bTODStD8Uctt4OPo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "T5ylheiuteFr2sbAmXds3DCE1Vft0BHGd9W6XafpM0U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "kt1HMBnbSC/c0szuZXDh6vzjL2ipnIa4tWIoQIGfLe0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "83uZkV8iz5Y7tT+eG6GfswZNIcstKQMshlzRyTbpmp8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "BlPxk5mtl2kgfcZUgkEguqiSAR/EUyUTT4EdebwkQvs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "faq/frequently_asked_questions.md",
+      "output": {
+        ".html": {
+          "relative_path": "faq/frequently_asked_questions.html",
+          "hash": "dj1s2/5pyYaLfkm1Bn/vA0w9c5LTFUW/RqFrKfDqRxU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "faq/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "faq/toc.html",
+          "hash": "ZbgtmGnFzrDYq5oHhdx4vplsowhb8n4p803H4+HDsAk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "help/definitions.md",
+      "output": {
+        ".html": {
+          "relative_path": "help/definitions.html",
+          "hash": "NZonl0We+TkPL+cdNso1Y9v+8Qy06in80X6pZYbTKBc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "help/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "help/index.html",
+          "hash": "vtLcP7SaRBa6J41iD5Jl2T3JQ/UmX9XIkz8jSPEicMo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "help/logging_on.md",
+      "output": {
+        ".html": {
+          "relative_path": "help/logging_on.html",
+          "hash": "WfaFerHEHPup0dw3ZKVGBR3rozuxMFYFW8NqtMg7pMg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "help/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "help/toc.html",
+          "hash": "9Wshq7I9SakRRJ7i4AmdsvTS1ycNuhk0v+WWckXucAU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "FbUbf3v6iqOfRdZ+34DuprormVruwMARiMRyv4JsP/U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "6decvecxpX2bizErnmxC7vrDbn7g8DtnEnJGLVb7OJc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 13,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 164,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
